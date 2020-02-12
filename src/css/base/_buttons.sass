@@ -5,20 +5,63 @@
   color: #fff
   cursor: pointer
   display: inline-flex
+  font-family: $secondary_font
   font-size: 16px
   font-weight: 700
   justify-content: center
   line-height: 19px
   min-height: 60px
   min-width: 250px
+  overflow: hidden
   padding: 0
+  position: relative
   text-decoration: none
+  text-transform: uppercase
   vertical-align: middle
 
   &:hover,
   &:focus
     background-color: darken($main_color, 5%)
     text-decoration: none
+
+  &__text
+    position: relative
+    z-index: 1
+
+  &--arrow
+    padding-left: 15px
+    padding-right: 77px
+
+    &:hover,
+    &:focus
+      background-color: $main_color
+
+      &::before
+        margin-left: -110%
+
+    &::after
+      background-image: url("data:image/svg+xml,%3Csvg width='23' height='10' viewBox='0 0 23 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.0858 4.00008L16.7929 1.70718L18.2071 0.292969L22.2071 4.29297L22.9142 5.00008L22.2071 5.70718L18.2071 9.70718L16.7929 8.29297L19.0858 6.00008H0V4.00008H19.0858Z' fill='%23fff'/%3E%3C/svg%3E%0A")
+      background-repeat: no-repeat
+      background-position: 27px 50%
+      content: ''
+      height: 60px
+      left: auto
+      position: absolute
+      right: 0
+      top: 0
+      width: 62px
+
+    &::before
+      background-color: $secondary_color
+      content: ''
+      height: 60px
+      left: 100%
+      margin-left: -48px
+      position: absolute
+      top: 0
+      transform: skewX(-23deg)
+      transition: margin-left 0.5s
+      width: 120%
 
   &.disabled,
   &:disabled

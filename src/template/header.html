@@ -13,14 +13,68 @@
           <svg class="location-button__icon" aria-hidden="true">
             <use xlink:href="#pin" />
           </svg>
-          <span>Санкт-Петербург</span>
+          <span>Петропавловск-Камчатский</span>
         </button>
+        <div class="location__dropdown">
+          <div class="location__dropdown-inner">
+            <p class="location__dropdown-title">Начните вводить название своего города или выберите из списка ниже.</p>
+            <div class="location__dropdown-form">
+              <div class="location__dropdown-inputin">
+                <input class="js-location-list location__dropdown-input" type="text" placeholder="Ваш населенный пункт" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+              </div>
+              <div class="location__suggest">
+                <p class="location__suggest-title">Выберите вариант или продолжайте ввод</p>
+                <div class="location__suggest-list">
+                  <div class="location__suggest-item">Россия, г <span>Мос</span>ква</div>
+                  <div class="location__suggest-item">США, Айдахо, <span>Мос</span>ква</div>
+                  <div class="location__suggest-item">Таджикистан, г <span>Мос</span>ковский</div>
+                  <div class="location__suggest-item">Россия, г <span>Мос</span>ква</div>
+                  <div class="location__suggest-item">США, Айдахо, <span>Мос</span>ква</div>
+                  <div class="location__suggest-item">Таджикистан, г <span>Мос</span>ковский</div>
+                  <div class="location__suggest-item">Россия, г <span>Мос</span>ква</div>
+                  <div class="location__suggest-item">США, Айдахо, <span>Мос</span>ква</div>
+                  <div class="location__suggest-item">Таджикистан, г <span>Мос</span>ковский</div>
+                </div>
+              </div>
+            </div>
+            <div class="location__dropdown-lists">
+              <div class="location__dropdown-list">
+                <div class="location__dropdown-link location__dropdown-link--main">Москва</div>
+                <div class="location__dropdown-link location__dropdown-link--main">Санкт-Петербург</div>
+                <div class="location__dropdown-link">Владивосток</div>
+                <div class="location__dropdown-link">Екатеринбург</div>
+                <div class="location__dropdown-link">Иркутск</div>
+                <div class="location__dropdown-link">Казань</div>
+              </div>
+              <div class="location__dropdown-list">
+                <div class="location__dropdown-link">Краснодар</div>
+                <div class="location__dropdown-link">Красноярск</div>
+                <div class="location__dropdown-link">Минск</div>
+                <div class="location__dropdown-link">Нижний Новгород</div>
+                <div class="location__dropdown-link">Новосибирск</div>
+                <div class="location__dropdown-link">Нурсултан</div>
+              </div>
+              <div class="location__dropdown-list">
+                <div class="location__dropdown-link">Пермь</div>
+                <div class="location__dropdown-link">Ростов-на-Дону</div>
+                <div class="location__dropdown-link">Самара</div>
+                <div class="location__dropdown-link">Ставрополь</div>
+                <div class="location__dropdown-link">Уфа</div>
+                <div class="location__dropdown-link">Челябинск</div>
+              </div>
+            </div>
+            <p class="location__dropdown-note">
+              <img width="35" src="images/icons/car.svg" alt="">
+              <span>Бесплатная доставка по России<br> Казахстан, Белоруссия - от 2500р.</span>
+            </p>
+          </div>
+        </div>
       </div>
       <a class="header__phone header-phone" href="tel:+78005009926" title="Позвоните нам">
         <svg class="header-phone__icon" aria-hidden="true">
           <use xlink:href="#phone" />
         </svg>
-        8 800 500-99-26
+        <span class="header-phone__text">8 800 500-99-26</span>
       </a>
       <a class="header__personal personal-link" href="#" title="Личный кабинет">
         <svg class="personal-link__icon" aria-hidden="true">
@@ -62,8 +116,59 @@
               <a class="main-menu__link" href="#"><span class="main-menu__link-text">Моноблоки</span></a>
             </li>
           </ul>
-          <div class="menu-block__mobile-content">
-            всякая шляпа
+          <div class="menu-block__mobile-content mc">
+            <div class="mc__top">
+              <div class="mc__top-menus">
+                <ul class="footer-menu">
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">Вход</a>&nbsp;/&nbsp;<a class="footer-menu__link" href="/auth/?register=yes">Регистрация</a></li>
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">Моя корзина</a></li>
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">Забыли пароль</a></li>
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">Договор оферты</a></li>
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">Гарантия</a></li>
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">Акции</a></li>
+                </ul>
+                <ul class="footer-menu">
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">Контакты</a></li>
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">Оплата</a></li>
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">Доставка</a></li>
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">FAQ</a></li>
+                </ul>
+              </div>
+              <p class="mc__phone"><a href="tel:+78005009926">8 800 500-99-26</a></p>
+              <p class="mc__address">Санкт-Петербург,<br> ул.&nbsp;Краснопутиловская&nbsp;9.</p>
+              <p class="mc__address">Москва, Шоссе&nbsp;Энтузиастов,<br> дом&nbsp;31с39, 3&nbsp;этаж, офис&nbsp;14</p>
+            </div>
+            <div class="mc__middle">
+              <div class="mc__payments">
+                <span class="payment-system" title="VISA">
+                  <svg class="payment-system__icon payment-system__icon--visa" aria-hidden="true">
+                    <use xlink:href="#visa" />
+                  </svg>
+                </span>
+                <span class="payment-system" title="MASTER CARD">
+                  <svg class="payment-system__icon payment-system__icon--ms" aria-hidden="true">
+                    <use xlink:href="#mastercard" />
+                  </svg>
+                </span>
+                <span class="payment-system" title="PAY PAL">
+                  <svg class="payment-system__icon payment-system__icon--pp" aria-hidden="true">
+                    <use xlink:href="#paypal" />
+                  </svg>
+                </span>
+              </div>
+              <div class="mc__email-block">
+                <a href="mailto:order@digital-razor.ru">order@digital-razor.ru</a>
+              </div>
+            </div>
+            <div class="mc__bottom">
+              <div class="mc__copyright">
+                2020 © DigitalRazor LLC. Все права защищены.
+              </div>
+              <div class="mc__note">
+                DigitalRazor и логотип DigitalRazor являются товарными знаками компании ООО "Форсайт Северо-Запад", зарегистрированными в России и других странах. Другие наименования и товарные знаки являются собственностью своих законных
+                владельцев.
+              </div>
+            </div>
           </div>
         </div>
         <a class="header__design-button design-button" href="#">

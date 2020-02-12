@@ -80,6 +80,7 @@
         padding-top: 0
 
     @media(min-width: 992px)
+      display: block
       left: auto
       margin-left: auto
       margin-right: auto
@@ -91,12 +92,16 @@
       z-index: 2
 
   &__mobile-content
-    @media(min-width: 992px)
+    padding-left: 15px
+    padding-right: 15px
+    padding-bottom: 65px
+
+    @media(min-width: 768px)
       display: none
 
 .main-menu
   align-items: stretch
-  font-family: $oswald
+  font-family: $secondary_font
   font-size: 22px
   font-weight: 700
   line-height: 43px
@@ -104,7 +109,7 @@
 
   @media(min-width: 992px)
     display: flex
-    font-family: 'Open sans', Arial, sans-serif
+    font-family: $main_font
     font-size: 14px
     font-weight: 400
     margin-bottom: 0
@@ -201,7 +206,7 @@
 
   &__dropdown-title
     display: none
-    font-family: $oswald
+    font-family: $secondary_font
     font-size: 14px
     margin-bottom: 0
     padding: 12px 40px
@@ -224,3 +229,108 @@
     &:hover
       color: $main_color
       text-decoration: none
+
+.mc
+  &__top
+    margin-bottom: 40px
+
+  &__top-menus
+    display: flex
+    margin-bottom: 30px
+
+    .footer-menu
+      padding-right: 40px
+
+      @media(min-width: 375px)
+        padding-right: 40px
+
+  &__phone
+    font-family: $secondary_font
+    font-size: 28px
+    font-weight: 700
+    line-height: 43px
+    margin-bottom: 20px
+    white-space: nowrap
+
+    @media(min-width: 768px) and (max-width: 991px)
+      font-size: 24px
+
+    a
+      text-decoration: none
+
+  &__address
+    color: #B3BFCD
+    font-size: 16px
+    line-height: 22px
+
+    @media(min-width: 768px) and (max-width: 991px)
+      font-size: 13px
+
+    &:not(:last-child)
+      margin-bottom: 10px
+
+      @media(min-width: 992px)
+        margin-bottom: 20px
+
+  &__middle
+    align-items: center
+    display: flex
+    margin-bottom: 20px
+
+    @media(min-width: 992px)
+      margin-bottom: 65px
+
+  &__payments
+    align-items: center
+    display: flex
+
+    @media(min-width: 768px)
+      flex-grow: 1
+
+  &__email-block
+    margin-left: auto
+
+    @media(min-width: 375px)
+      margin-right: 12px
+
+    @media(min-width: 768px)
+      margin-right: 0
+      width: 30%
+
+    @media(min-width: 1200px)
+      width: 21%
+
+    a
+      color: $main_color
+      font-family: $secondary_font
+      font-size: 14px
+      font-weight: 700
+      text-decoration: none
+
+      &:hover,
+      &:focus
+        text-decoration: underline
+
+      @media(min-width: 768px)
+        font-size: 18px
+
+  &__bottom
+    color: #717F8F
+    font-size: 12px
+    line-height: 19px
+
+    @media(min-width: 768px)
+      display: flex
+
+  &__copyright
+    margin-bottom: 10px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      min-width: 30%
+      padding-right: 15px
+      width: 30%
+
+  &__note
+    max-width: 660px
+    opacity: 0.5

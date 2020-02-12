@@ -1,144 +1,239 @@
 .footer
   background-color: #080C0F
   flex-shrink: 0
-  padding-top: 50px
-  padding-bottom: 50px
+  position: relative
+  padding-top: 100px
+  padding-bottom: 40px
 
-  @media(min-width: 1200px)
-    padding-top: 70px
-    padding-bottom: 70px
+  @media(min-width: 768px)
+    padding-top: 60px
+
+  @media(min-width: 992px)
+    padding-top: 80px
 
   &__inner
-    overflow: hidden
+    max-width: 1130px
 
   &__top
     margin-bottom: 40px
-    padding-left: 23px
-    padding-right: 23px
 
     @media(min-width: 768px)
       display: flex
-      justify-content: space-between
-      margin-left: -22px
-      margin-right: -22px
-      margin-bottom: 30px
-      padding-left: 0
-      padding-right: 0
-
-    .footer-menu
-      @media(min-width: 768px)
-        margin-bottom: 0
-        padding-left: 22px
-        padding-right: 22px
-        width: 25%
-
-  &__middle
-    margin-bottom: 40px
-
-    @media(min-width: 768px)
-      display: flex
-      justify-content: space-between
-      position: relative
-      margin-bottom: 55px
-
-  &__logo
-    margin-left: auto
-    margin-right: auto
-    margin-bottom: 20px
-    width: 244px
-
-    @media(min-width: 768px)
-      margin-left: 0
-      margin-right: 0
-      margin-bottom: 0
-      width: 300px
 
     @media(min-width: 992px)
-      width: 340px
+      margin-bottom: 80px
 
-  &__contacts
-    margin-bottom: 20px
-    text-align: center
+  &__top-left
+    margin-bottom: 15px
 
     @media(min-width: 768px)
       margin-bottom: 0
-      text-align: right
+      width: 30%
+
+  &__top-center
+    display: flex
+    margin-bottom: 30px
+
+    @media(min-width: 768px)
+      flex-grow: 1
+      margin-bottom: 0
+
+    .footer-menu
+      padding-right: 40px
+
+      @media(min-width: 375px)
+        padding-right: 40px
+
+      @media(min-width: 992px)
+        width: 50%
+
+  &__top-right
+    @media(min-width: 768px)
+      width: 30%
+
+    @media(min-width: 1200px)
+      width: 21%
 
   &__phone
-    font-size: 24px
-    line-height: 28px
-    margin-bottom: 10px
+    font-family: $secondary_font
+    font-size: 28px
+    font-weight: 700
+    line-height: 43px
+    margin-bottom: 20px
+    white-space: nowrap
+
+    @media(min-width: 768px) and (max-width: 991px)
+      font-size: 24px
 
     a
+      transition: color 0.3s
       text-decoration: none
 
-  &__addresses
-    color: #fff
-    font-size: 13px
-    font-weight: 300
-    line-height: 18px
-
-    a
-      color: #fff
-      text-decoration: none
-
-    br
-      @media(min-width: 768px)
-        display: none
+      &:hover,
+      &:focus
+        color: $main_color
 
   &__address
+    color: #B3BFCD
+    font-size: 16px
+    line-height: 22px
+
+    @media(min-width: 768px) and (max-width: 991px)
+      font-size: 13px
+
+    &:not(:last-child)
+      margin-bottom: 10px
+
+      @media(min-width: 992px)
+        margin-bottom: 20px
+
+  &__middle
+    align-items: center
+    display: flex
+    margin-bottom: 20px
+
+    @media(min-width: 992px)
+      margin-bottom: 65px
+
+  &__logo-block
     @media(min-width: 768px)
-      display: block
+      width: 30%
+
+  &__logo
+    left: 15px
+    position: absolute
+    top: 35px
+    width: 208px
+
+    @media(min-width: 768px)
+      left: auto
+      position: static
+      top: auto
+      width: 180px
+
+    @media(min-width: 992px)
+      width: 238px
 
   &__payments
     align-items: center
     display: flex
-    justify-content: center
 
     @media(min-width: 768px)
-      left: -5px
-      position: absolute
-      top: 85px
+      flex-grow: 1
 
-    img
-      margin-left: 5px
-      margin-right: 5px
+  &__email-block
+    margin-left: auto
+
+    @media(min-width: 375px)
+      margin-right: 12px
+
+    @media(min-width: 768px)
+      margin-right: 0
+      width: 30%
+
+    @media(min-width: 1200px)
+      width: 21%
+
+    a
+      color: $main_color
+      font-family: $secondary_font
+      font-size: 14px
+      font-weight: 700
+      text-decoration: none
+
+      &:hover,
+      &:focus
+        text-decoration: underline
+
+      @media(min-width: 768px)
+        font-size: 18px
 
   &__bottom
-    color: #b2b2b2
-    font-size: 13px
-    font-weight: 300
-    line-height: 18px
-    text-align: center
+    color: #717F8F
+    font-size: 12px
+    line-height: 19px
 
-    br
-      @media(max-width: 767px)
-        display: none
+    @media(min-width: 768px)
+      display: flex
+
+  &__copyright
+    margin-bottom: 10px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      min-width: 30%
+      padding-right: 15px
+      width: 30%
+
+  &__note
+    max-width: 660px
+    opacity: 0.5
 
 .footer-menu
-  color: #fff
-  font-size: 14px
-  font-weight: 300
-  line-height: 24px
-  margin-bottom: 30px
+  color: #B3BFCD
+  font-size: 13px
+  line-height: 36px
+  margin: 0
+  padding: 0
 
-  @media(min-width: 992px)
+  @media(min-width: 375px)
     font-size: 16px
-    line-height: 28px
 
-  &:last-child
-    margin-bottom: 0
+  @media(min-width: 768px) and (max-width: 991px)
+    font-size: 13px
 
-  &__title
-    border-bottom: 1px solid rgba(#414141, 0.4)
-    line-height: 1
-    margin-bottom: 16px
-    padding-bottom: 18px
+  &--big
+    font-family: $secondary_font
+    font-size: 16px
+    font-weight: 700
+    line-height: 36px
+
+    @media(min-width: 768px) and (max-width: 991px)
+      font-size: 19px
+
+    @media(min-width: 992px)
+      font-size: 22px
+      line-height: 43px
+
+    .footer-menu__link
+      color: #fff
+
+      &:hover
+        color: $main_color
+        text-decoration: none
 
   &__link
-    color: #fff
+    color: #B3BFCD
     display: inline-block
+    transition: color 0.3s
     text-decoration: none
 
     &:hover
-      text-decoration: underline
+      color: #fff
+
+.payment-system
+  align-items: center
+  border: 1px solid rgba(#717F8F, 0.2)
+  border-radius: 2px
+  display: flex
+  height: 26px
+  justify-content: center
+  width: 40px
+
+  &:not(:last-child)
+    margin-right: 10px
+
+  &__icon
+    fill: #fff
+
+    &--visa
+      height: 8px
+      width: 25px
+
+    &--ms
+      height: 12px
+      width: 20px
+
+    &--pp
+      height: 8px
+      width: 30px

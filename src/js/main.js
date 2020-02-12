@@ -1,3 +1,19 @@
+//функция навешивания класса на шапку
+var resize_scroll = function(e) {
+  var h = $(".header");
+  if($(window).scrollTop() > h.height()) {
+    h.addClass("half-scrolled");
+  } else {
+    h.removeClass("half-scrolled");
+  }
+
+  if($(window).scrollTop() > (h.height() * 2)) {
+    h.addClass("scrolled");
+  } else {
+    h.removeClass("scrolled");
+  }
+};
+
 function isTouchDevice(){
     return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
 }
@@ -5,6 +21,9 @@ function isTouchDevice(){
 var targetElement = document.querySelector(".menu-block__inner");
 
 $(document).ready(function() {
+  //запуск функции навешивания класса на шапку
+  resize_scroll();
+
   //открытие/закрытие главного меню
   $(".js-menu-toggler").click(function() {
     $(this).toggleClass("is-active");
@@ -43,100 +62,40 @@ $(document).ready(function() {
     );
   }
 
-  //аккордеон
-  $('.js-accordion-title').click(function() {
-    $(this).toggleClass('is-active');
-    $('.accordion__body[data-target=' + $(this).attr('data-link') + ']').slideToggle();
-    return false;
-  });
-
-  if($('body').width() < 768) {
-    //слайдер корпусов
-    if($('.js-list-1').length) {
-      $('.js-list-1').on('init', function(event, slick) {
-        var list = $('.js-list-1').find('.slick-dots');
-        $.each(list['0'].children, function(index, value) {
-          if(index < 9) {
-            list['0'].children[index].children['0'].innerText = '0' + list['0'].children[index].children['0'].innerText;
-          }
-        });
-      });
-
-      $('.js-list-1').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: false,
-        mobileFirst: true
-      });
-    }
-
-    //слайдер конфигураций
-    if($('.js-list-3').length) {
-      $('.js-list-3').on('init', function(event, slick) {
-        var list = $('.js-list-3').find('.slick-dots');
-        $.each(list['0'].children, function(index, value) {
-          if(index < 9) {
-            list['0'].children[index].children['0'].innerText = '0' + list['0'].children[index].children['0'].innerText;
-          }
-        });
-      });
-
-      $('.js-list-3').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: false,
-        mobileFirst: true
-      });
-    }
-
-    //слайдер дизайна
-    if($('.js-list-5').length) {
-      $('.js-list-5').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
-        prevArrow: '<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
-        nextArrow: '<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>',
-        mobileFirst: true
-      });
-    }
-  }
-
-  //слайдер игр
-  if($('.js-list-2').length) {
-    $('.js-list-2').slick({
+  if($('.js-main-banner').length) {
+    $('.js-main-banner').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      dots: false,
-      arrows: true,
-      prevArrow: '<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
-      nextArrow: '<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>',
+      dots: true,
+      arrows: false,
       mobileFirst: true,
       responsive: [
         {
-          breakpoint: 767,
+          breakpoint: 1199,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
+            arrows: true,
+            prevArrow: '<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
+            nextArrow: '<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>'
           }
-        },
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3
-          }
-        },
+        }
       ]
     });
   }
 });
 
-//переключение игр в списке
-$(document).on('click', '.js-game', function () {
-  $('.js-game').removeClass('is-active');
-  $(this).addClass('is-active');
+//перезапуск функции навешивания класса на шапку при скролле и ресайзе
+$(window).on("scroll", resize_scroll).on("resize", resize_scroll);
+
+//блок геопозиции
+$(document).on('click', '.js-location', function () {
+  $('.header__location').toggleClass('is-active');
   return false;
-})
+});
+
+$('.js-location-list').focus(function() {
+  $('.location__suggest').show();
+});
+
+$('.js-location-list').blur(function() {
+  $('.location__suggest').hide();
+});
