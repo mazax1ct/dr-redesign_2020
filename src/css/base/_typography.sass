@@ -53,18 +53,30 @@ img
   margin-bottom: 17px
   text-transform: uppercase
 
+  @media(min-width: 768px)
+    margin-bottom: 25px
+
   @media(min-width: 1200px)
     font-size: 42px
-    margin-bottom: 25px
 
   span
     color: $main_color
-    padding-left: 30px
     position: relative
+
+    &::-moz-selection
+      background: #fff
+
+    &::selection
+      background: #fff
 
     &::before
       content: '/'
-      left: 0
+      left: -15px
       pointer-events: none
       position: absolute
+      top: 50%
+      transform: translateY(-50%)
       user-select: none
+
+      @media(min-width: 1200px)
+        left: -30px

@@ -1,5 +1,5 @@
 .slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat;
+  /*background: #fff url("./ajax-loader.gif") center center no-repeat;*/
 }
 
 .slick-arrow {
@@ -63,7 +63,7 @@
 }
 
 .slick-dots {
-  bottom: 40px;
+  bottom: 20px;
   font-size: 0;
   width: 100%;
   margin: 0;
@@ -79,21 +79,33 @@
   position: relative;
   display: inline-block;
   width: 40px;
-  height: 2px;
+  height: 40px;
   margin: 0 7px;
   padding: 0;
   cursor: pointer;
 }
 
 .slick-dots li button {
-  background-color: rgba(#778790, 0.4);
+  background-color: transparent;
   display: block;
   width: 40px;
-  height: 2px;
+  height: 40px;
   cursor: pointer;
   border: none;
   outline: none;
+  position: relative;
   padding: 0;
+
+  &::after {
+    background-color: rgba(#778790, 0.4);
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+  }
 }
 
 .slick-dots li button:focus,
@@ -101,6 +113,6 @@
   outline: none;
 }
 
-.slick-dots li.slick-active button {
+.slick-dots li.slick-active button::after {
   background-color: $main_color;
 }

@@ -1,0 +1,114 @@
+.block-2
+  padding-top: 60px
+  padding-bottom: 75px
+
+  @media(min-width: 768px)
+    border-top: 1px solid #1D2226
+
+  @media(min-width: 1200px)
+    padding-top: 0
+    padding-bottom: 130px
+
+  &__banner
+    background-position: 50% 50%
+    background-size: contain
+    background-repeat: no-repeat
+    display: none
+    overflow: hidden
+
+    @media(min-width: 768px)
+      background-size: cover
+
+    &.is-active
+      display: block
+
+  &__banner-inner
+    padding-left: 30px
+    padding-right: 30px
+    position: relative
+
+    @media(min-width: 768px)
+      align-items: flex-start
+      display: flex
+      flex-direction: column
+      justify-content: center
+      min-height: 580px
+      padding-right: 50%
+
+    @media(min-width: 1200px)
+      padding-left: 110px
+      padding-right: 660px
+
+  &__banner-title
+    margin-bottom: 0
+
+  &__banner-image
+    @media(min-width: 768px)
+      left: auto
+      position: absolute
+      padding-left: 30px
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
+      width: 50%
+
+  &__banner-text
+    color: #fff
+    margin-bottom: 20px
+    max-width: 380px
+
+    @media(min-width: 768px)
+      margin-bottom: 20px
+
+    @media(min-width: 1200px)
+      margin-bottom: 40px
+
+  &__nav
+    margin-top: 50px
+
+    @media(min-width: 768px)
+      margin-top: 0
+
+.b2-nav
+  border-top: 1px solid #1D2226
+  border-bottom: 1px solid #1D2226
+  display: flex
+  overflow-x: auto
+
+  @media(min-width: 768px)
+    justify-content: center
+
+  &__item
+    &:not(:last-child)
+      border-right: 1px solid #1D2226
+
+  &__button
+    align-items: center
+    border: 3px solid transparent
+    border-left: none
+    border-right: none
+    background-color: transparent
+    cursor: pointer
+    display: flex
+    height: 58px
+    justify-content: center
+    padding: 0 15px
+    transition: background-color 0.3s, border-color 0.3s
+    width: 115px
+
+    @media(min-width: 1200px)
+      height: 105px
+      width: 215px
+
+    img
+      flex-shrink: 0
+      filter: grayscale(100%)
+      transition: filter 0.3s
+
+    &:hover,
+    &.is-active
+      border-bottom-color: $main_color
+      background-color: #121B25
+
+      img
+        filter: grayscale(0)

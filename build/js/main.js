@@ -14,30 +14,19 @@ var resize_scroll = function(e) {
   }
 };
 
+//проверка на тач-устройства
 function isTouchDevice(){
     return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
 }
 
+//элемент для bodyScrollLock
 var targetElement = document.querySelector(".menu-block__inner");
 
 $(document).ready(function() {
   //запуск функции навешивания класса на шапку
   resize_scroll();
 
-  //открытие/закрытие главного меню
-  $(".js-menu-toggler").click(function() {
-    $(this).toggleClass("is-active");
-    $(".menu-block").toggleClass("is-open");
-    $(".menu-block__inner").toggleClass("is-open");
-    if($(this).hasClass('is-active')) {
-      bodyScrollLock.disableBodyScroll(targetElement);
-    } else {
-      bodyScrollLock.enableBodyScroll(targetElement);
-    }
-    return false;
-  });
-
-  // дропдаун у главного меню
+  //дропдаун у главного меню
   if(isTouchDevice()===true) {
     $('.root-link').click(function(){
       if(!$(this).parent().hasClass('is-hover')){
@@ -62,6 +51,7 @@ $(document).ready(function() {
     );
   }
 
+  //слайдер главного баннера
   if($('.js-main-banner').length) {
     $('.js-main-banner').slick({
       slidesToShow: 1,
@@ -81,10 +71,34 @@ $(document).ready(function() {
       ]
     });
   }
+
+  //слайдер акций
+  if($('.js-actions-slider').length) {
+    $('.js-actions-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: false,
+      mobileFirst: true
+    });
+  }
 });
 
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе
 $(window).on("scroll", resize_scroll).on("resize", resize_scroll);
+
+//открытие/закрытие главного меню
+$(document).on('click', '.js-menu-toggler', function () {
+  $(this).toggleClass("is-active");
+  $(".menu-block").toggleClass("is-open");
+  $(".menu-block__inner").toggleClass("is-open");
+  if($(this).hasClass('is-active')) {
+    bodyScrollLock.disableBodyScroll(targetElement);
+  } else {
+    bodyScrollLock.enableBodyScroll(targetElement);
+  }
+  return false;
+});
 
 //блок геопозиции
 $(document).on('click', '.js-location', function () {
@@ -92,10 +106,19 @@ $(document).on('click', '.js-location', function () {
   return false;
 });
 
-$('.js-location-list').focus(function() {
+$(document).on('focus', '.js-location-list', function () {
   $('.location__suggest').show();
 });
 
-$('.js-location-list').blur(function() {
+$(document).on('blur', '.js-location-list', function () {
   $('.location__suggest').hide();
+});
+
+//переключение баннеров в .block-2
+$(document).on('click', '.js-b2-nav', function () {
+  $('.js-b2-nav').removeClass('is-active');
+  $(this).addClass('is-active');
+  $('.block-2__banner').removeClass('is-active');
+  $('.block-2__banner[data-target='+ $(this).attr('data-target') +']').addClass('is-active');
+  return false;
 });

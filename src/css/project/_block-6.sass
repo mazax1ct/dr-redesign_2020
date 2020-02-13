@@ -1,0 +1,106 @@
+.block-6
+  background-image: url('../images/content/block_6/bg_mobile.jpg')
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: cover
+  padding-top: 50px
+  padding-bottom: 60px
+
+  @media(min-width: 768px)
+    background-image: url('../images/content/block_6/bg.jpg')
+    background-attachment: fixed
+
+  @media(min-width: 1200px)
+    padding-top: 100px
+    padding-bottom: 90px
+
+  &__inner
+    @media(min-width: 768px)
+      align-items: center
+      display: flex
+
+    @media(min-width: 1200px)
+      padding-left: 110px
+
+  &__inner-block
+    &:first-child
+      @media(min-width: 768px)
+        padding-right: 30px
+        padding-left: 30px
+        min-width: 46%
+        width: 46%
+
+      @media(min-width: 1200px)
+        padding-left: 0
+        padding-right: 15px
+
+      .button
+        @media(max-width: 767px)
+          display: none
+
+    &:nth-child(2)
+      @media(min-width: 768px)
+        flex-grow: 1
+
+      @media(min-width: 1200px)
+        padding-left: 15px
+
+  .title
+    padding-left: 15px
+
+    @media(min-width: 768px)
+      padding-left: 0
+
+  &__text
+    font-size: 14px
+    line-height: 21px
+    margin-bottom: 20px
+    max-width: 470px
+
+    @media(min-width: 768px)
+      margin-bottom: 50px
+
+    @media(min-width: 1200px)
+      font-size: 16px
+      line-height: 22px
+
+.features
+  margin-bottom: -25px
+
+  @media(min-width: 992px)
+    display: flex
+    flex-wrap: wrap
+
+  @media(min-width: 1200px)
+    margin-bottom: -70px
+
+  .feature
+    @media(min-width: 992px)
+      padding-right: 30px
+      width: 50%
+
+.feature
+  color: #B3BFCD
+  display: flex
+  max-width: 320px
+  margin-bottom: 25px
+
+  @media(min-width: 1200px)
+    font-size: 14px
+    margin-bottom: 70px
+
+  &__image
+    margin-right: 25px
+    min-width: 50px
+    width: 50px
+
+  &__title
+    color: #fff
+    font-family: $secondary_font
+    font-size: 18px
+    font-weight: 700
+    margin-bottom: 5px
+
+    @media(min-width: 1200px)
+      font-size: 22px
+      margin-bottom: 10px

@@ -1,0 +1,52 @@
+.block-3
+  background-image: url('../images/content/block_3/bg_mobile.jpg')
+  background-position: 50% 50%
+  background-repeat: no-repeat
+  background-size: cover
+
+  @media(min-width: 768px)
+    background-image: url('../images/content/block_3/bg.jpg')
+    background-attachment: fixed
+    min-height: 555px
+
+  &__inner
+    max-width: 1070px
+    padding-left: 30px
+    padding-right: 30px
+    padding-top: 50px
+    padding-bottom: 60px
+    position: relative
+
+    @media(min-width: 768px)
+      align-items: flex-start
+      display: flex
+      flex-direction: column
+      justify-content: center
+      min-height: 555px
+      padding-left: 50%
+
+    @media(min-width: 1120px)
+      padding-left: 535px
+
+  &__banner-title
+    margin-bottom: 0
+
+  &__image
+    @media(min-width: 768px)
+      left: 0
+      position: absolute
+      padding-right: 30px
+      top: 50%
+      transform: translateY(-50%)
+      width: 50%
+
+  &__text
+    color: #fff
+    margin-bottom: 20px
+    max-width: 380px
+
+    @media(min-width: 768px)
+      margin-bottom: 20px
+
+    @media(min-width: 1200px)
+      margin-bottom: 40px
