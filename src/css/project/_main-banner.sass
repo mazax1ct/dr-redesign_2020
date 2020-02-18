@@ -19,12 +19,14 @@
     background-size: cover
     min-height: 550px
     min-width: 100%
+    padding-bottom: 40px
     width: 100%
 
     @media(min-width: 768px)
       align-items: center
       background-position: 50% 50%
       display: flex
+      padding-bottom: 0
 
     @media(min-width: 1200px)
       height: 770px
@@ -94,3 +96,9 @@
 
     @media(min-width: 1500px)
       right: 105px
+
+  .slick-dots
+    bottom: 0
+
+    @media(min-width: 768px)
+      bottom: 20px
