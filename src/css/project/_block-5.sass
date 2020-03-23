@@ -28,8 +28,8 @@
       display: flex
 
     @media(min-width: 1200px)
-      padding-left: 110px
-      padding-right: 110px
+      padding-left: 50px
+      padding-right: 50px
 
   &__inner-block
     @media(min-width: 768px)
@@ -39,6 +39,16 @@
       .button
         @media(max-width: 767px)
           display: none
+
+  .title
+    max-width: 300px
+
+    @media(min-width: 1200px)
+      max-width: 400px
+
+    @media(min-width: 1900px)
+      max-width: 100%
+      margin-bottom: 50px
 
 .actions-slider
   display: flex

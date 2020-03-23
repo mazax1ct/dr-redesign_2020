@@ -20,19 +20,24 @@
       display: flex
 
     @media(min-width: 1200px)
-      padding-left: 110px
+      padding-left: 50px
+      padding-right: 50px
 
   &__inner-block
     &:first-child
       @media(min-width: 768px)
         padding-right: 30px
-        padding-left: 30px
+        padding-left: 15px
         min-width: 46%
         width: 46%
 
       @media(min-width: 1200px)
         padding-left: 0
         padding-right: 15px
+
+      @media(min-width: 1440px)
+        min-width: 50%
+        width: 50%
 
       .button
         @media(max-width: 767px)
@@ -63,6 +68,9 @@
     @media(min-width: 1200px)
       font-size: 16px
       line-height: 22px
+
+    @media(min-width: 1440px)
+      max-width: 555px
 
 .features
   margin-bottom: -25px
