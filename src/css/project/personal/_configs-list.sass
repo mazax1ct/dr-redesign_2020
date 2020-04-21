@@ -1,0 +1,176 @@
+.configs-list
+  border-collapse: collapse
+  border: none
+  color: #fff
+  font-size: 10px
+  text-align: left
+  width: 100%
+
+  @media(min-width: 375px)
+    font-size: 12px
+
+  @media(min-width: 1200px)
+    font-size: 15px
+
+  &__th
+    border-bottom: 2px solid $main_color
+    font-family: $secondary_font
+    font-size: 11px
+    padding: 5px
+    text-align: left
+    text-transform: uppercase
+    white-space: nowrap
+
+    @media(min-width: 992px)
+      padding: 10px 15px
+
+  &__cell
+    border-bottom: 1px solid #333
+    padding: 5px
+    text-align: left
+
+    @media(min-width: 992px)
+      padding: 10px 15px
+
+  tbody
+    tr
+      &:nth-child(even)
+        .configs-list__cell
+          background-color: #212121
+
+  &__type-block
+    text-align: center
+
+    @media(min-width: 768px)
+      display: none
+
+  &__id-block
+    white-space: nowrap
+
+  &__date
+    @media(max-width: 991px)
+      display: none
+
+  &__title
+    @media(max-width: 767px)
+      display: none
+
+  &__cost
+    @media(max-width: 767px)
+      display: none
+
+  &__price
+    @media(min-width: 768px)
+      display: none
+
+  &__price-block
+    white-space: nowrap
+
+  &__buttons
+    @media(min-width: 1200px)
+      text-align: right
+      white-space: nowrap
+
+  &__type
+    color: #397FBE
+    font-weight: 500
+
+  &__button
+    border: 1px solid #666
+    color: #666
+    display: inline-block
+    font-family: $secondary_font
+    font-size: 11px
+    height: 28px
+    margin-right: 10px
+    margin-bottom: 5px
+    padding: 5px 12px
+    text-decoration: none
+    text-transform: uppercase
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s
+
+    @media(min-width: 1200px)
+      margin-bottom: 0
+
+    &:last-child
+      margin: 0
+
+    &:hover
+      background-color: $main_color
+      border-color: $main_color
+      color: #fff
+      text-decoration: none
+
+.config-detail
+  @media(min-width: 768px)
+    display: flex
+    justify-content: space-between
+
+  &__left
+    font-weight: 600
+    max-width: 595px
+    margin-bottom: 30px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+
+  &__right
+    @media(min-width: 768px)
+      padding-left: 30px
+
+  &__price
+    color: #fff
+    font-family: $secondary_font
+    font-size: 24px
+    line-height: 29px
+    margin-bottom: 12px
+    margin-top: -3px
+
+  &__date
+    color: rgba(#fff, 0.4)
+    margin-bottom: 20px
+
+.ri-block
+  border-bottom: 1px solid #323232
+  margin-bottom: 25px
+  padding-bottom: 25px
+
+  &:last-child
+    border-bottom: none
+    padding-bottom: 0
+
+.ri-info
+  display: flex
+  margin-bottom: 10px
+
+  &--inline
+    display: block
+
+  span
+    color: rgba(#fff, 0.4)
+    min-width: 170px
+    padding-right: 10px
+    width: 170px
+
+    @media(min-width: 1200px)
+      min-width: 220px
+      width: 220px
+
+  &--big
+    span
+      @media(min-width: 1200px)
+        min-width: 280px
+        width: 280px
+
+.ri-list
+  list-style: none
+  margin: 0
+  padding: 0
+
+  li
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.794 8C14.794 7.66691 15.0639 7.39697 15.397 7.39697C15.7301 7.39697 16 7.66694 16 8C16 12.4111 12.4111 16 8 16C3.58875 16 0 12.4111 0 8C0 3.58875 3.58875 0 8 0C8.33306 0 8.60303 0.269938 8.60303 0.603031C8.60303 0.936094 8.33306 1.20603 8 1.20603C4.25387 1.20603 1.20603 4.25387 1.20603 8C1.20603 11.7463 4.25387 14.794 8 14.794C11.7463 14.794 14.794 11.7463 14.794 8ZM14.6899 2.18637C14.9252 1.95118 15.3071 1.95159 15.5425 2.18737C15.7777 2.42315 15.7773 2.80506 15.5413 3.04021L7.86293 10.6985C7.74996 10.8111 7.59661 10.8744 7.43721 10.8744C7.43405 10.8744 7.43088 10.8744 7.42763 10.8743C7.42654 10.8743 7.42544 10.8742 7.42433 10.8742C7.2603 10.8708 7.10474 10.8006 6.99358 10.6798L3.95839 7.38352C3.73286 7.13849 3.74855 6.75699 3.99358 6.53146C4.2388 6.30596 4.62011 6.32184 4.84564 6.56665L7.45571 9.40143L14.6899 2.18637Z' fill='%23666666'/%3E%3C/svg%3E")
+    background-position: 0 3px
+    background-repeat: no-repeat
+    margin-bottom: 10px
+    min-height: 20px
+    padding-left: 26px

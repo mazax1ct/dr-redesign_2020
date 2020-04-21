@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>DIGITAL RAZOR</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#ffffff">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="burger" viewBox="0 0 22 14">
+      <path d="M0 0H22V2H0V0ZM0 6H22V8H0V6ZM22 12H0V14H22V12Z" />
+    </symbol>
+    <symbol id="menu_close" viewBox="0 0 18 18">
+      <g>
+        <rect x="0.514771" y="16.0703" width="22" height="2" transform="rotate(-45 0.514771 16.0703)" />
+        <rect width="22" height="2" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 17.4854 16.0703)" />
+      </g>
+    </symbol>
+    <symbol id="design" viewBox="0 0 24 24">
+      <path d="M23.3628 0.616903C22.5438 -0.202096 21.2135 -0.205611 20.3903 0.60631L9.91115 10.516C8.09179 10.1607 6.13298 10.6862 4.72654 12.0926C3.04448 13.7747 2.92917 15.566 2.81775 17.2982C2.71312 18.9248 2.60489 20.6068 1.158 22.4915L0 24H1.90167C4.67395 24 6.94251 23.6395 8.83705 22.8977C10.378 22.2945 11.66 21.4492 12.8715 20.2376C14.2638 18.8454 14.7925 16.9119 14.4583 15.1082L23.41 3.55151C24.185 2.72567 24.1693 1.42339 23.3628 0.616903ZM11.5457 18.9117C10.5305 19.9269 9.18876 20.9565 6.87426 21.5677C8.21385 20.5418 9.48627 19.1416 10.1451 17.2814L8.37763 16.6554C7.59749 18.8581 5.63334 20.3045 4.02735 21.1594C4.53651 19.7824 4.6184 18.5153 4.68899 17.4186C4.79029 15.8442 4.87026 14.6006 6.0524 13.4185C6.80976 12.6611 7.80421 12.2826 8.79899 12.2826C9.79358 12.2826 10.7885 12.6613 11.5456 13.4185C13.0602 14.9329 13.0602 17.3972 11.5457 18.9117ZM13.6604 13.0763C13.4386 12.7273 13.1759 12.3969 12.8715 12.0926C12.5532 11.7743 12.2065 11.5011 11.8395 11.273L13.3643 9.83111L15.0483 11.2845L13.6604 13.0763ZM22.0369 2.27431L21.995 2.31626L16.1982 9.80008L14.7337 8.53619L21.6867 1.96104L21.7055 1.94281C21.7969 1.85145 21.9456 1.85145 22.0369 1.94281C22.1284 2.03421 22.1284 2.1829 22.0369 2.27431Z" />
+    </symbol>
+    <symbol id="basket" viewBox="0 0 24 24">
+      <path d="M16.8275 9.60938L12.6556 0H11.3318L7.15992 9.60938H0V11.4844H1.43316L2.79722 20.8271L2.80261 20.8601C2.96616 21.7556 3.50138 22.5711 4.30964 23.1563C5.061 23.7004 5.9798 24 6.89686 24H17.1031C18.0191 24 18.9367 23.7001 19.6866 23.1556C20.4887 22.5733 21.0247 21.7609 21.1958 20.8681L21.1998 20.8471L22.5553 11.4844H24V9.60938H16.8275ZM11.9937 3.18366L14.7834 9.60938H9.20405L11.9937 3.18366ZM19.3507 20.5335C19.1703 21.4127 18.167 22.125 17.1031 22.125H6.89686C5.82347 22.125 4.81931 21.4142 4.64977 20.5375L3.32803 11.4844H20.6607L19.3507 20.5335ZM14.5719 13.3594H12.6969V20.25H14.5719V13.3594ZM17.8531 13.3594V18.375C17.8531 20.2969 15.9781 20.25 15.9781 20.25V13.3594H17.8531ZM11.3375 13.3594H9.46248V20.25H11.3375V13.3594ZM8.00936 13.3594V20.25C8.00936 20.25 6.13436 20.2969 6.13436 18.375V13.3594H8.00936Z" />
+    </symbol>
+    <symbol id="cart" viewBox="0 0 23 23">
+      <path d="M23.0001 4.59999H4.71503L3.10501 0H0V2.30002H1.49498L7.24501 19.5501H19.5501V17.25H8.85503L8.16503 14.95H19.5501L23.0001 4.59999ZM9.20004 23C9.83516 23 10.35 22.4851 10.35 21.85C10.35 21.2149 9.83516 20.7 9.20004 20.7C8.56492 20.7 8.05005 21.2149 8.05005 21.85C8.05005 22.4851 8.56492 23 9.20004 23ZM18.4 21.85C18.4 22.4851 17.8851 23 17.25 23C16.6149 23 16.1 22.4851 16.1 21.85C16.1 21.2149 16.6149 20.7 17.25 20.7C17.8851 20.7 18.4 21.2149 18.4 21.85Z" />
+    </symbol>
+    <symbol id="phone" viewBox="0 0 16 16">
+      <path d="M15.1111 11.1111C14.0444 11.1111 12.9778 10.9333 11.9111 10.5778C11.6444 10.4889 11.2889 10.5778 11.0222 10.7556L9.06667 12.7111C6.57781 11.4667 4.53333 9.33333 3.2 6.84444L5.15556 4.88889C5.42222 4.62222 5.51111 4.26667 5.33333 4C5.06667 3.02222 4.88889 1.95556 4.88889 0.888889C4.88889 0.355556 4.53333 0 4 0H0.888889C0.355556 0 0 0.355556 0 0.888889C0 9.24444 6.75556 16 15.1111 16C15.6444 16 16 15.6444 16 15.1111V12C16 11.4667 15.6444 11.1111 15.1111 11.1111ZM14.2222 8H16C16 3.55556 12.4444 0 8 0V1.77778C11.4667 1.77778 14.2222 4.53333 14.2222 8ZM10.6667 8H12.4444C12.4444 5.51111 10.4889 3.55556 8 3.55556V5.33333C9.51111 5.33333 10.6667 6.48889 10.6667 8Z" />
+    </symbol>
+    <symbol id="user" viewBox="0 0 14 14">
+      <path d="M6.65256 8.28595C4.70432 8.28595 3.12583 6.39365 3.12583 4.06109C3.12583 1.72879 4.70432 0 6.65256 0C8.6011 0 10.1809 1.72879 10.1809 4.06109C10.1809 6.39365 8.60105 8.28595 6.65256 8.28595ZM1.1666 13.9974C1.1666 13.9974 0.418537 14.0467 0.0890394 13.5927C-0.0889991 13.3474 0.0350226 12.8504 0.156775 12.573L0.454951 11.8935C0.454951 11.8935 1.27958 10.0492 2.21829 8.9805C2.79492 8.32514 3.48075 8.47438 3.92433 8.68752C4.19754 8.81865 4.50646 9.20076 4.73221 9.40326C5.0433 9.68227 5.5925 9.99936 6.49036 10.0172H7.04122C7.93852 9.99936 8.48772 9.68227 8.79855 9.40326C9.02405 9.20081 9.32445 8.80685 9.59519 8.67138C10.0023 8.46757 10.622 8.34219 11.1835 8.98055C12.1225 10.0493 12.8662 11.9271 12.8662 11.9271L13.1718 12.5934C13.2982 12.8689 13.4278 13.3634 13.2547 13.612C12.9458 14.0564 12.2523 13.9974 12.2523 13.9974L1.1666 13.9974Z" />
+    </symbol>
+    <symbol id="pin" viewBox="0 0 11 13">
+      <path d="M5.80002 0C8.66726 0 11 2.24362 11 5.00136C11 7.60803 6.6839 12.0957 6.19182 12.5995L5.80002 13L5.40822 12.5995C4.91603 12.0961 0.600001 7.60803 0.600001 5.00136C0.599777 2.24362 2.93252 0 5.80002 0ZM5.80002 7.07106C6.98642 7.07106 7.95175 6.14262 7.95175 5.00154C7.95175 3.86042 6.98642 2.93201 5.80002 2.93201C4.61335 2.93201 3.64829 3.86046 3.64829 5.00154C3.64829 6.14265 4.61335 7.07106 5.80002 7.07106Z" />
+    </symbol>
+    <symbol id="visa" viewBox="0 0 25 8">
+      <path d="M17.8581 0.327641C17.4656 0.171927 16.8431 0 16.0734 0C14.1083 0 12.7245 1.04788 12.716 2.54604C12.6997 3.65138 13.7067 4.26531 14.4599 4.63387C15.2298 5.01048 15.4915 5.25629 15.4915 5.59198C15.4837 6.10755 14.8694 6.3452 14.2965 6.3452C13.5021 6.3452 13.0764 6.22267 12.4295 5.93584L12.1674 5.81288L11.889 7.54042C12.3557 7.75304 13.2155 7.94172 14.1083 7.94999C16.1962 7.94999 17.5555 6.91832 17.5716 5.3218C17.5796 4.44573 17.0478 3.77445 15.9013 3.22592C15.2053 2.87379 14.7791 2.63636 14.7791 2.27608C14.7873 1.94854 15.1396 1.61307 15.9253 1.61307C16.5722 1.59664 17.0475 1.75213 17.4075 1.90774L17.5875 1.98946L17.8581 0.327641ZM10.6446 7.83527H8.65469L9.89931 0.139468H11.8891L10.6446 7.83527ZM21.2973 2.9557C21.2973 2.9557 20.6667 4.66682 20.5029 5.10893H22.1568C22.075 4.72416 21.6982 2.88204 21.6982 2.88204L21.5591 2.21892C21.5006 2.38954 21.416 2.62406 21.3589 2.7824L21.3588 2.78266L21.3587 2.78279C21.32 2.89012 21.294 2.96234 21.2973 2.9557ZM21.42 0.139468H22.9591L24.5645 7.83518H22.722C22.722 7.83518 22.5417 6.95095 22.4846 6.68076H19.9297C19.8559 6.88533 19.5121 7.83518 19.5121 7.83518H17.4242L20.3799 0.777994C20.5847 0.278533 20.9453 0.139468 21.42 0.139468ZM6.99263 0.139468L5.04387 5.38727L4.83092 4.32296C4.83087 4.32279 4.83082 4.32263 4.83078 4.32247L4.13496 0.786372C4.02038 0.294856 3.66825 0.155682 3.2343 0.139468H0.0327527L0 0.294964C0.780836 0.494639 1.47922 0.782369 2.09116 1.14012L3.86475 7.82711H5.96901L9.09678 0.139468H6.99263Z" />
+    </symbol>
+    <symbol id="paypal" viewBox="0 0 31 8">
+      <path d="M1.26496 0H3.62395C4.37609 0 4.99147 0.205129 5.33336 0.615387C5.64105 0.957269 5.74361 1.47009 5.64105 2.11967C5.40173 3.58976 4.51284 4.3419 2.97437 4.3419H2.22223C2.05129 4.3419 1.91454 4.44446 1.88035 4.6154L1.64103 6.22225C1.64103 6.39319 1.50428 6.49575 1.33334 6.49575H0.205129H0.170941C0.0683764 6.46157 0 6.359 0 6.25644L0.957269 0.273505C0.957269 0.102565 1.09402 0 1.26496 0ZM2.49574 3.04275C3.11112 3.04275 3.7607 3.04275 3.86326 2.18804C3.93164 1.88035 3.89745 1.67522 3.7607 1.53847C3.55557 1.29915 3.14531 1.29915 2.73505 1.29915H2.56411C2.49574 1.29915 2.39317 1.36753 2.39317 1.47009L2.15386 3.04275H2.49574ZM9.47013 2.15386H10.5983C10.7351 2.18804 10.8035 2.29061 10.8035 2.39317L10.1539 6.22225C10.1539 6.39319 10.0171 6.49575 9.8462 6.49575H8.85474H8.82055C8.71799 6.46157 8.64961 6.359 8.64961 6.25644L8.6838 5.94874C8.6838 5.94874 8.13679 6.59832 7.14533 6.59832C6.56413 6.59832 6.0855 6.42738 5.74361 6.01712C5.36754 5.60686 5.23079 4.95729 5.33336 4.30771C5.53849 2.97437 6.59832 2.05129 7.82909 2.05129C8.3761 2.05129 8.92311 2.18804 9.16243 2.52993L9.23081 2.63249L9.265 2.3248C9.29918 2.22223 9.36756 2.15386 9.47013 2.15386ZM7.76072 5.40173C8.41029 5.40173 8.92311 4.99147 9.02568 4.3419C9.09406 4.03421 9.02568 3.7607 8.85474 3.52138C8.6838 3.31625 8.41029 3.21369 8.1026 3.21369C7.45302 3.21369 6.9402 3.65814 6.83764 4.30771C6.76926 4.6154 6.83764 4.88891 7.00858 5.09404C7.17952 5.29917 7.41884 5.40173 7.76072 5.40173ZM15.4189 2.15386H16.5471C16.5871 2.15386 16.6155 2.16559 16.6389 2.17531C16.6555 2.18218 16.6697 2.18804 16.6838 2.18804C16.7522 2.25642 16.7864 2.39317 16.718 2.46155L12.9573 7.86328C12.8889 7.93166 12.7864 8.00003 12.6838 8.00003H11.5556C11.5214 8.00003 11.4872 8.00003 11.453 7.96585C11.3847 7.89747 11.3505 7.79491 11.4189 7.69234L12.5812 6.05131L11.3505 2.42736V2.35898C11.3505 2.25642 11.453 2.15386 11.5556 2.15386H12.6496C12.7864 2.15386 12.9231 2.25642 12.9573 2.39317L13.6069 4.58122L15.1454 2.29061C15.2137 2.22223 15.3163 2.15386 15.4189 2.15386ZM17.9488 0H20.2736C21.0599 0 21.6411 0.205129 22.0172 0.581199C22.3249 0.923081 22.4274 1.4359 22.3249 2.08548C22.0855 3.55557 21.1967 4.30771 19.6582 4.30771H18.906C18.7693 4.30771 18.6325 4.41028 18.5984 4.58122L18.3248 6.29063C18.2907 6.42738 18.1881 6.49576 18.0855 6.49576H16.8889H16.8548C16.7522 6.46157 16.6838 6.359 16.6838 6.25644L17.6411 0.273505C17.6411 0.102565 17.7778 0 17.9488 0ZM19.1454 3.04275C19.7949 3.04275 20.4103 3.04275 20.5471 2.18804C20.6155 1.88035 20.5471 1.67522 20.4445 1.53847C20.2394 1.29915 19.8291 1.29915 19.4189 1.29915H19.2479C19.1454 1.29915 19.0428 1.36753 19.0428 1.47009L18.8035 3.04275H19.1454ZM26.1539 2.15386H27.2821C27.4189 2.18804 27.4873 2.29061 27.4531 2.39317L26.8377 6.22225C26.8377 6.39319 26.7009 6.49576 26.53 6.49576H25.5385H25.5044C25.4018 6.46157 25.3334 6.359 25.3334 6.25644L25.3676 5.94874C25.3676 5.94874 24.8206 6.59832 23.8291 6.59832C23.2479 6.59832 22.7693 6.42738 22.4274 6.01712C22.0514 5.60686 21.9146 4.95729 22.0172 4.30771C22.2223 2.97437 23.2821 2.05129 24.5129 2.05129C25.0599 2.05129 25.6069 2.18804 25.8462 2.52993L25.9146 2.63249L25.9488 2.3248C25.983 2.22223 26.0514 2.15386 26.1539 2.15386ZM24.4445 5.40173C25.0941 5.40173 25.6069 4.99147 25.7095 4.3419C25.7779 4.03421 25.7095 3.7607 25.5385 3.52138C25.3676 3.31625 25.0941 3.21369 24.7864 3.21369C24.1368 3.21369 23.624 3.65814 23.5214 4.30771C23.4531 4.61541 23.5214 4.88891 23.6924 5.09404C23.8633 5.29917 24.1368 5.40173 24.4445 5.40173ZM27.624 6.29063L28.5813 0.170941C28.6155 0.0683764 28.6839 0 28.7522 0.0341882H29.8463H29.8804C29.983 0.0683764 30.0514 0.170941 30.0514 0.273505L29.0941 6.25644C29.0941 6.42738 28.9574 6.52994 28.7864 6.52994H27.8292H27.795C27.6924 6.49576 27.624 6.39319 27.624 6.29063Z" />
+    </symbol>
+    <symbol id="mastercard" viewBox="0 0 20 12">
+      <path d="M18.85 9.71667V9.51667H18.9333V9.48333H18.7333V9.51667H18.8167V9.71667H18.85ZM19.2333 9.71667V9.48333H19.1667L19.1 9.65L19.0333 9.48333H18.9667V9.71667H19.0167V9.53333L19.0833 9.68333H19.1333L19.2 9.53333V9.71667H19.2333ZM9.18333 10.8833C9.23333 10.9167 9.28333 10.9667 9.33333 11C8.38333 11.6333 7.23333 12 6.01667 12C2.68333 12 0 9.31667 0 6C0 2.68333 2.68333 0 6 0C7.23333 0 8.36667 0.366667 9.31667 1C9.26667 1.03333 9.21667 1.08333 9.16667 1.11667C7.75 2.35 6.95 4.11667 6.95 6C6.95 7.86667 7.76667 9.65 9.18333 10.8833ZM13.4167 0C12.1833 0 11.05 0.366667 10.1 1C10.15 1.03333 10.2 1.08333 10.25 1.11667C11.6667 2.35 12.4667 4.11667 12.4667 6C12.4667 7.86667 11.65 9.65 10.25 10.8833C10.2 10.9167 10.15 10.9667 10.1 11C11.05 11.6333 12.2 12 13.4167 12C16.7333 12 19.4167 9.31667 19.4167 6C19.4167 2.68333 16.7333 0 13.4167 0ZM9.7 1.28333C9.61667 1.35 9.55 1.4 9.46667 1.46667C8.21667 2.56667 7.41667 4.2 7.41667 6C7.41667 7.8 8.21667 9.43333 9.48333 10.5333C9.55 10.6 9.63333 10.6667 9.71667 10.7167C9.8 10.65 9.86667 10.6 9.95 10.5333C11.2 9.43333 12 7.8 12 6C12 4.2 11.2 2.56667 9.93333 1.46667C9.86667 1.41667 9.78333 1.35 9.7 1.28333Z" />
+    </symbol>
+    <symbol id="slider_arrow_left" viewBox="0 0 46 46">
+      <path d="M25.4443 31.1484L18.111 23.4077L25.4443 15.667" />
+    </symbol>
+    <symbol id="slider_arrow_right" viewBox="0 0 46 46">
+      <path d="M20.7407 14.8516L28.0741 22.5923L20.7407 30.333" />
+    </symbol>
+    <symbol id="arrow_right" viewBox="0 0 23 10">
+      <path d="M19.0858 4.00008L16.7929 1.70718L18.2071 0.292969L22.2071 4.29297L22.9142 5.00008L22.2071 5.70718L18.2071 9.70718L16.7929 8.29297L19.0858 6.00008H0V4.00008H19.0858Z" />
+    </symbol>
+    <symbol id="vk" viewBox="0 0 26 26">
+      <path d="M23.3,17.7c-0.1-0.1-0.4-0.9-2.1-2.4c-1.8-1.6-1.5-1.4,0.6-4.2c1.3-1.7,1.8-2.8,1.6-3.2c-0.2-0.4-1.1-0.3-1.1-0.3l-3.2,0c0,0-0.2,0-0.4,0.1C18.6,7.7,18.5,8,18.5,8s-0.5,1.3-1.2,2.5c-1.4,2.4-2,2.5-2.2,2.4c-0.5-0.3-0.4-1.4-0.4-2.1c0-2.3,0.4-3.3-0.7-3.5C13.7,7.1,13.5,7,12.6,7c-1.1,0-2.1,0-2.6,0.3C9.6,7.4,9.3,7.8,9.5,7.9c0.2,0,0.7,0.1,0.9,0.5c0.3,0.4,0.3,1.4,0.3,1.4s0.2,2.7-0.4,3.1c-0.4,0.2-1-0.2-2.3-2.4C7.4,9.3,6.9,8.1,6.9,8.1S6.8,7.8,6.7,7.7C6.5,7.6,6.2,7.5,6.2,7.5l-3,0c0,0-0.5,0-0.6,0.2c-0.1,0.2,0,0.5,0,0.5s2.4,5.5,5,8.3c2.4,2.5,5.2,2.4,5.2,2.4H14c0,0,0.4,0,0.6-0.3c0.2-0.2,0.2-0.6,0.2-0.6s0-1.7,0.8-1.9c0.8-0.2,1.8,1.6,2.8,2.4c0.8,0.5,1.4,0.4,1.4,0.4l2.8,0C22.6,18.9,24,18.9,23.3,17.7z"/>
+    </symbol>
+    <symbol id="ya" viewBox="0 0 26 26">
+      <path d="M16.4,5h-2.3c-2.3,0-4.6,1.7-4.6,5.5c0,2,0.8,3.5,2.4,4.4L9,19.9c-0.1,0.2-0.1,0.5,0,0.7C9.1,20.9,9.4,21,9.6,21H11c0.3,0,0.6-0.2,0.7-0.4l2.6-5.1h0.2v4.9c0,0.3,0.3,0.6,0.6,0.6h1.2c0.4,0,0.7-0.3,0.7-0.7V5.7C17.1,5.3,16.8,5,16.4,5z M14.5,13.2h-0.3c-1.3,0-2.1-1.1-2.1-2.9c0-2.2,1-3,1.9-3h0.5V13.2z"/>
+    </symbol>
+    <symbol id="gplus" viewBox="0 0 26 26">
+      <path d="M12.7,14.6H8.2v-3.2h8V13c0,4.4-3.6,8-8,8s-8-3.6-8-8s3.6-8,8-8c1.9,0,3.8,0.7,5.2,1.9l-2.1,2.4c-0.9-0.7-2-1.2-3.1-1.2c-2.6,0-4.8,2.2-4.8,4.8s2.2,4.8,4.8,4.8C10.3,17.8,12.1,16.5,12.7,14.6z M22.6,8.2v3.2h3.2V13h-3.2v3.2H21V13h-3.2v-1.6H21V8.2H22.6z"/>
+    </symbol>
+    <symbol id="fb" viewBox="0 0 26 26">
+      <path d="M15.9,7h1.6V4.1c-0.3,0-1.3-0.1-2.4-0.1c-2.4,0-4,1.5-4,4.2v2.5H8.5v3.2h2.6V22h3.2v-8h2.5l0.4-3.2h-2.9V8.5C14.3,7.6,14.6,7,15.9,7L15.9,7z"/>
+    </symbol>
+  </svg>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__inner container">
+        <div class="header__top">
+          <ul class="service-menu">
+            <li class="service-menu__item"><a class="service-menu__link" href="#">Контакты</a></li>
+            <li class="service-menu__item"><a class="service-menu__link" href="#">Оплата</a></li>
+            <li class="service-menu__item"><a class="service-menu__link" href="#">Доставка</a></li>
+            <li class="service-menu__item"><a class="service-menu__link" href="#">FAQ</a></li>
+            <li class="service-menu__item"><a class="service-menu__link" href="#">Задайте вопрос</a></li>
+          </ul>
+          <div class="header__location location">
+            <button class="js-location location-button" type="button" title="Выбрать город">
+              <svg class="location-button__icon" aria-hidden="true">
+                <use xlink:href="#pin" />
+              </svg>
+              <span>Петропавловск-Камчатский</span>
+            </button>
+            <div class="location__dropdown">
+              <div class="location__dropdown-inner">
+                <p class="location__dropdown-title">Начните вводить название своего города или выберите из списка ниже.</p>
+                <div class="location__dropdown-form">
+                  <div class="location__dropdown-inputin">
+                    <input class="js-location-list location__dropdown-input" type="text" placeholder="Ваш населенный пункт" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                  </div>
+                  <div class="location__suggest">
+                    <p class="location__suggest-title">Выберите вариант или продолжайте ввод</p>
+                    <div class="location__suggest-list">
+                      <div class="location__suggest-item">Россия, г <span>Мос</span>ква</div>
+                      <div class="location__suggest-item">США, Айдахо, <span>Мос</span>ква</div>
+                      <div class="location__suggest-item">Таджикистан, г <span>Мос</span>ковский</div>
+                      <div class="location__suggest-item">Россия, г <span>Мос</span>ква</div>
+                      <div class="location__suggest-item">США, Айдахо, <span>Мос</span>ква</div>
+                      <div class="location__suggest-item">Таджикистан, г <span>Мос</span>ковский</div>
+                      <div class="location__suggest-item">Россия, г <span>Мос</span>ква</div>
+                      <div class="location__suggest-item">США, Айдахо, <span>Мос</span>ква</div>
+                      <div class="location__suggest-item">Таджикистан, г <span>Мос</span>ковский</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="location__dropdown-lists">
+                  <div class="location__dropdown-list">
+                    <div class="location__dropdown-link location__dropdown-link--main">Москва</div>
+                    <div class="location__dropdown-link location__dropdown-link--main">Санкт-Петербург</div>
+                    <div class="location__dropdown-link">Владивосток</div>
+                    <div class="location__dropdown-link">Екатеринбург</div>
+                    <div class="location__dropdown-link">Иркутск</div>
+                    <div class="location__dropdown-link">Казань</div>
+                  </div>
+                  <div class="location__dropdown-list">
+                    <div class="location__dropdown-link">Краснодар</div>
+                    <div class="location__dropdown-link">Красноярск</div>
+                    <div class="location__dropdown-link">Минск</div>
+                    <div class="location__dropdown-link">Нижний Новгород</div>
+                    <div class="location__dropdown-link">Новосибирск</div>
+                    <div class="location__dropdown-link">Нурсултан</div>
+                  </div>
+                  <div class="location__dropdown-list">
+                    <div class="location__dropdown-link">Пермь</div>
+                    <div class="location__dropdown-link">Ростов-на-Дону</div>
+                    <div class="location__dropdown-link">Самара</div>
+                    <div class="location__dropdown-link">Ставрополь</div>
+                    <div class="location__dropdown-link">Уфа</div>
+                    <div class="location__dropdown-link">Челябинск</div>
+                  </div>
+                </div>
+                <p class="location__dropdown-note">
+                  <img width="35" src="images/icons/car.svg" alt="">
+                  <span>Бесплатная доставка по России<br> Казахстан, Белоруссия - от 2500р.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <a class="header__phone header-phone" href="tel:+78005009926" title="Позвоните нам">
+            <svg class="header-phone__icon" aria-hidden="true">
+              <use xlink:href="#phone" />
+            </svg>
+            <span class="header-phone__text">8 800 500-99-26</span>
+          </a>
+          <a class="header__personal personal-link" href="#" title="Личный кабинет">
+            <svg class="personal-link__icon" aria-hidden="true">
+              <use xlink:href="#user" />
+            </svg>
+          </a>
+        </div>
+        <div class="header__bottom">
+          <a class="header__logo" href="main.html"><img src="images/logo.png" alt="DIGITAL RAZOR"></a>
+          <button class="js-menu-toggler menu-toggler" type="button" title="Меню">
+            <svg class="menu-toggler__burger" aria-hidden="true">
+              <use xlink:href="#burger" />
+            </svg>
+            <svg class="menu-toggler__close" aria-hidden="true">
+              <use xlink:href="#menu_close" />
+            </svg>
+          </button>
+          <div class="menu-block">
+            <div class="menu-block__inner">
+              <ul class="main-menu">
+                <li class="main-menu__item root">
+                  <a class="main-menu__link root-link" href="#">
+                    <span class="main-menu__link-text">Игровые компьютеры</span>
+                  </a>
+                  <div class="main-menu__dropdown">
+                    <p class="main-menu__dropdown-title">ИГРОВЫЕ СЕРИИ</p>
+                    <a class="main-menu__dropdown-link" href="#">ProGaming - серия</a>
+                    <a class="main-menu__dropdown-link" href="#">Performance - серия</a>
+                    <a class="main-menu__dropdown-link" href="#">Performance X - серия</a>
+                    <p class="main-menu__dropdown-title">СПЕЦИАЛЬНЫЕ СЕРИИ</p>
+                    <a class="main-menu__dropdown-link" href="#">Powered by ASUS</a>
+                    <a class="main-menu__dropdown-link" href="#">Powered by AMD</a>
+                  </div>
+                </li>
+                <li class="main-menu__item">
+                  <a class="main-menu__link is-active" href="#"><span class="main-menu__link-text">Рабочие станции</span></a>
+                </li>
+                <li class="main-menu__item">
+                  <a class="main-menu__link" href="#"><span class="main-menu__link-text">Моноблоки</span></a>
+                </li>
+              </ul>
+              <div class="menu-block__mobile-content mc">
+                <div class="mc__top">
+                  <div class="mc__top-menus">
+                    <ul class="footer-menu">
+                      <li class="footer-menu__item"><a class="footer-menu__link" href="#">Вход</a>&nbsp;/&nbsp;<a class="footer-menu__link" href="/auth/?register=yes">Регистрация</a></li>
+                      <li class="footer-menu__item"><a class="footer-menu__link" href="#">Моя корзина</a></li>
+                      <li class="footer-menu__item"><a class="footer-menu__link" href="#">Забыли пароль</a></li>
+                      <li class="footer-menu__item"><a class="footer-menu__link" href="#">Договор оферты</a></li>
+                      <li class="footer-menu__item"><a class="footer-menu__link" href="#">Гарантия</a></li>
+                      <li class="footer-menu__item"><a class="footer-menu__link" href="#">Акции</a></li>
+                    </ul>
+                    <ul class="footer-menu">
+                      <li class="footer-menu__item"><a class="footer-menu__link" href="#">Контакты</a></li>
+                      <li class="footer-menu__item"><a class="footer-menu__link" href="#">Оплата</a></li>
+                      <li class="footer-menu__item"><a class="footer-menu__link" href="#">Доставка</a></li>
+                      <li class="footer-menu__item"><a class="footer-menu__link" href="#">FAQ</a></li>
+                    </ul>
+                  </div>
+                  <p class="mc__phone"><a href="tel:+78005009926">8 800 500-99-26</a></p>
+                  <p class="mc__address">Санкт-Петербург,<br> ул.&nbsp;Краснопутиловская&nbsp;9.</p>
+                  <p class="mc__address">Москва, Шоссе&nbsp;Энтузиастов,<br> дом&nbsp;31с39, 3&nbsp;этаж, офис&nbsp;14</p>
+                </div>
+                <div class="mc__middle">
+                  <div class="mc__payments">
+                    <span class="payment-system" title="VISA">
+                      <svg class="payment-system__icon payment-system__icon--visa" aria-hidden="true">
+                        <use xlink:href="#visa" />
+                      </svg>
+                    </span>
+                    <span class="payment-system" title="MASTER CARD">
+                      <svg class="payment-system__icon payment-system__icon--ms" aria-hidden="true">
+                        <use xlink:href="#mastercard" />
+                      </svg>
+                    </span>
+                    <span class="payment-system" title="PAY PAL">
+                      <svg class="payment-system__icon payment-system__icon--pp" aria-hidden="true">
+                        <use xlink:href="#paypal" />
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="mc__email-block">
+                    <a href="mailto:order@digital-razor.ru">order@digital-razor.ru</a>
+                  </div>
+                </div>
+                <div class="mc__bottom">
+                  <div class="mc__copyright">
+                    2020 © DigitalRazor LLC. Все права защищены.
+                  </div>
+                  <div class="mc__note">
+                    DigitalRazor и логотип DigitalRazor являются товарными знаками компании ООО "Форсайт Северо-Запад", зарегистрированными в России и других странах. Другие наименования и товарные знаки являются собственностью своих законных
+                    владельцев.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="header__design-button design-button" href="#">
+              <svg class="design-button__icon" aria-hidden="true">
+                <use xlink:href="#design" />
+              </svg>
+              <span class="design-button__text">Создать свой дизайн</span>
+            </a>
+            <a class="header__cart cart-button" href="#" title="Корзина">
+              <svg class="cart-button__icon" aria-hidden="true">
+                <use xlink:href="#basket" />
+              </svg>
+              <svg class="cart-button__icon2" aria-hidden="true">
+                <use xlink:href="#cart" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="js-main-banner main-banner">
+      <div class="main-banner__slide main-banner__slide--1" style="background-image: url('images/content/main_banner/bg2.jpg')">
+        <style>
+          @media(min-width: 768px) {
+            .main-banner__slide--1 {
+              background-image: url('images/content/main_banner/bg2.jpg') !important
+            }
+          }
+        </style>
+        <div class="main-banner__slide-inner">
+          <div class="main-banner__slide-image"><img src="images/content/main_banner/img_2.png" alt=""></div>
+          <div class="main-banner__slide-info">
+            <p class="main-banner__slide-title">256GB <span>В ПОДАРОК</span><br> ПРИ ПОКУПКЕ ПК</p>
+            <p class="main-banner__slide-text">При заказе игрового компьютера с материнской платой и видеокартой от MSI - получи новинку SSD Kingston KC600 на 256 GB в подарок!</p>
+            <a class="button button--arrow" href="#"><span class="button__text">Собери свой пк</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="main-banner__slide main-banner__slide--2" style="background-image: url('images/content/main_banner/bg3.jpg')">
+        <style>
+          @media(min-width: 768px) {
+            .main-banner__slide--2 {
+              background-image: url('images/content/main_banner/bg3.jpg') !important
+            }
+          }
+        </style>
+        <div class="main-banner__slide-inner">
+          <div class="main-banner__slide-image"><img src="images/content/main_banner/img_3.png" alt=""></div>
+          <div class="main-banner__slide-info">
+            <p class="main-banner__slide-title">КОВРИК ASUS<br><span>В ПОДАРОК</span> ПРИ ПОКУПКЕ ПК</p>
+            <p class="main-banner__slide-text">Закажи игровой ПК серии c материнской платой или видеокартой ASUS  и получи игровой коврик в подарок.</p>
+            <a class="button button--arrow" href="#"><span class="button__text">Собери свой пк</span></a>
+          </div>
+        </div>
+      </div>
+      <!--<div class="main-banner__slide main-banner__slide--3" style="background-image: url('images/content/main_banner/bg_mobile.jpg')">
+        <style>
+          @media(min-width: 768px) {
+            .main-banner__slide--3 {
+              background-image: url('images/content/main_banner/bg.jpg') !important
+            }
+          }
+        </style>
+        <div class="main-banner__slide-inner">
+          <div class="main-banner__slide-image"><img src="images/content/main_banner/img_1.png" alt=""></div>
+          <div class="main-banner__slide-info">
+            <p class="main-banner__slide-title">Звездные войны <span>Джедаи</span>&nbsp;Павший орден</p>
+            <p class="main-banner__slide-text">Закажи игровой ПК серии Performance c материнской платой AORUS Z390 ELITE и получи игру в подарок</p>
+            <a class="button button--arrow" href="#"><span class="button__text">Собери свой пк</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="main-banner__slide main-banner__slide--4" style="background-image: url('images/content/main_banner/bg_mobile.jpg')">
+        <style>
+          @media(min-width: 768px) {
+            .main-banner__slide--4 {
+              background-image: url('images/content/main_banner/bg.jpg') !important
+            }
+          }
+        </style>
+        <div class="main-banner__slide-inner">
+          <div class="main-banner__slide-image"><img src="images/content/main_banner/img_1.png" alt=""></div>
+          <div class="main-banner__slide-info">
+            <p class="main-banner__slide-title">Звездные войны <span>Джедаи</span>&nbsp;Павший орден</p>
+            <p class="main-banner__slide-text">Закажи игровой ПК серии Performance c материнской платой AORUS Z390 ELITE и получи игру в подарок</p>
+            <a class="button button--arrow" href="#"><span class="button__text">Собери свой пк</span></a>
+          </div>
+        </div>
+      </div>-->
+    </div>
+
+    <div class="block-1">
+      <div class="container">
+        <h2 class="title"><span>Выбери</span> игровую&nbsp;серию:</h2>
+        <div class="cards">
+          <div class="cards__item">
+            <a class="card" href="#">
+              <span class="card__top-block">
+                <span class="card__image"><img src="images/content/block_1/img_1.png" alt="PROGAMING"></span>
+                <span class="card__about">
+                  <span class="card__title">PROGAMING</span>
+                  <span class="card__preview">Игровые компьютеры данной серии прекрасно подойдут для игр в FullHD</span>
+                </span>
+              </span>
+              <span class="card__info">
+                <span class="card__power-row">
+                  <span class="card__units">
+                    <span class="card__units-item">HD</span>
+                    <span class="card__units-item">FullHD</span>
+                    <span class="card__units-item">2K</span>
+                    <span class="card__units-item">4K</span>
+                  </span>
+                </span>
+                <span class="card__power-row">
+                  <span class="card__power-title">Игры:</span>
+                  <span class="card__scale">
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                  </span>
+                </span>
+                <span class="card__power-row">
+                  <span class="card__power-title">Стриминг и запись:</span>
+                  <span class="card__scale">
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                  </span>
+                </span>
+                <span class="card__power-row">
+                  <span class="card__power-title">Обработка видео:</span>
+                  <span class="card__scale">
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                  </span>
+                </span>
+                <span class="card__power-row card__power-row--separator">
+                  <span class="card__units">
+                    <span class="card__units-item">Min</span>
+                    <span class="card__units-item">Max</span>
+                  </span>
+                </span>
+                <span class="card__power-row">
+                  <span class="card__power-title">Upgrade:</span>
+                  <span class="card__scale">
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                  </span>
+                </span>
+                <span class="card__power-row">
+                  <span class="card__power-title">Кастомизация:</span>
+                  <span class="card__scale">
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                  </span>
+                </span>
+              </span>
+              <span class="card__price">от <span>45 000</span> ₽</span>
+            </a>
+          </div>
+          <div class="cards__item">
+            <a class="card" href="#">
+              <span class="card__top-block">
+                <span class="card__image"><img src="images/content/block_1/img_2.png" alt="PERFOMANCE"></span>
+                <span class="card__about">
+                  <span class="card__title">PERFOMANCE</span>
+                  <span class="card__preview">Игровые компьютеры данной серии прекрасно подойдут для игр в FullHD</span>
+                </span>
+              </span>
+              <span class="card__info">
+                <span class="card__power-row">
+                  <span class="card__units">
+                    <span class="card__units-item">HD</span>
+                    <span class="card__units-item">FullHD</span>
+                    <span class="card__units-item">2K</span>
+                    <span class="card__units-item">4K</span>
+                  </span>
+                </span>
+                <span class="card__power-row">
+                  <span class="card__power-title">Игры:</span>
+                  <span class="card__scale">
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                  </span>
+                </span>
+                <span class="card__power-row">
+                  <span class="card__power-title">Стриминг и запись:</span>
+                  <span class="card__scale">
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                  </span>
+                </span>
+                <span class="card__power-row">
+                  <span class="card__power-title">Обработка видео:</span>
+                  <span class="card__scale">
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                  </span>
+                </span>
+                <span class="card__power-row card__power-row--separator">
+                  <span class="card__units">
+                    <span class="card__units-item">Min</span>
+                    <span class="card__units-item">Max</span>
+                  </span>
+                </span>
+                <span class="card__power-row">
+                  <span class="card__power-title">Upgrade:</span>
+                  <span class="card__scale">
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                  </span>
+                </span>
+                <span class="card__power-row">
+                  <span class="card__power-title">Кастомизация:</span>
+                  <span class="card__scale">
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                  </span>
+                </span>
+              </span>
+              <span class="card__price">от <span>45 000</span> ₽</span>
+            </a>
+          </div>
+          <div class="cards__item">
+            <a class="card" href="#">
+              <span class="card__top-block">
+                <span class="card__image"><img src="images/content/block_1/img_3.png" alt="EVOLUTION"></span>
+                <span class="card__about">
+                  <span class="card__title">EVOLUTION</span>
+                  <span class="card__preview">Игровые компьютеры данной серии прекрасно подойдут для игр в FullHD</span>
+                </span>
+              </span>
+              <span class="card__info">
+                <span class="card__power-row">
+                  <span class="card__units">
+                    <span class="card__units-item">HD</span>
+                    <span class="card__units-item">FullHD</span>
+                    <span class="card__units-item">2K</span>
+                    <span class="card__units-item">4K</span>
+                  </span>
+                </span>
+                <span class="card__power-row">
+                  <span class="card__power-title">Игры:</span>
+                  <span class="card__scale">
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                  </span>
+                </span>
+                <span class="card__power-row">
+                  <span class="card__power-title">Стриминг и запись:</span>
+                  <span class="card__scale">
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                  </span>
+                </span>
+                <span class="card__power-row">
+                  <span class="card__power-title">Обработка видео:</span>
+                  <span class="card__scale">
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                  </span>
+                </span>
+                <span class="card__power-row card__power-row--separator">
+                  <span class="card__units">
+                    <span class="card__units-item">Min</span>
+                    <span class="card__units-item">Max</span>
+                  </span>
+                </span>
+                <span class="card__power-row">
+                  <span class="card__power-title">Upgrade:</span>
+                  <span class="card__scale">
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                  </span>
+                </span>
+                <span class="card__power-row">
+                  <span class="card__power-title">Кастомизация:</span>
+                  <span class="card__scale">
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                  </span>
+                </span>
+              </span>
+              <span class="card__price">от <span>45 000</span> ₽</span>
+            </a>
+          </div>
+          <div class="cards__item">
+            <a class="card" href="#">
+              <span class="card__top-block">
+                <span class="card__image"><img src="images/content/block_1/img_4.png" alt="STINGER AIO"></span>
+                <span class="card__about">
+                  <span class="card__title">STINGER AIO</span>
+                  <span class="card__preview">Игровые компьютеры данной серии прекрасно подойдут для игр в FullHD</span>
+                </span>
+              </span>
+              <span class="card__info">
+                <span class="card__power-row">
+                  <span class="card__units">
+                    <span class="card__units-item">HD</span>
+                    <span class="card__units-item">FullHD</span>
+                    <span class="card__units-item">2K</span>
+                    <span class="card__units-item">4K</span>
+                  </span>
+                </span>
+                <span class="card__power-row">
+                  <span class="card__power-title">Игры:</span>
+                  <span class="card__scale">
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                  </span>
+                </span>
+                <span class="card__power-row">
+                  <span class="card__power-title">Стриминг и запись:</span>
+                  <span class="card__scale">
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                  </span>
+                </span>
+                <span class="card__power-row">
+                  <span class="card__power-title">Обработка видео:</span>
+                  <span class="card__scale">
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                  </span>
+                </span>
+                <span class="card__power-row card__power-row--separator">
+                  <span class="card__units">
+                    <span class="card__units-item">Min</span>
+                    <span class="card__units-item">Max</span>
+                  </span>
+                </span>
+                <span class="card__power-row">
+                  <span class="card__power-title">Upgrade:</span>
+                  <span class="card__scale">
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                  </span>
+                </span>
+                <span class="card__power-row">
+                  <span class="card__power-title">Кастомизация:</span>
+                  <span class="card__scale">
+                    <span class="card__scale-item red"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                    <span class="card__scale-item"></span>
+                  </span>
+                </span>
+              </span>
+              <span class="card__price">от <span>45 000</span> ₽</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block-2">
+      <div class="block-2__banner block-2__banner--1" style="background-image: url('images/content/block_2/bg_mobile.jpg')" data-target="1">
+        <style>
+          @media(min-width: 768px) {
+            .block-2__banner--1 {
+              background-image: url('images/content/block_2/bg.jpg') !important
+            }
+          }
+        </style>
+        <div class="block-2__banner-inner container">
+          <h2 class="block-2__banner-title title"><span>Другой</span> заголовок для баннера</h2>
+          <div class="block-2__banner-image"><img src="images/content/main_banner/img_1.png" alt=""></div>
+          <p class="block-2__banner-text">Небольшой рыбный текст для теста</p>
+          <a class="button button--arrow" href="#"><span class="button__text">СОБЕРИ СОВЙ ПК</span></a>
+        </div>
+      </div>
+      <div class="block-2__banner block-2__banner--2 is-active" style="background-image: url('images/content/block_2/bg_mobile.jpg')" data-target="2">
+        <style>
+          @media(min-width: 768px) {
+            .block-2__banner--2 {
+              background-image: url('images/content/block_2/bg.jpg') !important
+            }
+          }
+        </style>
+        <div class="block-2__banner-inner container">
+          <h2 class="block-2__banner-title title"><span>DigitalRazor</span> ROG&nbsp;Edition Выбирая&nbsp;лучшее. Выбирай&nbsp;ASUS</h2>
+          <div class="block-2__banner-image"><img src="images/content/block_2/img_1.png" alt=""></div>
+          <p class="block-2__banner-text">Это высокая мощность, инновационные технологии, безупречный уровень надежности и стильный дизайн, подчеркивающий индивидуальность каждого геймера.</p>
+          <a class="button button--arrow" href="#"><span class="button__text">СОБЕРИ СОВЙ ПК</span></a>
+        </div>
+      </div>
+      <div class="block-2__banner block-2__banner--3" style="background-image: url('images/content/block_2/bg_mobile.jpg')" data-target="3">
+        <style>
+          @media(min-width: 768px) {
+            .block-2__banner--3 {
+              background-image: url('images/content/block_2/bg.jpg') !important
+            }
+          }
+        </style>
+        <div class="block-2__banner-inner container">
+          <h2 class="block-2__banner-title title"><span>DigitalRazor</span> ROG&nbsp;Edition Выбирая&nbsp;лучшее. Выбирай&nbsp;ASUS</h2>
+          <div class="block-2__banner-image"><img src="images/content/block_2/img_1.png" alt=""></div>
+          <p class="block-2__banner-text">Это высокая мощность, инновационные технологии, безупречный уровень надежности и стильный дизайн, подчеркивающий индивидуальность каждого геймера.</p>
+          <a class="button button--arrow" href="#"><span class="button__text">СОБЕРИ СОВЙ ПК</span></a>
+        </div>
+      </div>
+      <div class="block-2__banner block-2__banner--4" style="background-image: url('images/content/block_2/bg_mobile.jpg')" data-target="4">
+        <style>
+          @media(min-width: 768px) {
+            .block-2__banner--4 {
+              background-image: url('images/content/block_2/bg.jpg') !important
+            }
+          }
+        </style>
+        <div class="block-2__banner-inner container">
+          <h2 class="block-2__banner-title title"><span>DigitalRazor</span> ROG&nbsp;Edition Выбирая&nbsp;лучшее. Выбирай&nbsp;ASUS</h2>
+          <div class="block-2__banner-image"><img src="images/content/block_2/img_1.png" alt=""></div>
+          <p class="block-2__banner-text">Это высокая мощность, инновационные технологии, безупречный уровень надежности и стильный дизайн, подчеркивающий индивидуальность каждого геймера.</p>
+          <a class="button button--arrow" href="#"><span class="button__text">СОБЕРИ СОВЙ ПК</span></a>
+        </div>
+      </div>
+      <div class="block-2__banner block-2__banner--5" style="background-image: url('images/content/block_2/bg_mobile.jpg')" data-target="5">
+        <style>
+          @media(min-width: 768px) {
+            .block-2__banner--5 {
+              background-image: url('images/content/block_2/bg.jpg') !important
+            }
+          }
+        </style>
+        <div class="block-2__banner-inner container">
+          <h2 class="block-2__banner-title title"><span>DigitalRazor</span> ROG&nbsp;Edition Выбирая&nbsp;лучшее. Выбирай&nbsp;ASUS</h2>
+          <div class="block-2__banner-image"><img src="images/content/block_2/img_1.png" alt=""></div>
+          <p class="block-2__banner-text">Это высокая мощность, инновационные технологии, безупречный уровень надежности и стильный дизайн, подчеркивающий индивидуальность каждого геймера.</p>
+          <a class="button button--arrow" href="#"><span class="button__text">СОБЕРИ СОВЙ ПК</span></a>
+        </div>
+      </div>
+      <div class="block-2__nav b2-nav">
+        <div class="b2-nav__item"><button class="js-b2-nav b2-nav__button" type="button" data-target="1"><img src="images/content/block_2/img_2.png" alt="Cooler Master"></button></div>
+        <div class="b2-nav__item"><button class="js-b2-nav b2-nav__button is-active" type="button" data-target="2"><img src="images/content/block_2/img_3.png" alt="Republic of Gamers"></button></div>
+        <div class="b2-nav__item"><button class="js-b2-nav b2-nav__button" type="button" data-target="3"><img src="images/content/block_2/img_4.png" alt="AORUS"></button></div>
+        <div class="b2-nav__item"><button class="js-b2-nav b2-nav__button" type="button" data-target="4"><img src="images/content/block_2/img_5.png" alt="MSI"></button></div>
+        <div class="b2-nav__item"><button class="js-b2-nav b2-nav__button" type="button" data-target="5"><img src="images/content/block_2/img_6.png" alt="ASUS"></button></div>
+      </div>
+    </div>
+
+    <div class="block-3">
+      <div class="block-3__inner container">
+        <h2 class="block-3__title title"><span>Aorus Edition</span> Игровой компьютер для&nbsp;игр&nbsp;и&nbsp;работы</h2>
+        <div class="block-3__image"><img src="images/content/block_3/img_1.png" alt=""></div>
+        <p class="block-3__text">Это высокая мощность, инновационные технологии, безупречный уровень надежности и стильный дизайн, подчеркивающий индивидуальность каждого геймера.</p>
+        <a class="button button--arrow" href="#"><span class="button__text">Подробнее</span></a>
+      </div>
+    </div>
+
+    <div class="block-4">
+      <div class="block-4__inner container">
+        <h2 class="title"><span>Собственное</span> производство</h2>
+      </div>
+      <div class="tiles">
+        <div class="tiles__container">
+          <div class="tiles__cell tiles__cell--type_1">
+            <div class="tiles__block tiles__block--type_1" style="background-image: url('images/content/block_4/img_1.jpg')">
+              <p>Представляем вашему вниманию «кухню» DigitalRazor. Именно здесь наши квалифицированные специалисты собирают Ваш компьютер</p>
+            </div>
+          </div>
+          <div class="tiles__cell tiles__cell--type_2">
+            <div class="tiles__sub-container">
+              <div class="tiles__cell tiles__cell--type_3">
+                <div class="tiles__block tiles__block--type_2" style="background-image: url('images/content/block_4/img_2.jpg')">
+                  <p>Сборка эксклюзивных систем</p>
+                </div>
+              </div>
+              <div class="tiles__cell tiles__cell--type_3">
+                <div class="tiles__block tiles__block--type_2" style="background-image: url('images/content/block_4/img_3.jpg')">
+                  <p>Установка ПО, настройка и&nbsp;тестирование</p>
+                </div>
+              </div>
+              <div class="tiles__cell tiles__cell--type_4">
+                <div class="tiles__block tiles__block--type_3 guarantee-block">
+                  <img width="41" src="images/icons/shield_white.svg" alt="">
+                  <p class="guarantee-block__title">ГАРАНТИЯ 3 ГОДА</p>
+                  <p>Гарантия на игровые компьютеры составляет от&nbsp;12&nbsp;до&nbsp;36&nbsp;месяцев.</p>
+                </div>
+              </div>
+              <div class="tiles__cell tiles__cell--type_4">
+                <div class="tiles__block tiles__block--type_2" style="background-image: url('images/content/block_4/img_4.jpg')">
+                  <p>Упаковка</p>
+                </div>
+              </div>
+              <div class="tiles__cell tiles__cell--type_5">
+                <div class="tiles__block tiles__block--type_2" style="background-image: url('images/content/block_4/img_5.jpg')">
+                  <p>Профессиональная винилография</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block-5">
+      <div class="block-5__inner container">
+        <div class="block-5__inner-block">
+          <h2 class="title"><span>Акции</span> и&nbsp;спецпредложения</h2>
+          <a class="button button--arrow" href="#"><span class="button__text">Смотреть всё</span></a>
+        </div>
+        <div class="block-5__inner-block">
+          <div class="js-actions-slider actions-slider">
+            <div class="actions-slider__slide">
+              <div class="action-slide">
+                <div class="action-slide__image"><img src="images/content/block_5/img_1.png" alt=""></div>
+                <div class="action-slide__info">
+                  <p class="action-slide__date">01 сентября 19 - 30 октября 19</p>
+                  <p class="action-slide__title">Game pass в подарок</p>
+                  <p class="action-slide__text">Купи игровой компьютер DigitalRazor Powered by ASUS с собственным дизайном...</p>
+                  <a class="action-slide__link" href="#">
+                    <span>подробнее о акции</span>
+                    <svg class="action-slide__link-icon" aria-hidden="true">
+                      <use xlink:href="#arrow_right" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="actions-slider__slide">
+              <div class="action-slide">
+                <div class="action-slide__image"><img src="images/content/block_5/img_1.png" alt=""></div>
+                <div class="action-slide__info">
+                  <p class="action-slide__date">01 сентября 19 - 30 октября 19</p>
+                  <p class="action-slide__title">Game pass в подарок</p>
+                  <p class="action-slide__text">Купи игровой компьютер DigitalRazor Powered by ASUS с собственным дизайном...</p>
+                  <a class="action-slide__link" href="#">
+                    <span>подробнее о акции</span>
+                    <svg class="action-slide__link-icon" aria-hidden="true">
+                      <use xlink:href="#arrow_right" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="actions-slider__slide">
+              <div class="action-slide">
+                <div class="action-slide__image"><img src="images/content/block_5/img_1.png" alt=""></div>
+                <div class="action-slide__info">
+                  <p class="action-slide__date">01 сентября 19 - 30 октября 19</p>
+                  <p class="action-slide__title">Game pass в подарок</p>
+                  <p class="action-slide__text">Купи игровой компьютер DigitalRazor Powered by ASUS с собственным дизайном...</p>
+                  <a class="action-slide__link" href="#">
+                    <span>подробнее о акции</span>
+                    <svg class="action-slide__link-icon" aria-hidden="true">
+                      <use xlink:href="#arrow_right" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="actions-slider__slide">
+              <div class="action-slide">
+                <div class="action-slide__image"><img src="images/content/block_5/img_1.png" alt=""></div>
+                <div class="action-slide__info">
+                  <p class="action-slide__date">01 сентября 19 - 30 октября 19</p>
+                  <p class="action-slide__title">Game pass в подарок</p>
+                  <p class="action-slide__text">Купи игровой компьютер DigitalRazor Powered by ASUS с собственным дизайном...</p>
+                  <a class="action-slide__link" href="#">
+                    <span>подробнее о акции</span>
+                    <svg class="action-slide__link-icon" aria-hidden="true">
+                      <use xlink:href="#arrow_right" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block-6">
+      <div class="block-6__inner container">
+        <div class="block-6__inner-block">
+          <h2 class="title"><span>Почему</span> DigitalRazor</h2>
+          <p class="block-6__text">Мы создаем системы с учетом высоких требований геймеров и энтузиастов, стараемся делать уникальные вещи, которые позволяют покупателю наслаждаться игровым процессом в полном объеме.</p>
+          <a class="button button--arrow" href="#"><span class="button__text">Подробнее</span></a>
+        </div>
+        <div class="block-6__inner-block">
+          <div class="features">
+            <div class="feature">
+              <div class="feature__image">
+                <img src="images/icons/shield.svg" alt="">
+              </div>
+              <div>
+                <p class="feature__title">ГАРАНТИЯ 3 ГОДА</p>
+                <p>Гарантия на игровые компьютеры составляет от&nbsp;12&nbsp;до&nbsp;36&nbsp;месяцев.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature__image">
+                <img src="images/icons/headphones.svg" alt="">
+              </div>
+              <div>
+                <p class="feature__title">СЕРВИСНЫЕ ЦЕНТРЫ</p>
+                <p>Поддержка в Москве и Санкт-Петербурге, для регионов бесплатный трансфер*</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature__image">
+                <img src="images/icons/car.svg" alt="">
+              </div>
+              <div>
+                <p class="feature__title">БЕСПЛАТНАЯ ДОСТАВКА</p>
+                <p>Бесплатная и надежная доставка со страхованием по&nbsp;России.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature__image">
+                <img src="images/icons/doc.svg" alt="">
+              </div>
+              <div>
+                <p class="feature__title">СТРЕСС - ТЕСТИРОВАНИЕ</p>
+                <p>Все компьютеры проходят комплексное стресс- тестирование.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__top-left">
+          <ul class="footer-menu footer-menu--big">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Progaming - серия</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Performance - cерия</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Performance X - cерия</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Игровые моноблоки</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Рабочие станции</a></li>
+          </ul>
+        </div>
+        <div class="footer__top-center">
+          <ul class="footer-menu">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="auth.html">Вход</a>&nbsp;/&nbsp;<a class="footer-menu__link" href="register.html">Регистрация</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Моя корзина</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Забыли пароль</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Договор оферты</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Гарантия</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Акции</a></li>
+          </ul>
+          <ul class="footer-menu">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Контакты</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Оплата</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Доставка</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__top-right">
+          <p class="footer__phone"><a href="tel:+78005009926">8 800 500-99-26</a></p>
+          <p class="footer__address">Санкт-Петербург,<br> ул.&nbsp;Краснопутиловская&nbsp;9.</p>
+          <p class="footer__address">Москва, Шоссе&nbsp;Энтузиастов,<br> дом&nbsp;31с39, 3&nbsp;этаж, офис&nbsp;14</p>
+        </div>
+      </div>
+      <div class="footer__middle">
+        <div class="footer__logo-block">
+          <div class="footer__logo"><img src="images/logo.png" alt="DIGITAL RAZOR"></div>
+        </div>
+        <div class="footer__payments">
+          <span class="payment-system" title="VISA">
+            <svg class="payment-system__icon payment-system__icon--visa" aria-hidden="true">
+              <use xlink:href="#visa" />
+            </svg>
+          </span>
+          <span class="payment-system" title="MASTER CARD">
+            <svg class="payment-system__icon payment-system__icon--ms" aria-hidden="true">
+              <use xlink:href="#mastercard" />
+            </svg>
+          </span>
+          <span class="payment-system" title="PAY PAL">
+            <svg class="payment-system__icon payment-system__icon--pp" aria-hidden="true">
+              <use xlink:href="#paypal" />
+            </svg>
+          </span>
+        </div>
+        <div class="footer__email-block">
+          <a href="mailto:order@digital-razor.ru">order@digital-razor.ru</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__copyright">
+          2020 © DigitalRazor LLC. Все права защищены.
+        </div>
+        <div class="footer__note">
+          DigitalRazor и логотип DigitalRazor являются товарными знаками компании ООО "Форсайт Северо-Запад", зарегистрированными в России и других странах. Другие наименования и товарные знаки являются собственностью своих законных владельцев.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bodyScrollLock.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

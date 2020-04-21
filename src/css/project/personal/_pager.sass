@@ -1,0 +1,70 @@
+.pager
+  display: flex
+  font-size: 12px
+  justify-content: center
+  list-style: none
+  line-height: 14px
+  margin-top: 30px
+  padding: 0
+
+  &__item
+    margin-left: 3px
+    margin-right: 3px
+
+    @media(min-width: 600px)
+      margin-left: 5px
+      margin-right: 5px
+
+    &:first-child
+      .pager__link-svg
+        margin-right: 10px
+
+    &:last-child
+      .pager__link-svg
+        margin-left: 10px
+
+  &__link
+    align-items: center
+    border-radius: 50%
+    color: #fff
+    display: flex
+    font-family: $secondary_font
+    height: 26px
+    justify-content: center
+    padding-bottom: 2px
+    text-decoration: none
+    text-transform: uppercase
+    width: 26px
+
+    &:hover
+      color: $main_color
+
+    &.is-active
+      background-color: $main_color
+      color: #fff
+
+  &__arrow
+    align-items: center
+    border-radius: 50%
+    color: #fff
+    display: flex
+    font-family: $secondary_font
+    height: 26px
+    justify-content: center
+    padding-bottom: 2px
+    text-decoration: none
+    text-transform: uppercase
+
+    &:hover
+      color: $main_color
+
+      .pager__link-svg
+        stroke: $main_color
+
+  &__link-svg
+    fill: none
+    height: 12px
+    margin-top: 1px
+    stroke: #fff
+    transition: stroke 0.3s
+    width: 5px

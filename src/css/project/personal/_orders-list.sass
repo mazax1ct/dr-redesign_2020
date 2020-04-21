@@ -1,0 +1,140 @@
+.orders-list
+  border-collapse: collapse
+  border: none
+  color: #fff
+  font-size: 10px
+  text-align: left
+  width: 100%
+
+  @media(min-width: 375px)
+    font-size: 12px
+
+  @media(min-width: 1200px)
+    font-size: 15px
+
+  &__th
+    border-bottom: 2px solid $main_color
+    font-family: $secondary_font
+    font-size: 11px
+    padding: 5px
+    text-align: left
+    text-transform: uppercase
+    white-space: nowrap
+
+    @media(min-width: 992px)
+      padding: 10px 15px
+
+  &__cell
+    border-bottom: 1px solid #333
+    padding: 5px
+    text-align: left
+
+    @media(min-width: 992px)
+      padding: 10px 15px
+
+  tbody
+    tr
+      &:nth-child(even)
+        .orders-list__cell
+          background-color: #212121
+
+  &__type-block
+    text-align: center
+
+    @media(min-width: 768px)
+      display: none
+
+  &__id-block
+    white-space: nowrap
+
+  &__date
+    @media(max-width: 991px)
+      display: none
+
+  &__title
+    @media(max-width: 767px)
+      display: none
+
+  &__cost
+    @media(max-width: 767px)
+      display: none
+
+  &__price
+    @media(min-width: 768px)
+      display: none
+
+  &__price-block
+    white-space: nowrap
+
+  &__status
+    @media(min-width: 600px)
+      font-weight: 700
+
+    &--type_1
+      color: #397FBE
+
+    &--type_2
+      color: $main_color
+
+    &--type_3
+      color: #25BA4F
+
+  &__buttons
+    @media(min-width: 1200px)
+      text-align: right
+      white-space: nowrap
+
+  &__type
+    color: #397FBE
+    font-weight: 500
+
+  &__button
+    border: 1px solid #666
+    color: #666
+    display: inline-block
+    font-family: $secondary_font
+    font-size: 11px
+    height: 28px
+    margin-right: 10px
+    margin-bottom: 5px
+    padding: 5px 12px
+    text-decoration: none
+    text-transform: uppercase
+    transition: border-color 0.3s, color 0.3s
+
+    @media(min-width: 1200px)
+      margin-bottom: 0
+
+    &:last-child
+      margin: 0
+
+    &:hover
+      border-color: #fff
+      color: #fff
+      text-decoration: none
+
+.no-orders
+  color: #808080
+  font-size: 14px
+  margin-top: auto
+  margin-bottom: auto !important
+  text-align: center
+
+  @media(min-width: 992px)
+    transform: translateY(-60px)
+
+  &__title
+    color: #666
+    font-family: $secondary_font
+    font-size: 30px
+    line-height: 36px
+    margin-bottom: 20px
+    margin-top: 20px
+
+    @media(min-width: 1200px)
+      font-size: 46px
+      line-height: 51px
+
+  a
+    color: $main_color
+    text-decoration: none

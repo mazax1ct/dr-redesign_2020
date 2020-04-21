@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>DIGITAL RAZOR</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/personal/style.html
+</head>
+
+<body class="personal">
+  //= template/personal/sprite.html
+
+  //= template/personal/header.html
+
+  <div class="personal__inner">
+    <div class="personal__content custom-scroll">
+      <h1 class="personal__title">Мои заказы</h1>
+      <table class="js-sort orders-list">
+        <thead>
+          <tr>
+            <th class="js-sorting orders-list__th">ID Заказа</th>
+            <th class="js-sorting orders-list__th orders-list__date">Дата создания</th>
+            <th class="js-sorting orders-list__th">Стоимость</th>
+            <th class="js-sorting orders-list__th">Статус</th>
+            <th class="orders-list__th"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="orders-list__cell orders-list__id-block">#816390</td>
+            <td class="orders-list__cell orders-list__date">10.09.2019</td>
+            <td class="orders-list__cell orders-list__price-block">22 500 р.</td>
+            <td class="orders-list__cell orders-list__status">Новый</td>
+            <td class="orders-list__cell orders-list__buttons">
+              <a class="orders-list__button" href="#">Подробнее</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="orders-list__cell orders-list__id-block">#816391</td>
+            <td class="orders-list__cell orders-list__date">11.09.2019</td>
+            <td class="orders-list__cell orders-list__price-block">25 500 р.</td>
+            <td class="orders-list__cell orders-list__status orders-list__status--type_1">Отправлен</td>
+            <td class="orders-list__cell orders-list__buttons">
+              <a class="orders-list__button" href="#">Подробнее</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="orders-list__cell orders-list__id-block">#816392</td>
+            <td class="orders-list__cell orders-list__date">12.09.2019</td>
+            <td class="orders-list__cell orders-list__price-block">30 500 р.</td>
+            <td class="orders-list__cell orders-list__status orders-list__status--type_2">Отказ по кредиту</td>
+            <td class="orders-list__cell orders-list__buttons">
+              <a class="orders-list__button" href="#">Подробнее</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="orders-list__cell orders-list__id-block">#816393</td>
+            <td class="orders-list__cell orders-list__date">13.09.2019</td>
+            <td class="orders-list__cell orders-list__price-block">45 500 р.</td>
+            <td class="orders-list__cell orders-list__status orders-list__status--type_3">Тестируется</td>
+            <td class="orders-list__cell orders-list__buttons">
+              <a class="orders-list__button" href="#">Подробнее</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <ul class="pager">
+        <li class="pager__item"><a class="pager__arrow" href="#"><svg class="pager__link-svg" aria-hidden="true"><use xlink:href="#back-link"/></svg> назад</a></li>
+        <li class="pager__item"><a class="pager__link" href="#">1</a></li>
+        <li class="pager__item"><a class="pager__link" href="#">2</a></li>
+        <li class="pager__item"><a class="pager__link is-active" href="#">3</a></li>
+        <li class="pager__item"><a class="pager__link" href="#">...</a></li>
+        <li class="pager__item"><a class="pager__link" href="#">10</a></li>
+        <li class="pager__item"><a class="pager__arrow" href="#">вперед <svg class="pager__link-svg" aria-hidden="true"><use xlink:href="#forward-link"/></svg></a></li>
+      </ul>
+    </div>
+    <div class="personal__sidebar custom-scroll">
+      //= template/personal/sidebar.html
+    </div>
+  </div>
+
+  //= template/personal/scripts.html
+</body>
+
+</html>

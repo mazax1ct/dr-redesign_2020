@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>DIGITAL RAZOR</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body class="inner-page auth-reg-page">
+  //= template/sprite.html
+  <div class="wrapper">
+    //= template/header.html
+
+    <div class="auth-reg">
+      <div class="container">
+        <div class="auth-reg__links auth-reg-links">
+          <a class="auth-reg-links__link is-active" href="auth.html">Авторизация</a>
+          <span class="auth-reg-links__separator"></span>
+          <a class="auth-reg-links__link" href="register.html">Регистрация</a>
+        </div>
+        <div class="auth-form form">
+          <form method="post" action="/auth/?login=yes" novalidate="novalidate">
+            <input name="AUTH_FORM" value="Y" type="hidden">
+            <input name="TYPE" value="AUTH" type="hidden">
+            <input name="backurl" value="/auth/" type="hidden">
+            <label class="form__label" for="log-email2">
+              <span class="form__label-text">Логин</span>
+              <input class="input error" name="USER_LOGIN" required="" value="" type="text">
+            </label>
+            <label class="form__label" for="log-password2">
+              <span class="form__label-text">Пароль</span>
+              <input class="input auth-form__input" name="USER_PASSWORD" required="" type="password">
+              <a class="auth-form__forget" href="/auth/?forgot_password=yes">Забыли пароль?</a>
+            </label>
+            <div class="auth-form__button-block">
+              <input class="form__button button button--h50" value="Войти в кабинет" type="submit">
+            </div>
+            <p class="auth-form__social-title">Войти с помощью соцсетей:</p>
+            <div class="auth-form__social-auth">
+              <a class="social-auth" href="#">
+                <span class="social-auth__icon">
+                  <svg class="social-auth__svg" aria-hidden="true"><use xlink:href="#ya"/></svg>
+                </span>
+                <span class="social-auth__text">Яндекс</span>
+              </a>
+              <a class="social-auth" href="#">
+                <span class="social-auth__icon">
+                  <svg class="social-auth__svg" aria-hidden="true"><use xlink:href="#vk"/></svg>
+                </span>
+                <span class="social-auth__text">Вконтакте</span>
+              </a>
+              <a class="social-auth" href="#">
+                <span class="social-auth__icon">
+                  <svg class="social-auth__svg" aria-hidden="true"><use xlink:href="#gplus"/></svg>
+                </span>
+                <span class="social-auth__text">Google</span>
+              </a>
+              <a class="social-auth" href="#">
+                <span class="social-auth__icon">
+                  <svg class="social-auth__svg" aria-hidden="true"><use xlink:href="#fb"/></svg>
+                </span>
+                <span class="social-auth__text">Facebook</span>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  //= template/footer.html
+
+  //= template/scripts.html
+</body>
+
+</html>

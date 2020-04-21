@@ -1,24 +1,19 @@
 .input,
 .textarea
-  background-color: rgba(#343434, 0.5)
-  border: 1px solid rgba(#343434, 0.5)
+  border: 1px solid #474747
   border-radius: 0
-  box-shadow: none
+  background-color: #292929
   color: #fff
-  display: block
-  font-size: 14px
-  font-family: 'Roboto', 'Arial', sans-serif
-  font-weight: 400
-  line-height: 18px
-  transition: border-color 0.3s, background-color 0.3s
-  -webkit-appearance: none
-  -moz-appearance: none
-  appearance: none
+  font-size: 16px
+  height: 50px
+  line-height: 19px
+  opacity: 1
+  padding: 15px 20px 16px
+  transition: border-color 0.3s
   width: 100%
 
   &:focus
-    border-color: #676767
-    background-color: #343434
+    border-color: #666666
 
   &.error
     border-color: $main_color
@@ -34,16 +29,13 @@ textarea
     outline: 0
 
 .input
-  height: 60px
-  padding: 20px 18px
+  height: 50px
+  padding: 15px 20px 16px
 
 .textarea
-  height: 95px
-  padding: 20px 18px
+  height: 120px
+  padding: 15px 20px 16px
   resize: none
-
-  @media(min-width: 768px)
-    height: 200px
 
 /*placeholder*/
 .input::-webkit-input-placeholder
@@ -72,38 +64,38 @@ textarea
 
 //error
 .input.error::-webkit-input-placeholder
-  color: #fff
+  color: rgba(#fff, 0.3)
 
 .input.error::-moz-placeholder
-  color: #fff
+  color: rgba(#fff, 0.3)
 
 .input.error:-ms-input-placeholder
-  color: #fff
+  color: rgba(#fff, 0.3)
 
 .textarea.error::-webkit-input-placeholder
-  color: #fff
+  color: rgba(#fff, 0.3)
 
 .textarea.error::-moz-placeholder
-  color: #fff
+  color: rgba(#fff, 0.3)
 
 .textarea.error:-ms-input-placeholder
-  color: #fff
+  color: rgba(#fff, 0.3)
 
 /*:focus placeholder*/
 .input:focus::-webkit-input-placeholder
-  color: #fff
+  color: rgba(#fff, 0.3)
 
 .input:focus::-moz-placeholder
-  color: #fff
+  color: rgba(#fff, 0.3)
 
 .input:focus:-ms-input-placeholder
-  color: #fff
+  color: rgba(#fff, 0.3)
 
 .textarea:focus::-webkit-input-placeholder
-  color: #fff
+  color: rgba(#fff, 0.3)
 
 .textarea:focus::-moz-placeholder
-  color: #fff
+  color: rgba(#fff, 0.3)
 
 .textarea:focus:-ms-input-placeholder
-  color: #fff
+  color: rgba(#fff, 0.3)
