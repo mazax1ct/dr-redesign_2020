@@ -1,0 +1,119 @@
+.affiliate
+  background-color: #262626
+  color: #808080
+  margin-bottom: 40px
+
+  @media(min-width: 768px)
+    display: flex
+    margin-bottom: 60px
+    position: relative
+
+  @media(min-width: 1200px)
+    font-size: 14px
+
+  &::after
+    @media(min-width: 768px)
+      background-color: #323232
+      content: ''
+      height: 110px
+      left: 50%
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 1px
+
+  &__block
+    padding: 15px
+    
+    @media(min-width: 768px)
+      display: flex
+      flex-direction: column
+      padding: 27px 40px
+      width: 50%
+
+  &__text
+    margin-bottom: 15px
+
+  &__code,
+  &__price
+    color: #fff
+    font-family: $secondary_font
+    font-size: 36px
+    line-height: 43px
+
+    @media(min-width: 768px)
+      margin-top: auto
+
+  &__code
+    align-items: center
+    display: flex
+
+    .copy-button
+      margin-left: 15px
+      margin-top: 5px
+
+.copy-button
+  background-image: url("data:image/svg+xml,%3Csvg width='21' height='24' viewBox='0 0 21 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5 24H16.4531C18.5209 24 20.2031 22.3178 20.2031 20.25V7.54688C20.2031 5.47906 18.5209 3.79688 16.4531 3.79688H7.5C5.43219 3.79688 3.75 5.47906 3.75 7.54688V20.25C3.75 22.3178 5.43219 24 7.5 24ZM16.4531 5.67188C17.4869 5.67188 18.3281 6.51306 18.3281 7.54688V20.25C18.3281 21.2838 17.4869 22.125 16.4531 22.125H7.5C6.46619 22.125 5.625 21.2838 5.625 20.25V7.54688C5.625 6.51306 6.46619 5.67188 7.5 5.67188H16.4531ZM0 17.9062V3.75C0 1.68219 1.68219 0 3.75 0H14.1562C14.6741 0 15.0938 0.419678 15.0938 0.9375C15.0938 1.45532 14.6741 1.875 14.1562 1.875H3.75C2.71619 1.875 1.875 2.71619 1.875 3.75V17.9062C1.875 18.4241 1.45532 18.8438 0.9375 18.8438C0.419678 18.8438 0 18.4241 0 17.9062Z' fill='%23EA1C24'/%3E%3C/svg%3E")
+  background-position: 0 50%
+  background-repeat: no-repeat
+  color: $main_color
+  display: inline-block
+  font-family: $secondary_font
+  font-size: 11px
+  line-height: 24px
+  padding-left: 25px
+  text-transform: uppercase
+  text-decoration: none
+
+  &:hover
+    color: #fff
+
+.codes-list
+  border-collapse: collapse
+  border: none
+  color: #fff
+  font-size: 10px
+  margin-bottom: 40px
+  text-align: left
+  width: 100%
+
+  @media(min-width: 375px)
+    font-size: 12px
+
+  @media(min-width: 768px)
+    margin-bottom: 60px
+
+  @media(min-width: 1200px)
+    font-size: 15px
+
+  &__th
+    border-bottom: 2px solid $main_color
+    font-family: $secondary_font
+    font-size: 11px
+    padding: 5px
+    text-align: left
+    text-transform: uppercase
+    white-space: nowrap
+
+    @media(min-width: 992px)
+      padding: 10px 15px
+
+  &__cell
+    border-bottom: 1px solid #333
+    padding: 5px
+    text-align: left
+
+    @media(min-width: 992px)
+      padding: 10px 15px
+
+  tbody
+    tr
+      &:nth-child(even)
+        .tests-list__cell
+          background-color: #212121
+
+  &__qnt,
+  &__summ,
+  &__login
+    @media(max-width: 767px)
+      display: none

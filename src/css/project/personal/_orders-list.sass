@@ -116,12 +116,11 @@
 .no-orders
   color: #808080
   font-size: 14px
-  margin-top: auto
-  margin-bottom: auto !important
+  margin-top: 50px
   text-align: center
 
   @media(min-width: 992px)
-    transform: translateY(-60px)
+    margin-top: 140px
 
   &__title
     color: #666
@@ -138,3 +137,158 @@
   a
     color: $main_color
     text-decoration: none
+
+    &:hover
+      text-decoration: underline
+
+.order
+  @media(min-width: 1200px)
+    padding-right: 20px
+
+  &__date
+    border-bottom: 1px solid #323232
+    color: rgba(#fff, 0.4)
+    margin-bottom: 20px
+    padding-bottom: 10px
+
+    @media(min-width: 1200px)
+      margin-bottom: 35px
+      padding-bottom: 25px
+
+  &__status-block
+    margin-bottom: 40px
+
+    @media(min-width: 600px)
+      align-items: center
+      display: flex
+      justify-content: space-between
+
+  &__statuses
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 5px
+
+    @media(min-width: 600px)
+      margin-bottom: 0
+
+  &__buttons
+    .button
+      min-width: 130px
+      margin-right: 10px
+      margin-bottom: 5px
+
+      &:last-child
+        margin-right: 0
+
+  &__status-title
+    color: rgba(#fff, 0.4)
+    margin-bottom: 10px
+
+  &__status
+    align-items: center
+    background-color: rgba(#fff, 0.1)
+    border: 1px solid #666
+    color: #fff
+    display: inline-flex
+    font-family: $secondary_font
+    font-size: 13px
+    justify-content: center
+    line-height: 19px
+    min-height: 36px
+    margin-right: 5px
+    margin-bottom: 5px
+    margin-top: 0
+    padding: 10px
+    text-transform: uppercase
+    vertical-align: middle
+
+    @media(min-width: 768px)
+      padding-left: 30px
+      padding-right: 30px
+
+    &--type_1
+      border-color: #397FBE
+      background-color: rgba(#397FBE, 0.1)
+      color: #397FBE
+
+  &__block
+    background-color: #212121
+    color: #808080
+    margin-bottom: 10px
+    padding: 15px 20px 10px
+    position: relative
+
+    @media(min-width: 768px)
+      padding: 25px 30px 20px
+
+    p
+      margin-bottom: 10px
+
+      &:last-child
+        margin-bottom: 0
+
+      span
+        color: #fff
+        padding-left: 10px
+        padding-right: 10px
+
+  &__block-val
+    @media(min-width: 1200px)
+      font-size: 14px
+
+  &__block-edit
+    min-width: 130px
+
+    @media(min-width: 768px)
+      left: auto
+      position: absolute
+      right: 30px
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 1
+
+  &__item
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+
+  &__item-title
+    font-family: $secondary_font
+    font-size: 24px
+    padding-left: 0 !important
+
+  &__item-more
+    align-items: center
+    border: 1px solid #666
+    background-color: transparent
+    color: #666
+    display: inline-flex
+    font-family: $secondary_font
+    font-size: 11px
+    justify-content: center
+    line-height: 19px
+    min-height: 28px
+    padding: 6px 12px
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s
+    text-transform: uppercase
+    text-decoration: none
+    vertical-align: middle
+
+    &:hover
+      background-color: $main_color
+      border-color: $main_color
+      color: #fff
+
+  &__price-block
+    border-top: 1px solid #323232
+    margin-top: 35px
+    padding-top: 30px
+
+    @media(min-width: 600px)
+      display: flex
+      justify-content: space-between
+
+
+  &__price
+    font-family: $secondary_font
+    font-size: 31px

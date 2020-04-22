@@ -1,0 +1,46 @@
+.tabs-menu
+  font-family: $secondary_font
+  font-size: 13px
+
+  @media(min-width: 768px)
+    margin-bottom: 30px
+
+  &__list
+    display: flex
+
+  &__item
+    display: flex
+    margin-right: 30px
+
+  &__link
+    align-items: center
+    border-top: 2px solid transparent
+    color: #666
+    display: flex
+    padding-top: 15px
+    padding-bottom: 15px
+    transition: border-color 0.3s, color 0.3s
+    text-decoration: none
+    text-transform: uppercase
+    white-space: nowrap
+
+    &.is-active
+      border-top-color: $main_color
+      color: #fff
+      text-decoration: none
+
+    &:hover
+      color: #fff
+      text-decoration: none
+
+  .tab
+    display: none
+
+    &.is-active
+      display: block
+
+.tab
+  display: none
+
+  &.is-active
+    display: block
