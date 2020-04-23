@@ -1,0 +1,325 @@
+.cart-table
+  color: #fff
+
+  &__row
+    &--item
+      background-color: #212121
+      display: flex
+      flex-wrap: wrap
+      overflow: hidden
+      transition: background-color 0.3s
+
+      @media(min-width: 992px)
+        flex-wrap: nowrap
+
+      &.is-open
+        background-color: #262626
+        position: relative
+
+        &::after
+          @media(min-width: 992px)
+            background-color: #323232
+            bottom: 0
+            content: ''
+            height: 1px
+            left: 60px
+            position: absolute
+            top: auto
+            width: 100%
+
+        .cart-table__title
+          background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20 10.5C20 15.7467 15.7467 20 10.5 20C5.25329 20 1 15.7467 1 10.5C1 5.25329 5.25329 1 10.5 1C15.7467 1 20 5.25329 20 10.5ZM21 10.5C21 16.299 16.299 21 10.5 21C4.70101 21 0 16.299 0 10.5C0 4.70101 4.70101 0 10.5 0C16.299 0 21 4.70101 21 10.5ZM6 11H15V10H6V11Z' fill='%23EA1C24'/%3E%3C/svg%3E%0A");
+
+    &--description
+      background-color: #262626
+
+  &__separator
+    height: 10px
+
+  &__cell
+    padding: 5px 10px
+
+  &__title-block
+    cursor: pointer
+    padding: 15px
+    width: 100%
+
+    @media(min-width: 992px)
+      flex-grow: 1
+      width: auto
+
+    @media(min-width: 992px)
+      padding-top: 25px
+      padding-bottom: 25px
+      padding-left: 20px
+      padding-right: 20px
+      position: relative
+
+  &__title
+    display: block
+    font-family: $secondary_font
+    font-size: 24px
+    background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.5 20C15.7467 20 20 15.7467 20 10.5C20 5.25329 15.7467 1 10.5 1C5.25329 1 1 5.25329 1 10.5C1 15.7467 5.25329 20 10.5 20ZM10.5 21C16.299 21 21 16.299 21 10.5C21 4.70101 16.299 0 10.5 0C4.70101 0 0 4.70101 0 10.5C0 16.299 4.70101 21 10.5 21ZM10 11H6V10H10V6H11V10H15V11H11V15H10V11Z' fill='white'/%3E%3C/svg%3E%0A")
+    background-position: 0 50%
+    background-repeat: no-repeat
+    padding-left: 38px
+
+  &__qnt
+    align-items: center
+    display: flex
+    justify-content: center
+    text-align: center
+    vertical-align: middle
+    white-space: nowrap
+    width: 33.33%
+
+    @media(min-width: 992px)
+      min-width: 110px
+      width: 110px
+
+    .qnt
+      margin-left: auto
+      margin-right: auto
+
+  &__price
+    align-items: center
+    display: flex
+    font-family: $secondary_font
+    font-size: 24px
+    justify-content: center
+    text-align: center
+    vertical-align: middle
+    white-space: nowrap
+    width: 33.33%
+
+    @media(min-width: 992px)
+      padding-left: 30px
+      padding-right: 30px
+      min-width: 28%
+      width: 28%
+
+  &__delete-block
+    align-items: center
+    display: flex
+    justify-content: center
+    text-align: center
+    vertical-align: middle
+    width: 33.33%
+
+    @media(min-width: 992px)
+      width: 50px
+
+  &__delete
+    align-items: center
+    background: none
+    border: none
+    cursor: pointer
+    display: flex
+    height: 30px
+    justify-content: center
+    padding: 0
+    vertical-align: middle
+    width: 30px
+
+    &:hover
+      .cart-table__delete-icon
+        stroke: $main-color
+
+  &__delete-icon
+    fill: none
+    height: 18px
+    stroke: #808080
+    transition: fill 0.3s
+    width: 18px
+
+  &__description-block
+    @media(min-width: 992px)
+      display: table-cell
+
+  &__description
+    display: none
+    padding: 10px
+
+    @media(min-width: 992px)
+      padding-left: 60px
+      padding-top: 35px
+      padding-right: 0
+
+  &__info
+    max-width: 595px
+
+  &__result
+    font-family: $secondary_font
+    font-size: 31px
+    line-height: 37px
+    margin-bottom: 30px
+    margin-top: 20px
+
+    @media(min-width: 992px)
+      text-align: right
+
+  &__button-block
+    @media(min-width: 992px)
+      text-align: right
+
+.person-type
+  display: flex
+  flex-wrap: wrap
+
+  .radio-label
+    margin-right: 45px
+
+.delivery
+  background-color: #212121
+  margin-bottom: 10px
+  position: relative
+  transition: background-color 0.3s
+
+  &.is-open
+    background-color: #333
+
+    .delivery__title
+      cursor: default
+
+    .delivery__radio
+      background-color: $main_color
+      border-color: $main_color
+
+      &::after
+        background-color: #fff
+
+  &__title
+    cursor: pointer
+    font-weight: 600
+    line-height: 20px
+    margin: 0
+    padding: 25px 30px 25px 60px
+    position: relative
+
+  &__radio
+    background-color: #292929
+    border-radius: 50%
+    border: 1px solid #474747
+    height: 20px
+    left: 30px
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    transition: background-color 0.3s, border-color 0.3s
+    width: 20px
+
+    &::after
+      background-color: transparent
+      border-radius: 50%
+      content: ''
+      height: 8px
+      left: 50%
+      position: absolute
+      top: 50%
+      transform: translate(-50%, -50%)
+      transition: background-color 0.3s
+      width: 8px
+
+  &__info
+    display: none
+    padding: 0 30px 30px
+
+  &__description
+    color: #808080
+    margin-bottom: 40px
+
+    @media(min-width: 1200px)
+      font-size: 14px
+
+.no-city
+  margin-bottom: 30px
+
+  @media(min-width: 1200px)
+    font-size: 14px
+
+  a
+    border-bottom: 1px dotted #808080
+    color: #fff
+    text-decoration: none
+
+.no-city-hidden
+  display: none
+
+.next-block
+  margin-top: 20px
+  margin-bottom: 40px
+
+  @media(min-width: 768px)
+    text-align: right
+
+.payment
+  cursor: pointer
+  display: block
+  position: relative
+  margin-bottom: 10px
+
+  &:last-child
+    margin-bottom: 0
+
+  &__input
+    position: absolute
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    width: 1px
+
+    &:checked + .payment__inner
+      background-color: #333
+
+    &:checked + .payment__inner .payment__radio
+      background-color: $main_color
+      border-color: $main_color
+
+    &:checked + .payment__inner .payment__radio::after
+      background-color: #fff
+
+    &:checked + .payment__inner .payment__info
+      color: #fff
+
+  &__inner
+    background-color: #212121
+    cursor: pointer
+    display: block
+    padding: 25px 30px
+    transition: background-color 0.3s
+
+  &__title
+    display: flex
+    font-weight: 600
+    line-height: 20px
+    margin-bottom: 10px
+
+  &__radio
+    background-color: #292929
+    border-radius: 50%
+    border: 1px solid #474747
+    height: 20px
+    margin-right: 10px
+    position: relative
+    transition: background-color 0.3s, border-color 0.3s
+    width: 20px
+
+    &::after
+      background-color: transparent
+      border-radius: 50%
+      content: ''
+      height: 8px
+      left: 50%
+      position: absolute
+      top: 50%
+      transform: translate(-50%, -50%)
+      transition: background-color 0.3s
+      width: 8px
+
+  &__info
+    color: #808080
+    display: block
+    transition: color 0.3s
+
+    @media(min-width: 1200px)
+      font-size: 14px

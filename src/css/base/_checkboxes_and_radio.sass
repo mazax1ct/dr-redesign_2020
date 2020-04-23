@@ -1,30 +1,48 @@
 .radio-label
   cursor: pointer
   display: block
-  font-weight: 500
-  margin-bottom: 5px
+  font-weight: 600
+  line-height: 20px
+  margin-bottom: 15px
   position: relative
-  padding-left: 25px
-
-  &:last-child
-    margin-bottom: 0
+  padding-left: 30px
 
   &__input
-    display: none
+    position: absolute
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    width: 1px
 
-    &:checked + .radio-label__icon
-      background-color: #ff0303
+    &:checked + .radio-label__radio
+      background-color: $main_color
+      border-color: $main_color
 
-  &__icon
-    border: 3px solid #fff
-    background-color: #262626
+    &:checked + .radio-label__radio::after
+      background-color: #fff
+
+  &__radio
+    background-color: #292929
     border-radius: 50%
-    cursor: pointer
-    height: 15px
+    border: 1px solid #474747
+    height: 20px
     left: 0
     position: absolute
-    top: 1px
-    width: 15px
+    top: 0
+    transition: background-color 0.3s, border-color 0.3s
+    width: 20px
+
+    &::after
+      background-color: transparent
+      border-radius: 50%
+      content: ''
+      height: 8px
+      left: 50%
+      position: absolute
+      top: 50%
+      transform: translate(-50%, -50%)
+      transition: background-color 0.3s
+      width: 8px
 
 .checkbox-label
   cursor: pointer

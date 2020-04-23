@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>DIGITAL RAZOR</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/personal/style.html
+</head>
+
+<body class="personal">
+  //= template/personal/sprite.html
+
+  //= template/personal/cart_header.html
+
+  <div class="personal__inner">
+    <div class="personal__content custom-scroll">
+      <h1 class="personal__title"><span>2.</span> Контактные данные</h1>
+      <div class="person-type">
+        <label class="radio-label" for="PERSON_TYPE_1" onclick="submitForm()">
+          <input class="radio-label__input" id="PERSON_TYPE_1" name="PERSON_TYPE" value="1" checked="checked" onclick="submitForm()" type="radio">
+          <span class="radio-label__radio"></span>
+          Физическое лицо
+        </label>
+        <label class="radio-label" for="PERSON_TYPE_2" onclick="submitForm()">
+          <input class="radio-label__input" id="PERSON_TYPE_2" name="PERSON_TYPE" value="2" onclick="submitForm()" type="radio">
+          <span class="radio-label__radio"></span>
+          Юридическое лицо
+        </label>
+      </div>
+      <hr class="personal__separator">
+      <div class="profile">
+        <div class="row">
+          <div class="col-md-4">
+            <label class="form__label">
+              <span class="form__label-text">Имя</span>
+              <input class="input" type="text" name="name" value="" placeholder="Иван">
+            </label>
+          </div>
+          <div class="col-md-4">
+            <label class="form__label">
+              <span class="form__label-text">Фамилия</span>
+              <input class="input" type="text" name="last_name" value="" placeholder="Иванов">
+            </label>
+          </div>
+          <div class="col-md-4">
+            <label class="form__label">
+              <span class="form__label-text">Отчество</span>
+              <input class="input" type="text" name="second_name" value="" placeholder="Иванович">
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <label class="form__label">
+              <span class="form__label-text">Телефон</span>
+              <input class="js-phone-mask input" type="text" name="phone" value="" placeholder="+7(___)___-__-__">
+            </label>
+          </div>
+          <div class="col-md-4">
+            <label class="form__label">
+              <span class="form__label-text">E-mail:</span>
+              <input class="js-email-mask input" type="text" name="uemail" value="" placeholder="example@mail.ru">
+            </label>
+          </div>
+          <div class="col-md-4">
+            <span class="form__label-text">&nbsp;</span>
+            <a class="button button--h50 button--wide disabled" href="#">СЛЕДУЮЩИЙ ШАГ</a>
+          </div>
+        </div>
+        <p class="back-link-block">
+          <a class="back-link" href="personal_2.html">
+            <svg class="back-link__svg" aria-hidden="true">
+              <use xlink:href="#back-link" /></svg>
+            Вернуться назад
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="personal__sidebar custom-scroll">
+      //= template/personal/cart_sidebar.html
+    </div>
+  </div>
+
+  //= template/personal/scripts.html
+</body>
+
+</html>

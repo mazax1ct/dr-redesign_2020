@@ -24,7 +24,7 @@
 
   &__block
     padding: 15px
-    
+
     @media(min-width: 768px)
       display: flex
       flex-direction: column
@@ -117,3 +117,62 @@
   &__login
     @media(max-width: 767px)
       display: none
+
+.prize-type
+  cursor: pointer
+  display: block
+  font-weight: 600
+  margin-bottom: 10px
+  position: relative
+
+  &:last-child
+    margin-bottom: 0
+
+  &__input
+    position: absolute
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+    width: 1px
+
+    &:checked + .prize-type__inner
+      background-color: #333
+
+    &:checked + .prize-type__inner .prize-type__radio
+      background-color: $main_color
+      border-color: $main_color
+
+    &:checked + .prize-type__inner .prize-type__radio::after
+      background-color: #fff
+
+  &__inner
+    background-color: #212121
+    cursor: pointer
+    display: flex
+    font-weight: 600
+    margin-bottom: 10px
+    position: relative
+    padding: 25px 30px
+    transition: background-color 0.3s
+
+  &__radio
+    background-color: #292929
+    border-radius: 50%
+    border: 1px solid #474747
+    height: 20px
+    margin-right: 10px
+    position: relative
+    transition: background-color 0.3s, border-color 0.3s
+    width: 20px
+
+    &::after
+      background-color: transparent
+      border-radius: 50%
+      content: ''
+      height: 8px
+      left: 50%
+      position: absolute
+      top: 50%
+      transform: translate(-50%, -50%)
+      transition: background-color 0.3s
+      width: 8px

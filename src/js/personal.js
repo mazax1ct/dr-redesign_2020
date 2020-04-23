@@ -68,24 +68,26 @@ $(document).ready(function () {
  }
 });
 
-//кастомный загрузчик файлов
-var inputs = document.querySelectorAll( '.js-upload-file' );
-Array.prototype.forEach.call( inputs, function( input ) {
-	var label	= input.nextElementSibling,
-		  labelVal = label.innerHTML;
+//тогл описания в корзине
+$(document).on('click', '.js-cart-description-opener', function () {
+  $(this).parent().toggleClass('is-open');
+  $(".cart-table__description[data-target=" + $(this).attr("data-link") + "]").slideToggle(300);
+  return false;
+});
 
-	input.addEventListener( 'change', function( e ) {
-    var fileName = '';
-		if( this.files && this.files.length > 1 ) {
-			fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
-		} else {
-			fileName = e.target.value.split( '\\' ).pop();
-    }
+//открытие/закрытие доставки
+$(document).on('click', '.js-delivery', function () {
+  if(!$(this).parent().hasClass('is-open')) {
+    $('.delivery__info').slideUp();
+    $('.delivery').removeClass('is-open');
+    $(this).parent().addClass('is-open');
+    $(this).next('.delivery__info').slideToggle();
+  }
+  return false;
+});
 
-		if( fileName ) {
-			label.innerHTML = fileName;
-		} else {
-			label.innerHTML = labelVal;
-    }
-	});
+//мокго города нет
+$(document).on('click', '.js-no-city', function () {
+  $('.no-city-hidden').slideToggle();
+  return false;
 });

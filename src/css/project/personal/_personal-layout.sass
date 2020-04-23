@@ -259,6 +259,10 @@
       &::after
         background-color: lighten($main_color, 10%)
 
+      .personal-menu__link-num,
+      .main-menu__link-num
+        color: lighten($main_color, 15%)
+
     &::before
       background-color: transparent
       content: ''
@@ -284,6 +288,10 @@
   &__link-text
     position: relative
     z-index: 2
+
+  &__link-num
+    color: #666
+    transition: color 0.3s
 
 .main-menu
   display: none
