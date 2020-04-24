@@ -37,75 +37,54 @@
 </div>
 
 <div id="popup_2" class="popup">
-  <button class="js-popup-close popup__close" type="button" title="Закрыть"><svg class="popup__close-icon" aria-hidden="true">
-      <use xlink:href="#close" /></svg></button>
-  <p class="popup__title">СОХРАНЕНИЕ КОНФИГУРАЦИИ:</p>
-  <p class="popup__text">Сохраните Вашу конфигурацию, что бы не потерять информацию или вернуться к ней позднее.</p>
-  <p class="popup__text">Рекомендуем отправить конфигурацию на электронную почту. Если Вы зарегистрированы на сайте, она будет доступна в <a href="#">личном кабинете</a>.</p>
-  <div class="popup__options-buttons">
-    <a class="popup__option-button" href="#">
-      <span class="popup__option-button-icon"><svg aria-hidden="true">
-          <use xlink:href="#pdf" /></svg></span>
-      <span class="popup__option-button-text">Сохранить конфигурацию<br> в PDF файл</span>
-    </a>
-    <a class="popup__option-button" href="#popup_3" data-fancybox="popup">
-      <span class="popup__option-button-icon"><svg aria-hidden="true">
-          <use xlink:href="#envelope" /></svg></span>
-      <span class="popup__option-button-text">Отправить конфигурацию<br> на почту</span>
-    </a>
-    <a class="popup__option-button" href="#popup_5" data-fancybox="popup">
-      <span class="popup__option-button-icon"><svg aria-hidden="true">
-          <use xlink:href="#link" /></svg></span>
-      <span class="popup__option-button-text">Создать постоянную<br> ссылку</span>
-    </a>
-  </div>
-</div>
-
-<div id="popup_3" class="popup">
-  <button class="js-popup-close popup__close" type="button" title="Закрыть"><svg class="popup__close-icon" aria-hidden="true">
-      <use xlink:href="#close" /></svg></button>
-  <p class="popup__title">ОТПРАВИТЬ КОНФИГУРАЦИЮ НА ПОЧТУ:</p>
-  <form class="popup__form" action="">
-    <div class="popup__form-row">
-      <div class="popup__form-row-block">
-        <label class="popup__form-label" for="email">
-          <input class="input" id="email" type="text" placeholder="E-mail">
-        </label>
-      </div>
-    </div>
-    <label class="popup__form-label" for="comment">
-      <textarea class="popup__form-textarea textarea" id="comment" placeholder="Ваш вопрос или комментарий"></textarea>
-    </label>
-    <div class="popup__form-buttons">
-      <button class="popup__form-button button button--red" type="submit">Отправить на почту</button>
-    </div>
-  </form>
-</div>
-
-<div id="popup_4" class="popup">
-  <button class="js-popup-close popup__close" type="button" title="Закрыть"><svg class="popup__close-icon" aria-hidden="true">
-      <use xlink:href="#close" /></svg></button>
+  <button class="js-popup-close popup__close" type="button" title="Закрыть">
+    <svg class="popup__close-icon" aria-hidden="true">
+      <use xlink:href="#popup-close" />
+    </svg>
+  </button>
   <p class="popup__title">Обратите внимание вы не завершили<br> оформление заказа</p>
   <p class="popup__text">По какой-то причине Вы не завершили оформление заказа, не беспокойтесь мы сохраним вашу конфигурацию и список товаров в вашем личном кабинете, вы сможете продолжить покупки в более удобное время.</p>
   <div class="popup__options-buttons">
     <a class="popup__option-button" href="#">
-      <svg class="popup__option-button-icon" aria-hidden="true">
-        <use xlink:href="#comment-dollar" /></svg>
+      <span class="popup__option-button-icon">
+        <svg aria-hidden="true">
+          <use xlink:href="#comment-dollar" />
+        </svg>
+      </span>
       <span class="popup__option-button-text">У меня есть вопрос<br> по оплате</span>
     </a>
     <a class="popup__option-button" href="#">
-      <svg class="popup__option-button-icon" aria-hidden="true">
-        <use xlink:href="#shipping-fast" /></svg>
+      <span class="popup__option-button-icon">
+        <svg aria-hidden="true">
+          <use xlink:href="#shipping-fast" />
+        </svg>
+      </span>
       <span class="popup__option-button-text">У меня есть вопрос<br> по доставке</span>
     </a>
     <a class="popup__option-button" href="#">
-      <svg class="popup__option-button-icon" aria-hidden="true">
-        <use xlink:href="#comments-alt" /></svg>
+      <span class="popup__option-button-icon">
+        <svg aria-hidden="true">
+          <use xlink:href="#comments-alt" />
+        </svg>
+      </span>
       <span class="popup__option-button-text">Мне нужна<br> консультация</span>
     </a>
   </div>
   <div class="popup__buttons">
-    <a class="popup__button button" href="#">Не интересует</a>
-    <a class="popup__button button button--red" href="#">Продолжу позже</a>
+    <a class="popup__button button button--h50 button--transparent" href="#">Не интересует</a>
+    <a class="popup__button button button--h50" href="#">Продолжу позже</a>
+  </div>
+</div>
+
+<div id="popup_3" class="popup popup--small">
+  <button class="js-popup-close popup__close" type="button" title="Закрыть">
+    <svg class="popup__close-icon" aria-hidden="true">
+      <use xlink:href="#popup-close" />
+    </svg>
+  </button>
+  <div class="thanks">
+    <img src="images/icons/popups/thanks.svg" alt="">
+    <p class="thanks__title">СПАСИБО!</p>
+    <p class="thanks__text">Наши специалисты свяжутся с вами!</p>
   </div>
 </div>

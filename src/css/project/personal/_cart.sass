@@ -158,6 +158,9 @@
     @media(min-width: 992px)
       text-align: right
 
+    span
+      color: #808080
+
   &__button-block
     @media(min-width: 992px)
       text-align: right
@@ -323,3 +326,76 @@
 
     @media(min-width: 1200px)
       font-size: 14px
+
+.checkout
+  .cart-table__result
+    margin-top: 25px
+    margin-bottom: 20px
+
+.checkout-result
+  border: none
+  border-collapse: collapse
+  max-width: 630px
+  width: 100%
+
+  @media(min-width: 1400px)
+    font-size: 18px
+    margin-bottom: 60px
+
+  tr
+    &:nth-child(even)
+      td,
+      th
+        background-color: rgba(#666, 0.1)
+
+  td,
+  th
+    border: none
+    padding: 10px 20px
+
+  th
+    color: #808080
+    font-weight: 600
+    text-align: left
+
+.order-finish
+  max-width: 910px
+  margin-left: auto
+  margin-right: auto
+  padding-top: 50px
+  padding-left: 20px
+  padding-right: 20px
+
+  @media(min-width: 992px)
+    background: url('../images/icons/popups/thanks.svg') no-repeat 0 10px transparent
+    margin: auto
+    padding-top: 0
+    padding-left: 140px
+    padding-right: 140px
+
+  &__title
+    font-family: $secondary_font
+    font-size: 42px
+    line-height: 51px
+    margin-bottom: 20px
+
+  &__info
+    font-weight: 600
+    margin-bottom: 10px
+
+    @media(min-width: 1400px)
+      font-size: 18px
+
+    span
+      color: #808080
+
+  &__note
+    color: #808080
+    margin-top: 20px
+    margin-bottom: 30px
+
+    @media(min-width: 1400px)
+      font-size: 14px
+
+    a
+      color: $main_color
