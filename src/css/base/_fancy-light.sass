@@ -1,0 +1,47 @@
+.personal-section,
+.prize-type__input:not(:checked) + .prize-type__inner,
+.cart-table__row--item:not(.is-open),
+.delivery:not(.is-open),
+.payment__input:not(:checked) + .payment__inner,
+  &.js-fancy-light
+    overflow: hidden
+    position: relative
+    z-index: 2
+
+    &::before,
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+      z-index: -1
+      transition: opacity 0.1s linear
+
+    &::before
+      width: 160px
+      height: 120px
+      background: radial-gradient(circle at center, #FFF 0%, transparent 60%)
+      opacity: 0
+      mix-blend-mode: screen
+      transform: translate(calc( var(--px) * 1px ), calc( var(--py) * 1px )) translate(-50%, -50%)
+
+    &::after
+      background: inherit
+      margin: 1px
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      opacity: 0
+      transition-delay: 0.05s
+
+    &:hover
+      background-color: #333
+
+      &::before
+        opacity: 0.6
+
+      &::after
+        opacity: 0.85
+        transition-delay: 0s
