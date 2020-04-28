@@ -18,38 +18,41 @@
 <body class="personal">
   //= template/personal/sprite.html
 
-  //= template/personal/header.html
+  <div class="personal__wrapper">
+    //= template/personal/header.html
 
-  <div class="personal__inner">
-    <div class="personal__content custom-scroll">
-      <h1 class="personal__title"><span>Конфигурация</span> #816392 Design</h1>
-      <div class="config-detail">
-        <div class="js-content-with-sticky config-detail__left">
-          <p class="ri-info ri-info--big"><span>Покраска шасси:</span> Jet - Black</p>
-          <p class="ri-info ri-info--big"><span>Покраска фронтальной панели:</span> Digital Art 5</p>
-          <p class="ri-info ri-info--big"><span>Покраска вехрней панели:</span> Deep Yellow</p>
-          <p class="ri-info ri-info--big"><span>Подсветка:</span> 8GB (2x4Gb) Красная</p>
-          <p class="ri-info ri-info--big"><span>Нанесения изображения:</span> Digital Art 4</p>
-          <br><br>
-          <button class="button button--h50 button--transparent" type="button" data-src="#popup_1" data-fancybox="popup_1">ЗАДАТЬ ВОПРОС</button>
-        </div>
-        <div class="config-detail__right">
-          <div class="js-sticky-block">
-            <p class="config-detail__price">Итого: 18 200 Р.</p>
-            <p class="config-detail__date">(на 08.04.2020)</p>
-            <a class="button button--h50" href="#">Оформить заказ</a>
+    <div class="personal__inner">
+      <div class="personal__content custom-scroll">
+        <h1 class="personal__title"><span>Конфигурация</span> #816392 Design</h1>
+        <div class="config-detail">
+          <div class="js-content-with-sticky config-detail__left">
+            <p class="ri-info ri-info--big"><span>Покраска шасси:</span> Jet - Black</p>
+            <p class="ri-info ri-info--big"><span>Покраска фронтальной панели:</span> Digital Art 5</p>
+            <p class="ri-info ri-info--big"><span>Покраска вехрней панели:</span> Deep Yellow</p>
+            <p class="ri-info ri-info--big"><span>Подсветка:</span> 8GB (2x4Gb) Красная</p>
+            <p class="ri-info ri-info--big"><span>Нанесения изображения:</span> Digital Art 4</p>
+            <br><br>
+            <button class="button button--h50 button--transparent" type="button" data-src="#popup_1" data-fancybox="popup_1">ЗАДАТЬ ВОПРОС</button>
+          </div>
+          <div class="config-detail__right">
+            <div class="js-sticky-block">
+              <p class="config-detail__price">Итого: 18 200 Р.</p>
+              <p class="config-detail__date">(на 08.04.2020)</p>
+              <a class="button button--h50" href="#">Оформить заказ</a>
+            </div>
           </div>
         </div>
+        <p class="back-link-block">
+          <a class="back-link" href="personal_2.html">
+            <svg class="back-link__svg" aria-hidden="true">
+              <use xlink:href="#back-link" /></svg>
+            Вернуться назад
+          </a>
+        </p>
       </div>
-      <p class="back-link-block">
-        <a class="back-link" href="personal_2.html">
-          <svg class="back-link__svg" aria-hidden="true"><use xlink:href="#back-link"/></svg>
-          Вернуться назад
-        </a>
-      </p>
-    </div>
-    <div class="personal__sidebar custom-scroll">
-      //= template/personal/sidebar.html
+      <div class="personal__sidebar custom-scroll">
+        //= template/personal/sidebar.html
+      </div>
     </div>
   </div>
 

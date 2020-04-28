@@ -85,312 +85,314 @@
     </symbol>
   </svg>
 
-  <div class="personal__header">
-    <div class="personal__header-inner">
-      <p class="personal__header-title">Личный кабинет</p>
-      <a class="personal__header-link" href="main.html">ЗАКРЫТЬ</a>
-      <button class="js-config-menu menu-toggler menu-toggler--config" type="button" title="Меню"><span></span></button>
-      <button class="js-main-menu menu-toggler menu-toggler--main-menu" type="button" title="Меню"><span></span></button>
+  <div class="personal__wrapper">
+    <div class="personal__header">
+      <div class="personal__header-inner">
+        <p class="personal__header-title">Личный кабинет</p>
+        <a class="personal__header-link" href="main.html">ЗАКРЫТЬ</a>
+        <button class="js-config-menu menu-toggler menu-toggler--config" type="button" title="Меню"><span></span></button>
+        <button class="js-main-menu menu-toggler menu-toggler--main-menu" type="button" title="Меню"><span></span></button>
+      </div>
     </div>
-  </div>
 
-  <div class="personal__inner">
-    <div class="personal__content custom-scroll">
-      <h1 class="personal__title">Профиль</h1>
-      <form class="profile form" action="">
-        <h2>Личные данные</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <label class="form__label">
-              <span class="form__label-text">Имя:</span>
-              <input class="input" type="text" name="uname" value="" placeholder="Иван">
-            </label>
-          </div>
-          <div class="col-md-4">
-            <label class="form__label">
-              <span class="form__label-text">Фамилия:</span>
-              <input class="input" type="text" name="ulastname" value="" placeholder="Иванов">
-            </label>
-          </div>
-          <div class="col-md-4">
-            <label class="form__label">
-              <span class="form__label-text">Отчество:</span>
-              <input class="input" type="text" name="usecondname" value="" placeholder="Иванович">
-            </label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <label class="form__label">
-              <span class="form__label-text">Телефон:</span>
-              <input class="js-phone-mask input" type="text" name="uphone" value="" placeholder="+7(___)___-__-__">
-            </label>
-          </div>
-          <div class="col-md-4">
-            <label class="form__label">
-              <span class="form__label-text">E-mail:</span>
-              <input class="js-email-mask input" type="text" name="uemail" value="" placeholder="example@mail.ru">
-            </label>
-          </div>
-          <div class="col-md-4">
-            <span class="form__label-text">&nbsp;</span>
-            <div class="two-buttons row">
-              <div class="col-6"><button class="button button--h50" type="button">СОХРАНИТЬ</button></div>
-              <div class="col-6"><button class="button button--h50 button--transparent" type="reset">СБРОСИТЬ</button></div>
+    <div class="personal__inner">
+      <div class="personal__content custom-scroll">
+        <h1 class="personal__title">Профиль</h1>
+        <form class="profile form" action="">
+          <h2>Личные данные</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <label class="form__label">
+                <span class="form__label-text">Имя:</span>
+                <input class="input" type="text" name="uname" value="" placeholder="Иван">
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="form__label">
+                <span class="form__label-text">Фамилия:</span>
+                <input class="input" type="text" name="ulastname" value="" placeholder="Иванов">
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="form__label">
+                <span class="form__label-text">Отчество:</span>
+                <input class="input" type="text" name="usecondname" value="" placeholder="Иванович">
+              </label>
             </div>
           </div>
-        </div>
-        <h2>Пароль</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <label class="form__label">
-              <span class="form__label-text">Новый пароль:</span>
-              <input class="input" type="password" name="new_pass" value="" placeholder="********">
-            </label>
-          </div>
-          <div class="col-md-4">
-            <label class="form__label">
-              <span class="form__label-text">Подтвердите пароль:</span>
-              <input class="input" type="password" name="uemail" value="" placeholder="********">
-            </label>
-          </div>
-          <div class="col-md-4">
-            <span class="form__label-text">&nbsp;</span>
-            <div class="two-buttons row">
-              <div class="col-6">
-                <button class="button button--h50" type="button">изменить</button>
+          <div class="row">
+            <div class="col-md-4">
+              <label class="form__label">
+                <span class="form__label-text">Телефон:</span>
+                <input class="js-phone-mask input" type="text" name="uphone" value="" placeholder="+7(___)___-__-__">
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="form__label">
+                <span class="form__label-text">E-mail:</span>
+                <input class="js-email-mask input" type="text" name="uemail" value="" placeholder="example@mail.ru">
+              </label>
+            </div>
+            <div class="col-md-4">
+              <span class="form__label-text">&nbsp;</span>
+              <div class="two-buttons row">
+                <div class="col-6"><button class="button button--h50" type="button">СОХРАНИТЬ</button></div>
+                <div class="col-6"><button class="button button--h50 button--transparent" type="reset">СБРОСИТЬ</button></div>
               </div>
             </div>
           </div>
-        </div>
-      </form>
-      <hr class="personal__separator">
-      <h2 class="personal__title">Выберите игры для тестов</h2>
-      <div class="settings">
-        <div class="tabs-menu">
-          <ul class="tabs-menu__list">
-            <li class="tabs-menu__item"><a class="tabs-menu__link is-active" href="#" data-link="1">Игровые тесты</a></li>
-            <li class="tabs-menu__item"><a class="tabs-menu__link" href="#" data-link="2">Проф. тесты</a></li>
-            <li class="tabs-menu__item"><a class="tabs-menu__link" href="#" data-link="3">Доп. настройки</a></li>
-          </ul>
-        </div>
-        <div class="tab is-active" data-target="1">
+          <h2>Пароль</h2>
           <div class="row">
             <div class="col-md-4">
-              <p class="settings-title">Шутеры:</p>
-              <label class="checkbox-label" for="inp_1">
-                <input id="inp_1" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Playerunknown's Battlegrounds
-              </label>
-              <label class="checkbox-label" for="inp_2">
-                <input id="inp_2" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Shadow of the Tomb Rider
-              </label>
-              <label class="checkbox-label" for="inp_3">
-                <input id="inp_3" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Black Ops 4
-              </label>
-              <label class="checkbox-label" for="inp_4">
-                <input id="inp_4" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                BattleField 1
-              </label>
-              <label class="checkbox-label" for="inp_5">
-                <input id="inp_5" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                BattleField Starwars 2
-              </label>
-              <label class="checkbox-label" for="inp_6">
-                <input id="inp_6" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                BattleField 5
-              </label>
-              <label class="checkbox-label" for="inp_7">
-                <input id="inp_7" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Farcry
-              </label>
-              <p class="settings-title">Simulator:</p>
-              <label class="checkbox-label" for="inp_1">
-                <input id="inp_1" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Playerunknown's Battlegrounds
-              </label>
-              <label class="checkbox-label" for="inp_2">
-                <input id="inp_2" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Shadow of the Tomb Rider
-              </label>
-              <label class="checkbox-label" for="inp_3">
-                <input id="inp_3" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Black Ops 4
+              <label class="form__label">
+                <span class="form__label-text">Новый пароль:</span>
+                <input class="input" type="password" name="new_pass" value="" placeholder="********">
               </label>
             </div>
             <div class="col-md-4">
-              <p class="settings-title">Action:</p>
-              <label class="checkbox-label" for="inp_8">
-                <input id="inp_8" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Playerunknown's Battlegrounds
-              </label>
-              <label class="checkbox-label" for="inp_9">
-                <input id="inp_9" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Fortnite
-              </label>
-              <label class="checkbox-label" for="inp_10">
-                <input id="inp_10" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Apex Legends
-              </label>
-              <label class="checkbox-label" for="inp_11">
-                <input id="inp_11" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Shadow of the Tomb Rider
-              </label>
-              <label class="checkbox-label" for="inp_12">
-                <input id="inp_12" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                GTA 5
-              </label>
-              <label class="checkbox-label" for="inp_13">
-                <input id="inp_13" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Anthem
-              </label>
-              <label class="checkbox-label" for="inp_12">
-                <input id="inp_12" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                GTA 5
-              </label>
-              <label class="checkbox-label" for="inp_13">
-                <input id="inp_13" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Anthem
-              </label>
-              <label class="checkbox-label" for="inp_14">
-                <input id="inp_14" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Assassin´s Creed Odyssey
-              </label>
-              <p class="settings-title">MMO:</p>
-              <label class="checkbox-label" for="inp_15">
-                <input id="inp_15" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Just Cause
+              <label class="form__label">
+                <span class="form__label-text">Подтвердите пароль:</span>
+                <input class="input" type="password" name="uemail" value="" placeholder="********">
               </label>
             </div>
             <div class="col-md-4">
-              <p class="settings-title">Battle Royale:</p>
-              <label class="checkbox-label" for="inp_8">
-                <input id="inp_8" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Playerunknown's Battlegrounds
-              </label>
-              <label class="checkbox-label" for="inp_9">
-                <input id="inp_9" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Fortnite
-              </label>
-              <label class="checkbox-label" for="inp_10">
-                <input id="inp_10" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Apex Legends
-              </label>
-              <p class="settings-title">RPG:</p>
-              <label class="checkbox-label" for="inp_11">
-                <input id="inp_11" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Shadow of the Tomb Rider
-              </label>
-              <label class="checkbox-label" for="inp_12">
-                <input id="inp_12" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                GTA 5
-              </label>
-              <label class="checkbox-label" for="inp_13">
-                <input id="inp_13" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Anthem
-              </label>
-              <label class="checkbox-label" for="inp_14">
-                <input id="inp_14" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Assassin´s Creed Odyssey
-              </label>
-              <label class="checkbox-label" for="inp_15">
-                <input id="inp_15" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
-                Just Cause
-              </label>
+              <span class="form__label-text">&nbsp;</span>
+              <div class="two-buttons row">
+                <div class="col-6">
+                  <button class="button button--h50" type="button">изменить</button>
+                </div>
+              </div>
             </div>
           </div>
+        </form>
+        <hr class="personal__separator">
+        <h2 class="personal__title">Выберите игры для тестов</h2>
+        <div class="settings">
+          <div class="tabs-menu">
+            <ul class="tabs-menu__list">
+              <li class="tabs-menu__item"><a class="tabs-menu__link is-active" href="#" data-link="1">Игровые тесты</a></li>
+              <li class="tabs-menu__item"><a class="tabs-menu__link" href="#" data-link="2">Проф. тесты</a></li>
+              <li class="tabs-menu__item"><a class="tabs-menu__link" href="#" data-link="3">Доп. настройки</a></li>
+            </ul>
+          </div>
+          <div class="tab is-active" data-target="1">
+            <div class="row">
+              <div class="col-md-4">
+                <p class="settings-title">Шутеры:</p>
+                <label class="checkbox-label" for="inp_1">
+                  <input id="inp_1" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Playerunknown's Battlegrounds
+                </label>
+                <label class="checkbox-label" for="inp_2">
+                  <input id="inp_2" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Shadow of the Tomb Rider
+                </label>
+                <label class="checkbox-label" for="inp_3">
+                  <input id="inp_3" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Black Ops 4
+                </label>
+                <label class="checkbox-label" for="inp_4">
+                  <input id="inp_4" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  BattleField 1
+                </label>
+                <label class="checkbox-label" for="inp_5">
+                  <input id="inp_5" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  BattleField Starwars 2
+                </label>
+                <label class="checkbox-label" for="inp_6">
+                  <input id="inp_6" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  BattleField 5
+                </label>
+                <label class="checkbox-label" for="inp_7">
+                  <input id="inp_7" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Farcry
+                </label>
+                <p class="settings-title">Simulator:</p>
+                <label class="checkbox-label" for="inp_1">
+                  <input id="inp_1" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Playerunknown's Battlegrounds
+                </label>
+                <label class="checkbox-label" for="inp_2">
+                  <input id="inp_2" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Shadow of the Tomb Rider
+                </label>
+                <label class="checkbox-label" for="inp_3">
+                  <input id="inp_3" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Black Ops 4
+                </label>
+              </div>
+              <div class="col-md-4">
+                <p class="settings-title">Action:</p>
+                <label class="checkbox-label" for="inp_8">
+                  <input id="inp_8" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Playerunknown's Battlegrounds
+                </label>
+                <label class="checkbox-label" for="inp_9">
+                  <input id="inp_9" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Fortnite
+                </label>
+                <label class="checkbox-label" for="inp_10">
+                  <input id="inp_10" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Apex Legends
+                </label>
+                <label class="checkbox-label" for="inp_11">
+                  <input id="inp_11" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Shadow of the Tomb Rider
+                </label>
+                <label class="checkbox-label" for="inp_12">
+                  <input id="inp_12" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  GTA 5
+                </label>
+                <label class="checkbox-label" for="inp_13">
+                  <input id="inp_13" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Anthem
+                </label>
+                <label class="checkbox-label" for="inp_12">
+                  <input id="inp_12" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  GTA 5
+                </label>
+                <label class="checkbox-label" for="inp_13">
+                  <input id="inp_13" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Anthem
+                </label>
+                <label class="checkbox-label" for="inp_14">
+                  <input id="inp_14" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Assassin´s Creed Odyssey
+                </label>
+                <p class="settings-title">MMO:</p>
+                <label class="checkbox-label" for="inp_15">
+                  <input id="inp_15" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Just Cause
+                </label>
+              </div>
+              <div class="col-md-4">
+                <p class="settings-title">Battle Royale:</p>
+                <label class="checkbox-label" for="inp_8">
+                  <input id="inp_8" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Playerunknown's Battlegrounds
+                </label>
+                <label class="checkbox-label" for="inp_9">
+                  <input id="inp_9" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Fortnite
+                </label>
+                <label class="checkbox-label" for="inp_10">
+                  <input id="inp_10" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Apex Legends
+                </label>
+                <p class="settings-title">RPG:</p>
+                <label class="checkbox-label" for="inp_11">
+                  <input id="inp_11" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Shadow of the Tomb Rider
+                </label>
+                <label class="checkbox-label" for="inp_12">
+                  <input id="inp_12" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  GTA 5
+                </label>
+                <label class="checkbox-label" for="inp_13">
+                  <input id="inp_13" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Anthem
+                </label>
+                <label class="checkbox-label" for="inp_14">
+                  <input id="inp_14" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Assassin´s Creed Odyssey
+                </label>
+                <label class="checkbox-label" for="inp_15">
+                  <input id="inp_15" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  <span class="settings-image"><img src="images/content/personal/settings/img_1.png" alt=""></span>
+                  Just Cause
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="tab" data-target="2">
+            Проф. тесты
+          </div>
+          <div class="tab" data-target="3">
+            Доп. настройки
+          </div>
+          <p class="settings-note">Вы можете выбрать до 10 игр. <span>У вас осталось 5 из 10</span></p>
         </div>
-        <div class="tab" data-target="2">
-          Проф. тесты
-        </div>
-        <div class="tab" data-target="3">
-          Доп. настройки
-        </div>
-        <p class="settings-note">Вы можете выбрать до 10 игр. <span>У вас осталось 5 из 10</span></p>
       </div>
-    </div>
-    <div class="personal__sidebar custom-scroll">
-      <ul class="personal-menu">
-        <li class="personal-menu__item"><a class="personal-menu__link is-active" href="personal_2.html"><span class="personal-menu__link-text">Сохраненные конфигурации</span></a></li>
-        <li class="personal-menu__item"><a class="personal-menu__link" href="#"><span class="personal-menu__link-text">Сохраненные дизайны</span></a></li>
-        <li class="personal-menu__item"><a class="personal-menu__link" href="personal_8.html"><span class="personal-menu__link-text">Партнерский кабинет</span></a></li>
-        <li class="personal-menu__item"><a class="personal-menu__link" href="personal_4.html"><span class="personal-menu__link-text">Мои заказы</span></a></li>
-        <li class="personal-menu__item"><a class="personal-menu__link" href="personal_6.html"><span class="personal-menu__link-text">Профиль</span></a></li>
-        <li class="personal-menu__item"><a class="personal-menu__link" href="personal_7.html"><span class="personal-menu__link-text">Поддержка</span></a></li>
-        <li class="personal-menu__item"><a class="personal-menu__link" href="#"><span class="personal-menu__link-text">Выйти</span></a></li>
-      </ul>
-      
-      <ul class="main-menu">
-        <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Игровые компьютеры</span></a></li>
-        <li class="main-menu__item main-menu__item--title">ИГРОВЫЕ СЕРИИ</li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">ProGaming - серия</span></a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Performance - серия</span></a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Performance X - серия</span></a></li>
-        <li class="main-menu__item main-menu__item--title">СПЕЦИАЛЬНЫЕ СЕРИИ</li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Powered by ASUS</span></a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Powered by AMD</span></a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Рабочие станции</span></a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Моноблоки</span></a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Аксессуары</span></a></li>
-      </ul>
+      <div class="personal__sidebar custom-scroll">
+        <ul class="personal-menu">
+          <li class="personal-menu__item"><a class="personal-menu__link is-active" href="personal_2.html"><span class="personal-menu__link-text">Сохраненные конфигурации</span></a></li>
+          <li class="personal-menu__item"><a class="personal-menu__link" href="#"><span class="personal-menu__link-text">Сохраненные дизайны</span></a></li>
+          <li class="personal-menu__item"><a class="personal-menu__link" href="personal_8.html"><span class="personal-menu__link-text">Партнерский кабинет</span></a></li>
+          <li class="personal-menu__item"><a class="personal-menu__link" href="personal_4.html"><span class="personal-menu__link-text">Мои заказы</span></a></li>
+          <li class="personal-menu__item"><a class="personal-menu__link" href="personal_6.html"><span class="personal-menu__link-text">Профиль</span></a></li>
+          <li class="personal-menu__item"><a class="personal-menu__link" href="personal_7.html"><span class="personal-menu__link-text">Поддержка</span></a></li>
+          <li class="personal-menu__item"><a class="personal-menu__link" href="#"><span class="personal-menu__link-text">Выйти</span></a></li>
+        </ul>
+        
+        <ul class="main-menu">
+          <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Игровые компьютеры</span></a></li>
+          <li class="main-menu__item main-menu__item--title">ИГРОВЫЕ СЕРИИ</li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">ProGaming - серия</span></a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Performance - серия</span></a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Performance X - серия</span></a></li>
+          <li class="main-menu__item main-menu__item--title">СПЕЦИАЛЬНЫЕ СЕРИИ</li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Powered by ASUS</span></a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Powered by AMD</span></a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Рабочие станции</span></a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Моноблоки</span></a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Аксессуары</span></a></li>
+        </ul>
+      </div>
     </div>
   </div>
 

@@ -18,83 +18,85 @@
 <body class="personal">
   //= template/personal/sprite.html
 
-  //= template/personal/header.html
+  <div class="personal__wrapper">
+    //= template/personal/header.html
 
-  <div class="personal__inner">
-    <div class="personal__content custom-scroll">
-      <h1 class="personal__title">Партнерский кабинет</h1>
-      <div class="affiliate">
-        <div class="affiliate__block">
-          <p class="affiliate__text">Передайте данный код покупателю, зарабатывайте баллы и обменивате на призы</p>
-          <p class="affiliate__code">DR4456 <a class="copy-button" href="javascript:void(0)">скопировать</a></p>
+    <div class="personal__inner">
+      <div class="personal__content custom-scroll">
+        <h1 class="personal__title">Партнерский кабинет</h1>
+        <div class="affiliate">
+          <div class="affiliate__block">
+            <p class="affiliate__text">Передайте данный код покупателю, зарабатывайте баллы и обменивате на призы</p>
+            <p class="affiliate__code">DR4456 <a class="copy-button" href="javascript:void(0)">скопировать</a></p>
+          </div>
+          <div class="affiliate__block">
+            <p class="affiliate__text">Вы заработали денег:</p>
+            <p class="affiliate__price"> 120 000 руб.</p>
+          </div>
         </div>
-        <div class="affiliate__block">
-          <p class="affiliate__text">Вы заработали денег:</p>
-          <p class="affiliate__price"> 120 000 руб.</p>
-        </div>
+        <h2 class="personal__title">Список кодов</h2>
+        <table class="js-sort codes-list">
+          <thead>
+            <tr>
+              <th class="js-sorting codes-list__th">Название ПК</th>
+              <th class="js-sorting codes-list__th codes-list__qnt">Кол-во</th>
+              <th class="js-sorting codes-list__th codes-list__summ">Сумма заказов</th>
+              <th class="js-sorting codes-list__th codes-list__login">Логин пользоватея</th>
+              <th class="js-sorting codes-list__th">Сумма комиссии</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="codes-list__cell">Coolmaster Cosmos C700</td>
+              <td class="codes-list__cell codes-list__qnt">2</td>
+              <td class="codes-list__cell codes-list__summ">22 500 р.</td>
+              <td class="codes-list__cell codes-list__login">sniper55</td>
+              <td class="codes-list__cell">1 200 р.</td>
+            </tr>
+            <tr>
+              <td class="codes-list__cell">ProGaming S</td>
+              <td class="codes-list__cell codes-list__qnt">3</td>
+              <td class="codes-list__cell codes-list__summ">120 560 р.</td>
+              <td class="codes-list__cell codes-list__login">vladastahov</td>
+              <td class="codes-list__cell">1 200 р.</td>
+            </tr>
+            <tr>
+              <td class="codes-list__cell">Coolmaster Cosmos C700</td>
+              <td class="codes-list__cell codes-list__qnt">1</td>
+              <td class="codes-list__cell codes-list__summ">22 500 р.</td>
+              <td class="codes-list__cell codes-list__login">pert1996</td>
+              <td class="codes-list__cell">1 200 р.</td>
+            </tr>
+            <tr>
+              <td class="codes-list__cell">ProGaming S</td>
+              <td class="codes-list__cell codes-list__qnt">4</td>
+              <td class="codes-list__cell codes-list__summ">120 560 р.</td>
+              <td class="codes-list__cell codes-list__login">vladastahov</td>
+              <td class="codes-list__cell">1 200 р.</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 class="personal__title">Получить приз</h2>
+        <form action="">
+          <label class="prize-type" for="prize_1">
+            <input id="prize_1" class="prize-type__input" name="prize" type="radio" value="1">
+            <span class="js-fancy-light prize-type__inner">
+              <span class="prize-type__radio"></span>
+              Оплата банковской картой
+            </span>
+          </label>
+          <label class="prize-type" for="prize_2">
+            <input id="prize_2" class="prize-type__input" name="prize" type="radio" value="2">
+            <span class="js-fancy-light prize-type__inner">
+              <span class="prize-type__radio"></span>
+              Использовать скидку на покупку
+            </span>
+          </label>
+        </form>
       </div>
-      <h2 class="personal__title">Список кодов</h2>
-      <table class="js-sort codes-list">
-        <thead>
-          <tr>
-            <th class="js-sorting codes-list__th">Название ПК</th>
-            <th class="js-sorting codes-list__th codes-list__qnt">Кол-во</th>
-            <th class="js-sorting codes-list__th codes-list__summ">Сумма заказов</th>
-            <th class="js-sorting codes-list__th codes-list__login">Логин пользоватея</th>
-            <th class="js-sorting codes-list__th">Сумма комиссии</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="codes-list__cell">Coolmaster Cosmos C700</td>
-            <td class="codes-list__cell codes-list__qnt">2</td>
-            <td class="codes-list__cell codes-list__summ">22 500 р.</td>
-            <td class="codes-list__cell codes-list__login">sniper55</td>
-            <td class="codes-list__cell">1 200 р.</td>
-          </tr>
-          <tr>
-            <td class="codes-list__cell">ProGaming S</td>
-            <td class="codes-list__cell codes-list__qnt">3</td>
-            <td class="codes-list__cell codes-list__summ">120 560 р.</td>
-            <td class="codes-list__cell codes-list__login">vladastahov</td>
-            <td class="codes-list__cell">1 200 р.</td>
-          </tr>
-          <tr>
-            <td class="codes-list__cell">Coolmaster Cosmos C700</td>
-            <td class="codes-list__cell codes-list__qnt">1</td>
-            <td class="codes-list__cell codes-list__summ">22 500 р.</td>
-            <td class="codes-list__cell codes-list__login">pert1996</td>
-            <td class="codes-list__cell">1 200 р.</td>
-          </tr>
-          <tr>
-            <td class="codes-list__cell">ProGaming S</td>
-            <td class="codes-list__cell codes-list__qnt">4</td>
-            <td class="codes-list__cell codes-list__summ">120 560 р.</td>
-            <td class="codes-list__cell codes-list__login">vladastahov</td>
-            <td class="codes-list__cell">1 200 р.</td>
-          </tr>
-        </tbody>
-      </table>
-      <h2 class="personal__title">Получить приз</h2>
-      <form action="">
-        <label class="prize-type" for="prize_1">
-          <input id="prize_1" class="prize-type__input" name="prize" type="radio" value="1">
-          <span class="js-fancy-light prize-type__inner">
-            <span class="prize-type__radio"></span>
-            Оплата банковской картой
-          </span>
-        </label>
-        <label class="prize-type" for="prize_2">
-          <input id="prize_2" class="prize-type__input" name="prize" type="radio" value="2">
-          <span class="js-fancy-light prize-type__inner">
-            <span class="prize-type__radio"></span>
-            Использовать скидку на покупку
-          </span>
-        </label>
-      </form>
-    </div>
-    <div class="personal__sidebar custom-scroll">
-      //= template/personal/sidebar.html
+      <div class="personal__sidebar custom-scroll">
+        //= template/personal/sidebar.html
+      </div>
     </div>
   </div>
 

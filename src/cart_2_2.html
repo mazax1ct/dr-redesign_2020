@@ -18,83 +18,85 @@
 <body class="personal">
   //= template/personal/sprite.html
 
-  //= template/personal/cart_header.html
+  <div class="personal__wrapper">
+    //= template/personal/cart_header.html
 
-  <div class="personal__inner">
-    <div class="personal__content custom-scroll">
-      <h1 class="personal__title"><span>2.</span> Контактные данные</h1>
-      <div class="person-type">
-        <label class="radio-label" for="PERSON_TYPE_1" onclick="submitForm()">
-          <input class="radio-label__input" id="PERSON_TYPE_1" name="PERSON_TYPE" value="1" checked="checked" onclick="submitForm()" type="radio">
-          <span class="radio-label__radio"></span>
-          Физическое лицо
-        </label>
-        <label class="radio-label" for="PERSON_TYPE_2" onclick="submitForm()">
-          <input class="radio-label__input" id="PERSON_TYPE_2" name="PERSON_TYPE" value="2" onclick="submitForm()" type="radio" checked>
-          <span class="radio-label__radio"></span>
-          Юридическое лицо
-        </label>
+    <div class="personal__inner">
+      <div class="personal__content custom-scroll">
+        <h1 class="personal__title"><span>2.</span> Контактные данные</h1>
+        <div class="person-type">
+          <label class="radio-label" for="PERSON_TYPE_1" onclick="submitForm()">
+            <input class="radio-label__input" id="PERSON_TYPE_1" name="PERSON_TYPE" value="1" checked="checked" onclick="submitForm()" type="radio">
+            <span class="radio-label__radio"></span>
+            Физическое лицо
+          </label>
+          <label class="radio-label" for="PERSON_TYPE_2" onclick="submitForm()">
+            <input class="radio-label__input" id="PERSON_TYPE_2" name="PERSON_TYPE" value="2" onclick="submitForm()" type="radio" checked>
+            <span class="radio-label__radio"></span>
+            Юридическое лицо
+          </label>
+        </div>
+        <hr class="personal__separator">
+        <div class="profile">
+          <div class="row">
+            <div class="col-md-4">
+              <label class="form__label">
+                <span class="form__label-text">Название компании<span class="required">*</span></span>
+                <input class="input" type="text" name="company" value="" placeholder="ООО, ОАО, ИП и т.д.">
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="form__label">
+                <span class="form__label-text">Телефон рабочий</span>
+                <input class="js-phone-mask input" type="text" name="phone" value="" placeholder="+7(___)___-__-__">
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="form__label">
+                <span class="form__label-text">Мобильный</span>
+                <input class="js-phone-mask input" type="text" name="phone_mob" value="" placeholder="+7(___)___-__-__">
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8">
+              <label class="form__label">
+                <span class="form__label-text">Контактное лицо (ФИО)<span class="required">*</span></span>
+                <input class="input" type="text" name="contact" value="" placeholder="Петров Петр Петрович">
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="form__label">
+                <span class="form__label-text">E-mail:</span>
+                <input class="js-email-mask input" type="text" name="uemail" value="" placeholder="example@mail.ru">
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <span class="form__label-text">Реквизиты</span>
+              <label class="upload-file">
+                <input class="js-upload-file upload-file__input" type="file" name="file" id="file" value="" data-multiple-caption="{count} файла выбрано" multiple>
+                <span class="upload-file__text">Загрузить файл</span>
+              </label>
+            </div>
+            <div class="col-md-4">
+              <span class="form__label-text">&nbsp;</span>
+              <a class="button button--h50 button--wide" href="#">СЛЕДУЮЩИЙ ШАГ</a>
+            </div>
+          </div>
+          <p class="back-link-block">
+            <a class="back-link" href="personal_2.html">
+              <svg class="back-link__svg" aria-hidden="true">
+                <use xlink:href="#back-link" /></svg>
+              Вернуться назад
+            </a>
+          </p>
+        </div>
       </div>
-      <hr class="personal__separator">
-      <div class="profile">
-        <div class="row">
-          <div class="col-md-4">
-            <label class="form__label">
-              <span class="form__label-text">Название компании<span class="required">*</span></span>
-              <input class="input" type="text" name="company" value="" placeholder="ООО, ОАО, ИП и т.д.">
-            </label>
-          </div>
-          <div class="col-md-4">
-            <label class="form__label">
-              <span class="form__label-text">Телефон рабочий</span>
-              <input class="js-phone-mask input" type="text" name="phone" value="" placeholder="+7(___)___-__-__">
-            </label>
-          </div>
-          <div class="col-md-4">
-            <label class="form__label">
-              <span class="form__label-text">Мобильный</span>
-              <input class="js-phone-mask input" type="text" name="phone_mob" value="" placeholder="+7(___)___-__-__">
-            </label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-8">
-            <label class="form__label">
-              <span class="form__label-text">Контактное лицо (ФИО)<span class="required">*</span></span>
-              <input class="input" type="text" name="contact" value="" placeholder="Петров Петр Петрович">
-            </label>
-          </div>
-          <div class="col-md-4">
-            <label class="form__label">
-              <span class="form__label-text">E-mail:</span>
-              <input class="js-email-mask input" type="text" name="uemail" value="" placeholder="example@mail.ru">
-            </label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <span class="form__label-text">Реквизиты</span>
-            <label class="upload-file">
-              <input class="js-upload-file upload-file__input" type="file" name="file" id="file" value="" data-multiple-caption="{count} файла выбрано" multiple>
-              <span class="upload-file__text">Загрузить файл</span>
-            </label>
-          </div>
-          <div class="col-md-4">
-            <span class="form__label-text">&nbsp;</span>
-            <a class="button button--h50 button--wide" href="#">СЛЕДУЮЩИЙ ШАГ</a>
-          </div>
-        </div>
-        <p class="back-link-block">
-          <a class="back-link" href="personal_2.html">
-            <svg class="back-link__svg" aria-hidden="true">
-              <use xlink:href="#back-link" /></svg>
-            Вернуться назад
-          </a>
-        </p>
+      <div class="personal__sidebar custom-scroll">
+        //= template/personal/cart_sidebar.html
       </div>
-    </div>
-    <div class="personal__sidebar custom-scroll">
-      //= template/personal/cart_sidebar.html
     </div>
   </div>
 

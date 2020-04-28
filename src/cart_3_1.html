@@ -18,180 +18,182 @@
 <body class="personal">
   //= template/personal/sprite.html
 
-  //= template/personal/cart_header.html
+  <div class="personal__wrapper">
+    //= template/personal/cart_header.html
 
-  <div class="personal__inner">
-    <div class="personal__content custom-scroll">
-      <h1 class="personal__title"><span>3.</span> Адрес доставки</h1>
-      <div class="js-fancy-light delivery is-open">
-        <p class="js-delivery delivery__title"><span class="delivery__radio"></span>Бесплатная доставка</p>
-        <div class="delivery__info" style="display: block">
-          <p class="delivery__description">Доставка по всей территории РФ бесплатная. В данную услугу включена полная страховка груза. Доставка осуществляется до дверей без подъема на этаж.</p>
-          <div class="form">
-            <div class="row">
-              <div class="col-md-4">
-                <label class="form__label">
-                  <span class="form__label-text">Выберите страну:</span>
-                  <select class="js-select">
-                    <option>Россия</option>
-                    <option>Украина</option>
-                    <option>Беларусь</option>
-                  </select>
-                </label>
-              </div>
-              <div class="col-md-4">
-                <label class="form__label">
-                  <span class="form__label-text">Выберите регион:</span>
-                  <select class="js-select">
-                    <option>Ленинградская область</option>
-                    <option>Московская область</option>
-                    <option>Новгородская область</option>
-                  </select>
-                </label>
-              </div>
-              <div class="col-md-4">
-                <label class="form__label">
-                  <span class="form__label-text">Выберите город:</span>
-                  <select class="js-select">
-                    <option>Москва</option>
-                    <option>Санкт-Петербург</option>
-                    <option>Арзамас</option>
-                  </select>
-                </label>
-              </div>
-            </div>
-            <p class="no-city"><a class="js-no-city" href="#">Моего города нет в списке</a></p>
-            <div class="no-city-hidden">
-              <label class="form__label">
-                <input class="input" type="text" name="city" value="" placeholder="Укажите название вашего города">
-              </label>
-            </div>
-            <div class="row">
-              <div class="col-12 col-xl-4">
-                <label class="form__label">
-                  <span class="form__label-text">Улица:</span>
-                  <input class="input" type="text" name="street" value="Гагарина">
-                </label>
-              </div>
-              <div class="col-12 col-xl-4">
-                <div class="row">
-                  <div class="col-4">
-                    <label class="form__label">
-                      <span class="form__label-text">Дом:</span>
-                      <input class="input" type="text" name="house" value="124">
-                    </label>
-                  </div>
-                  <div class="col-4">
-                    <label class="form__label">
-                      <span class="form__label-text">Корпус:</span>
-                      <input class="input" type="text" name="corp" value="3">
-                    </label>
-                  </div>
-                  <div class="col-4">
-                    <label class="form__label">
-                      <span class="form__label-text">Квартира:</span>
-                      <input class="input" type="text" name="appart" value="23">
-                    </label>
-                  </div>
+    <div class="personal__inner">
+      <div class="personal__content custom-scroll">
+        <h1 class="personal__title"><span>3.</span> Адрес доставки</h1>
+        <div class="js-fancy-light delivery is-open">
+          <p class="js-delivery delivery__title"><span class="delivery__radio"></span>Бесплатная доставка</p>
+          <div class="delivery__info" style="display: block">
+            <p class="delivery__description">Доставка по всей территории РФ бесплатная. В данную услугу включена полная страховка груза. Доставка осуществляется до дверей без подъема на этаж.</p>
+            <div class="form">
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="form__label">
+                    <span class="form__label-text">Выберите страну:</span>
+                    <select class="js-select">
+                      <option>Россия</option>
+                      <option>Украина</option>
+                      <option>Беларусь</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="col-md-4">
+                  <label class="form__label">
+                    <span class="form__label-text">Выберите регион:</span>
+                    <select class="js-select">
+                      <option>Ленинградская область</option>
+                      <option>Московская область</option>
+                      <option>Новгородская область</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="col-md-4">
+                  <label class="form__label">
+                    <span class="form__label-text">Выберите город:</span>
+                    <select class="js-select">
+                      <option>Москва</option>
+                      <option>Санкт-Петербург</option>
+                      <option>Арзамас</option>
+                    </select>
+                  </label>
                 </div>
               </div>
-              <div class="col-12 col-xl-4">
+              <p class="no-city"><a class="js-no-city" href="#">Моего города нет в списке</a></p>
+              <div class="no-city-hidden">
                 <label class="form__label">
-                  <span class="form__label-text">Индекс:</span>
-                  <input class="input" type="text" name="index" value="192281">
+                  <input class="input" type="text" name="city" value="" placeholder="Укажите название вашего города">
                 </label>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                <label class="form__label">
-                  <span class="form__label-text">Расчетное время доставки:</span>
-                  <input class="input" type="text" name="time" value="12 апреля, 14:00 - 20:00">
-                </label>
+              <div class="row">
+                <div class="col-12 col-xl-4">
+                  <label class="form__label">
+                    <span class="form__label-text">Улица:</span>
+                    <input class="input" type="text" name="street" value="Гагарина">
+                  </label>
+                </div>
+                <div class="col-12 col-xl-4">
+                  <div class="row">
+                    <div class="col-4">
+                      <label class="form__label">
+                        <span class="form__label-text">Дом:</span>
+                        <input class="input" type="text" name="house" value="124">
+                      </label>
+                    </div>
+                    <div class="col-4">
+                      <label class="form__label">
+                        <span class="form__label-text">Корпус:</span>
+                        <input class="input" type="text" name="corp" value="3">
+                      </label>
+                    </div>
+                    <div class="col-4">
+                      <label class="form__label">
+                        <span class="form__label-text">Квартира:</span>
+                        <input class="input" type="text" name="appart" value="23">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-xl-4">
+                  <label class="form__label">
+                    <span class="form__label-text">Индекс:</span>
+                    <input class="input" type="text" name="index" value="192281">
+                  </label>
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-8">
-                <label class="form__label">
-                  <span class="form__label-text">Пожелание времени доставки:</span>
-                  <input class="input" type="text" name="time_2" value="" placeholder="Например, доставьте только на выходных">
-                </label>
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="form__label">
+                    <span class="form__label-text">Расчетное время доставки:</span>
+                    <input class="input" type="text" name="time" value="12 апреля, 14:00 - 20:00">
+                  </label>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="js-fancy-light delivery">
-        <p class="js-delivery delivery__title"><span class="delivery__radio"></span>Самовывоз</p>
-        <div class="delivery__info">
-          <div class="form">
-            <div class="row">
-              <div class="col-md-8">
-                <label class="form__label">
-                  <span class="form__label-text">Выберите магазин:</span>
-                  <select class="js-select">
-                    <option>г. Санкт-Петербург, ул. Краснопутиловская 9.,</option>
-                    <option>г. Москва, Шоссе Энтузиастов, дом 31с39, 3 этаж, офис 14</option>
-                  </select>
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="js-fancy-light delivery">
-        <p class="js-delivery delivery__title"><span class="delivery__radio"></span>DHL</p>
-        <div class="delivery__info">
-          <p class="delivery__description">Описание DHL</p>
-          <div class="form">
-            <div class="row">
-              <div class="col-md-4">
-                <label class="form__label">
-                  <span class="form__label-text">Выберите страну:</span>
-                  <select class="js-select">
-                    <option>Россия</option>
-                    <option>Украина</option>
-                    <option>Беларусь</option>
-                  </select>
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="js-fancy-light delivery">
-        <p class="js-delivery delivery__title"><span class="delivery__radio"></span>Срочная доставка</p>
-        <div class="delivery__info">
-          <p class="delivery__description">Описание срочной доставки</p>
-          <div class="form">
-            <div class="row">
-              <div class="col-md-4">
-                <label class="form__label">
-                  <span class="form__label-text">Выберите страну:</span>
-                  <select class="js-select">
-                    <option>Россия</option>
-                    <option>Украина</option>
-                    <option>Беларусь</option>
-                  </select>
-                </label>
+              <div class="row">
+                <div class="col-md-8">
+                  <label class="form__label">
+                    <span class="form__label-text">Пожелание времени доставки:</span>
+                    <input class="input" type="text" name="time_2" value="" placeholder="Например, доставьте только на выходных">
+                  </label>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="js-fancy-light delivery">
+          <p class="js-delivery delivery__title"><span class="delivery__radio"></span>Самовывоз</p>
+          <div class="delivery__info">
+            <div class="form">
+              <div class="row">
+                <div class="col-md-8">
+                  <label class="form__label">
+                    <span class="form__label-text">Выберите магазин:</span>
+                    <select class="js-select">
+                      <option>г. Санкт-Петербург, ул. Краснопутиловская 9.,</option>
+                      <option>г. Москва, Шоссе Энтузиастов, дом 31с39, 3 этаж, офис 14</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="js-fancy-light delivery">
+          <p class="js-delivery delivery__title"><span class="delivery__radio"></span>DHL</p>
+          <div class="delivery__info">
+            <p class="delivery__description">Описание DHL</p>
+            <div class="form">
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="form__label">
+                    <span class="form__label-text">Выберите страну:</span>
+                    <select class="js-select">
+                      <option>Россия</option>
+                      <option>Украина</option>
+                      <option>Беларусь</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="js-fancy-light delivery">
+          <p class="js-delivery delivery__title"><span class="delivery__radio"></span>Срочная доставка</p>
+          <div class="delivery__info">
+            <p class="delivery__description">Описание срочной доставки</p>
+            <div class="form">
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="form__label">
+                    <span class="form__label-text">Выберите страну:</span>
+                    <select class="js-select">
+                      <option>Россия</option>
+                      <option>Украина</option>
+                      <option>Беларусь</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="next-block">
+          <a class="button button--h50" href="#">Следующий щаг</a>
+        </div>
+        <p class="back-link-block">
+          <a class="back-link" href="personal_2.html">
+            <svg class="back-link__svg" aria-hidden="true">
+              <use xlink:href="#back-link" /></svg>
+            Вернуться назад
+          </a>
+        </p>
       </div>
-      <div class="next-block">
-        <a class="button button--h50" href="#">Следующий щаг</a>
+      <div class="personal__sidebar custom-scroll">
+        //= template/personal/cart_sidebar.html
       </div>
-      <p class="back-link-block">
-        <a class="back-link" href="personal_2.html">
-          <svg class="back-link__svg" aria-hidden="true">
-            <use xlink:href="#back-link" /></svg>
-          Вернуться назад
-        </a>
-      </p>
-    </div>
-    <div class="personal__sidebar custom-scroll">
-      //= template/personal/cart_sidebar.html
     </div>
   </div>
 

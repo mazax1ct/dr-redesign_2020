@@ -85,155 +85,157 @@
     </symbol>
   </svg>
 
-  <div class="personal__header">
-    <div class="personal__header-inner">
-      <p class="personal__header-title">Личный кабинет</p>
-      <a class="personal__header-link" href="main.html">ЗАКРЫТЬ</a>
-      <button class="js-config-menu menu-toggler menu-toggler--config" type="button" title="Меню"><span></span></button>
-      <button class="js-main-menu menu-toggler menu-toggler--main-menu" type="button" title="Меню"><span></span></button>
+  <div class="personal__wrapper">
+    <div class="personal__header">
+      <div class="personal__header-inner">
+        <p class="personal__header-title">Личный кабинет</p>
+        <a class="personal__header-link" href="main.html">ЗАКРЫТЬ</a>
+        <button class="js-config-menu menu-toggler menu-toggler--config" type="button" title="Меню"><span></span></button>
+        <button class="js-main-menu menu-toggler menu-toggler--main-menu" type="button" title="Меню"><span></span></button>
+      </div>
     </div>
-  </div>
 
-  <div class="personal__inner">
-    <div class="personal__content custom-scroll">
-      <h1 class="personal__title">Поддержка</h1>
-      <form class="support form" action="">
-        <div class="row">
-          <div class="col-md-4">
-            <label class="form__label">
-              <span class="form__label-text">Имя пользователя:</span>
-              <input class="input" type="text" name="name" value="" placeholder="Иван Иванов">
-            </label>
-          </div>
-          <div class="col-md-4">
-            <label class="form__label">
-              <span class="form__label-text">Телефон:</span>
-              <input class="js-phone-mask input" type="text" name="phone" value="" placeholder="+7(___)___-__-__">
-            </label>
-          </div>
-          <div class="col-md-4">
-            <label class="form__label">
-              <span class="form__label-text">E-mail:</span>
-              <input class="js-email-mask input" type="text" name="email" value="" placeholder="example@mail.ru">
-            </label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <label class="form__label">
-              <span class="form__label-text">Проблемы с заказом:</span>
-              <select class="js-select">
-                <option>#83591</option>
-                <option>#83592</option>
-                <option>#8353</option>
-              </select>
-            </label>
-          </div>
-          <div class="col-md-4">
-            <label class="form__label">
-              <span class="form__label-text">Дата покупки:</span>
-              <input class="js-date-mask input" type="text" name="date" value="" placeholder="ДД.ММ.ГГГГ">
-            </label>
-          </div>
-          <div class="col-md-4">
-            <label class="form__label">
-              <span class="form__label-text">Серийный номер ПК:</span>
-              <input class="input" type="text" name="serial" value="">
-            </label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <label class="form__label">
-              <span class="form__label-text">Срок гарантии:</span>
-              <input class="input" type="text" name="guarantee" value="" placeholder="Например, 2 года">
-            </label>
-          </div>
-          <div class="col-md-4">
-            <label class="form__label">
-              <span class="form__label-text">Время до конца гарантии:</span>
-              <input class="input" type="text" name="guarantee_end" value="" placeholder="Например, 2 месяца">
-            </label>
-          </div>
-          <div class="col-md-4">
-            <div class="form__label">
-              <span class="form__label-text">Видео / фото и т.д.:</span>
-              <label class="upload-file">
-                <input class="js-upload-file upload-file__input" type="file" name="file" id="file" value="" data-multiple-caption="{count} файла выбрано" multiple>
-                <span class="upload-file__text">Загрузить файл</span>
+    <div class="personal__inner">
+      <div class="personal__content custom-scroll">
+        <h1 class="personal__title">Поддержка</h1>
+        <form class="support form" action="">
+          <div class="row">
+            <div class="col-md-4">
+              <label class="form__label">
+                <span class="form__label-text">Имя пользователя:</span>
+                <input class="input" type="text" name="name" value="" placeholder="Иван Иванов">
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="form__label">
+                <span class="form__label-text">Телефон:</span>
+                <input class="js-phone-mask input" type="text" name="phone" value="" placeholder="+7(___)___-__-__">
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="form__label">
+                <span class="form__label-text">E-mail:</span>
+                <input class="js-email-mask input" type="text" name="email" value="" placeholder="example@mail.ru">
               </label>
             </div>
           </div>
-        </div>
-        <label class="support__textarea form__label">
-          <span class="form__label-text">Неисправность:</span>
-          <textarea class="textarea" name="problem" placeholder="Опишите подробно что у вас случилось с заказом..."></textarea>
-        </label>
-        <label class="support__textarea form__label">
-          <span class="form__label-text">Комментарии / Пожелания:</span>
-          <textarea class="textarea" name="comment" placeholder="Опишите подробно что у вас случилось с заказом..."></textarea>
-        </label>
-        <div class="support__button-block"><button class="button button--h50" type="button">ОТПРАВИТЬ</button></div>
-        <div class="support__note">
-          <p>*Заполните максимально подробно всю информацю в форме для технической поддержки. Это позволит ускорить решение вопроса и найти нужную информацию по Вашему компьютеру.</p>
-          <p>Служба технической поддержки и сервиса работает с понедельника по пятницу с 10:00 до 18:00.</p>
-        </div>
-      </form>
-      <hr class="personal__separator">
-      <h2 class="personal__title">Результаты теста</h2>
-      <table class="tests-list">
-        <thead>
-          <tr>
-            <th class="tests-list__th tests-list__id">id теста</th>
-            <th class="tests-list__th tests-list__title">Название теста</th>
-            <th class="tests-list__th tests-list__result">Результаты теста</th>
-            <th class="tests-list__th"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="tests-list__cell tests-list__id">#816390</td>
-            <td class="tests-list__cell tests-list__title">Проверка температуры видеокарты, стабильность в пиковой нагрузке</td>
-            <td class="tests-list__cell tests-list__result">93°C</td>
-            <td class="tests-list__cell tests-list__buttons">
-              <a class="tests-list__button" href="#">Подробнее</a>
-            </td>
-          </tr>
-          <tr>
-            <td class="tests-list__cell tests-list__id">#816391</td>
-            <td class="tests-list__cell tests-list__title">3DMARK ТЕСТ FIRE STRIKE EXTREME, CINEBENCH, UNIGINE (оценка производительности процессора и видеокарты)</td>
-            <td class="tests-list__cell tests-list__result">Успешно</td>
-            <td class="tests-list__cell tests-list__buttons">
-              <a class="tests-list__button" href="#">Подробнее</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="personal__sidebar custom-scroll">
-      <ul class="personal-menu">
-        <li class="personal-menu__item"><a class="personal-menu__link is-active" href="personal_2.html"><span class="personal-menu__link-text">Сохраненные конфигурации</span></a></li>
-        <li class="personal-menu__item"><a class="personal-menu__link" href="#"><span class="personal-menu__link-text">Сохраненные дизайны</span></a></li>
-        <li class="personal-menu__item"><a class="personal-menu__link" href="personal_8.html"><span class="personal-menu__link-text">Партнерский кабинет</span></a></li>
-        <li class="personal-menu__item"><a class="personal-menu__link" href="personal_4.html"><span class="personal-menu__link-text">Мои заказы</span></a></li>
-        <li class="personal-menu__item"><a class="personal-menu__link" href="personal_6.html"><span class="personal-menu__link-text">Профиль</span></a></li>
-        <li class="personal-menu__item"><a class="personal-menu__link" href="personal_7.html"><span class="personal-menu__link-text">Поддержка</span></a></li>
-        <li class="personal-menu__item"><a class="personal-menu__link" href="#"><span class="personal-menu__link-text">Выйти</span></a></li>
-      </ul>
-      
-      <ul class="main-menu">
-        <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Игровые компьютеры</span></a></li>
-        <li class="main-menu__item main-menu__item--title">ИГРОВЫЕ СЕРИИ</li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">ProGaming - серия</span></a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Performance - серия</span></a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Performance X - серия</span></a></li>
-        <li class="main-menu__item main-menu__item--title">СПЕЦИАЛЬНЫЕ СЕРИИ</li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Powered by ASUS</span></a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Powered by AMD</span></a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Рабочие станции</span></a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Моноблоки</span></a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Аксессуары</span></a></li>
-      </ul>
+          <div class="row">
+            <div class="col-md-4">
+              <label class="form__label">
+                <span class="form__label-text">Проблемы с заказом:</span>
+                <select class="js-select">
+                  <option>#83591</option>
+                  <option>#83592</option>
+                  <option>#8353</option>
+                </select>
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="form__label">
+                <span class="form__label-text">Дата покупки:</span>
+                <input class="js-date-mask input" type="text" name="date" value="" placeholder="ДД.ММ.ГГГГ">
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="form__label">
+                <span class="form__label-text">Серийный номер ПК:</span>
+                <input class="input" type="text" name="serial" value="">
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <label class="form__label">
+                <span class="form__label-text">Срок гарантии:</span>
+                <input class="input" type="text" name="guarantee" value="" placeholder="Например, 2 года">
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="form__label">
+                <span class="form__label-text">Время до конца гарантии:</span>
+                <input class="input" type="text" name="guarantee_end" value="" placeholder="Например, 2 месяца">
+              </label>
+            </div>
+            <div class="col-md-4">
+              <div class="form__label">
+                <span class="form__label-text">Видео / фото и т.д.:</span>
+                <label class="upload-file">
+                  <input class="js-upload-file upload-file__input" type="file" name="file" id="file" value="" data-multiple-caption="{count} файла выбрано" multiple>
+                  <span class="upload-file__text">Загрузить файл</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <label class="support__textarea form__label">
+            <span class="form__label-text">Неисправность:</span>
+            <textarea class="textarea" name="problem" placeholder="Опишите подробно что у вас случилось с заказом..."></textarea>
+          </label>
+          <label class="support__textarea form__label">
+            <span class="form__label-text">Комментарии / Пожелания:</span>
+            <textarea class="textarea" name="comment" placeholder="Опишите подробно что у вас случилось с заказом..."></textarea>
+          </label>
+          <div class="support__button-block"><button class="button button--h50" type="button">ОТПРАВИТЬ</button></div>
+          <div class="support__note">
+            <p>*Заполните максимально подробно всю информацю в форме для технической поддержки. Это позволит ускорить решение вопроса и найти нужную информацию по Вашему компьютеру.</p>
+            <p>Служба технической поддержки и сервиса работает с понедельника по пятницу с 10:00 до 18:00.</p>
+          </div>
+        </form>
+        <hr class="personal__separator">
+        <h2 class="personal__title">Результаты теста</h2>
+        <table class="tests-list">
+          <thead>
+            <tr>
+              <th class="tests-list__th tests-list__id">id теста</th>
+              <th class="tests-list__th tests-list__title">Название теста</th>
+              <th class="tests-list__th tests-list__result">Результаты теста</th>
+              <th class="tests-list__th"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tests-list__cell tests-list__id">#816390</td>
+              <td class="tests-list__cell tests-list__title">Проверка температуры видеокарты, стабильность в пиковой нагрузке</td>
+              <td class="tests-list__cell tests-list__result">93°C</td>
+              <td class="tests-list__cell tests-list__buttons">
+                <a class="tests-list__button" href="#">Подробнее</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="tests-list__cell tests-list__id">#816391</td>
+              <td class="tests-list__cell tests-list__title">3DMARK ТЕСТ FIRE STRIKE EXTREME, CINEBENCH, UNIGINE (оценка производительности процессора и видеокарты)</td>
+              <td class="tests-list__cell tests-list__result">Успешно</td>
+              <td class="tests-list__cell tests-list__buttons">
+                <a class="tests-list__button" href="#">Подробнее</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="personal__sidebar custom-scroll">
+        <ul class="personal-menu">
+          <li class="personal-menu__item"><a class="personal-menu__link is-active" href="personal_2.html"><span class="personal-menu__link-text">Сохраненные конфигурации</span></a></li>
+          <li class="personal-menu__item"><a class="personal-menu__link" href="#"><span class="personal-menu__link-text">Сохраненные дизайны</span></a></li>
+          <li class="personal-menu__item"><a class="personal-menu__link" href="personal_8.html"><span class="personal-menu__link-text">Партнерский кабинет</span></a></li>
+          <li class="personal-menu__item"><a class="personal-menu__link" href="personal_4.html"><span class="personal-menu__link-text">Мои заказы</span></a></li>
+          <li class="personal-menu__item"><a class="personal-menu__link" href="personal_6.html"><span class="personal-menu__link-text">Профиль</span></a></li>
+          <li class="personal-menu__item"><a class="personal-menu__link" href="personal_7.html"><span class="personal-menu__link-text">Поддержка</span></a></li>
+          <li class="personal-menu__item"><a class="personal-menu__link" href="#"><span class="personal-menu__link-text">Выйти</span></a></li>
+        </ul>
+        
+        <ul class="main-menu">
+          <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Игровые компьютеры</span></a></li>
+          <li class="main-menu__item main-menu__item--title">ИГРОВЫЕ СЕРИИ</li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">ProGaming - серия</span></a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Performance - серия</span></a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Performance X - серия</span></a></li>
+          <li class="main-menu__item main-menu__item--title">СПЕЦИАЛЬНЫЕ СЕРИИ</li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Powered by ASUS</span></a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Powered by AMD</span></a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Рабочие станции</span></a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Моноблоки</span></a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#"><span class="main-menu__link-text">Аксессуары</span></a></li>
+        </ul>
+      </div>
     </div>
   </div>
 

@@ -1,13 +1,23 @@
 .personal
-  background-color: #1A1A1A
+  background-color: #000
   display: flex
   flex-direction: column
 
-  @media (min-width: 992px)
-    overflow: hidden
+  &__wrapper
+    background-color: #1A1A1A
+    display: flex
+    flex-direction: column
+    height: 100%
+    max-width: 1440px
+    margin-left: auto
+    margin-right: auto
+    width: 100%
 
-  @media(max-width: 991px)
-    padding-top: 55px
+    @media (min-width: 992px)
+      overflow: hidden
+
+    @media(max-width: 991px)
+      padding-top: 55px
 
   &__header
     background-color: #191919

@@ -18,196 +18,198 @@
 <body class="personal">
   //= template/personal/sprite.html
 
-  //= template/personal/cart_header.html
+  <div class="personal__wrapper">
+    //= template/personal/cart_header.html
 
-  <div class="personal__inner">
-    <div class="personal__content custom-scroll">
-      <h1 class="personal__title"><span>5.</span> Подтверждение</h1>
-      <div class="checkout form">
-        <table class="checkout-result">
-          <tr>
-            <th>Тип плательщика:</th>
-            <td>Физическое лицо</td>
-          </tr>
-          <tr>
-            <th>Контактное лицо:</th>
-            <td>Сухов Максим</td>
-          </tr>
-          <tr>
-            <th>Email:</th>
-            <td>max93suh@yandex.ru</td>
-          </tr>
-          <tr>
-            <th>Телефон:</th>
-            <td>Бесплатная доставка</td>
-          </tr>
-          <tr>
-            <th>Доставка:</th>
-            <td>Санкт-Петербург</td>
-          </tr>
-          <tr>
-            <th>Оплата:</th>
-            <td>Наличные в офисе</td>
-          </tr>
-        </table>
-        <hr class="personal__separator">
-        <h2 class="personal__title">Состав заказа</h2>
-        <div class="cart-table">
-          <div class="js-fancy-light cart-table__row cart-table__row--item">
-            <div class="js-cart-description-opener cart-table__cell cart-table__title-block" data-link="1">
-              <span class="cart-table__title">DigitalRazor Performance</span>
-            </div>
-            <div class="cart-table__cell cart-table__qnt">
-              <div class="qnt">
-                <button class="qnt__button" type="button" title="Уменьшить"><img src="images/icons/qnt/minus.svg" alt="-"></button>
-                <input class="qnt__input" type="text" value="1">
-                <button class="qnt__button" type="button" title="Увеличить"><img src="images/icons/qnt/plus.svg" alt="+"></button>
+    <div class="personal__inner">
+      <div class="personal__content custom-scroll">
+        <h1 class="personal__title"><span>5.</span> Подтверждение</h1>
+        <div class="checkout form">
+          <table class="checkout-result">
+            <tr>
+              <th>Тип плательщика:</th>
+              <td>Физическое лицо</td>
+            </tr>
+            <tr>
+              <th>Контактное лицо:</th>
+              <td>Сухов Максим</td>
+            </tr>
+            <tr>
+              <th>Email:</th>
+              <td>max93suh@yandex.ru</td>
+            </tr>
+            <tr>
+              <th>Телефон:</th>
+              <td>Бесплатная доставка</td>
+            </tr>
+            <tr>
+              <th>Доставка:</th>
+              <td>Санкт-Петербург</td>
+            </tr>
+            <tr>
+              <th>Оплата:</th>
+              <td>Наличные в офисе</td>
+            </tr>
+          </table>
+          <hr class="personal__separator">
+          <h2 class="personal__title">Состав заказа</h2>
+          <div class="cart-table">
+            <div class="js-fancy-light cart-table__row cart-table__row--item">
+              <div class="js-cart-description-opener cart-table__cell cart-table__title-block" data-link="1">
+                <span class="cart-table__title">DigitalRazor Performance</span>
+              </div>
+              <div class="cart-table__cell cart-table__qnt">
+                <div class="qnt">
+                  <button class="qnt__button" type="button" title="Уменьшить"><img src="images/icons/qnt/minus.svg" alt="-"></button>
+                  <input class="qnt__input" type="text" value="1">
+                  <button class="qnt__button" type="button" title="Увеличить"><img src="images/icons/qnt/plus.svg" alt="+"></button>
+                </div>
+              </div>
+              <div class="cart-table__cell cart-table__price">70 000 Р.</div>
+              <div class="cart-table__cell cart-table__delete-block">
+                <button class="cart-table__delete" type="button" title="Удалить">
+                  <svg class="cart-table__delete-icon" aria-hidden="true">
+                    <use xlink:href="#cart-delete" />
+                  </svg>
+                </button>
               </div>
             </div>
-            <div class="cart-table__cell cart-table__price">70 000 Р.</div>
-            <div class="cart-table__cell cart-table__delete-block">
-              <button class="cart-table__delete" type="button" title="Удалить">
-                <svg class="cart-table__delete-icon" aria-hidden="true">
-                  <use xlink:href="#cart-delete" />
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="cart-table__row cart-table__row--description">
-            <div class="cart-table__description-block">
-              <div class="cart-table__description" data-target="1">
-                <div class="cart-table__info">
-                  <div class="ri-block">
-                    <p class="ri-info"><span>Процессор:</span> 6-ядерный Intel Core i5-8400 2.80 GHz</p>
-                    <p class="ri-info"><span>Кулер:</span> CoolerMaster MasterAir G100L</p>
-                    <p class="ri-info"><span>Системная плата:</span> ASUS PRIME B360M-K</p>
-                    <p class="ri-info"><span>Оперативная память:</span> 8GB (2x4Gb) DDR4 2400Mhz Kingston Hyperx Fury</p>
-                    <p class="ri-info"><span>Видеокарта:</span> ASUS DUAL GTX1060 3G</p>
-                    <p class="ri-info"><span>SSD накопитель - SATA:</span> 120GB WD GREEN</p>
-                    <p class="ri-info"><span>HDD накопитель:</span> HDD 1TB Seagate Barracuda</p>
-                    <p class="ri-info"><span>Корпус:</span> Cooler Master MasterBox MB600L</p>
-                    <p class="ri-info"><span>Блок питания:</span> 500W Cooler Master Elite V3 500</p>
-                    <p class="ri-info"><span>Сборка:</span> Сборка и настройка ПК за 5-7 рабочих дней</p>
-                  </div>
-                  <div class="ri-block">
-                    <p class="ri-info"><span>Гарантия:</span> 36 месецев</p>
-                    <ul class="ri-list">
-                      <li>Бесплатный гарантийный ремонт</li>
-                      <li>Удаленная диагностика неисправности</li>
-                      <li>Горячая замена неисправных комплектующих</li>
-                      <li>Бесплатная доставка до СЦ и обратно по России</li>
-                    </ul>
-                    <p class="ri-info ri-info--inline"><span>Дополнительная упаковка:</span> Деревянный ящик DigitalRazor. Фирменная упаковка, для обеспечения дополнительной надежности при транспортировке грузов в регионы</p>
-                  </div>
-                  <div class="ri-block">
-                    <p class="ri-info"><span>Тестирование:</span> Стандартный стресс-тест 8 часов</p>
-                    <ul class="ri-list">
-                      <li>Стресс-тестирование (синтетика)</li>
-                      <li>Оценка стабильности и производительности системы</li>
-                      <li>Обновление BIOS</li>
-                      <li>Установка актуальных драйверов</li>
-                      <li>Настройка операционной системы</li>
-                    </ul>
-                  </div>
-                  <div class="ri-block">
-                    <p class="ri-info ri-info--inline"><span>Доставка:</span> Бесплатная доставка по России</p>
-                    <p>Доставка осуществляется по всей России бесплатно, согласно стандартным срокам транспортных компаний. Груз будет полностью застрахован на время транспортировки.</p>
+            <div class="cart-table__row cart-table__row--description">
+              <div class="cart-table__description-block">
+                <div class="cart-table__description" data-target="1">
+                  <div class="cart-table__info">
+                    <div class="ri-block">
+                      <p class="ri-info"><span>Процессор:</span> 6-ядерный Intel Core i5-8400 2.80 GHz</p>
+                      <p class="ri-info"><span>Кулер:</span> CoolerMaster MasterAir G100L</p>
+                      <p class="ri-info"><span>Системная плата:</span> ASUS PRIME B360M-K</p>
+                      <p class="ri-info"><span>Оперативная память:</span> 8GB (2x4Gb) DDR4 2400Mhz Kingston Hyperx Fury</p>
+                      <p class="ri-info"><span>Видеокарта:</span> ASUS DUAL GTX1060 3G</p>
+                      <p class="ri-info"><span>SSD накопитель - SATA:</span> 120GB WD GREEN</p>
+                      <p class="ri-info"><span>HDD накопитель:</span> HDD 1TB Seagate Barracuda</p>
+                      <p class="ri-info"><span>Корпус:</span> Cooler Master MasterBox MB600L</p>
+                      <p class="ri-info"><span>Блок питания:</span> 500W Cooler Master Elite V3 500</p>
+                      <p class="ri-info"><span>Сборка:</span> Сборка и настройка ПК за 5-7 рабочих дней</p>
+                    </div>
+                    <div class="ri-block">
+                      <p class="ri-info"><span>Гарантия:</span> 36 месецев</p>
+                      <ul class="ri-list">
+                        <li>Бесплатный гарантийный ремонт</li>
+                        <li>Удаленная диагностика неисправности</li>
+                        <li>Горячая замена неисправных комплектующих</li>
+                        <li>Бесплатная доставка до СЦ и обратно по России</li>
+                      </ul>
+                      <p class="ri-info ri-info--inline"><span>Дополнительная упаковка:</span> Деревянный ящик DigitalRazor. Фирменная упаковка, для обеспечения дополнительной надежности при транспортировке грузов в регионы</p>
+                    </div>
+                    <div class="ri-block">
+                      <p class="ri-info"><span>Тестирование:</span> Стандартный стресс-тест 8 часов</p>
+                      <ul class="ri-list">
+                        <li>Стресс-тестирование (синтетика)</li>
+                        <li>Оценка стабильности и производительности системы</li>
+                        <li>Обновление BIOS</li>
+                        <li>Установка актуальных драйверов</li>
+                        <li>Настройка операционной системы</li>
+                      </ul>
+                    </div>
+                    <div class="ri-block">
+                      <p class="ri-info ri-info--inline"><span>Доставка:</span> Бесплатная доставка по России</p>
+                      <p>Доставка осуществляется по всей России бесплатно, согласно стандартным срокам транспортных компаний. Груз будет полностью застрахован на время транспортировки.</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="cart-table__separator"></div>
-          <div class="js-fancy-light cart-table__row cart-table__row--item">
-            <div class="js-cart-description-opener cart-table__cell cart-table__title-block" data-link="2">
-              <span class="cart-table__title">DigitalRazor Performance</span>
-            </div>
-            <div class="cart-table__cell cart-table__qnt">
-              <div class="qnt">
-                <button class="qnt__button" type="button" title="Уменьшить"><img src="images/icons/qnt/minus.svg" alt="-"></button>
-                <input class="qnt__input" type="text" value="1">
-                <button class="qnt__button" type="button" title="Увеличить"><img src="images/icons/qnt/plus.svg" alt="+"></button>
+            <div class="cart-table__separator"></div>
+            <div class="js-fancy-light cart-table__row cart-table__row--item">
+              <div class="js-cart-description-opener cart-table__cell cart-table__title-block" data-link="2">
+                <span class="cart-table__title">DigitalRazor Performance</span>
+              </div>
+              <div class="cart-table__cell cart-table__qnt">
+                <div class="qnt">
+                  <button class="qnt__button" type="button" title="Уменьшить"><img src="images/icons/qnt/minus.svg" alt="-"></button>
+                  <input class="qnt__input" type="text" value="1">
+                  <button class="qnt__button" type="button" title="Увеличить"><img src="images/icons/qnt/plus.svg" alt="+"></button>
+                </div>
+              </div>
+              <div class="cart-table__cell cart-table__price">84 200 Р.</div>
+              <div class="cart-table__cell cart-table__delete-block">
+                <button class="cart-table__delete" type="button" title="Удалить">
+                  <svg class="cart-table__delete-icon" aria-hidden="true">
+                    <use xlink:href="#cart-delete" />
+                  </svg>
+                </button>
               </div>
             </div>
-            <div class="cart-table__cell cart-table__price">84 200 Р.</div>
-            <div class="cart-table__cell cart-table__delete-block">
-              <button class="cart-table__delete" type="button" title="Удалить">
-                <svg class="cart-table__delete-icon" aria-hidden="true">
-                  <use xlink:href="#cart-delete" />
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="cart-table__row cart-table__row--description">
-            <div class="cart-table__description-block">
-              <div class="cart-table__description" data-target="2">
-                <div class="cart-table__info">
-                  <div class="ri-block">
-                    <p class="ri-info"><span>Процессор:</span> 6-ядерный Intel Core i5-8400 2.80 GHz</p>
-                    <p class="ri-info"><span>Кулер:</span> CoolerMaster MasterAir G100L</p>
-                    <p class="ri-info"><span>Системная плата:</span> ASUS PRIME B360M-K</p>
-                    <p class="ri-info"><span>Оперативная память:</span> 8GB (2x4Gb) DDR4 2400Mhz Kingston Hyperx Fury</p>
-                    <p class="ri-info"><span>Видеокарта:</span> ASUS DUAL GTX1060 3G</p>
-                    <p class="ri-info"><span>SSD накопитель - SATA:</span> 120GB WD GREEN</p>
-                    <p class="ri-info"><span>HDD накопитель:</span> HDD 1TB Seagate Barracuda</p>
-                    <p class="ri-info"><span>Корпус:</span> Cooler Master MasterBox MB600L</p>
-                    <p class="ri-info"><span>Блок питания:</span> 500W Cooler Master Elite V3 500</p>
-                    <p class="ri-info"><span>Сборка:</span> Сборка и настройка ПК за 5-7 рабочих дней</p>
-                  </div>
-                  <div class="ri-block">
-                    <p class="ri-info"><span>Гарантия:</span> 36 месецев</p>
-                    <ul class="ri-list">
-                      <li>Бесплатный гарантийный ремонт</li>
-                      <li>Удаленная диагностика неисправности</li>
-                      <li>Горячая замена неисправных комплектующих</li>
-                      <li>Бесплатная доставка до СЦ и обратно по России</li>
-                    </ul>
-                    <p class="ri-info ri-info--inline"><span>Дополнительная упаковка:</span> Деревянный ящик DigitalRazor. Фирменная упаковка, для обеспечения дополнительной надежности при транспортировке грузов в регионы</p>
-                  </div>
-                  <div class="ri-block">
-                    <p class="ri-info"><span>Тестирование:</span> Стандартный стресс-тест 8 часов</p>
-                    <ul class="ri-list">
-                      <li>Стресс-тестирование (синтетика)</li>
-                      <li>Оценка стабильности и производительности системы</li>
-                      <li>Обновление BIOS</li>
-                      <li>Установка актуальных драйверов</li>
-                      <li>Настройка операционной системы</li>
-                    </ul>
-                  </div>
-                  <div class="ri-block">
-                    <p class="ri-info ri-info--inline"><span>Доставка:</span> Бесплатная доставка по России</p>
-                    <p>Доставка осуществляется по всей России бесплатно, согласно стандартным срокам транспортных компаний. Груз будет полностью застрахован на время транспортировки.</p>
+            <div class="cart-table__row cart-table__row--description">
+              <div class="cart-table__description-block">
+                <div class="cart-table__description" data-target="2">
+                  <div class="cart-table__info">
+                    <div class="ri-block">
+                      <p class="ri-info"><span>Процессор:</span> 6-ядерный Intel Core i5-8400 2.80 GHz</p>
+                      <p class="ri-info"><span>Кулер:</span> CoolerMaster MasterAir G100L</p>
+                      <p class="ri-info"><span>Системная плата:</span> ASUS PRIME B360M-K</p>
+                      <p class="ri-info"><span>Оперативная память:</span> 8GB (2x4Gb) DDR4 2400Mhz Kingston Hyperx Fury</p>
+                      <p class="ri-info"><span>Видеокарта:</span> ASUS DUAL GTX1060 3G</p>
+                      <p class="ri-info"><span>SSD накопитель - SATA:</span> 120GB WD GREEN</p>
+                      <p class="ri-info"><span>HDD накопитель:</span> HDD 1TB Seagate Barracuda</p>
+                      <p class="ri-info"><span>Корпус:</span> Cooler Master MasterBox MB600L</p>
+                      <p class="ri-info"><span>Блок питания:</span> 500W Cooler Master Elite V3 500</p>
+                      <p class="ri-info"><span>Сборка:</span> Сборка и настройка ПК за 5-7 рабочих дней</p>
+                    </div>
+                    <div class="ri-block">
+                      <p class="ri-info"><span>Гарантия:</span> 36 месецев</p>
+                      <ul class="ri-list">
+                        <li>Бесплатный гарантийный ремонт</li>
+                        <li>Удаленная диагностика неисправности</li>
+                        <li>Горячая замена неисправных комплектующих</li>
+                        <li>Бесплатная доставка до СЦ и обратно по России</li>
+                      </ul>
+                      <p class="ri-info ri-info--inline"><span>Дополнительная упаковка:</span> Деревянный ящик DigitalRazor. Фирменная упаковка, для обеспечения дополнительной надежности при транспортировке грузов в регионы</p>
+                    </div>
+                    <div class="ri-block">
+                      <p class="ri-info"><span>Тестирование:</span> Стандартный стресс-тест 8 часов</p>
+                      <ul class="ri-list">
+                        <li>Стресс-тестирование (синтетика)</li>
+                        <li>Оценка стабильности и производительности системы</li>
+                        <li>Обновление BIOS</li>
+                        <li>Установка актуальных драйверов</li>
+                        <li>Настройка операционной системы</li>
+                      </ul>
+                    </div>
+                    <div class="ri-block">
+                      <p class="ri-info ri-info--inline"><span>Доставка:</span> Бесплатная доставка по России</p>
+                      <p>Доставка осуществляется по всей России бесплатно, согласно стандартным срокам транспортных компаний. Груз будет полностью застрахован на время транспортировки.</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="cart-table__separator"></div>
+            <p class="cart-table__result"><span>Итого:</span> 120 000 руб.</p>
           </div>
-          <div class="cart-table__separator"></div>
-          <p class="cart-table__result"><span>Итого:</span> 120 000 руб.</p>
+          <label class="form__label">
+            <span class="form__label-text">Комментарии / Пожелания</span>
+            <textarea class="textarea" name="comment"></textarea>
+          </label>
+          <label class="checkbox-label" for="terms">
+            <input id="terms" class="checkbox-label__input" type="checkbox">
+            <span class="checkbox-label__icon"></span>
+            Я согласен на обработку <a href="#">персональных данных</a>, а также с условиями <a href="#">договора оферты</a>.
+          </label>
         </div>
-        <label class="form__label">
-          <span class="form__label-text">Комментарии / Пожелания</span>
-          <textarea class="textarea" name="comment"></textarea>
-        </label>
-        <label class="checkbox-label" for="terms">
-          <input id="terms" class="checkbox-label__input" type="checkbox">
-          <span class="checkbox-label__icon"></span>
-          Я согласен на обработку <a href="#">персональных данных</a>, а также с условиями <a href="#">договора оферты</a>.
-        </label>
+        <div class="next-block">
+          <a class="button button--h50" href="#">оформить заказ</a>
+        </div>
+        <p class="back-link-block">
+          <a class="back-link" href="personal_2.html">
+            <svg class="back-link__svg" aria-hidden="true">
+              <use xlink:href="#back-link" /></svg>
+            Вернуться назад
+          </a>
+        </p>
       </div>
-      <div class="next-block">
-        <a class="button button--h50" href="#">оформить заказ</a>
+      <div class="personal__sidebar custom-scroll">
+        //= template/personal/cart_sidebar.html
       </div>
-      <p class="back-link-block">
-        <a class="back-link" href="personal_2.html">
-          <svg class="back-link__svg" aria-hidden="true">
-            <use xlink:href="#back-link" /></svg>
-          Вернуться назад
-        </a>
-      </p>
-    </div>
-    <div class="personal__sidebar custom-scroll">
-      //= template/personal/cart_sidebar.html
     </div>
   </div>
 
