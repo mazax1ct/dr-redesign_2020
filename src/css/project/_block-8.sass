@@ -1,0 +1,77 @@
+.block-8
+  background-image: url('../images/content/block_8/bg.jpg')
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: cover
+  padding-top: 50px
+  padding-bottom: 50px
+
+  @media(min-width: 768px)
+    background-attachment: fixed
+
+  @media(min-width: 1200px)
+    padding-top: 100px
+    padding-bottom: 120px
+
+.video-block
+  border: 1px solid #454545
+  display: block
+  max-width: 1060px
+  margin-left: auto
+  margin-right: auto
+  margin-top: 50px
+  margin-bottom: 50px
+  position: relative
+  width: 80%
+
+  @media(min-width: 1200px)
+    margin-top: 70px
+    margin-bottom: 70px
+
+  &:last-child
+    margin-bottom: 0
+
+  &:hover
+    .video-block__play
+      background-color: darken($main_color, 10%)
+
+  &::before,
+  &::after
+    background-color: $main_color
+    content: ''
+    height: 3px
+    position: absolute
+    width: 50px
+    z-index: 1
+
+  &::before
+    left: 0
+    top: -18px
+
+  &::after
+    bottom: -18px
+    left: auto
+    right: 0
+    top: auto
+
+  &__play
+    align-items: center
+    background-color: $main_color
+    display: flex
+    height: 50px
+    justify-content: center
+    left: 50%
+    position: absolute
+    top: 50%
+    transform: translate(-50%, -50%)
+    transition: background-color 0.3s
+    width: 50px
+
+    @media(min-width: 1200px)
+      height: 82px
+      width: 82px
+
+  &__play-icon
+    fill: #fff
+    height: 15px
+    width: 17px

@@ -38,6 +38,37 @@
     @media(min-width: 1900px)
       height: 1100px
 
+    &--wide
+      background-position: 50% 50%
+      display: flex
+      height: 550px
+      padding-top: 55px
+      padding-bottom: 55px
+
+      .main-banner__slide-inner
+        display: flex
+        flex-direction: column
+        height: 100%
+        justify-content: center
+        padding-left: 15px
+        padding-right: 15px
+
+        @media(min-width: 1200px)
+          height: calc(100% - 160px)
+
+      .main-banner__slide-title
+        text-align: center
+
+        @media(min-width: 1900px)
+          font-size: 68px
+
+      .main-banner__slide-text
+        text-align: center
+
+        @media(min-width: 1900px)
+          font-size: 25px
+          line-height: 35px
+
   &__slide-inner
     max-width: 1100px
     margin-left: auto

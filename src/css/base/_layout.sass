@@ -38,4 +38,37 @@ body
   padding-right: 15px
 
   @media(min-width: 1900px)
-    max-width: 1680px
+    max-width: 1710px
+
+.cols
+  margin-bottom: -30px
+
+  @media(min-width: 600px)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -15px
+    margin-right: -15px
+
+  &--3
+    .cols__item
+      @media(min-width: 600px)
+        padding-left: 15px
+        padding-right: 15px
+        width: 50%
+
+      @media(min-width: 992px)
+        width: 33.33333%
+
+  &--4
+    .cols__item
+      @media(min-width: 600px)
+        margin-bottom: 30px
+        padding-left: 15px
+        padding-right: 15px
+        width: 50%
+
+      @media(min-width: 992px)
+        width: 25%
+
+  &__item
+    margin-bottom: 30px

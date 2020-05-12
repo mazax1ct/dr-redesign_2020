@@ -1,0 +1,148 @@
+.block-12
+  background-color: #000
+  padding-top: 50px
+  padding-bottom: 50px
+
+  @media(min-width: 1200px)
+    padding-top: 100px
+    padding-bottom: 100px
+
+  &__text
+    margin-bottom: 50px
+
+.reviews-slider
+  @media(min-width: 1200px)
+    display: flex
+    flex-wrap: wrap
+
+  @media(min-width: 1900px)
+    padding-left: 145px
+    padding-right: 145px
+
+  &.slick-initialized
+    display: block
+
+    .reviews-slider__slide
+      margin-bottom: 0
+
+      @media(min-width: 1200px)
+        display: flex
+
+  &__slide
+    margin-bottom: 20px
+
+    @media(min-width: 1200px)
+      height: auto
+      padding-left: 20px
+      padding-right: 20px
+      width: 50%
+
+  .slick-track
+    display: flex
+    height: auto
+
+  .slick-arrow
+    border-radius: 0
+    border-color: $main_color
+
+  .slick-arrow__arrow
+    stroke: #fff
+
+.review
+  background-color: #0b141d
+  max-width: 680px
+  margin-left: auto
+  margin-right: auto
+
+  @media(min-width: 1200px)
+    display: flex
+    flex-direction: column
+
+  &__top
+    @media(min-width: 600px)
+      display: flex
+
+  &__info
+    padding: 20px
+
+    @media(min-width: 600px)
+      flex-grow: 1
+
+    @media(min-width: 670px)
+      padding: 40px
+
+    @media(min-width: 1200px) and (max-width: 1899px)
+      padding: 20px
+
+  &__title
+    font-family: $secondary_font
+    font-size: 16px
+    margin-bottom: 15px
+    text-transform: uppercase
+
+    @media(min-width: 1200px)
+      font-size: 24px
+
+  &__text
+    @media(min-width: 1200px) and (max-width: 1899px)
+      font-size: 12px
+
+    @media(min-width: 1600px)
+      font-size: 14px
+
+  &__image
+    padding: 0 20px 20px
+    text-align: center
+
+    @media(min-width: 600px)
+      padding: 20px 0
+      min-width: 50%
+
+    @media(min-width: 670px)
+      padding: 40px 0
+      min-width: 320px
+
+    @media(min-width: 1200px) and (max-width: 1899px)
+      min-width: 50%
+      padding: 20px 0
+
+  &__author
+    align-items: center
+    border-top: 1px solid rgba(#fff, 0.1)
+    display: flex
+    padding: 20px
+
+    @media(min-width: 670px)
+      padding: 20px 40px
+
+    @media(min-width: 1200px) and (max-width: 1899px)
+      padding: 20px
+
+    @media(min-width: 1200px)
+      margin-top: auto
+
+  &__author-avatar
+    min-width: 70px
+    margin-right: 20px
+    width: 70px
+
+    @media(min-width: 670px)
+      margin-right: 40px
+
+    @media(min-width: 1200px) and (max-width: 1899px)
+      margin-right: 20px
+
+  &__author-name
+    font-family: $secondary_font
+    font-size: 16px
+    margin-bottom: 5px
+    text-transform: uppercase
+
+    @media(min-width: 1200px)
+      font-size: 24px
+
+  &__author-about
+    opacity: 0.5
+
+    @media(min-width: 1200px)
+      font-size: 14px
