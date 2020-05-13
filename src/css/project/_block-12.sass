@@ -8,7 +8,10 @@
     padding-bottom: 100px
 
   &__text
-    margin-bottom: 50px
+    margin-bottom: 30px
+
+    @media(min-width: 1200px)
+      margin-bottom: 50px
 
 .reviews-slider
   @media(min-width: 1200px)
@@ -43,10 +46,21 @@
 
   .slick-arrow
     border-radius: 0
+    border-width: 1px
     border-color: $main_color
 
+    @media(min-width: 1900px)
+      height: 56px
+      width: 56px
+
   .slick-arrow__arrow
+    height: 40px
     stroke: #fff
+    width: 40px
+
+    @media(min-width: 1900px)
+      height: 55px
+      width: 55px
 
 .review
   background-color: #0b141d
@@ -89,6 +103,7 @@
 
     @media(min-width: 1600px)
       font-size: 14px
+      line-height: 1.5
 
   &__image
     padding: 0 20px 20px

@@ -1,0 +1,90 @@
+<div id="request" class="popup">
+  <button class="js-popup-close popup__close" type="button" title="Закрыть">
+    <svg class="popup__close-svg" aria-hidden="true">
+      <use xlink:href="#menu_close" />
+    </svg>
+  </button>
+  <p class="popup__title">свяжитесь с нами</p>
+  <p class="popup__text">Оставьте заявку, и мы ответим вам онлайн в течение 15 минут. </p>
+  <form class="form2" action="">
+    <div class="row">
+      <div class="col-md-4">
+        <label class="form2__label" for="inp1_">
+          <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Ваше имя</span></span>
+          <input id="inp1_" class="form2__input" type="text" name="name">
+        </label>
+      </div>
+      <div class="col-md-4">
+        <label class="form2__label" for="inp2_">
+          <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Ваше телефон</span></span>
+          <input id="inp2_" class="form2__input" type="text" name="phone">
+        </label>
+      </div>
+      <div class="col-md-4">
+        <label class="form2__label" for="inp3_">
+          <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Ваше email</span></span>
+          <input id="inp3_" class="form2__input" type="text" name="email">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <label class="form2__label" for="inp4_">
+          <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Ваше город</span></span>
+          <input id="inp4_" class="form2__input" type="text" name="city">
+        </label>
+      </div>
+      <div class="col-md-6">
+        <label class="form2__label" for="inp5_">
+          <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Название клуба</span></span>
+          <input id="inp5_" class="form2__input" type="text" name="club">
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <fieldset class="form2__fieldset">
+          <legend class="form2__legend"><span class="form2__legend-content"><span class="form2__legend-decor">+</span> Форма оплаты</span></legend>
+          <label class="radio-label2" for="r1_">
+            <input id="r1_" class="radio-label2__input" type="radio" name="type" value="1">
+            <span class="radio-label2__radio"></span>
+            ЛИЗИНГ
+          </label>
+          <label class="radio-label2" for="r2_">
+            <input id="r2_" class="radio-label2__input" type="radio" name="type" value="2">
+            <span class="radio-label2__radio"></span>
+            ПРЯМАЯ ЗАКУПКА
+          </label>
+        </fieldset>
+      </div>
+      <div class="col-lg-8">
+        <div class="row">
+          <div class="col-md-6">
+            <label class="form2__label" for="inp6_">
+              <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Кол-во компьютеров</span></span>
+              <input id="inp6_" class="form2__input" type="text" name="qnt">
+            </label>
+          </div>
+          <div class="col-md-6">
+            <label class="form2__label" for="inp7_">
+              <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Планируемая дата открытия</span></span>
+              <input id="inp7_" class="form2__input" type="text" name="date">
+            </label>
+          </div>
+        </div>
+        <label class="form2__label" for="inp8_">
+          <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Ваше сообщение</span></span>
+          <textarea id="inp8_" class="form2__textarea" name="comment"></textarea>
+        </label>
+      </div>
+    </div>
+    <div class="form2__submit-block">
+      <label class="checkbox-label2" for="ch1_">
+        <input id="ch1_" class="checkbox-label2__input" type="checkbox">
+        <span class="checkbox-label2__icon"></span>
+        Я принимаю условия договора оферты
+      </label>
+      <button class="button button--arrow" type="submit"><span class="button__text">оставить заявку</span></button>
+    </div>
+  </form>
+</div>

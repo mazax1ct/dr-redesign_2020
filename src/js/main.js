@@ -147,3 +147,9 @@ $(document).on('click', '.js-b2-nav', function () {
   $('.block-2__banner[data-target='+ $(this).attr('data-target') +']').addClass('is-active');
   return false;
 });
+
+//закрытие попапа
+$(document).on('click', '.js-popup-close', function () {
+  $.fancybox.close();
+  return false;
+});

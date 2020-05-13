@@ -1,0 +1,175 @@
+.popup
+  background-color: #191919
+  color: #808080
+  display: none
+  max-width: 776px
+  padding: 40px 15px
+  width: 100%
+
+  @media(min-width: 768px)
+    padding: 55px 70px
+
+  &--big
+    max-width: 986px
+
+  &--small
+    max-width: 410px
+
+  &__close
+    align-items: center
+    background: none
+    border: none
+    cursor: pointer
+    display: flex
+    height: 40px
+    justify-content: center
+    left: auto
+    outline: none
+    position: absolute
+    padding: 0
+    right: 10px
+    top: 10px
+    width: 40px
+
+    &:hover
+      .popup__close-icon
+        fill: $main-color
+
+    &:focus
+      outline: none
+
+  &__close-icon
+    fill: rgba(#fff, 0.3)
+    height: 12px
+    transition: fill 0.3s
+    width: 12px
+
+  &__title
+    color: #fff
+    font-family: $secondary-font
+    font-size: 28px
+    margin-bottom: 25px
+
+  &__text
+    font-size: 14px
+    margin-bottom: 10px
+
+    a
+      color: #fff
+
+  &__options-buttons
+    margin-top: 40px
+
+    @media(min-width: 768px)
+      align-items: flex-start
+      display: flex
+
+  &__option-button
+    align-items: center
+    color: #fff
+    display: flex
+    font-size: 16px
+    font-weight: 600
+    line-height: 1.2
+    margin-right: 40px
+    margin-bottom: 15px
+    transition: color 0.3s
+    text-decoration: none
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+
+    &:last-child
+      margin-right: 0
+      margin-bottom: 0
+
+    &:hover
+      text-decoration: none
+
+      .popup__option-button-icon
+        border-color: $main-color
+        background-color: $main-color
+
+        svg
+          stroke: #fff
+
+  &__option-button-icon
+    align-items: center
+    background-color: transparent
+    border: 1px solid #303030
+    border-radius: 50%
+    display: flex
+    height: 52px
+    justify-content: center
+    margin-right: 15px
+    min-width: 52px
+    transition: background-color 0.3s, border-color 0.3s
+    width: 52px
+
+    svg
+      fill: none
+      height: 52px
+      stroke: $main_color
+      transition: stroke 0.3s
+      width: 52px
+
+  &__option-button-text
+    display: block
+
+  &__buttons
+    display: flex
+    flex-wrap: wrap
+    margin-top: 40px
+
+  &__button
+    margin: 5px
+    min-width: 200px
+
+  &__form-row
+    display: flex
+
+  &__form-row-block
+    margin-right: 15px
+    width: 50%
+
+    &:last-child
+      margin-right: 0
+
+  &__form-label
+    display: block
+    margin-bottom: 10px
+
+  &__form-buttons
+    margin-top: 20px
+
+  &__form-button
+    width: 200px
+
+  .fancybox-button
+    display: none
+
+  hr
+    background-color: rgba(#C4C4C4, 0.2)
+    border: none
+    color: #C4C4C4
+    height: 1px
+    margin-top: 20px
+    margin-bottom: 25px
+    margin-left: -70px
+    margin-right: -70px
+
+.thanks
+  text-align: center
+
+  &__title
+    color: #fff
+    font-family: $secondary_font
+    font-size: 28px
+    line-height: 34px
+    margin-bottom: 10px
+    margin-top: 20px
+    text-transform: uppercase
+
+  &__text
+    color: #808080
+    font-size: 14px
