@@ -153,3 +153,22 @@ $(document).on('click', '.js-popup-close', function () {
   $.fancybox.close();
   return false;
 });
+
+//переключение табов стандарт/vip
+$(document).on('click', '.js-tab-changer', function () {
+  var el = $(this);
+  if(el.hasClass('button--transparent')){
+    $('.js-tab-changer').addClass('button--transparent');
+    el.removeClass('button--transparent');
+
+    $('.configs-tab.is-active').animate({
+      opacity: 0
+    }, 400, function() {
+      $('.configs-tab.is-active').removeClass('is-active');
+      $('.configs-tab[data-target='+el.attr('data-target')+']').addClass('is-active').animate({
+        opacity: 1
+      }, 400);
+    });
+  }
+  return false;
+});
