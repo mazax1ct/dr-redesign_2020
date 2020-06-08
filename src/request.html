@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>DIGITAL RAZOR</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body class="inner-page">
+  //= template/sprite.html
+  <div class="wrapper">
+    //= template/header.html
+
+    <div class="page-content">
+      <div class="container">
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item">Запрос на подбор компьютера</li>
+        </ol>
+        <h1>ЗАПРОС НА ПОДБОР <span class="color-red">КОМПЬЮТЕРА</span></h1>
+        <div class="request-block">
+          <div class="row">
+            <div class="request-block__text-block col-md-6 col-xl-5">
+              <p class="big-text">Вы можете оставить запрос на подбор игрового компьютера и уточнить интересующую Вас информацию.</p>
+              <p>Наши специалисты ответят в течении суток с момента отправки формы обратной связи. Мы работаем с понедельника по воскресенье с 9:30 до 20:00. Также мы собрали ответы на основные вопросы. Рекомендуем проверить F.A.Q, расположенный ниже.</p>
+            </div>
+            <div class="col-md-6 col-xl-5 offset-xl-2">
+              <form class="form form--request" action="" method="post">
+                <label class="form__label" for="name">
+                  <input id="name" class="input_2" name="name" type="text" placeholder="Имя">
+                </label>
+                <label class="form__label" for="email">
+                  <input id="email" class="input_2" name="email" type="text" placeholder="Email">
+                </label>
+                <label class="form__label" for="phone">
+                  <input id="phone" class="input_2 input_2--type_2" name="phone" type="text" placeholder="Телефон">
+                </label>
+                <label class="form__label" for="comment">
+                  <textarea id="comment" class="textarea_2" name="comment" placeholder="Ваше сообщение..."></textarea>
+                </label>
+                <label class="checkbox-label3" for="inp_1">
+                  <input id="inp_1" class="checkbox-label3__input" type="checkbox">
+                  <span class="checkbox-label3__icon"></span>
+                  Даю согласие на обработку <a href="#" target="_blank">персональных данных</a>
+                </label>
+                <div class="form__button-block">
+                  <button class="button button--arrow" type="submit"><span class="button__text">Собери свой пк</span></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq-block">
+      <div class="container">
+        <h2>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
+        //= template/faq.html
+      </div>
+    </div>
+  </div>
+
+  //= template/footer.html
+
+  //= template/scripts.html
+</body>
+
+</html>

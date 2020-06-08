@@ -1,5 +1,5 @@
 body
-  color: #fff
+  color: $text-color
   font-family: $main_font
   font-size: 12px
   font-weight: 400
@@ -13,7 +13,7 @@ body
   outline: none
 
 a
-  color: #fff
+  color: $main_color
   transition: color 0.3s
 
 h1,.h1,
@@ -22,9 +22,38 @@ h3,.h3,
 h4,.h4,
 h5,.h5,
 h6,.h6
+  color: #fff
   font-family: $secondary_font
   font-weight: 500
   margin-top: 0
+
+h1, .h1
+  font-size: 32px
+  line-height: 38px
+  margin-bottom: 20px
+
+  @media(min-width: 1200px)
+    font-size: 42px
+    line-height: 56px
+    margin-bottom: 60px
+
+  @media(min-width: 1900px)
+    font-size: 52px
+
+h2, .h2
+  font-size: 24px
+  line-height: 26px
+  margin-bottom: 30px
+
+  @media(min-width: 1200px)
+    font-size: 38px
+    line-height: 56px
+    margin-bottom: 50px
+
+h3, .h3
+  font-size: 24px
+  line-height: 26px
+  margin-bottom: 30px
 
 p,
 ol,
@@ -32,10 +61,141 @@ ul
   margin-top: 0
   margin-bottom: 0
 
-ul,
-ol
+ol,
+ul
   list-style: none
-  padding-left: 0
+  padding: 0
+
+.numbered-list
+  counter-reset: list_1
+  list-style: none
+  margin-top: 40px
+  margin-bottom: 40px
+
+  &:last-child
+    margin-bottom: 0
+
+  & > li
+    color: #fff
+    font-family: $secondary_font
+    font-weight: 500
+    font-size: 24px
+    line-height: 26px
+    margin-bottom: 25px
+
+    @media(min-width: 1200px)
+      margin-bottom: 40px
+
+    &:last-child
+      margin-bottom: 0
+
+      ol
+        &:last-child
+          margin-bottom: 0
+
+    &::before
+      counter-increment: list_1
+      content: counter(list_1) ". "
+
+    & > ol
+      counter-reset: list_2
+      color: $text-color
+      font-family: $main_font
+      font-size: 12px
+      font-weight: 400
+      line-height: 1.5
+      margin-top: 15px
+      margin-bottom: 20px
+
+      @media(min-width: 1200px)
+        font-size: 16px
+        line-height: 1.375
+        margin-top: 30px
+        margin-bottom: 40px
+
+      & > li
+        margin-bottom: 5px
+        padding-left: 37px
+        position: relative
+
+        @media(min-width: 1200px)
+          margin-bottom: 15px
+          padding-left: 45px
+
+        &:last-child
+          margin-bottom: 0
+
+          ul
+            margin-bottom: 0
+
+        &::before
+          color: #4F5966
+          counter-increment: list_2
+          content: counter(list_1) "." counter(list_2) ". "
+          left: 0
+          position: absolute
+          top: 0
+
+        & > ol
+          counter-reset: list_3
+          color: $text-color
+          font-family: $main_font
+          font-size: 12px
+          font-weight: 400
+          line-height: 1.5
+          margin-top: 15px
+
+          @media(min-width: 1200px)
+            font-size: 16px
+            line-height: 1.375
+            margin-top: 20px
+
+          & > li
+            margin-bottom: 5px
+            padding-left: 37px
+            position: relative
+
+            @media(min-width: 1200px)
+              margin-bottom: 15px
+              padding-left: 45px
+
+            &:last-child
+              margin-bottom: 0
+
+            &::before
+              color: #4F5966
+              counter-increment: list_3
+              content: counter(list_1) "." counter(list_2) "." counter(list_3) ". "
+              left: 0
+              position: absolute
+              top: 0
+
+    &
+      ul
+        margin-top: 15px
+        margin-bottom: 20px
+
+        @media(min-width: 1200px)
+          margin-top: 20px
+          margin-bottom: 40px
+
+        & > li
+          margin-bottom: 5px
+          padding-left: 17px
+          position: relative
+
+          @media(min-width: 1200px)
+            margin-bottom: 15px
+            padding-left: 30px
+
+          &:last-child
+            margin-bottom: 0
+
+          &::before
+            content: '•'
+            left: 0
+            position: absolute
+            top: 0
 
 img
   height: auto
@@ -71,9 +231,11 @@ img
 
     &::-moz-selection
       background: #fff
+      color: $main_color
 
     &::selection
       background: #fff
+      color: $main_color
 
     &::before
       content: '/'
@@ -90,3 +252,19 @@ img
 .accented-text
   @media(min-width: 1900px)
     font-size: 25px
+
+.color-red
+  color: $main_color
+
+.big-text
+  color: #fff
+  font-family: $secondary_font
+  font-weight: 300
+  font-size: 20px
+  line-height: 24px
+  margin-bottom: 10px
+
+  @media(min-width: 1200px)
+    font-size: 28px
+    line-height: 36px
+    margin-bottom: 20px

@@ -21,7 +21,19 @@ body
 
 .inner-page
   @media(min-width: 992px)
-    padding-top: 125px
+    padding-top: 150px
+
+  .header
+    background-color: #05080A
+
+  .header__bottom
+    @media(min-width: 992px)
+      padding-bottom: 25px
+
+.auth-reg-page
+  .header
+    background-color: transparent
+
 
 .wrapper
   flex: 1 0 auto
@@ -29,6 +41,14 @@ body
 
   @media(min-width: 992px)
     padding-top: 0
+
+.page-content
+  padding-top: 16px
+  padding-bottom: 60px
+
+  @media(min-width: 1200px)
+    padding-top: 24px
+    padding-bottom: 100px
 
 .container
   max-width: 1360px

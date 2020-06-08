@@ -1,0 +1,170 @@
+.faq-block
+  background-color: #0E141B
+  padding-top: 50px
+  padding-bottom: 50px
+
+  @media(min-width: 1900px)
+    padding-top: 100px
+    padding-bottom: 100px
+
+.faq
+  @media(min-width: 992px)
+    display: flex
+
+  &__left
+    display: none
+
+    @media(min-width: 992px)
+      display: block
+      width: 26.47058%
+
+  &__right
+    @media(min-width: 992px)
+      padding-left: 40px
+      width: 73.52942%
+
+    @media(min-width: 1900px)
+      padding-left: 80px
+
+  &__mobile-title
+    align-items: center
+    border-bottom: 1px solid #32455A
+    color: #4F5966
+    cursor: pointer
+    display: flex
+    font-family: $secondary_font
+    font-weight: 300
+    font-size: 24px
+    margin-left: -15px
+    margin-right: -15px
+    padding-left: 15px
+    padding-right: 15px
+    padding-top: 17px
+    padding-bottom: 17px
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s
+
+    @media(min-width: 768px)
+      margin-left: 0
+      margin-right: 0
+
+    @media(min-width: 992px)
+      display: none
+
+    &.is-active
+      background-color: #66788C
+      border-bottom-color: #66788C
+      color: #fff
+
+      .faq__mobile-title-icon
+        fill: #fff
+
+  &__mobile-title-icon
+    fill: #4F5966
+    height: 30px
+    min-width: 30px
+    margin-right: 20px
+    transition: fill 0.3s
+    width: 30px
+
+  &__questions-block
+    display: none
+    padding-top: 30px
+    padding-bottom: 30px
+
+    @media(min-width: 992px)
+      display: block
+      padding-top: 0
+      padding-bottom: 0
+
+  &__title
+    align-items: center
+    border-bottom: 1px solid rgba(#32455A, 0.3)
+    border-left: 4px solid transparent
+    color: #4F5966
+    cursor: pointer
+    display: flex
+    font-family: $secondary_font
+    font-weight: 300
+    font-size: 24px
+    padding-top: 17px
+    padding-left: 15px
+    padding-bottom: 17px
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s
+
+    &--no_icon
+      padding-left: 50px
+
+    &:last-child
+      border-bottom: none
+
+    &.is-active
+      border-left-color: #EA1C24
+      color: #fff
+
+      .faq__mobile-title-icon
+        fill: #fff
+
+  &__title-icon
+    fill: #4F5966
+    height: 30px
+    min-width: 30px
+    margin-right: 20px
+    transition: fill 0.3s
+    width: 30px
+
+  &__section
+    @media(min-width: 992px)
+      display: none
+
+    &.is-active
+      @media(min-width: 992px)
+        display: block
+
+.question
+  border: 1px solid #32455A
+  background-color: #171F29
+  margin-bottom: 10px
+  min-height: 60px
+  padding-left: 60px
+  position: relative
+
+  &:last-child
+    margin-bottom: 0
+
+  &.is-open
+    &::before
+      background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 17'%3E%3Crect fill='%23EA1C24' y='8' width='17' height='1'/%3E%3C/svg%3E%0A")
+
+    .question__title
+      color: #fff
+
+  &::before
+    background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 17'%3E%3Crect fill='%2332455A' y='8' width='17' height='1'/%3E%3Crect fill='%2332455A' x='8' width='1' height='17'/%3E%3C/svg%3E")
+    content: ''
+    height: 17px
+    left: 20px
+    position: absolute
+    top: 20px
+    width: 17px
+    z-index: 1
+
+  &__title
+    align-items: center
+    color: #919FAE
+    cursor: pointer
+    display: flex
+    font-size: 16px
+    line-height: 1.3
+    min-height: 60px
+    padding-bottom: 15px
+    padding-top: 15px
+    transition: color 0.3s
+
+    @media(min-width: 1200px)
+      font-size: 18px
+
+  &__body
+    color: #66788C
+    display: none
+    font-size: 14px
+    padding-bottom: 15px

@@ -172,3 +172,35 @@ $(document).on('click', '.js-tab-changer', function () {
   }
   return false;
 });
+
+//faq togglers
+$(document).on('click', '.js-faq-mobile-toggler', function () {
+  var el = $(this);
+  el.next('.faq__questions-block').slideToggle();
+  el.toggleClass('is-active');
+  return false;
+});
+
+$(document).on('click', '.js-faq-toggler', function () {
+  var el = $(this);
+  if(!el.hasClass('is-active')) {
+    $('.js-faq-toggler').removeClass('is-active');
+    el.addClass('is-active');
+    $('.faq__section.is-active').slideToggle('300', function () {
+      $('.faq__section.is-active').removeClass('is-active');
+      $('.faq__section[data-target="'+el.attr('data-target')+'"]').slideToggle('300').addClass('is-active');
+    });
+  }
+  return false;
+});
+
+$(document).on('click', '.js-question-toggler', function () {
+  var el = $(this);
+  el.find('.question__body').slideToggle();
+  el.toggleClass('is-open');
+  return false;
+});
+
+$(window).on("orientationchange", function(event) {
+  $('.faq__questions-block, .faq__section').attr('style', '');
+});

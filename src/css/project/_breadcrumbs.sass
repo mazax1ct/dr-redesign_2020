@@ -1,0 +1,29 @@
+.breadcrumbs
+  color: #4F5966
+  display: flex
+  font-size: 12px
+  flex-wrap: wrap
+  line-height: 1.5
+  margin-bottom: 30px
+
+  @media(min-width: 1200px)
+    font-size: 13px
+    margin-bottom: 60px
+
+  &__item
+    margin-bottom: 5px
+
+    &:not(:last-child)
+      margin-right: 5px
+
+      &::after
+        content: '•'
+        margin-left: 5px
+
+  &__link
+    color: #B3BFCD
+    text-decoration: none
+
+    &:hover,
+    &:focus
+      text-decoration: underline
