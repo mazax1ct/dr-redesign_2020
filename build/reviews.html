@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="inner-page auth-reg-page">
+<body class="inner-page">
   <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
     <symbol id="burger" viewBox="0 0 22 14">
       <path d="M0 0H22V2H0V0ZM0 6H22V8H0V6ZM22 12H0V14H22V12Z" />
@@ -368,59 +368,98 @@
       </div>
     </header>
 
-    <div class="auth-reg">
+    <div class="page-content">
       <div class="container">
-        <div class="auth-reg__links auth-reg-links">
-          <a class="auth-reg-links__link is-active" href="auth.html">Авторизация</a>
-          <span class="auth-reg-links__separator"></span>
-          <a class="auth-reg-links__link" href="register.html">Регистрация</a>
-        </div>
-        <div class="auth-form form">
-          <form method="post" action="/auth/?login=yes" novalidate="novalidate">
-            <input name="AUTH_FORM" value="Y" type="hidden">
-            <input name="TYPE" value="AUTH" type="hidden">
-            <input name="backurl" value="/auth/" type="hidden">
-            <label class="form__label" for="log-email2">
-              <span class="form__label-text">Логин</span>
-              <input class="input error" name="USER_LOGIN" required="" value="" type="text">
-            </label>
-            <label class="form__label" for="log-password2">
-              <span class="form__label-text">Пароль</span>
-              <input class="input auth-form__input" name="USER_PASSWORD" required="" type="password">
-              <a class="auth-form__forget" href="/auth/?forgot_password=yes">Забыли пароль?</a>
-            </label>
-            <div class="auth-form__button-block">
-              <input class="form__button button button--h50" value="Войти в кабинет" type="submit">
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item">Отзывы клиентов</li>
+        </ol>
+        <h1>ОТЗЫВЫ <span class="color-red">КЛИЕНТОВ</span></h1>
+        <div class="review2">
+          <div class="review2__author">
+            <div class="review2__author-avatar"><img src="images/content/reviews/default-avatar.svg" alt=""></div>
+            <div class="review2__author-info">
+              <p class="review2__author-name">Dmitry Alexandrov</p>
+              <p class="review2__date">11.09.19</p>
             </div>
-            <p class="auth-form__social-title">Войти с помощью соцсетей:</p>
-            <div class="auth-form__social-auth">
-              <a class="social-auth" href="#">
-                <span class="social-auth__icon">
-                  <svg class="social-auth__svg" aria-hidden="true"><use xlink:href="#ya"/></svg>
-                </span>
-                <span class="social-auth__text">Яндекс</span>
-              </a>
-              <a class="social-auth" href="#">
-                <span class="social-auth__icon">
-                  <svg class="social-auth__svg" aria-hidden="true"><use xlink:href="#vk"/></svg>
-                </span>
-                <span class="social-auth__text">Вконтакте</span>
-              </a>
-              <a class="social-auth" href="#">
-                <span class="social-auth__icon">
-                  <svg class="social-auth__svg" aria-hidden="true"><use xlink:href="#gplus"/></svg>
-                </span>
-                <span class="social-auth__text">Google</span>
-              </a>
-              <a class="social-auth" href="#">
-                <span class="social-auth__icon">
-                  <svg class="social-auth__svg" aria-hidden="true"><use xlink:href="#fb"/></svg>
-                </span>
-                <span class="social-auth__text">Facebook</span>
-              </a>
+          </div>
+          <div class="review2__body">
+            <div class="review2__text">
+              <p>Приветствую)</p>
+              <p>Наконец пришло и мое время оставить отзыв. Около 5 лет я пускал слюни на этом сайте и вот оно. Свершилось. Заказал себе ПК за 136000р. Хочу сказать спасибо Светлане и Константину. Но особую благодарность хочу выразить Леонтьеву Даниилу. С консультантом мне очень повезло. Знает своё дело. Если вы попадёте к нему, при</p>
+              <p><button class="review2__more" type="button" data-fancybox="review-popup" data-src="#review_1">Читать подробнее...</button></p>
             </div>
-          </form>
+            <div class="review2__image">
+              <div class="js-review2-slider review2-slider">
+                <div class="review2-slider__slide" style="background-image: url('images/content/reviews/img_3.jpg')"></div>
+                <div class="review2-slider__slide" style="background-image: url('images/content/reviews/img_4.jpg')"></div>
+                <div class="review2-slider__slide" style="background-image: url('images/content/reviews/img_5.jpg')"></div>
+              </div>
+            </div>
+          </div>
+          <div id="review_1" class="review2__popup">
+            <button class="js-popup-close review2__popup-close" type="button" title="Закрыть">
+              <svg class="review2__popup-close-icon" aria-hidden="true" tabindex="-1">
+                <use xlink:href="#popup-close2" />
+              </svg>
+            </button>
+            <div class="review2__popup-author">
+              <div class="review2__popup-author-avatar"><img src="images/content/reviews/default-avatar.svg" alt=""></div>
+              <div class="review2__popup-author-info">
+                <p class="review2__popup-author-name">Dmitry Alexandrov</p>
+                <p class="review2__popup-date">11.09.19</p>
+              </div>
+            </div>
+            <div class="popup__text">
+              <p>Если бы тыщу мартышек посадить за тыщу пишущих машинок, то, известное дело, за тыщу лет они б напечатали мануал по ассемблеру для чайников или даже Чапаев и Пустоту. Но вот в том, что высшие приматы в любом количестве смогли бы оставить вменяемый отзыв на мою суперрррмашину, практически бэтмобиль с реактивным двигателем, практически акулу-убийцу, эргономичную и стремительную – сильно сомневаюсь.</p>
+              <p>Если бы в минувшие выходные вдруг наступил зомби-апокалипсис, я бы вряд ли об этом как-нибудь догадался. Ибо нафига покидать убежище, где таинственно мерцает мой новый бесшумный и прохладный друг — вот вообще не шумит, ни на пол градуса не перегревается - где игры летают, картинка как всамделишняя, а рабочие проекты выполняются по щучьему велению, по моему хотению, я вас спрашиваю? Нет ответа.</p>
+            </div>
+          </div>
         </div>
+        <div class="review2">
+          <div class="review2__author">
+            <div class="review2__author-avatar"><img src="images/content/reviews/img_1.jpg" alt=""></div>
+            <div class="review2__author-info">
+              <p class="review2__author-name">Dmitry Alexandrov</p>
+              <p class="review2__date">11.09.19</p>
+            </div>
+          </div>
+          <div class="review2__body">
+            <div class="review2__text">
+              <p>Всё хорошо,пришёл без повреждений и хорошо работает.</p>
+            </div>
+          </div>
+        </div>
+        <div class="review2">
+          <div class="review2__author">
+            <div class="review2__author-avatar"><img src="images/content/reviews/img_2.jpg" alt=""></div>
+            <div class="review2__author-info">
+              <p class="review2__author-name">Petr Anisimov</p>
+              <p class="review2__date">11.09.19</p>
+            </div>
+          </div>
+          <div class="review2__body">
+            <div class="review2__text">
+              <p>Приветствую)</p>
+              <p>Наконец пришло и мое время оставить отзыв. Около 5 лет я пускал слюни на этом сайте и вот оно. Свершилось. Заказал себе ПК за 136000р. Хочу сказать спасибо Светлане и Константину. Но особую благодарность хочу выразить Леонтьеву Даниилу. С консультантом мне очень повезло. Знает своё дело. Если вы попадёте к нему, при</p>
+              <p><button class="review2__more" type="button">Читать подробнее...</button></p>
+            </div>
+            <div class="review2__image">
+              <div class="js-review2-slider review2-slider">
+                <div class="review2-slider__slide" style="background-image: url('images/content/reviews/img_3.jpg')"></div>
+                <div class="review2-slider__slide" style="background-image: url('images/content/reviews/img_4.jpg')"></div>
+                <div class="review2-slider__slide" style="background-image: url('images/content/reviews/img_5.jpg')"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ol class="pager">
+          <li class="pager__item"><a class="pager__link is-active" href="#">1</a></li>
+          <li class="pager__item"><a class="pager__link" href="#">2</a></li>
+          <li class="pager__item"><a class="pager__link" href="#">3</a></li>
+          <li class="pager__item"><a class="pager__link pager__link--more" href="#">...</a></li>
+          <li class="pager__item"><a class="pager__link" href="#">10</a></li>
+        </ol>
       </div>
     </div>
   </div>
@@ -499,6 +538,8 @@
   <script type="text/javascript" src="js/bodyScrollLock.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+
+  <script src="js\jquery.fancybox.min.js"></script>
 </body>
 
 </html>

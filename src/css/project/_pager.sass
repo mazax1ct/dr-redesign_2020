@@ -1,0 +1,40 @@
+.pager
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  list-style: none
+  margin-top: 30px
+  padding: 0
+
+  &__item
+    margin-left: 5px
+    margin-right: 5px
+
+  &__link
+    align-items: center
+    background-color: #171F29
+    border: 1px solid #32455A
+    border-radius: 50%
+    color: #66788C
+    display: flex
+    font-size: 16px
+    height: 38px
+    justify-content: center
+    text-decoration: none
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s
+    width: 38px
+
+    &:hover,
+    &:focus
+      background-color: $main_color
+      border-color: $main_color
+      color: #fff
+
+    &--more
+      background-color: transparent
+      border-color: transparent
+
+    &.is-active
+      background-color: $main_color
+      border-color: $main_color
+      color: #fff

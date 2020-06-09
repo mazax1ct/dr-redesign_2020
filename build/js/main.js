@@ -83,7 +83,6 @@ $(document).ready(function() {
     });
   }
 
-
   //слайдер отзывов
   if($('.js-reviews-slider').length) {
     $('.js-reviews-slider').slick({
@@ -101,6 +100,29 @@ $(document).ready(function() {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  }
+
+  //слайдер картинок в отзыве
+  if($('.js-review2-slider').length) {
+    $('.js-review2-slider').slick({
+      infinite: false,
+      adaptiveHeight: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: true,
+      mobileFirst: true,
+      prevArrow: '<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
+      nextArrow: '<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>',
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            dots: true
           }
         }
       ]

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>DIGITAL RAZOR</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body class="inner-page">
+  //= template/sprite.html
+  <div class="wrapper">
+    //= template/header.html
+
+    <div class="page-content">
+      <div class="container">
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item">Запрос на подбор компьютера</li>
+        </ol>
+        <h1><span class="color-red">RMA -</span> ТЕХНИЧЕКСКАЯ ПОДДЕРЖКА</h1>
+        <div class="support-block">
+          <div class="row">
+            <div class="support-block__text-block col-xl-5">
+              <p class="big-text">Заполните максимально подробно всю информацю в форме для технической поддержки. Это позволит ускорить решение вопроса и найти нужную информацию по Вашему компьютеру.</p>
+              <p>Служба технической поддержки и сервиса работает с<br> понедельника по пятницу с 10:00 до 18:00.</p>
+            </div>
+            <div class="support-block__form col-xl-5 offset-xl-2">
+              <form class="form form--request" action="" method="post">
+                <label class="form__label" for="name">
+                  <input id="name" class="input_2" name="name" type="text" placeholder="ФИО">
+                </label>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label class="form__label" for="email">
+                      <input id="email" class="input_2" name="email" type="text" placeholder="Email">
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form__label" for="phone">
+                      <input id="phone" class="input_2" name="phone" type="text" placeholder="Телефон">
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label class="form__label" for="number">
+                      <input id="number" class="input_2" name="number" type="text" placeholder="Номер заказа">
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form__label" for="serial">
+                      <input id="serial" class="input_2" name="serial" type="text" placeholder="Серийный номер ПК">
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label class="form__label" for="date">
+                      <input id="date" class="input_2" name="date" type="text" placeholder="Дата покупки">
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label class="form__label" for="guareantee_period">
+                      <input id="guareantee_period" class="input_2" name="guareantee_period" type="text" placeholder="Срок гарантии">
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form__label" for="guareantee_end">
+                      <input id="guareantee_end" class="input_2" name="guareantee_end" type="text" placeholder="Дата истечения гарантии">
+                    </label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form__label">
+                      <label class="upload-file_2">
+                        <input class="js-upload-file upload-file_2__input" type="file" name="file" id="file" value="" data-multiple-caption="{count} файла выбрано" multiple="">
+                        <span class="upload-file_2__text">Загрузить файл</span>
+                      </label>
+                      <span class="form__label-text">Видео / фото и т.д.:</span>
+                    </div>
+                  </div>
+                </div>
+                <label class="form__label" for="problem">
+                  <textarea id="problem" class="textarea_2" name="problem" placeholder="Неисправность"></textarea>
+                </label>
+                <label class="form__label" for="comment">
+                  <textarea id="comment" class="textarea_2" name="comment" placeholder="Комментарии"></textarea>
+                </label>
+                <label class="checkbox-label3" for="inp_1">
+                  <input id="inp_1" class="checkbox-label3__input" type="checkbox">
+                  <span class="checkbox-label3__icon"></span>
+                  Даю согласие на обработку <a href="#" target="_blank">персональных данных</a>
+                </label>
+                <div class="form__button-block">
+                  <button class="button button--arrow" type="submit"><span class="button__text">Отправить</span></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq-block">
+      <div class="container">
+        <h2>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
+        //= template/faq.html
+      </div>
+    </div>
+  </div>
+
+  //= template/footer.html
+
+  //= template/scripts.html
+
+  <script src="js/file-upload.js"></script>
+</body>
+
+</html>
