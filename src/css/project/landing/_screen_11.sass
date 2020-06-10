@@ -1,0 +1,130 @@
+.screen-11
+  background-color: #131515
+  padding-top: 55px
+  padding-bottom: 50px
+
+  @media(min-width: 1200px)
+    padding-top: 75px
+    padding-bottom: 100px
+
+  &__image-block
+    margin-bottom: 30px
+    text-align: center
+
+    @media(min-width: 1200px)
+      margin-bottom: 60px
+
+  &__image
+    filter: drop-shadow(0 0 92px rgba(#fff,0.15))
+
+    @media(max-width: 767px)
+      max-width: 270px
+
+    @media(min-width: 768px)
+      max-width: 45%
+
+    @media(min-width: 1900px)
+      max-width: 100%
+
+  .title
+    margin-bottom: 30px
+    text-align: center
+
+    @media(min-width: 1200px)
+      margin-bottom: 60px
+
+.list-6
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  max-width: 270px
+  margin-left: auto
+  margin-right: auto
+
+  @media(min-width: 768px)
+    max-width: 750px
+
+  @media(min-width: 1200px)
+    max-width: 80%
+
+  & > div
+    &:nth-child(1)
+      @media(max-width: 767px)
+        order: 3
+
+    &:nth-child(2)
+      @media(max-width: 767px)
+        order: 2
+
+    &:nth-child(3)
+      @media(max-width: 767px)
+        order: 6
+
+    &:nth-child(4)
+      @media(max-width: 767px)
+        order: 4
+
+    &:nth-child(5)
+      @media(max-width: 767px)
+        order: 1
+
+    &:nth-child(6)
+      @media(max-width: 767px)
+        order: 6
+
+    &:nth-child(7)
+      @media(max-width: 767px)
+        order: 5
+
+  &__item
+    position: relative
+
+    //&:not(:last-child)
+      &::after
+        @media(min-width: 768px)
+          border-right: 1px solid #2a2a2a
+          content: ''
+          height: 100%
+          left: auto
+          position: absolute
+          right: -27px
+          top: 0
+
+        //@media(min-width: 1200px)
+          right: -30px
+
+  &__item-title
+    color: #fff
+    font-family: $secondary_font
+    font-size: 17px
+    line-height: 1
+    margin-bottom: 0
+    text-transform: uppercase
+
+    @media(min-width: 768px)
+      font-size: 20px
+      margin-bottom: 5px
+
+    @media(min-width: 1200px)
+      font-size: 36px
+      line-height: 28px
+      margin-bottom: 15px
+
+  &__item-text
+    color: #9f9f9f
+    font-size: 12px
+    font-weight: 300
+    line-height: 18px
+
+    @media(min-width: 1200px)
+      font-size: 17px
+      line-height: 17px
+
+  &__delimiter
+    border-bottom: 1px solid #2a2a2a
+    min-width: 100%
+    margin-top: 18px
+    margin-bottom: 18px
+
+    @media(min-width: 768px)
+      display: none

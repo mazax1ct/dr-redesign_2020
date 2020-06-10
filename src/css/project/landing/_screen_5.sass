@@ -1,0 +1,160 @@
+.screen-5
+  background-color: #0a0a0a
+  background-position: 50% 50%
+  background-repeat: no-repeat
+  background-size: cover
+  background-image: url('../images/content/screen_5/bg_mobile.jpg')
+  padding-top: 55px
+  padding-bottom: 55px
+
+  @media(min-width: 768px)
+    background-image: url('../images/content/screen_5/bg.jpg')
+
+  @media(min-width: 1200px)
+    padding-bottom: 85px
+    padding-top: 75px
+
+.vs-title
+  align-items: center
+  display: flex
+  font-family: $secondary_font
+  font-size: 14px
+  justify-content: center
+  max-width: 290px
+  margin-bottom: 35px
+  margin-left: auto
+  margin-right: auto
+  text-transform: uppercase
+
+  @media(min-width: 768px)
+    font-size: 20px
+    max-width: 450px
+
+  @media(min-width: 1200px)
+    font-size: 36px
+    max-width: 820px
+    margin-bottom: 60px
+
+  & > span
+    &:nth-child(1)
+      text-align: right
+
+    &:nth-child(2)
+      text-shadow: 0 0 133px #ad0303
+      color: $main_color
+      font-size: 40px
+      line-height: 1
+      padding-left: 10px
+      padding-right: 10px
+
+      @media(min-width: 768px)
+        font-size: 60px
+        padding-left: 20px
+        padding-right: 20px
+
+      @media(min-width: 1200px)
+        font-size: 106px
+        padding-left: 30px
+        padding-right: 30px
+
+      &::-moz-selection
+        background: #fff
+
+      &::selection
+        background: #fff
+
+    span
+      color: $main_color
+
+      &::-moz-selection
+        background: #fff
+
+      &::selection
+        background: #fff
+
+  br
+    @media(min-width: 1200px)
+      display: none
+
+.video
+  border: 1px solid rgba(#fff, 0.1)
+  box-shadow: 0 0 172px 0 rgba(#847691, 0.1)
+  display: block
+  margin-left: auto
+  margin-right: auto
+  max-width: 980px
+  padding: 4px
+  position: relative
+
+  @media(min-width: 768px)
+    padding: 16px
+
+  &:hover,
+  &:focus
+    .video__inner
+      &::after
+        background-color: darken($main_color, 10%)
+
+  &::before,
+  &::after
+    background-color: $main_color
+    box-shadow: 0 0 30px 5px rgba($main_color, 0.5)
+    content: ''
+    height: 2px
+    position: absolute
+    width: 27px
+
+    @media(min-width: 768px)
+      height: 3px
+      width: 50px
+
+  &::before
+    left: -1px
+    top: -1px
+
+    @media(min-width: 768px)
+      top: -2px
+
+  &::after
+    bottom: -1px
+    left: auto
+    right: -1px
+    top: auto
+
+    @media(min-width: 768px)
+      bottom: -2px
+
+  &__inner
+    overflow: hidden
+    position: relative
+
+    @media(max-width: 437px)
+      height: 260px
+
+    &::after
+      background-color: $main_color
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' width='17' height='17'%3E%3Cpath fill='%23fff' d='M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z'/%3E%3C/svg%3E%0A")
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      content: ''
+      height: 52px
+      left: 50%
+      position: absolute
+      transform: translate(-50%, -50%)
+      top: 50%
+      transition: background-color 0.3s
+      width: 52px
+      z-index: 1
+
+      @media(min-width: 768px)
+        height: 82px
+        width: 82px
+
+  &__image
+    @media(max-width: 437px)
+      height: 260px
+      left: 50%
+      max-width: initial
+      position: absolute
+      transform: translateX(-50%)
+      top: 0

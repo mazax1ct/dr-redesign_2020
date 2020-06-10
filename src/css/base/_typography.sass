@@ -229,28 +229,29 @@ img
     font-size: 50px
 
   span
-    color: $main_color
-    position: relative
-
-    &::-moz-selection
-      background: #fff
+    &:first-child
       color: $main_color
+      position: relative
 
-    &::selection
-      background: #fff
-      color: $main_color
+      &::-moz-selection
+        background: #fff
+        color: $main_color
 
-    &::before
-      content: '/'
-      left: -15px
-      pointer-events: none
-      position: absolute
-      top: 50%
-      transform: translateY(-50%)
-      user-select: none
+      &::selection
+        background: #fff
+        color: $main_color
 
-      @media(min-width: 1200px)
-        left: -35px
+      &::before
+        content: '/'
+        left: -15px
+        pointer-events: none
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        user-select: none
+
+        @media(min-width: 1200px)
+          left: -35px
 
 .accented-text
   @media(min-width: 1900px)

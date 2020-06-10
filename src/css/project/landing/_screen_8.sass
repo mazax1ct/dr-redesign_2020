@@ -1,0 +1,116 @@
+.screen-8
+  background-color: #1a1a1a
+  background-image: url('../images/content/screen_8/bg_mobile.jpg')
+  background-position: 50% 50%
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 55px
+  padding-bottom: 55px
+
+  @media(min-width: 768px)
+    background-image: url('../images/content/screen_8/bg.jpg')
+
+  @media(min-width: 1200px)
+    padding-top: 75px
+    padding-bottom: 75px
+
+  @media(min-width: 1900px)
+    background-size: 100% auto
+
+  .title
+    margin-bottom: 30px
+    text-align: center
+
+    @media(min-width: 1200px)
+      margin-bottom: 60px
+
+.accordion-block
+  @media(max-width: 767px)
+    margin-left: -10px
+    margin-right: -10px
+
+  @media(min-width: 1200px)
+    max-width: 80%
+    margin-left: auto
+    margin-right: auto
+
+.accordion
+  &:not(:last-child)
+    padding-bottom: 10px
+
+  .accordion
+    padding-bottom: 2px
+
+    .accordion__title
+      color: #c5c6c6
+      font-size: 13px
+      font-weight: 400
+
+      @media(min-width: 1200px)
+        color: #fff
+        font-size: 18px
+
+      &.is-active
+        &::after
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 7.4' width='12' height='8'%3E%3Cpath fill='%23f13724' d='M6,2.8l4.6,4.6L12,6L6,0L0,6l1.4,1.4L6,2.8z'/%3E%3C/svg%3E%0A")
+
+      &::after
+        background-color: transparent
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 7.4' width='12' height='8'%3E%3Cpath fill='%23f13724' d='M6,4.6L1.4,0L0,1.4l6,6l6-6L10.6,0L6,4.6z'/%3E%3C/svg%3E%0A")
+
+    .accordion__body
+      background-color: #181616
+      padding: 24px
+
+      &::before
+        border-top: 1px solid #292829
+        content: ''
+        display: block
+        transform: translateY(-24px)
+
+  &__title
+    align-items: center
+    background-color: #181616
+    color: #fff
+    cursor: pointer
+    display: flex
+    font-size: 15px
+    font-weight: 500
+    min-height: 55px
+    padding-left: 24px
+    padding-top: 15px
+    padding-bottom: 15px
+    position: relative
+    padding-right: 80px
+
+    @media(min-width: 1200px)
+      font-size: 20px
+      min-height: 70px
+
+    &.is-active
+      &::after
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 7.4' width='12' height='8'%3E%3Cpath fill='%23fff' d='M6,2.8l4.6,4.6L12,6L6,0L0,6l1.4,1.4L6,2.8z'/%3E%3C/svg%3E%0A")
+
+    &::after
+      background-color: $main_color
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 7.4' width='12' height='8'%3E%3Cpath fill='%23fff' d='M6,4.6L1.4,0L0,1.4l6,6l6-6L10.6,0L6,4.6z'/%3E%3C/svg%3E%0A")
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      content: ''
+      height: 100%
+      left: auto
+      position: absolute
+      right: 0
+      top: 0
+      width: 55px
+      z-index: 1
+
+  &__body
+    display: none
+    color: #fff
+    font-size: 13px
+    padding-top: 10px
+
+    @media(min-width: 1200px)
+      font-size: 15px
+      line-height: 22px

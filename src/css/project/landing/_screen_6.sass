@@ -1,0 +1,96 @@
+.screen-6
+  background-color: #0b0d0e
+  background-image: url('../images/content/screen_6/bg_mobile.jpg')
+  background-position: 0 0
+  background-repeat: no-repeat
+  padding-top: 55px
+  padding-bottom: 40px
+
+  @media(min-width: 768px)
+    background-image: url('../images/content/screen_6/bg.jpg')
+    background-position: 50% 50%
+
+  @media(min-width: 1200px)
+    padding-top: 75px
+
+  @media(min-width: 1900px)
+    background-size: 100% auto
+
+  .title
+    margin-bottom: 30px
+    text-align: center
+
+    @media(min-width: 1200px)
+      margin-bottom: 60px
+
+.list-4
+  @media(min-width: 600px)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -7px
+    margin-right: -7px
+
+  @media(min-width: 1100px)
+    margin-left: -15px
+    margin-right: -15px
+
+  &__item
+    margin-bottom: 15px
+    margin-left: auto
+    margin-right: auto
+
+    @media(min-width: 600px)
+      margin-left: 0
+      margin-right: 0
+      margin-bottom: 15px
+      padding-left: 7px
+      padding-right: 7px
+      width: 50%
+
+    @media(min-width: 1100px)
+      margin-bottom: 30px
+      padding-left: 15px
+      padding-right: 15px
+      width: 33.33333%
+
+.l4-item
+  color: #fff
+  display: block
+  font-family: $secondary_font
+  font-size: 13px
+  line-height: 16px
+  overflow: hidden
+  position: relative
+  text-transform: uppercase
+  text-decoration: none
+
+  @media(min-width: 1200px)
+    font-size: 16px
+    line-height: 24px
+
+  &__image
+    transform: scale(1)
+    transition: transform 0.3s
+
+  &__title
+    align-items: center
+    bottom: 0
+    background-color: rgba(#141617, 0.95)
+    display: flex
+    left: 0
+    min-height: 70px
+    position: absolute
+    padding: 10px 15px
+    top: auto
+    width: 100%
+    z-index: 1
+
+    @media(min-width: 1200px)
+      min-height: 75px
+      padding: 15px 30px
+
+a.l4-item
+  &:hover,
+  &:focus
+    .l4-item__image
+      transform: scale(1.02)

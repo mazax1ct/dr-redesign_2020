@@ -1,0 +1,89 @@
+.screen-12
+  background-image: url('../images/content/screen_12/bg_mobile.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: 50% 50%
+  background-color: #0f1010
+  padding-top: 55px
+  padding-bottom: 15px
+
+  @media(min-width: 768px)
+    background-image: url('../images/content/screen_12/bg.jpg')
+    padding-bottom: 55px
+
+  @media(min-width: 1200px)
+    padding-top: 75px
+    min-height: 520px
+
+  .title
+    margin-bottom: 30px
+    text-align: center
+
+    @media(min-width: 1200px)
+      margin-bottom: 90px
+
+.list-7
+  @media(min-width: 768px)
+    display: flex
+    flex-wrap: wrap
+
+  &__item
+    margin-bottom: 35px
+
+    @media(min-width: 768px)
+      width: 50%
+
+    @media(min-width: 992px)
+      margin-bottom: 0
+      width: 25%
+
+.l7-item
+  align-items: center
+  color: #fff
+  display: flex
+  max-width: 305px
+  margin-left: auto
+  margin-right: auto
+
+  @media(min-width: 768px)
+    display: block
+    text-align: center
+
+  &__image-block
+    min-width: 43px
+    width: 43px
+
+    @media(min-width: 768px)
+      align-items: flex-end
+      display: flex
+      justify-content: center
+      min-height: 67px
+      margin-bottom: 20px
+      width: 100%
+
+    @media(min-width: 1200px)
+      margin-bottom: 40px
+
+  &__info
+    padding-left: 12px
+
+    @media(min-width: 768px)
+      padding-left: 0
+
+  &__title
+    font-family: $secondary_font
+    font-size: 14px
+    line-height: 27px
+
+  &__text
+    color: rgba(#fff, 0.8)
+    font-size: 14px
+    font-weight: 300
+    max-width: 260px
+    margin-left: auto
+    margin-right: auto
+
+    @media(min-width: 1200px)
+      color: rgba(#fff, 0.55)
+      font-size: 15px
+      line-height: 22px

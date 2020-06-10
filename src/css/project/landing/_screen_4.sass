@@ -1,0 +1,477 @@
+.screen-4
+  background-color: #0f1010
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: cover
+  background-image: url('../images/content/screen_4/bg_mobile.jpg')
+  padding-top: 55px
+  padding-bottom: 55px
+
+  @media(min-width: 768px)
+    background-image: url('../images/content/screen_4/bg.jpg')
+
+  @media(min-width: 1200px)
+    padding-top: 75px
+    padding-bottom: 85px
+
+  .title
+    margin-bottom: 30px
+    text-align: center
+
+    @media(min-width: 1200px)
+      margin-bottom: 60px
+
+.list-3
+  margin-bottom: -15px
+
+  @media(min-width: 768px)
+    display: flex
+    flex-wrap: wrap
+    margin-left: auto
+    margin-right: auto
+    width: 608px
+
+  @media(min-width: 992px)
+    width: 912px
+
+  @media(min-width: 1200px)
+    width: 1136px
+
+  @media(min-width: 1400px)
+    margin-bottom: -30px
+    width: 1360px
+
+  &__item
+    margin-bottom: 15px
+
+    @media(min-width: 768px)
+      padding-left: 7px
+      padding-right: 7px
+
+    @media(min-width: 1400px)
+      margin-bottom: 30px
+      padding-left: 15px
+      padding-right: 15px
+      width: 50%
+
+  &.slick-initialized
+    margin-bottom: 0
+
+    .list-3__item
+      margin-bottom: 0
+
+.l3-item
+  background-color: #1a1b1b
+  max-width: 290px
+  margin-left: auto
+  margin-right: auto
+
+  @media(min-width: 768px)
+    box-shadow: 0 0 92px 0 rgba(#000, 0.25)
+
+  @media(min-width: 1200px)
+    max-width: 270px
+
+  @media(min-width: 1400px)
+    display: flex
+    max-width: 650px
+
+  &__left
+    margin-bottom: 30px
+    padding-left: 23px
+    padding-right: 23px
+
+    @media(min-width: 1400px)
+      margin-bottom: 0
+      padding-bottom: 35px
+
+  &__image
+    margin-left: -23px
+    margin-right: -23px
+    position: relative
+
+  &__fps-block
+    align-items: center
+    background-color: rgba($main_color, 0.5)
+    color: #fff
+    display: flex
+    flex-direction: column
+    font-size: 12px
+    justify-content: center
+    height: 66px
+    left: auto
+    overflow: hidden
+    position: absolute
+    right: 0
+    top: 0
+    text-transform: uppercase
+    width: 66px
+    z-index: 1
+
+    &::after
+      border: solid transparent
+      border-bottom-color: rgba(#861b10, 0.75)
+      border-right-color: rgba(#861b10, 0.75)
+      border-width: 33px
+      content: ''
+      height: 0
+      left: 0
+      position: absolute
+      top: 0
+      width: 0
+      z-index: -1
+
+  &__fps
+    display: block
+    font-family: $secondary_font
+    font-size: 28px
+    line-height: 1
+
+  &__title
+    color: #fff
+    font-family: $secondary_font
+    font-size: 16px
+    margin-bottom: 15px
+    text-transform: uppercase
+
+  &__buy-block
+    align-items: center
+    display: flex
+    margin-bottom: 25px
+
+  &__price
+    color: $main_color
+    font-size: 27px
+    font-family: $secondary_font
+    font-weight: 500
+    line-height: 1
+    margin-bottom: 0
+
+  &__credit-price
+    color: rgba(#fff, 0.35)
+    font-size: 12px
+
+  &__buy-button
+    align-items: center
+    background-color: $main_color
+    display: flex
+    justify-content: center
+    height: 39px
+    margin-left: auto
+    transition: background-color 0.3s
+    text-decoration: none
+    width: 39px
+
+    &:hover,
+    &:focus
+      background-color: darken($main_color, 5%)
+
+  &__buy-icon
+    fill: #fff
+    height: 14px
+    width: 14px
+
+  &__config-button
+    align-items: center
+    border: 1px solid #3e3f3f
+    color: #fff
+    display: flex
+    font-family: $secondary_font
+    height: 48px
+    justify-content: center
+    font-size: 14px
+    font-weight: 300
+    text-decoration: none
+    transition: background-color 0.3s, border-color 0.3s
+    text-transform: uppercase
+
+    &:hover,
+    &:focus
+      background-color: $main_color
+      border-color: $main_color
+
+  &__config-icon
+    fill: #fff
+    height: 14px
+    margin-right: 10px
+    width: 14px
+
+  &__right
+    padding-left: 23px
+    padding-right: 23px
+    padding-bottom: 15px
+
+    @media(min-width: 1400px)
+      flex-grow: 1
+      padding-top: 40px
+
+  &__config-title
+    color: #767979
+    font-size: 13px
+    font-weight: 300
+    margin-bottom: 20px
+    position: relative
+
+    &::after
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 7.4' width='12' height='8'%3E%3Cpath fill='%23767979' d='M6,2.8l4.6,4.6L12,6L6,0L0,6l1.4,1.4L6,2.8z'/%3E%3C/svg%3E%0A")
+      content: ''
+      height: 8px
+      left: auto
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
+      width: 12px
+
+      @media(min-width: 1400px)
+        display: none
+
+  &__config-option
+    &:not(:last-child)
+      margin-bottom: 13px
+
+.config-option
+  align-items: center
+  display: flex
+  margin-left: -23px
+  margin-right: -23px
+  padding-bottom: 13px
+  padding-left: 23px
+  padding-right: 23px
+
+  @media(min-width: 1400px)
+    margin-left: 0
+    margin-right: 0
+    padding-left: 0
+    padding-right: 0
+
+  &:not(:last-child)
+    border-bottom: 1px solid #222424
+
+  &__icon-block
+    min-width: 35px
+
+  &__icon
+    fill: #343535
+    height: 24px
+    width: 24px
+
+  &__info
+    color: #fff
+    font-size: 13px
+    font-weight: 300
+    line-height: 16px
+
+  &__title
+    color: #767979
+
+    &:not(:last-child)
+      margin-bottom: 5px
+
+.list-8-container
+  max-width: 1710px
+  margin-left: auto
+  margin-right: auto
+  padding-left: 15px
+  padding-right: 15px
+
+.list-8
+  margin-bottom: -20px
+
+  @media(min-width: 768px)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -10px
+    margin-right: -10px
+
+  &__item
+    margin-bottom: 20px
+
+    @media(min-width: 768px)
+      padding-left: 10px
+      padding-right: 10px
+      width: 50%
+
+    @media(min-width: 992px)
+      width: 25%
+
+  &.slick-initialized
+    margin-bottom: 0
+
+    .list-3__item
+      margin-bottom: 0
+
+  .slick-dots
+    bottom: -40px
+    font-size: 14px
+
+    li
+      margin: 0
+
+      &.slick-active
+        button
+          color: $main_color
+          text-decoration: underline
+
+      button
+        color: #fff
+
+        &::after
+          display: none
+
+.l8-item
+  max-width: 400px
+  margin-left: auto
+  margin-right: auto
+
+  &__image
+    background-color: #000
+    margin-bottom: 20px
+    padding-left: 20px
+    padding-right: 20px
+    position: relative
+    text-align: center
+
+  &__fps-block
+    align-items: center
+    background-color: rgba($main_color, 0.5)
+    color: #fff
+    display: flex
+    flex-direction: column
+    font-size: 12px
+    justify-content: center
+    height: 66px
+    left: auto
+    overflow: hidden
+    position: absolute
+    right: 0
+    top: 0
+    text-transform: uppercase
+    width: 66px
+    z-index: 1
+
+    &::after
+      border: solid transparent
+      border-bottom-color: rgba(#861b10, 0.75)
+      border-right-color: rgba(#861b10, 0.75)
+      border-width: 33px
+      content: ''
+      height: 0
+      left: 0
+      position: absolute
+      top: 0
+      width: 0
+      z-index: -1
+
+  &__fps
+    display: block
+    font-family: $secondary_font
+    font-size: 28px
+    line-height: 1
+
+  &__info
+    background-color: #000
+    padding: 20px
+
+    @media(min-width: 1400px)
+      padding: 30px 40px 20px
+
+  &__title
+    color: #fff
+    font-family: $secondary_font
+    font-size: 16px
+    margin-bottom: 15px
+    text-transform: uppercase
+
+  &__buy-block
+    align-items: center
+    display: flex
+    margin-bottom: 25px
+
+  &__price
+    color: $main_color
+    font-size: 27px
+    font-family: $secondary_font
+    font-weight: 500
+    line-height: 1
+    margin-bottom: 0
+
+  &__credit-price
+    color: rgba(#fff, 0.35)
+    font-size: 12px
+
+  &__buy-button
+    align-items: center
+    background-color: $main_color
+    display: flex
+    justify-content: center
+    height: 39px
+    margin-left: auto
+    transition: background-color 0.3s
+    text-decoration: none
+    width: 39px
+
+    &:hover,
+    &:focus
+      background-color: darken($main_color, 5%)
+
+  &__buy-icon
+    fill: #fff
+    height: 14px
+    width: 14px
+
+  &__config-button
+    align-items: center
+    border: 1px solid #3e3f3f
+    color: #fff
+    display: flex
+    font-family: $secondary_font
+    height: 48px
+    justify-content: center
+    font-size: 14px
+    font-weight: 300
+    text-decoration: none
+    transition: background-color 0.3s, border-color 0.3s
+    text-transform: uppercase
+
+    &:hover,
+    &:focus
+      background-color: $main_color
+      border-color: $main_color
+
+  &__config-icon
+    fill: #fff
+    height: 14px
+    margin-right: 10px
+    width: 14px
+
+  &__config-title
+    color: #767979
+    font-size: 13px
+    font-weight: 300
+    margin-bottom: 20px
+    margin-top: 20px
+    position: relative
+
+    &::after
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 7.4' width='12' height='8'%3E%3Cpath fill='%23767979' d='M6,2.8l4.6,4.6L12,6L6,0L0,6l1.4,1.4L6,2.8z'/%3E%3C/svg%3E%0A")
+      content: ''
+      height: 8px
+      left: auto
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
+      width: 12px
+
+      @media(min-width: 1400px)
+        display: none
+
+  &__config-option
+    margin-left: 0
+    margin-right: 0
+    padding-left: 0
+    padding-right: 0
+
+    &:not(:last-child)
+      margin-bottom: 13px

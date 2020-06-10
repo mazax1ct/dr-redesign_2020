@@ -1,0 +1,111 @@
+.screen-1
+  background-color: #191919
+  background-image: url('../images/content/screen_1/bg_mobile.jpg')
+  background-position: 50% 50%
+  background-size: cover
+  background-repeat: no-repeat
+  overflow: hidden
+  text-align: center
+
+  @media(min-width: 768px)
+    background-image: url('../images/content/screen_1/bg.jpg')
+    background-size: auto
+    overflow: visible
+    text-align: right
+
+  @media(min-width: 1200px)
+    min-height: 685px
+
+  @media(min-width: 1900px)
+    background-size: cover
+
+  &__inner
+    padding-top: 60px
+
+    @media(min-width: 768px)
+      align-items: center
+      display: flex
+      padding-bottom: 60px
+
+    @media(min-width: 1200px)
+      min-height: 685px
+      padding-top: 0
+      padding-bottom: 0
+
+  &__title
+    font-size: 18px
+    font-family: $secondary_font
+    line-height: 28px
+    margin-top: 0
+    margin-bottom: 15px
+
+    @media(min-width: 992px)
+      font-size: 22px
+      line-height: 1.375
+
+    @media(min-width: 1200px)
+      font-size: 36px
+      line-height: 1.375
+
+    span
+      color: $main_color
+      display: block
+      font-size: 24px
+
+      @media(min-width: 992px)
+        font-size: 36px
+
+      @media(min-width: 1200px)
+        font-size: 48px
+
+      &::-moz-selection
+        background: #fff
+
+      &::selection
+        background: #fff
+
+  &__text-block
+    margin-bottom: 5px
+
+    @media(min-width: 768px)
+      min-width: 55%
+      margin-bottom: 0
+      padding-right: 40px
+      width: 55%
+
+  &__text
+    color: #fefefe
+    font-size: 14px
+    font-weight: 300
+    margin-bottom: 15px
+
+    @media(max-width: 767px)
+      display: none
+
+    @media(min-width: 1200px)
+      font-size: 18px
+      margin-bottom: 50px
+
+  &__image-block
+    height: 275px
+    margin-left: -15px
+    margin-right: -15px
+    overflow: hidden
+
+    @media(min-width: 768px)
+      height: auto
+      margin-left: 0
+      margin-right: 0
+      overflow: visible
+
+    img
+      max-width: 330px
+      width: 330px
+
+      @media(min-width: 768px)
+        max-width: 100%
+        width: auto
+
+      @media(min-width: 1500px)
+        max-width: 620px
+        width: 620px

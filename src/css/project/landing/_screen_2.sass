@@ -1,0 +1,167 @@
+.screen-2
+  background-color: #1a1a1a
+  background-position: 50% 50%
+  background-size: cover
+  background-repeat: no-repeat
+  background-image: url('../images/content/screen_2/bg_mobile.jpg')
+  padding-top: 35px
+  padding-bottom: 45px
+
+  @media(min-width: 768px)
+    background-image: url('../images/content/screen_2/bg.jpg')
+
+  @media(min-width: 1200px)
+    padding-top: 75px
+    padding-bottom: 90px
+
+  .title
+    margin-bottom: 30px
+    text-align: center
+
+    @media(min-width: 1200px)
+      margin-bottom: 60px
+
+.list-1
+  max-width: 1060px
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: -15px
+
+  @media(min-width: 768px)
+    display: flex
+    flex-wrap: wrap
+
+  @media(min-width: 1200px)
+    margin-bottom: -42px
+
+  &.slick-initialized
+    margin-bottom: 0
+
+    .list-1__item
+      margin-bottom: 0
+
+  &__item
+    margin-bottom: 15px
+
+    @media(min-width: 768px)
+      padding-left: 7px
+      padding-right: 7px
+      width: 33.33333%
+
+    @media(min-width: 1200px)
+      margin-bottom: 42px
+      padding-left: 21px
+      padding-right: 21px
+
+  .slick-dots
+    bottom: -40px
+    font-size: 14px
+
+    li
+      margin: 0
+
+      &.slick-active
+        button
+          color: $main_color
+          text-decoration: underline
+
+      button
+        color: #fff
+
+        &::after
+          display: none
+
+.l1-item
+  display: block
+  margin-left: auto
+  margin-right: auto
+  position: relative
+  text-align: center
+
+  @media(max-width: 767px)
+    max-width: 246px
+
+  @media(min-width: 768px)
+    max-width: 325px
+
+  &::before,
+  &::after
+    filter: drop-shadow(0 0 10px $main_color)
+    content: ''
+    height: 34px
+    position: absolute
+    width: 34px
+    z-index: 1
+
+    @media(min-width: 1200px)
+      height: 44px
+      width: 44px
+
+  &::before
+    border-top: 1px solid $main_color
+    border-left: 1px solid $main_color
+    border-right: 1px solid transparent
+    border-bottom: 1px solid transparent
+    left: 0
+    top: 0
+
+  &::after
+    bottom: 0
+    border-top: 1px solid transparent
+    border-left: 1px solid transparent
+    border-right: 1px solid $main_color
+    border-bottom: 1px solid $main_color
+    left: auto
+    right: 0
+    top: auto
+
+  &__inner
+    display: block
+    position: relative
+    padding-top: 15px
+    padding-bottom: 15px
+
+    &::before,
+    &::after
+      filter: drop-shadow(0 0 10px #fff)
+      content: ''
+      height: 34px
+      position: absolute
+      width: 34px
+      z-index: 1
+
+      @media(min-width: 1200px)
+        height: 44px
+        width: 44px
+
+    &::before
+      border-top: 1px solid rgba(#fff, 0.2)
+      border-left: 1px solid transparent
+      border-right: 1px solid rgba(#fff, 0.2)
+      border-bottom: 1px solid transparent
+      left: auto
+      right: 0
+      top: 0
+
+    &::after
+      bottom: 0
+      border-top: 1px solid transparent
+      border-left: 1px solid rgba(#fff, 0.2)
+      border-right: 1px solid transparent
+      border-bottom: 1px solid rgba(#fff, 0.2)
+      left: 0
+      top: auto
+
+  &__image
+    filter: drop-shadow(0 0 10px rgba(#fff,0.09))
+    transform: scale(1)
+    transition: transform 0.3s
+
+    @media(min-width: 768px)
+      filter: drop-shadow(0 0 40px rgba(#fff,0.09))
+
+a.l1-item
+  &:hover,
+  &:focus
+    .l1-item__image
+      transform: scale(1.02)
