@@ -123,6 +123,7 @@
     display: none
     max-width: 900px
     padding: 50px 20px 20px
+    width: 100%
 
     @media(min-width: 768px)
       padding: 40px
@@ -187,10 +188,15 @@
 
   &__popup-text
     font-size: 14px
+    margin-bottom: 40px
 
     @media(min-width: 1200px)
       font-size: 16px
       line-height: 1.375
+      margin-bottom: 70px
+
+    &:last-child
+      margin-bottom: 0
 
 .review2-slider
   max-width: 390px
@@ -254,3 +260,40 @@
           transform: translate(-50%, -50%)
           transition: all 0.3s
           width: 6px
+
+.review2-slider2
+  margin-left: -15px
+  margin-right: -15px
+
+  &__slide
+    padding-right: 15px
+    padding-left: 15px
+
+  .slick-prev
+    @media(min-width: 1200px)
+      left: -15px
+
+  .slick-next
+    @media(min-width: 1200px)
+      right: -15px
+
+  .slick-arrow
+    border: none
+    background-color: #171F29
+    height: 25px
+    transition: background-color 0.3s
+    width: 25px
+
+    @media(min-width: 1200px)
+      height: 56px
+      width: 56px
+
+    &.slick-disabled
+      cursor: default
+
+    &:not(.slick-disabled)
+      &:hover
+        background-color: $main_color
+
+  .slick-arrow__arrow
+    stroke: #fff

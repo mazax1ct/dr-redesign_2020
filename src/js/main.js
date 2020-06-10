@@ -129,6 +129,36 @@ $(document).ready(function() {
     });
   }
 
+  if($('.js-review2-slider2').length) {
+    $('.js-review2-slider2').slick({
+      infinite: false,
+      adaptiveHeight: false,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: true,
+      mobileFirst: true,
+      prevArrow: '<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
+      nextArrow: '<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>',
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            slidesToShow: 3
+          }
+        }
+      ]
+    });
+  }
+
+  $('[data-fancybox="review-popup"]').fancybox({
+    arrows: false,
+    infobar: false,
+    modal: true,
+		afterShow: function() {
+      $('.js-review2-slider2').slick('setPosition');
+		}
+	});
 
   /******js для страницы лендинга evolv******/
   //аккордеон
