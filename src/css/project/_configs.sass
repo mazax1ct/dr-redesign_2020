@@ -1,0 +1,196 @@
+.configs-block
+  background-color: #0E141B
+  padding-top: 50px
+  padding-bottom: 50px
+
+  @media(min-width: 1200px)
+    padding-top: 100px
+    padding-bottom: 100px
+
+.list-9
+  margin-bottom: -20px
+
+  @media(min-width: 768px)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -15px
+    margin-right: -15px
+
+  &__item
+    margin-bottom: 20px
+
+    @media(min-width: 768px)
+      padding-left: 15px
+      padding-right: 15px
+      width: 50%
+
+    @media(min-width: 992px)
+      width: 25%
+
+  &.slick-initialized
+    margin-bottom: 0
+
+    .list-9__item
+      margin-bottom: 0
+
+  .slick-dots
+    bottom: -40px
+    font-size: 14px
+
+    li
+      margin: 0
+
+      &.slick-active
+        button
+          color: $main_color
+          text-decoration: underline
+
+      button
+        color: #fff
+
+        &::after
+          display: none
+
+.l9-item
+  max-width: 400px
+  margin-left: auto
+  margin-right: auto
+
+  &__image
+    background-color: #0B1015
+    padding-left: 20px
+    padding-right: 20px
+    position: relative
+    text-align: center
+
+  &__fps-block
+    bottom: 0
+    color: #fff
+    font-family: $secondary_font
+    font-size: 20px
+    font-weight: 700
+    justify-content: center
+    left: auto
+    line-height: 1
+    overflow: hidden
+    position: absolute
+    padding-left: 28px
+    right: 0
+    top: auto
+    text-transform: uppercase
+    white-space: nowrap
+    min-width: 100px
+    z-index: 1
+
+    &::after
+      background-color: $main_color
+      content: ''
+      height: 53px
+      left: 11px
+      position: absolute
+      top: 0
+      transform: skewX(-23deg)
+      width: 120%
+      z-index: -1
+
+  &__fps
+    align-items: center
+    background-color: $main_color
+    display: flex
+    height: 53px
+    justify-content: center
+    padding-bottom: 3px
+    padding-right: 10px
+
+  &__info
+    background-color: #0B1015
+    padding: 20px
+
+    @media(min-width: 1400px)
+      padding: 25px 20px
+
+  &__title
+    color: #fff
+    font-family: $secondary_font
+    font-size: 28px
+    font-weight: 700
+    margin-bottom: 15px
+    text-transform: uppercase
+
+  &__buy-block
+    align-items: center
+    display: flex
+    justify-content: space-between
+    margin-bottom: 15px
+
+    .button
+      max-width: 140px
+      min-width: 140px
+      padding-left: 25px
+
+  &__price
+    color: #66717B
+    font-family: $secondary_font
+    font-size: 20px
+    font-weight: 700
+    line-height: 1
+    margin-bottom: 0
+
+  &__credit-price
+    color: #66717B
+    font-size: 12px
+
+  &__config-title
+    color: #fff
+    font-size: 15px
+    margin-bottom: 20px
+    margin-top: 20px
+    position: relative
+
+    &::after
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 7.4' width='12' height='8'%3E%3Cpath fill='%23767979' d='M6,2.8l4.6,4.6L12,6L6,0L0,6l1.4,1.4L6,2.8z'/%3E%3C/svg%3E%0A")
+      content: ''
+      height: 8px
+      left: auto
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
+      width: 12px
+
+      @media(min-width: 1400px)
+        display: none
+
+  &__config-option
+    border-bottom: none !important
+    margin-left: 0
+    margin-right: 0
+    padding-left: 0
+    padding-right: 0
+    padding-bottom: 0
+
+    &:not(:last-child)
+      margin-bottom: 13px
+
+    .config-option__icon-block
+      min-width: 42px
+      margin-right: 20px
+
+    .config-option__icon
+      fill: #4F5966
+      height: 42px
+      width: 42px
+
+    .config-option__title
+      color: #66788C
+      font-size: 11px
+      text-transform: uppercase
+
+    .config-option__info
+      border-bottom: 1px solid rgba(#4F5966, 0.2)
+      font-size: 15px
+      flex-grow: 1
+      padding-bottom: 15px
+
+  &__config-button
+    width: 100%
