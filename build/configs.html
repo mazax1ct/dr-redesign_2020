@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="inner-page">
+<body class="inner-page landing">
   <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
     <symbol id="burger" viewBox="0 0 22 14">
       <path d="M0 0H22V2H0V0ZM0 6H22V8H0V6ZM22 12H0V14H22V12Z" />
@@ -122,10 +122,10 @@
     <symbol id="ssd" viewBox="0 0 512 512">
       <g>
         <path d="M416,0H152.6L48,122.1V464c0,26.5,21.5,48,48,48h320c26.5,0,48-21.5,48-48V48C464,21.5,442.5,0,416,0z M432,464c0,8.8-7.2,16-16,16H96c-8.8,0-16-7.2-16-16v-48h64v-32H80V133.9L167.4,32H416c8.8,0,16,7.2,16,16V464z" />
-        <rect x="176" y="64" class="st0" width="32" height="128" />
-        <rect x="240" y="64" class="st0" width="32" height="128" />
-        <rect x="304" y="64" class="st0" width="32" height="128" />
-        <rect x="368" y="64" class="st0" width="32" height="128" />
+        <rect x="176" y="64" width="32" height="128" />
+        <rect x="240" y="64" width="32" height="128" />
+        <rect x="304" y="64" width="32" height="128" />
+        <rect x="368" y="64" width="32" height="128" />
       </g>
     </symbol>
     <symbol id="hdd" viewBox="0 0 512 512">
@@ -276,6 +276,9 @@
         <rect y="10.7" width="0.9" height="20.5"/>
         <rect x="41.1" y="10.7" width="0.9" height="20.5"/>
       </g>
+    </symbol>
+    <symbol id="settings" viewBox="0 0 14 14">
+      <path d="M13.6706 5.40594L12.5946 5.17203C12.501 4.88556 12.3851 4.60614 12.2483 4.33698L12.844 3.41039C12.9504 3.24483 12.927 3.02747 12.7879 2.8884L11.1116 1.2121C10.9725 1.07303 10.7552 1.04964 10.5896 1.15602L9.66302 1.75171C9.39386 1.61488 9.11444 1.49899 8.82797 1.40543L8.59406 0.329407C8.55229 0.137146 8.38203 0 8.18529 0H5.81471C5.61797 0 5.44771 0.137146 5.40594 0.329407L5.17203 1.40543C4.88556 1.49899 4.60614 1.61488 4.33698 1.75171L3.41039 1.15602C3.24483 1.04964 3.02747 1.07303 2.8884 1.2121L1.2121 2.8884C1.07303 3.02747 1.04964 3.24483 1.15602 3.41039L1.75171 4.33698C1.61488 4.60614 1.49899 4.88556 1.40543 5.17203L0.329407 5.40594C0.137146 5.44781 0 5.61797 0 5.81471V8.18529C0 8.38203 0.137146 8.55219 0.329407 8.59406L1.40543 8.82797C1.49899 9.11444 1.61488 9.39386 1.75171 9.66302L1.15602 10.5896C1.04964 10.7552 1.07303 10.9725 1.2121 11.1116L2.8884 12.7879C3.02747 12.927 3.24483 12.9504 3.41039 12.844L4.33698 12.2483C4.60614 12.3851 4.88556 12.501 5.17203 12.5946L5.40594 13.6706C5.44771 13.8629 5.61797 14 5.81471 14H8.18529C8.38203 14 8.55229 13.8629 8.59406 13.6706L8.82797 12.5946C9.11444 12.501 9.39386 12.3851 9.66302 12.2483L10.5896 12.844C10.7552 12.9504 10.9725 12.9271 11.1116 12.7879L12.7879 11.1116C12.927 10.9725 12.9504 10.7552 12.844 10.5896L12.2483 9.66302C12.3851 9.39386 12.501 9.11444 12.5946 8.82797L13.6706 8.59406C13.8629 8.55219 14 8.38203 14 8.18529V5.81471C14 5.61797 13.8629 5.44781 13.6706 5.40594ZM9.50996 7C9.50996 8.38396 8.38396 9.50996 7 9.50996C5.61604 9.50996 4.49004 8.38396 4.49004 7C4.49004 5.61604 5.61604 4.49004 7 4.49004C8.38396 4.49004 9.50996 5.61604 9.50996 7Z"/>
     </symbol>
   </svg>
   <div class="wrapper">
@@ -481,416 +484,1309 @@
           </div>
         </div>
       </div>
-      <div class="">
+      <div class="selection-block">
         <div class="container">
           <h2 class="title"><span>ВЫБЕРИ</span> СВОЮ КОНФИГУРАЦИЮ</h2>
+          <div class="resolution-selection">
+            <h3 class="numbered-title"><span class="numbered-title__number">1</span> ВЫБЕРИ РАЗРЕШЕНИЕ:</h3>
+            <div class="res-list">
+              <button class="res" type="button">1080P</button>
+              <button class="res" type="button">2K</button>
+              <button class="res is-active" type="button">4K</button>
+            </div>
+            <a class="settings-button" href="#" target="_blank">
+              <svg class="settings-button__icon" aria-hidden="true">
+                <use xlink:href="#settings" />
+              </svg>
+              Настроить
+            </a>
+          </div>
+          <div class="games-selection">
+            <div class="games-selection__title-block">
+              <h3 class="numbered-title"><span class="numbered-title__number">2</span> ВЫБЕРИ ИГРУ:</h3>
+              <p>Полученные показатели FPS являются усредненными и служат для демонстрации относительной производительности систем на максимальных настройках графики.</p>
+            </div>
+            <div class="games-selection__games">
+              <div class="g-list">
+                <div class="g-list__item">
+                  <button class="js-game game" type="button" title="Название игры">
+                    <img src="images/content/games/img_1.jpg" alt="Название игры">
+                  </button>
+                </div>
+                <div class="g-list__item">
+                  <button class="js-game game" type="button" title="Название игры">
+                    <img src="images/content/games/img_2.jpg" alt="Название игры">
+                  </button>
+                </div>
+                <div class="g-list__item">
+                  <button class="js-game game is-active" type="button" title="Название игры">
+                    <img src="images/content/games/img_3.jpg" alt="Название игры">
+                  </button>
+                </div>
+                <div class="g-list__item">
+                  <button class="js-game game" type="button" title="Название игры">
+                    <img src="images/content/games/img_4.jpg" alt="Название игры">
+                  </button>
+                </div>
+                <div class="g-list__item">
+                  <button class="js-game game" type="button" title="Название игры">
+                    <img src="images/content/games/img_5.jpg" alt="Название игры">
+                  </button>
+                </div>
+                <div class="g-list__item">
+                  <button class="js-game game" type="button" title="Название игры">
+                    <img src="images/content/games/img_6.jpg" alt="Название игры">
+                  </button>
+                </div>
+                <div class="g-list__item">
+                  <button class="js-game game" type="button" title="Название игры">
+                    <img src="images/content/games/img_7.jpg" alt="Название игры">
+                  </button>
+                </div>
+                <div class="g-list__item">
+                  <button class="js-game game" type="button" title="Название игры">
+                    <img src="images/content/games/img_1.jpg" alt="Название игры">
+                  </button>
+                </div>
+                <div class="g-list__item">
+                  <button class="js-game game" type="button" title="Название игры">
+                    <img src="images/content/games/img_2.jpg" alt="Название игры">
+                  </button>
+                </div>
+                <div class="g-list__item">
+                  <button class="js-game game" type="button" title="Название игры">
+                    <img src="images/content/games/img_3.jpg" alt="Название игры">
+                  </button>
+                </div>
+                <div class="g-list__item">
+                  <button class="js-game game" type="button" title="Название игры">
+                    <img src="images/content/games/img_4.jpg" alt="Название игры">
+                  </button>
+                </div>
+                <div class="g-list__item">
+                  <button class="js-game game" type="button" title="Название игры">
+                    <img src="images/content/games/img_5.jpg" alt="Название игры">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="configs-block">
-      <div class="container">
-        <div class="js-list-9 list-9">
-          <div class="list-9__item">
-            <div class="l9-item">
-              <div class="l9-item__image">
-                <img src="images/content/configs/img_1.png" alt="">
-                <span class="l9-item__fps-block"><span class="l9-item__fps">66 FPS</span></span>
-              </div>
-              <div class="l9-item__info">
-                <p class="l9-item__title">progaming s</p>
-                <div class="l9-item__buy-block">
-                  <div class="l9-item__price-block">
-                    <p class="l9-item__price">65 000 руб.</p>
-                    <p class="l9-item__credit-price">от от 4 063 руб./мес</p>
+      <div class="configs-block">
+        <div class="container">
+          <h3 class="numbered-title"><span class="numbered-title__number">3</span> ВЫБЕРИ СВОЮ КОНФИГУРАЦИЮ:</h3>
+          <div class="js-list-9 list-9">
+            <div class="list-9__item">
+              <div class="l9-item">
+                <div class="l9-item__image">
+                  <img src="images/content/configs/img_1.png" alt="">
+                  <span class="l9-item__fps-block"><span class="l9-item__fps">66 FPS</span></span>
+                </div>
+                <div class="l9-item__info">
+                  <p class="l9-item__title">progaming s</p>
+                  <div class="l9-item__buy-block">
+                    <div class="l9-item__price-block">
+                      <p class="l9-item__price">65 000 руб.</p>
+                      <p class="l9-item__credit-price">от 4 063 руб./мес</p>
+                    </div>
+                    <a class="l9-item__buy-button button button--grey button--buy" href="#">
+                      <span class="button__text">КУПИТЬ</span>
+                    </a>
                   </div>
-                  <a class="button button--grey button--buy" href="#">
-                    <span class="button__text">КУПИТЬ</span>
+                  <p class="l9-item__config-title">Выберите тип конфигуратора:</p>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#cpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Процессор:</p>
+                      <p class="config-option__text">6-ядерный AMD Ryzen 5 3500X 3.60 GHz</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ram_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Оперативная память:</p>
+                      <p class="config-option__text">8GB (2x4Gb) DDR4 2400Mhz</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#gpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Видеокарта:</p>
+                      <p class="config-option__text">AMD Radeon 5500 XT 8G</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Системный SSD:</p>
+                      <p class="config-option__text">SSD M.2 240GB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 1:</p>
+                      <p class="config-option__text">-</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#hdd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 2:</p>
+                      <p class="config-option__text">Жесткий диск 1TB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#warranty_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Гарантия:</p>
+                      <p class="config-option__text">Гарантия 24 месяца</p>
+                    </div>
+                  </div>
+                  <a class="l9-item__config-button button button--grey button--config" href="#">
+                    <span class="button__text">собрать свой вариант</span>
                   </a>
                 </div>
-                <p class="l9-item__config-title">Выберите тип конфигуратора:</p>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#cpu_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Процессор:</p>
-                    <p class="config-option__text">6-ядерный AMD Ryzen 5 3500X 3.60 GHz</p>
-                  </div>
-                </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#ram_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Оперативная память:</p>
-                    <p class="config-option__text">8GB (2x4Gb) DDR4 2400Mhz</p>
-                  </div>
-                </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#gpu_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Видеокарта:</p>
-                    <p class="config-option__text">AMD Radeon 5500 XT 8G</p>
-                  </div>
-                </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#ssd_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Системный SSD:</p>
-                    <p class="config-option__text">SSD M.2 240GB</p>
-                  </div>
-                </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#ssd_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Накопитель 1:</p>
-                    <p class="config-option__text">-</p>
-                  </div>
-                </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#hdd_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Накопитель 2:</p>
-                    <p class="config-option__text">Жесткий диск 1TB</p>
-                  </div>
-                </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#warranty_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Гарантия:</p>
-                    <p class="config-option__text">Гарантия 24 месяца</p>
-                  </div>
-                </div>
-                <a class="l9-item__config-button button button--grey button--config" href="#">
-                  <span class="button__text">собрать свой вариант</span>
-                </a>
               </div>
             </div>
-          </div>
-          <div class="list-9__item">
-            <div class="l9-item">
-              <div class="l9-item__image">
-                <img src="images/content/configs/img_1.png" alt="">
-                <span class="l9-item__fps-block"><span class="l9-item__fps">66 FPS</span></span>
-              </div>
-              <div class="l9-item__info">
-                <p class="l9-item__title">progaming s</p>
-                <div class="l9-item__buy-block">
-                  <div class="l9-item__price-block">
-                    <p class="l9-item__price">65 000 руб.</p>
-                    <p class="l9-item__credit-price">от от 4 063 руб./мес</p>
+            <div class="list-9__item">
+              <div class="l9-item">
+                <div class="l9-item__image">
+                  <img src="images/content/configs/img_1.png" alt="">
+                  <span class="l9-item__fps-block"><span class="l9-item__fps">66 FPS</span></span>
+                </div>
+                <div class="l9-item__info">
+                  <p class="l9-item__title">progaming s</p>
+                  <div class="l9-item__buy-block">
+                    <div class="l9-item__price-block">
+                      <p class="l9-item__price">65 000 руб.</p>
+                      <p class="l9-item__credit-price">от 4 063 руб./мес</p>
+                    </div>
+                    <a class="l9-item__buy-button button button--grey button--buy" href="#">
+                      <span class="button__text">КУПИТЬ</span>
+                    </a>
                   </div>
-                  <a class="button button--grey button--buy" href="#">
-                    <span class="button__text">КУПИТЬ</span>
+                  <p class="l9-item__config-title">Выберите тип конфигуратора:</p>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#cpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Процессор:</p>
+                      <p class="config-option__text">6-ядерный AMD Ryzen 5 3500X 3.60 GHz</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ram_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Оперативная память:</p>
+                      <p class="config-option__text">8GB (2x4Gb) DDR4 2400Mhz</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#gpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Видеокарта:</p>
+                      <p class="config-option__text">AMD Radeon 5500 XT 8G</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Системный SSD:</p>
+                      <p class="config-option__text">SSD M.2 240GB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 1:</p>
+                      <p class="config-option__text">-</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#hdd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 2:</p>
+                      <p class="config-option__text">Жесткий диск 1TB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#warranty_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Гарантия:</p>
+                      <p class="config-option__text">Гарантия 24 месяца</p>
+                    </div>
+                  </div>
+                  <a class="l9-item__config-button button button--grey button--config" href="#">
+                    <span class="button__text">собрать свой вариант</span>
                   </a>
                 </div>
-                <p class="l9-item__config-title">Выберите тип конфигуратора:</p>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#cpu_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Процессор:</p>
-                    <p class="config-option__text">6-ядерный AMD Ryzen 5 3500X 3.60 GHz</p>
-                  </div>
-                </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#ram_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Оперативная память:</p>
-                    <p class="config-option__text">8GB (2x4Gb) DDR4 2400Mhz</p>
-                  </div>
-                </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#gpu_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Видеокарта:</p>
-                    <p class="config-option__text">AMD Radeon 5500 XT 8G</p>
-                  </div>
-                </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#ssd_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Системный SSD:</p>
-                    <p class="config-option__text">SSD M.2 240GB</p>
-                  </div>
-                </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#ssd_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Накопитель 1:</p>
-                    <p class="config-option__text">-</p>
-                  </div>
-                </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#hdd_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Накопитель 2:</p>
-                    <p class="config-option__text">Жесткий диск 1TB</p>
-                  </div>
-                </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#warranty_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Гарантия:</p>
-                    <p class="config-option__text">Гарантия 24 месяца</p>
-                  </div>
-                </div>
-                <a class="l9-item__config-button button button--grey button--config" href="#">
-                  <span class="button__text">собрать свой вариант</span>
-                </a>
               </div>
             </div>
-          </div>
-          <div class="list-9__item">
-            <div class="l9-item">
-              <div class="l9-item__image">
-                <img src="images/content/configs/img_1.png" alt="">
-                <span class="l9-item__fps-block"><span class="l9-item__fps">66 FPS</span></span>
-              </div>
-              <div class="l9-item__info">
-                <p class="l9-item__title">progaming s</p>
-                <div class="l9-item__buy-block">
-                  <div class="l9-item__price-block">
-                    <p class="l9-item__price">65 000 руб.</p>
-                    <p class="l9-item__credit-price">от от 4 063 руб./мес</p>
+            <div class="list-9__item">
+              <div class="l9-item">
+                <div class="l9-item__image">
+                  <img src="images/content/configs/img_1.png" alt="">
+                  <span class="l9-item__fps-block"><span class="l9-item__fps">66 FPS</span></span>
+                </div>
+                <div class="l9-item__info">
+                  <p class="l9-item__title">progaming s</p>
+                  <div class="l9-item__buy-block">
+                    <div class="l9-item__price-block">
+                      <p class="l9-item__price">65 000 руб.</p>
+                      <p class="l9-item__credit-price">от 4 063 руб./мес</p>
+                    </div>
+                    <a class="l9-item__buy-button button button--grey button--buy" href="#">
+                      <span class="button__text">КУПИТЬ</span>
+                    </a>
                   </div>
-                  <a class="button button--grey button--buy" href="#">
-                    <span class="button__text">КУПИТЬ</span>
+                  <p class="l9-item__config-title">Выберите тип конфигуратора:</p>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#cpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Процессор:</p>
+                      <p class="config-option__text">6-ядерный AMD Ryzen 5 3500X 3.60 GHz</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ram_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Оперативная память:</p>
+                      <p class="config-option__text">8GB (2x4Gb) DDR4 2400Mhz</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#gpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Видеокарта:</p>
+                      <p class="config-option__text">AMD Radeon 5500 XT 8G</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Системный SSD:</p>
+                      <p class="config-option__text">SSD M.2 240GB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 1:</p>
+                      <p class="config-option__text">-</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#hdd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 2:</p>
+                      <p class="config-option__text">Жесткий диск 1TB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#warranty_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Гарантия:</p>
+                      <p class="config-option__text">Гарантия 24 месяца</p>
+                    </div>
+                  </div>
+                  <a class="l9-item__config-button button button--grey button--config" href="#">
+                    <span class="button__text">собрать свой вариант</span>
                   </a>
                 </div>
-                <p class="l9-item__config-title">Выберите тип конфигуратора:</p>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#cpu_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Процессор:</p>
-                    <p class="config-option__text">6-ядерный AMD Ryzen 5 3500X 3.60 GHz</p>
-                  </div>
-                </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#ram_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Оперативная память:</p>
-                    <p class="config-option__text">8GB (2x4Gb) DDR4 2400Mhz</p>
-                  </div>
-                </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#gpu_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Видеокарта:</p>
-                    <p class="config-option__text">AMD Radeon 5500 XT 8G</p>
-                  </div>
-                </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#ssd_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Системный SSD:</p>
-                    <p class="config-option__text">SSD M.2 240GB</p>
-                  </div>
-                </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#ssd_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Накопитель 1:</p>
-                    <p class="config-option__text">-</p>
-                  </div>
-                </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#hdd_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Накопитель 2:</p>
-                    <p class="config-option__text">Жесткий диск 1TB</p>
-                  </div>
-                </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#warranty_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Гарантия:</p>
-                    <p class="config-option__text">Гарантия 24 месяца</p>
-                  </div>
-                </div>
-                <a class="l9-item__config-button button button--grey button--config" href="#">
-                  <span class="button__text">собрать свой вариант</span>
-                </a>
               </div>
             </div>
-          </div>
-          <div class="list-9__item">
-            <div class="l9-item">
-              <div class="l9-item__image">
-                <img src="images/content/configs/img_1.png" alt="">
-                <span class="l9-item__fps-block"><span class="l9-item__fps">66 FPS</span></span>
-              </div>
-              <div class="l9-item__info">
-                <p class="l9-item__title">progaming s</p>
-                <div class="l9-item__buy-block">
-                  <div class="l9-item__price-block">
-                    <p class="l9-item__price">65 000 руб.</p>
-                    <p class="l9-item__credit-price">от от 4 063 руб./мес</p>
+            <div class="list-9__item">
+              <div class="l9-item">
+                <div class="l9-item__image">
+                  <img src="images/content/configs/img_1.png" alt="">
+                  <span class="l9-item__fps-block"><span class="l9-item__fps">66 FPS</span></span>
+                </div>
+                <div class="l9-item__info">
+                  <p class="l9-item__title">progaming s</p>
+                  <div class="l9-item__buy-block">
+                    <div class="l9-item__price-block">
+                      <p class="l9-item__price">65 000 руб.</p>
+                      <p class="l9-item__credit-price">от 4 063 руб./мес</p>
+                    </div>
+                    <a class="l9-item__buy-button button button--grey button--buy" href="#">
+                      <span class="button__text">КУПИТЬ</span>
+                    </a>
                   </div>
-                  <a class="button button--grey button--buy" href="#">
-                    <span class="button__text">КУПИТЬ</span>
+                  <p class="l9-item__config-title">Выберите тип конфигуратора:</p>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#cpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Процессор:</p>
+                      <p class="config-option__text">6-ядерный AMD Ryzen 5 3500X 3.60 GHz</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ram_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Оперативная память:</p>
+                      <p class="config-option__text">8GB (2x4Gb) DDR4 2400Mhz</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#gpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Видеокарта:</p>
+                      <p class="config-option__text">AMD Radeon 5500 XT 8G</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Системный SSD:</p>
+                      <p class="config-option__text">SSD M.2 240GB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 1:</p>
+                      <p class="config-option__text">-</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#hdd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 2:</p>
+                      <p class="config-option__text">Жесткий диск 1TB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#warranty_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Гарантия:</p>
+                      <p class="config-option__text">Гарантия 24 месяца</p>
+                    </div>
+                  </div>
+                  <a class="l9-item__config-button button button--grey button--config" href="#">
+                    <span class="button__text">собрать свой вариант</span>
                   </a>
                 </div>
-                <p class="l9-item__config-title">Выберите тип конфигуратора:</p>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#cpu_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Процессор:</p>
-                    <p class="config-option__text">6-ядерный AMD Ryzen 5 3500X 3.60 GHz</p>
-                  </div>
+              </div>
+            </div>
+            <div class="list-9__item">
+              <div class="l9-item">
+                <div class="l9-item__image">
+                  <img src="images/content/configs/img_1.png" alt="">
+                  <span class="l9-item__fps-block"><span class="l9-item__fps">66 FPS</span></span>
                 </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#ram_2" />
-                    </svg>
+                <div class="l9-item__info">
+                  <p class="l9-item__title">progaming s</p>
+                  <div class="l9-item__buy-block">
+                    <div class="l9-item__price-block">
+                      <p class="l9-item__price">65 000 руб.</p>
+                      <p class="l9-item__credit-price">от 4 063 руб./мес</p>
+                    </div>
+                    <a class="l9-item__buy-button button button--grey button--buy" href="#">
+                      <span class="button__text">КУПИТЬ</span>
+                    </a>
                   </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Оперативная память:</p>
-                    <p class="config-option__text">8GB (2x4Gb) DDR4 2400Mhz</p>
+                  <p class="l9-item__config-title">Выберите тип конфигуратора:</p>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#cpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Процессор:</p>
+                      <p class="config-option__text">6-ядерный AMD Ryzen 5 3500X 3.60 GHz</p>
+                    </div>
                   </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ram_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Оперативная память:</p>
+                      <p class="config-option__text">8GB (2x4Gb) DDR4 2400Mhz</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#gpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Видеокарта:</p>
+                      <p class="config-option__text">AMD Radeon 5500 XT 8G</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Системный SSD:</p>
+                      <p class="config-option__text">SSD M.2 240GB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 1:</p>
+                      <p class="config-option__text">-</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#hdd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 2:</p>
+                      <p class="config-option__text">Жесткий диск 1TB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#warranty_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Гарантия:</p>
+                      <p class="config-option__text">Гарантия 24 месяца</p>
+                    </div>
+                  </div>
+                  <a class="l9-item__config-button button button--grey button--config" href="#">
+                    <span class="button__text">собрать свой вариант</span>
+                  </a>
                 </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#gpu_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Видеокарта:</p>
-                    <p class="config-option__text">AMD Radeon 5500 XT 8G</p>
-                  </div>
+              </div>
+            </div>
+            <div class="list-9__item">
+              <div class="l9-item">
+                <div class="l9-item__image">
+                  <img src="images/content/configs/img_1.png" alt="">
+                  <span class="l9-item__fps-block"><span class="l9-item__fps">66 FPS</span></span>
                 </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#ssd_2" />
-                    </svg>
+                <div class="l9-item__info">
+                  <p class="l9-item__title">progaming s</p>
+                  <div class="l9-item__buy-block">
+                    <div class="l9-item__price-block">
+                      <p class="l9-item__price">65 000 руб.</p>
+                      <p class="l9-item__credit-price">от 4 063 руб./мес</p>
+                    </div>
+                    <a class="l9-item__buy-button button button--grey button--buy" href="#">
+                      <span class="button__text">КУПИТЬ</span>
+                    </a>
                   </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Системный SSD:</p>
-                    <p class="config-option__text">SSD M.2 240GB</p>
+                  <p class="l9-item__config-title">Выберите тип конфигуратора:</p>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#cpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Процессор:</p>
+                      <p class="config-option__text">6-ядерный AMD Ryzen 5 3500X 3.60 GHz</p>
+                    </div>
                   </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ram_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Оперативная память:</p>
+                      <p class="config-option__text">8GB (2x4Gb) DDR4 2400Mhz</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#gpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Видеокарта:</p>
+                      <p class="config-option__text">AMD Radeon 5500 XT 8G</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Системный SSD:</p>
+                      <p class="config-option__text">SSD M.2 240GB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 1:</p>
+                      <p class="config-option__text">-</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#hdd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 2:</p>
+                      <p class="config-option__text">Жесткий диск 1TB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#warranty_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Гарантия:</p>
+                      <p class="config-option__text">Гарантия 24 месяца</p>
+                    </div>
+                  </div>
+                  <a class="l9-item__config-button button button--grey button--config" href="#">
+                    <span class="button__text">собрать свой вариант</span>
+                  </a>
                 </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#ssd_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Накопитель 1:</p>
-                    <p class="config-option__text">-</p>
-                  </div>
+              </div>
+            </div>
+            <div class="list-9__item">
+              <div class="l9-item">
+                <div class="l9-item__image">
+                  <img src="images/content/configs/img_1.png" alt="">
+                  <span class="l9-item__fps-block"><span class="l9-item__fps">66 FPS</span></span>
                 </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#hdd_2" />
-                    </svg>
+                <div class="l9-item__info">
+                  <p class="l9-item__title">progaming s</p>
+                  <div class="l9-item__buy-block">
+                    <div class="l9-item__price-block">
+                      <p class="l9-item__price">65 000 руб.</p>
+                      <p class="l9-item__credit-price">от 4 063 руб./мес</p>
+                    </div>
+                    <a class="l9-item__buy-button button button--grey button--buy" href="#">
+                      <span class="button__text">КУПИТЬ</span>
+                    </a>
                   </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Накопитель 2:</p>
-                    <p class="config-option__text">Жесткий диск 1TB</p>
+                  <p class="l9-item__config-title">Выберите тип конфигуратора:</p>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#cpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Процессор:</p>
+                      <p class="config-option__text">6-ядерный AMD Ryzen 5 3500X 3.60 GHz</p>
+                    </div>
                   </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ram_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Оперативная память:</p>
+                      <p class="config-option__text">8GB (2x4Gb) DDR4 2400Mhz</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#gpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Видеокарта:</p>
+                      <p class="config-option__text">AMD Radeon 5500 XT 8G</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Системный SSD:</p>
+                      <p class="config-option__text">SSD M.2 240GB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 1:</p>
+                      <p class="config-option__text">-</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#hdd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 2:</p>
+                      <p class="config-option__text">Жесткий диск 1TB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#warranty_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Гарантия:</p>
+                      <p class="config-option__text">Гарантия 24 месяца</p>
+                    </div>
+                  </div>
+                  <a class="l9-item__config-button button button--grey button--config" href="#">
+                    <span class="button__text">собрать свой вариант</span>
+                  </a>
                 </div>
-                <div class="l9-item__config-option config-option">
-                  <div class="config-option__icon-block">
-                    <svg class="config-option__icon" aria-hidden="true">
-                      <use xlink:href="#warranty_2" />
-                    </svg>
-                  </div>
-                  <div class="config-option__info">
-                    <p class="config-option__title">Гарантия:</p>
-                    <p class="config-option__text">Гарантия 24 месяца</p>
-                  </div>
+              </div>
+            </div>
+            <div class="list-9__item">
+              <div class="l9-item">
+                <div class="l9-item__image">
+                  <img src="images/content/configs/img_1.png" alt="">
+                  <span class="l9-item__fps-block"><span class="l9-item__fps">66 FPS</span></span>
                 </div>
-                <a class="l9-item__config-button button button--grey button--config" href="#">
-                  <span class="button__text">собрать свой вариант</span>
-                </a>
+                <div class="l9-item__info">
+                  <p class="l9-item__title">progaming s</p>
+                  <div class="l9-item__buy-block">
+                    <div class="l9-item__price-block">
+                      <p class="l9-item__price">65 000 руб.</p>
+                      <p class="l9-item__credit-price">от 4 063 руб./мес</p>
+                    </div>
+                    <a class="l9-item__buy-button button button--grey button--buy" href="#">
+                      <span class="button__text">КУПИТЬ</span>
+                    </a>
+                  </div>
+                  <p class="l9-item__config-title">Выберите тип конфигуратора:</p>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#cpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Процессор:</p>
+                      <p class="config-option__text">6-ядерный AMD Ryzen 5 3500X 3.60 GHz</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ram_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Оперативная память:</p>
+                      <p class="config-option__text">8GB (2x4Gb) DDR4 2400Mhz</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#gpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Видеокарта:</p>
+                      <p class="config-option__text">AMD Radeon 5500 XT 8G</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Системный SSD:</p>
+                      <p class="config-option__text">SSD M.2 240GB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 1:</p>
+                      <p class="config-option__text">-</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#hdd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 2:</p>
+                      <p class="config-option__text">Жесткий диск 1TB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#warranty_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Гарантия:</p>
+                      <p class="config-option__text">Гарантия 24 месяца</p>
+                    </div>
+                  </div>
+                  <a class="l9-item__config-button button button--grey button--config" href="#">
+                    <span class="button__text">собрать свой вариант</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="list-9__item">
+              <div class="l9-item">
+                <div class="l9-item__image">
+                  <img src="images/content/configs/img_1.png" alt="">
+                  <span class="l9-item__fps-block"><span class="l9-item__fps">66 FPS</span></span>
+                </div>
+                <div class="l9-item__info">
+                  <p class="l9-item__title">progaming s</p>
+                  <div class="l9-item__buy-block">
+                    <div class="l9-item__price-block">
+                      <p class="l9-item__price">65 000 руб.</p>
+                      <p class="l9-item__credit-price">от 4 063 руб./мес</p>
+                    </div>
+                    <a class="l9-item__buy-button button button--grey button--buy" href="#">
+                      <span class="button__text">КУПИТЬ</span>
+                    </a>
+                  </div>
+                  <p class="l9-item__config-title">Выберите тип конфигуратора:</p>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#cpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Процессор:</p>
+                      <p class="config-option__text">6-ядерный AMD Ryzen 5 3500X 3.60 GHz</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ram_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Оперативная память:</p>
+                      <p class="config-option__text">8GB (2x4Gb) DDR4 2400Mhz</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#gpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Видеокарта:</p>
+                      <p class="config-option__text">AMD Radeon 5500 XT 8G</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Системный SSD:</p>
+                      <p class="config-option__text">SSD M.2 240GB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 1:</p>
+                      <p class="config-option__text">-</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#hdd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 2:</p>
+                      <p class="config-option__text">Жесткий диск 1TB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#warranty_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Гарантия:</p>
+                      <p class="config-option__text">Гарантия 24 месяца</p>
+                    </div>
+                  </div>
+                  <a class="l9-item__config-button button button--grey button--config" href="#">
+                    <span class="button__text">собрать свой вариант</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="list-9__item">
+              <div class="l9-item">
+                <div class="l9-item__image">
+                  <img src="images/content/configs/img_1.png" alt="">
+                  <span class="l9-item__fps-block"><span class="l9-item__fps">66 FPS</span></span>
+                </div>
+                <div class="l9-item__info">
+                  <p class="l9-item__title">progaming s</p>
+                  <div class="l9-item__buy-block">
+                    <div class="l9-item__price-block">
+                      <p class="l9-item__price">65 000 руб.</p>
+                      <p class="l9-item__credit-price">от 4 063 руб./мес</p>
+                    </div>
+                    <a class="l9-item__buy-button button button--grey button--buy" href="#">
+                      <span class="button__text">КУПИТЬ</span>
+                    </a>
+                  </div>
+                  <p class="l9-item__config-title">Выберите тип конфигуратора:</p>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#cpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Процессор:</p>
+                      <p class="config-option__text">6-ядерный AMD Ryzen 5 3500X 3.60 GHz</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ram_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Оперативная память:</p>
+                      <p class="config-option__text">8GB (2x4Gb) DDR4 2400Mhz</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#gpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Видеокарта:</p>
+                      <p class="config-option__text">AMD Radeon 5500 XT 8G</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Системный SSD:</p>
+                      <p class="config-option__text">SSD M.2 240GB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 1:</p>
+                      <p class="config-option__text">-</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#hdd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 2:</p>
+                      <p class="config-option__text">Жесткий диск 1TB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#warranty_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Гарантия:</p>
+                      <p class="config-option__text">Гарантия 24 месяца</p>
+                    </div>
+                  </div>
+                  <a class="l9-item__config-button button button--grey button--config" href="#">
+                    <span class="button__text">собрать свой вариант</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="list-9__item">
+              <div class="l9-item">
+                <div class="l9-item__image">
+                  <img src="images/content/configs/img_1.png" alt="">
+                  <span class="l9-item__fps-block"><span class="l9-item__fps">66 FPS</span></span>
+                </div>
+                <div class="l9-item__info">
+                  <p class="l9-item__title">progaming s</p>
+                  <div class="l9-item__buy-block">
+                    <div class="l9-item__price-block">
+                      <p class="l9-item__price">65 000 руб.</p>
+                      <p class="l9-item__credit-price">от 4 063 руб./мес</p>
+                    </div>
+                    <a class="l9-item__buy-button button button--grey button--buy" href="#">
+                      <span class="button__text">КУПИТЬ</span>
+                    </a>
+                  </div>
+                  <p class="l9-item__config-title">Выберите тип конфигуратора:</p>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#cpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Процессор:</p>
+                      <p class="config-option__text">6-ядерный AMD Ryzen 5 3500X 3.60 GHz</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ram_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Оперативная память:</p>
+                      <p class="config-option__text">8GB (2x4Gb) DDR4 2400Mhz</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#gpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Видеокарта:</p>
+                      <p class="config-option__text">AMD Radeon 5500 XT 8G</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Системный SSD:</p>
+                      <p class="config-option__text">SSD M.2 240GB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 1:</p>
+                      <p class="config-option__text">-</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#hdd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 2:</p>
+                      <p class="config-option__text">Жесткий диск 1TB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#warranty_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Гарантия:</p>
+                      <p class="config-option__text">Гарантия 24 месяца</p>
+                    </div>
+                  </div>
+                  <a class="l9-item__config-button button button--grey button--config" href="#">
+                    <span class="button__text">собрать свой вариант</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="list-9__item">
+              <div class="l9-item">
+                <div class="l9-item__image">
+                  <img src="images/content/configs/img_1.png" alt="">
+                  <span class="l9-item__fps-block"><span class="l9-item__fps">66 FPS</span></span>
+                </div>
+                <div class="l9-item__info">
+                  <p class="l9-item__title">progaming s</p>
+                  <div class="l9-item__buy-block">
+                    <div class="l9-item__price-block">
+                      <p class="l9-item__price">65 000 руб.</p>
+                      <p class="l9-item__credit-price">от 4 063 руб./мес</p>
+                    </div>
+                    <a class="l9-item__buy-button button button--grey button--buy" href="#">
+                      <span class="button__text">КУПИТЬ</span>
+                    </a>
+                  </div>
+                  <p class="l9-item__config-title">Выберите тип конфигуратора:</p>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#cpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Процессор:</p>
+                      <p class="config-option__text">6-ядерный AMD Ryzen 5 3500X 3.60 GHz</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ram_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Оперативная память:</p>
+                      <p class="config-option__text">8GB (2x4Gb) DDR4 2400Mhz</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#gpu_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Видеокарта:</p>
+                      <p class="config-option__text">AMD Radeon 5500 XT 8G</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Системный SSD:</p>
+                      <p class="config-option__text">SSD M.2 240GB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#ssd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 1:</p>
+                      <p class="config-option__text">-</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#hdd_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Накопитель 2:</p>
+                      <p class="config-option__text">Жесткий диск 1TB</p>
+                    </div>
+                  </div>
+                  <div class="l9-item__config-option config-option">
+                    <div class="config-option__icon-block">
+                      <svg class="config-option__icon" aria-hidden="true">
+                        <use xlink:href="#warranty_2" />
+                      </svg>
+                    </div>
+                    <div class="config-option__info">
+                      <p class="config-option__title">Гарантия:</p>
+                      <p class="config-option__text">Гарантия 24 месяца</p>
+                    </div>
+                  </div>
+                  <a class="l9-item__config-button button button--grey button--config" href="#">
+                    <span class="button__text">собрать свой вариант</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

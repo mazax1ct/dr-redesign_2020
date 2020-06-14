@@ -122,10 +122,10 @@
     <symbol id="ssd" viewBox="0 0 512 512">
       <g>
         <path d="M416,0H152.6L48,122.1V464c0,26.5,21.5,48,48,48h320c26.5,0,48-21.5,48-48V48C464,21.5,442.5,0,416,0z M432,464c0,8.8-7.2,16-16,16H96c-8.8,0-16-7.2-16-16v-48h64v-32H80V133.9L167.4,32H416c8.8,0,16,7.2,16,16V464z" />
-        <rect x="176" y="64" class="st0" width="32" height="128" />
-        <rect x="240" y="64" class="st0" width="32" height="128" />
-        <rect x="304" y="64" class="st0" width="32" height="128" />
-        <rect x="368" y="64" class="st0" width="32" height="128" />
+        <rect x="176" y="64" width="32" height="128" />
+        <rect x="240" y="64" width="32" height="128" />
+        <rect x="304" y="64" width="32" height="128" />
+        <rect x="368" y="64" width="32" height="128" />
       </g>
     </symbol>
     <symbol id="hdd" viewBox="0 0 512 512">
@@ -276,6 +276,9 @@
         <rect y="10.7" width="0.9" height="20.5"/>
         <rect x="41.1" y="10.7" width="0.9" height="20.5"/>
       </g>
+    </symbol>
+    <symbol id="settings" viewBox="0 0 14 14">
+      <path d="M13.6706 5.40594L12.5946 5.17203C12.501 4.88556 12.3851 4.60614 12.2483 4.33698L12.844 3.41039C12.9504 3.24483 12.927 3.02747 12.7879 2.8884L11.1116 1.2121C10.9725 1.07303 10.7552 1.04964 10.5896 1.15602L9.66302 1.75171C9.39386 1.61488 9.11444 1.49899 8.82797 1.40543L8.59406 0.329407C8.55229 0.137146 8.38203 0 8.18529 0H5.81471C5.61797 0 5.44771 0.137146 5.40594 0.329407L5.17203 1.40543C4.88556 1.49899 4.60614 1.61488 4.33698 1.75171L3.41039 1.15602C3.24483 1.04964 3.02747 1.07303 2.8884 1.2121L1.2121 2.8884C1.07303 3.02747 1.04964 3.24483 1.15602 3.41039L1.75171 4.33698C1.61488 4.60614 1.49899 4.88556 1.40543 5.17203L0.329407 5.40594C0.137146 5.44781 0 5.61797 0 5.81471V8.18529C0 8.38203 0.137146 8.55219 0.329407 8.59406L1.40543 8.82797C1.49899 9.11444 1.61488 9.39386 1.75171 9.66302L1.15602 10.5896C1.04964 10.7552 1.07303 10.9725 1.2121 11.1116L2.8884 12.7879C3.02747 12.927 3.24483 12.9504 3.41039 12.844L4.33698 12.2483C4.60614 12.3851 4.88556 12.501 5.17203 12.5946L5.40594 13.6706C5.44771 13.8629 5.61797 14 5.81471 14H8.18529C8.38203 14 8.55229 13.8629 8.59406 13.6706L8.82797 12.5946C9.11444 12.501 9.39386 12.3851 9.66302 12.2483L10.5896 12.844C10.7552 12.9504 10.9725 12.9271 11.1116 12.7879L12.7879 11.1116C12.927 10.9725 12.9504 10.7552 12.844 10.5896L12.2483 9.66302C12.3851 9.39386 12.501 9.11444 12.5946 8.82797L13.6706 8.59406C13.8629 8.55219 14 8.38203 14 8.18529V5.81471C14 5.61797 13.8629 5.44781 13.6706 5.40594ZM9.50996 7C9.50996 8.38396 8.38396 9.50996 7 9.50996C5.61604 9.50996 4.49004 8.38396 4.49004 7C4.49004 5.61604 5.61604 4.49004 7 4.49004C8.38396 4.49004 9.50996 5.61604 9.50996 7Z"/>
     </symbol>
   </svg>
   <div class="wrapper">
@@ -511,157 +514,156 @@
           </div>
         </div>
       </div>
-    </div>
-    
-    <div class="faq-block">
-      <div class="container">
-        <h2>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
-        <div class="faq">
-          <div class="faq__left">
-            <p class="js-faq-toggler faq__title is-active" data-target="1">
-              <svg class="faq__title-icon" aria-hidden="true">
-                <use xlink:href="#faq_icon_delivery" />
-              </svg>
-              Вопросы по Доставке
-            </p>
-            <p class="js-faq-toggler faq__title" data-target="2">
-              <svg class="faq__title-icon" aria-hidden="true">
-                <use xlink:href="#faq_icon_pay" />
-              </svg>
-              Вопросы по Оплате
-            </p>
-            <p class="js-faq-toggler faq__title" data-target="3">
-              <svg class="faq__title-icon" aria-hidden="true">
-                <use xlink:href="#faq_icon_guarantee" />
-              </svg>
-              Вопросы по Гарантии
-            </p>
-            <p class="js-faq-toggler faq__title" data-target="4">
-              <svg class="faq__title-icon" aria-hidden="true">
-                <use xlink:href="#faq_icon_setup" />
-              </svg>
-              Вопросы по Сборке
-            </p>
-          </div>
-          <div class="faq__right">
-            <div class="faq__section is-active" data-target="1">
-              <p class="js-faq-mobile-toggler faq__mobile-title">
-                <svg class="faq__mobile-title-icon" aria-hidden="true">
+      <div class="faq-block">
+        <div class="container">
+          <h2>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
+          <div class="faq">
+            <div class="faq__left">
+              <p class="js-faq-toggler faq__title is-active" data-target="1">
+                <svg class="faq__title-icon" aria-hidden="true">
                   <use xlink:href="#faq_icon_delivery" />
                 </svg>
                 Вопросы по Доставке
               </p>
-              <div class="faq__questions-block">
-                <div class="js-question-toggler question">
-                  <p class="question__title">В какие города вы осуществляете доставку?</p>
-                  <div class="question__body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dicta maiores sint consequuntur rerum, id obcaecati accusamus provident fugit officiis est, quisquam dolorum. Nostrum veniam fuga, tenetur sit ducimus quaerat.</p>
-                    <p>Aliquid eligendi nesciunt, vel porro quasi eaque veniam recusandae aspernatur sequi.</p>
-                  </div>
-                </div>
-                <div class="js-question-toggler question">
-                  <p class="question__title">Сколько стоит доставка в Санкт-Петербург?</p>
-                  <div class="question__body">
-                    <p>Наша компания осуществляет доставку по всей территории России. Мы работаем только с проверенными логистическими компаниями, отправляемый груз обязательно будет застрахован на полную стоимость и снабжается дополнительной упаковочной тарой, а также датчиками удара.</p>
-                  </div>
-                </div>
-                <div class="js-question-toggler question">
-                  <p class="question__title">В какие города вы осуществляете доставку?</p>
-                  <div class="question__body">
-                    <p>Наша компания осуществляет доставку по всей территории России. Мы работаем только с проверенными логистическими компаниями, отправляемый груз обязательно будет застрахован на полную стоимость и снабжается дополнительной упаковочной тарой, а также датчиками удара.</p>
-                  </div>
-                </div>
-                <div class="js-question-toggler question">
-                  <p class="question__title">Сколько стоит доставка в Москву?</p>
-                  <div class="question__body">
-                    <p>Наша компания осуществляет доставку по всей территории России. Мы работаем только с проверенными логистическими компаниями, отправляемый груз обязательно будет застрахован на полную стоимость и снабжается дополнительной упаковочной тарой, а также датчиками удара.</p>
-                  </div>
-                </div>
-                <div class="js-question-toggler question">
-                  <p class="question__title">Возможна доставка в другие страны?</p>
-                  <div class="question__body">
-                    <p>Наша компания осуществляет доставку по всей территории России. Мы работаем только с проверенными логистическими компаниями, отправляемый груз обязательно будет застрахован на полную стоимость и снабжается дополнительной упаковочной тарой, а также датчиками удара.</p>
-                  </div>
-                </div>
-                <div class="js-question-toggler question">
-                  <p class="question__title">Мой город отсутствует в списке доставки</p>
-                  <div class="question__body">
-                    <p>Наша компания осуществляет доставку по всей территории России. Мы работаем только с проверенными логистическими компаниями, отправляемый груз обязательно будет застрахован на полную стоимость и снабжается дополнительной упаковочной тарой, а также датчиками удара.</p>
-                  </div>
-                </div>
-                <div class="js-question-toggler question">
-                  <p class="question__title">Я переживаю за сохранность груза при доставке</p>
-                  <div class="question__body">
-                    <p>Наша компания осуществляет доставку по всей территории России. Мы работаем только с проверенными логистическими компаниями, отправляемый груз обязательно будет застрахован на полную стоимость и снабжается дополнительной упаковочной тарой, а также датчиками удара.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="faq__section" data-target="2">
-              <p class="js-faq-mobile-toggler faq__mobile-title">
-                <svg class="faq__mobile-title-icon" aria-hidden="true">
+              <p class="js-faq-toggler faq__title" data-target="2">
+                <svg class="faq__title-icon" aria-hidden="true">
                   <use xlink:href="#faq_icon_pay" />
                 </svg>
                 Вопросы по Оплате
               </p>
-              <div class="faq__questions-block">
-                <div class="js-question-toggler question">
-                  <p class="question__title">В какие города вы осуществляете доставку?</p>
-                  <div class="question__body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dicta maiores sint consequuntur rerum, id obcaecati accusamus provident fugit officiis est, quisquam dolorum. Nostrum veniam fuga, tenetur sit ducimus quaerat.</p>
-                    <p>Aliquid eligendi nesciunt, vel porro quasi eaque veniam recusandae aspernatur sequi.</p>
-                  </div>
-                </div>
-                <div class="js-question-toggler question">
-                  <p class="question__title">Сколько стоит доставка в Санкт-Петербург?</p>
-                  <div class="question__body">
-                    <p>Наша компания осуществляет доставку по всей территории России. Мы работаем только с проверенными логистическими компаниями, отправляемый груз обязательно будет застрахован на полную стоимость и снабжается дополнительной упаковочной тарой, а также датчиками удара.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="faq__section" data-target="3">
-              <p class="js-faq-mobile-toggler faq__mobile-title">
-                <svg class="faq__mobile-title-icon" aria-hidden="true">
+              <p class="js-faq-toggler faq__title" data-target="3">
+                <svg class="faq__title-icon" aria-hidden="true">
                   <use xlink:href="#faq_icon_guarantee" />
                 </svg>
                 Вопросы по Гарантии
               </p>
-              <div class="faq__questions-block">
-                <div class="js-question-toggler question">
-                  <p class="question__title">В какие города вы осуществляете доставку?</p>
-                  <div class="question__body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dicta maiores sint consequuntur rerum, id obcaecati accusamus provident fugit officiis est, quisquam dolorum. Nostrum veniam fuga, tenetur sit ducimus quaerat.</p>
-                    <p>Aliquid eligendi nesciunt, vel porro quasi eaque veniam recusandae aspernatur sequi.</p>
-                  </div>
-                </div>
-                <div class="js-question-toggler question">
-                  <p class="question__title">Сколько стоит доставка в Санкт-Петербург?</p>
-                  <div class="question__body">
-                    <p>Наша компания осуществляет доставку по всей территории России. Мы работаем только с проверенными логистическими компаниями, отправляемый груз обязательно будет застрахован на полную стоимость и снабжается дополнительной упаковочной тарой, а также датчиками удара.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="faq__section" data-target="4">
-              <p class="js-faq-mobile-toggler faq__mobile-title">
-                <svg class="faq__mobile-title-icon" aria-hidden="true">
+              <p class="js-faq-toggler faq__title" data-target="4">
+                <svg class="faq__title-icon" aria-hidden="true">
                   <use xlink:href="#faq_icon_setup" />
                 </svg>
                 Вопросы по Сборке
               </p>
-              <div class="faq__questions-block">
-                <div class="js-question-toggler question">
-                  <p class="question__title">В какие города вы осуществляете доставку?</p>
-                  <div class="question__body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dicta maiores sint consequuntur rerum, id obcaecati accusamus provident fugit officiis est, quisquam dolorum. Nostrum veniam fuga, tenetur sit ducimus quaerat.</p>
-                    <p>Aliquid eligendi nesciunt, vel porro quasi eaque veniam recusandae aspernatur sequi.</p>
+            </div>
+            <div class="faq__right">
+              <div class="faq__section is-active" data-target="1">
+                <p class="js-faq-mobile-toggler faq__mobile-title">
+                  <svg class="faq__mobile-title-icon" aria-hidden="true">
+                    <use xlink:href="#faq_icon_delivery" />
+                  </svg>
+                  Вопросы по Доставке
+                </p>
+                <div class="faq__questions-block">
+                  <div class="js-question-toggler question">
+                    <p class="question__title">В какие города вы осуществляете доставку?</p>
+                    <div class="question__body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dicta maiores sint consequuntur rerum, id obcaecati accusamus provident fugit officiis est, quisquam dolorum. Nostrum veniam fuga, tenetur sit ducimus quaerat.</p>
+                      <p>Aliquid eligendi nesciunt, vel porro quasi eaque veniam recusandae aspernatur sequi.</p>
+                    </div>
+                  </div>
+                  <div class="js-question-toggler question">
+                    <p class="question__title">Сколько стоит доставка в Санкт-Петербург?</p>
+                    <div class="question__body">
+                      <p>Наша компания осуществляет доставку по всей территории России. Мы работаем только с проверенными логистическими компаниями, отправляемый груз обязательно будет застрахован на полную стоимость и снабжается дополнительной упаковочной тарой, а также датчиками удара.</p>
+                    </div>
+                  </div>
+                  <div class="js-question-toggler question">
+                    <p class="question__title">В какие города вы осуществляете доставку?</p>
+                    <div class="question__body">
+                      <p>Наша компания осуществляет доставку по всей территории России. Мы работаем только с проверенными логистическими компаниями, отправляемый груз обязательно будет застрахован на полную стоимость и снабжается дополнительной упаковочной тарой, а также датчиками удара.</p>
+                    </div>
+                  </div>
+                  <div class="js-question-toggler question">
+                    <p class="question__title">Сколько стоит доставка в Москву?</p>
+                    <div class="question__body">
+                      <p>Наша компания осуществляет доставку по всей территории России. Мы работаем только с проверенными логистическими компаниями, отправляемый груз обязательно будет застрахован на полную стоимость и снабжается дополнительной упаковочной тарой, а также датчиками удара.</p>
+                    </div>
+                  </div>
+                  <div class="js-question-toggler question">
+                    <p class="question__title">Возможна доставка в другие страны?</p>
+                    <div class="question__body">
+                      <p>Наша компания осуществляет доставку по всей территории России. Мы работаем только с проверенными логистическими компаниями, отправляемый груз обязательно будет застрахован на полную стоимость и снабжается дополнительной упаковочной тарой, а также датчиками удара.</p>
+                    </div>
+                  </div>
+                  <div class="js-question-toggler question">
+                    <p class="question__title">Мой город отсутствует в списке доставки</p>
+                    <div class="question__body">
+                      <p>Наша компания осуществляет доставку по всей территории России. Мы работаем только с проверенными логистическими компаниями, отправляемый груз обязательно будет застрахован на полную стоимость и снабжается дополнительной упаковочной тарой, а также датчиками удара.</p>
+                    </div>
+                  </div>
+                  <div class="js-question-toggler question">
+                    <p class="question__title">Я переживаю за сохранность груза при доставке</p>
+                    <div class="question__body">
+                      <p>Наша компания осуществляет доставку по всей территории России. Мы работаем только с проверенными логистическими компаниями, отправляемый груз обязательно будет застрахован на полную стоимость и снабжается дополнительной упаковочной тарой, а также датчиками удара.</p>
+                    </div>
                   </div>
                 </div>
-                <div class="js-question-toggler question">
-                  <p class="question__title">Сколько стоит доставка в Санкт-Петербург?</p>
-                  <div class="question__body">
-                    <p>Наша компания осуществляет доставку по всей территории России. Мы работаем только с проверенными логистическими компаниями, отправляемый груз обязательно будет застрахован на полную стоимость и снабжается дополнительной упаковочной тарой, а также датчиками удара.</p>
+              </div>
+              <div class="faq__section" data-target="2">
+                <p class="js-faq-mobile-toggler faq__mobile-title">
+                  <svg class="faq__mobile-title-icon" aria-hidden="true">
+                    <use xlink:href="#faq_icon_pay" />
+                  </svg>
+                  Вопросы по Оплате
+                </p>
+                <div class="faq__questions-block">
+                  <div class="js-question-toggler question">
+                    <p class="question__title">В какие города вы осуществляете доставку?</p>
+                    <div class="question__body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dicta maiores sint consequuntur rerum, id obcaecati accusamus provident fugit officiis est, quisquam dolorum. Nostrum veniam fuga, tenetur sit ducimus quaerat.</p>
+                      <p>Aliquid eligendi nesciunt, vel porro quasi eaque veniam recusandae aspernatur sequi.</p>
+                    </div>
+                  </div>
+                  <div class="js-question-toggler question">
+                    <p class="question__title">Сколько стоит доставка в Санкт-Петербург?</p>
+                    <div class="question__body">
+                      <p>Наша компания осуществляет доставку по всей территории России. Мы работаем только с проверенными логистическими компаниями, отправляемый груз обязательно будет застрахован на полную стоимость и снабжается дополнительной упаковочной тарой, а также датчиками удара.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__section" data-target="3">
+                <p class="js-faq-mobile-toggler faq__mobile-title">
+                  <svg class="faq__mobile-title-icon" aria-hidden="true">
+                    <use xlink:href="#faq_icon_guarantee" />
+                  </svg>
+                  Вопросы по Гарантии
+                </p>
+                <div class="faq__questions-block">
+                  <div class="js-question-toggler question">
+                    <p class="question__title">В какие города вы осуществляете доставку?</p>
+                    <div class="question__body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dicta maiores sint consequuntur rerum, id obcaecati accusamus provident fugit officiis est, quisquam dolorum. Nostrum veniam fuga, tenetur sit ducimus quaerat.</p>
+                      <p>Aliquid eligendi nesciunt, vel porro quasi eaque veniam recusandae aspernatur sequi.</p>
+                    </div>
+                  </div>
+                  <div class="js-question-toggler question">
+                    <p class="question__title">Сколько стоит доставка в Санкт-Петербург?</p>
+                    <div class="question__body">
+                      <p>Наша компания осуществляет доставку по всей территории России. Мы работаем только с проверенными логистическими компаниями, отправляемый груз обязательно будет застрахован на полную стоимость и снабжается дополнительной упаковочной тарой, а также датчиками удара.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__section" data-target="4">
+                <p class="js-faq-mobile-toggler faq__mobile-title">
+                  <svg class="faq__mobile-title-icon" aria-hidden="true">
+                    <use xlink:href="#faq_icon_setup" />
+                  </svg>
+                  Вопросы по Сборке
+                </p>
+                <div class="faq__questions-block">
+                  <div class="js-question-toggler question">
+                    <p class="question__title">В какие города вы осуществляете доставку?</p>
+                    <div class="question__body">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dicta maiores sint consequuntur rerum, id obcaecati accusamus provident fugit officiis est, quisquam dolorum. Nostrum veniam fuga, tenetur sit ducimus quaerat.</p>
+                      <p>Aliquid eligendi nesciunt, vel porro quasi eaque veniam recusandae aspernatur sequi.</p>
+                    </div>
+                  </div>
+                  <div class="js-question-toggler question">
+                    <p class="question__title">Сколько стоит доставка в Санкт-Петербург?</p>
+                    <div class="question__body">
+                      <p>Наша компания осуществляет доставку по всей территории России. Мы работаем только с проверенными логистическими компаниями, отправляемый груз обязательно будет застрахован на полную стоимость и снабжается дополнительной упаковочной тарой, а также датчиками удара.</p>
+                    </div>
                   </div>
                 </div>
               </div>

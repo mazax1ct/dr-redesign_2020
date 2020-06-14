@@ -151,14 +151,17 @@ $(document).ready(function() {
     });
   }
 
-  $('[data-fancybox="review-popup"]').fancybox({
-    arrows: false,
-    infobar: false,
-    modal: true,
-		afterShow: function() {
-      $('.js-review2-slider2').slick('setPosition');
-		}
-	});
+  //попап отзыва
+  if($('[data-fancybox="review-popup"]').length) {
+    $('[data-fancybox="review-popup"]').fancybox({
+      arrows: false,
+      infobar: false,
+      modal: true,
+  		afterShow: function() {
+        $('.js-review2-slider2').slick('setPosition');
+  		}
+  	});
+  }
 
   /******js для страницы лендинга evolv******/
   //аккордеон
@@ -278,6 +281,46 @@ $(document).ready(function() {
     return false;
   });
   /******js для страницы лендинга evolv******/
+
+
+  if($('body').width() < 1200) {
+    //слайдер конфигураций
+    if($('.js-list-9').length) {
+      $('.js-list-9').on('init', function(event, slick) {
+        var list = $('.js-list-9').find('.slick-dots');
+        $.each(list['0'].children, function(index, value) {
+          if(index < 9) {
+            list['0'].children[index].children['0'].innerText = '0' + list['0'].children[index].children['0'].innerText;
+          }
+        });
+      });
+
+      $('.js-list-9').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        mobileFirst: true,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          }
+        ]
+      });
+    }
+  }
+
 });
 
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе

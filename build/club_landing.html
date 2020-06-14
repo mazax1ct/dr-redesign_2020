@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body class="landing">
   <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
     <symbol id="burger" viewBox="0 0 22 14">
       <path d="M0 0H22V2H0V0ZM0 6H22V8H0V6ZM22 12H0V14H22V12Z" />
@@ -122,10 +122,10 @@
     <symbol id="ssd" viewBox="0 0 512 512">
       <g>
         <path d="M416,0H152.6L48,122.1V464c0,26.5,21.5,48,48,48h320c26.5,0,48-21.5,48-48V48C464,21.5,442.5,0,416,0z M432,464c0,8.8-7.2,16-16,16H96c-8.8,0-16-7.2-16-16v-48h64v-32H80V133.9L167.4,32H416c8.8,0,16,7.2,16,16V464z" />
-        <rect x="176" y="64" class="st0" width="32" height="128" />
-        <rect x="240" y="64" class="st0" width="32" height="128" />
-        <rect x="304" y="64" class="st0" width="32" height="128" />
-        <rect x="368" y="64" class="st0" width="32" height="128" />
+        <rect x="176" y="64" width="32" height="128" />
+        <rect x="240" y="64" width="32" height="128" />
+        <rect x="304" y="64" width="32" height="128" />
+        <rect x="368" y="64" width="32" height="128" />
       </g>
     </symbol>
     <symbol id="hdd" viewBox="0 0 512 512">
@@ -276,6 +276,9 @@
         <rect y="10.7" width="0.9" height="20.5"/>
         <rect x="41.1" y="10.7" width="0.9" height="20.5"/>
       </g>
+    </symbol>
+    <symbol id="settings" viewBox="0 0 14 14">
+      <path d="M13.6706 5.40594L12.5946 5.17203C12.501 4.88556 12.3851 4.60614 12.2483 4.33698L12.844 3.41039C12.9504 3.24483 12.927 3.02747 12.7879 2.8884L11.1116 1.2121C10.9725 1.07303 10.7552 1.04964 10.5896 1.15602L9.66302 1.75171C9.39386 1.61488 9.11444 1.49899 8.82797 1.40543L8.59406 0.329407C8.55229 0.137146 8.38203 0 8.18529 0H5.81471C5.61797 0 5.44771 0.137146 5.40594 0.329407L5.17203 1.40543C4.88556 1.49899 4.60614 1.61488 4.33698 1.75171L3.41039 1.15602C3.24483 1.04964 3.02747 1.07303 2.8884 1.2121L1.2121 2.8884C1.07303 3.02747 1.04964 3.24483 1.15602 3.41039L1.75171 4.33698C1.61488 4.60614 1.49899 4.88556 1.40543 5.17203L0.329407 5.40594C0.137146 5.44781 0 5.61797 0 5.81471V8.18529C0 8.38203 0.137146 8.55219 0.329407 8.59406L1.40543 8.82797C1.49899 9.11444 1.61488 9.39386 1.75171 9.66302L1.15602 10.5896C1.04964 10.7552 1.07303 10.9725 1.2121 11.1116L2.8884 12.7879C3.02747 12.927 3.24483 12.9504 3.41039 12.844L4.33698 12.2483C4.60614 12.3851 4.88556 12.501 5.17203 12.5946L5.40594 13.6706C5.44771 13.8629 5.61797 14 5.81471 14H8.18529C8.38203 14 8.55229 13.8629 8.59406 13.6706L8.82797 12.5946C9.11444 12.501 9.39386 12.3851 9.66302 12.2483L10.5896 12.844C10.7552 12.9504 10.9725 12.9271 11.1116 12.7879L12.7879 11.1116C12.927 10.9725 12.9504 10.7552 12.844 10.5896L12.2483 9.66302C12.3851 9.39386 12.501 9.11444 12.5946 8.82797L13.6706 8.59406C13.8629 8.55219 14 8.38203 14 8.18529V5.81471C14 5.61797 13.8629 5.44781 13.6706 5.40594ZM9.50996 7C9.50996 8.38396 8.38396 9.50996 7 9.50996C5.61604 9.50996 4.49004 8.38396 4.49004 7C4.49004 5.61604 5.61604 4.49004 7 4.49004C8.38396 4.49004 9.50996 5.61604 9.50996 7Z"/>
     </symbol>
   </svg>
 
@@ -472,992 +475,994 @@
       </div>
     </header>
 
-    <div class="js-main-banner main-banner">
-      <div class="main-banner__slide main-banner__slide--wide" style="background-image: url('images/content/main_banner/bg4.jpg')">
-        <div class="main-banner__slide-inner">
-          <p class="main-banner__slide-title"><span>Укомплектуй клуб</span><br> игровыми ПК для геймеров</p>
-          <p class="main-banner__slide-text">Выбор игровых систем - это просто: гарантия 3 года,<br> комплексное решение, техническая поддержка, лизинг</p>
+    <div class="page-content">
+      <div class="js-main-banner main-banner">
+        <div class="main-banner__slide main-banner__slide--wide" style="background-image: url('images/content/main_banner/bg4.jpg')">
+          <div class="main-banner__slide-inner">
+            <p class="main-banner__slide-title"><span>Укомплектуй клуб</span><br> игровыми ПК для геймеров</p>
+            <p class="main-banner__slide-text">Выбор игровых систем - это просто: гарантия 3 года,<br> комплексное решение, техническая поддержка, лизинг</p>
+          </div>
+        </div>
+        <div class="main-banner__slide main-banner__slide--wide" style="background-image: url('images/content/main_banner/bg4.jpg')">
+          <div class="main-banner__slide-inner">
+            <p class="main-banner__slide-title"><span>Укомплектуй клуб</span><br> игровыми ПК для геймеров</p>
+            <p class="main-banner__slide-text">Выбор игровых систем - это просто: гарантия 3 года,<br> комплексное решение, техническая поддержка, лизинг</p>
+          </div>
+        </div>
+        <div class="main-banner__slide main-banner__slide--wide" style="background-image: url('images/content/main_banner/bg4.jpg')">
+          <div class="main-banner__slide-inner">
+            <p class="main-banner__slide-title"><span>Укомплектуй клуб</span><br> игровыми ПК для геймеров</p>
+            <p class="main-banner__slide-text">Выбор игровых систем - это просто: гарантия 3 года,<br> комплексное решение, техническая поддержка, лизинг</p>
+          </div>
         </div>
       </div>
-      <div class="main-banner__slide main-banner__slide--wide" style="background-image: url('images/content/main_banner/bg4.jpg')">
-        <div class="main-banner__slide-inner">
-          <p class="main-banner__slide-title"><span>Укомплектуй клуб</span><br> игровыми ПК для геймеров</p>
-          <p class="main-banner__slide-text">Выбор игровых систем - это просто: гарантия 3 года,<br> комплексное решение, техническая поддержка, лизинг</p>
-        </div>
-      </div>
-      <div class="main-banner__slide main-banner__slide--wide" style="background-image: url('images/content/main_banner/bg4.jpg')">
-        <div class="main-banner__slide-inner">
-          <p class="main-banner__slide-title"><span>Укомплектуй клуб</span><br> игровыми ПК для геймеров</p>
-          <p class="main-banner__slide-text">Выбор игровых систем - это просто: гарантия 3 года,<br> комплексное решение, техническая поддержка, лизинг</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="block-7">
-      <div class="container">
-        <h1 class="title"><span>Типовые решения</span> для компьютерного клуба</h1>
-        <p class="block-7__text accented-text">Мы оснастили более 10 игровых клубов и проконсультировали более сотни клиентов. Проанализировав их потребности, предлагаем несколько оптимальных конфигураций:</p>
-        <div class="configs-tab is-active is-visible" data-target="1">
-          <div class="big-cards">
-            <div class="big-cards__item">
-              <div class="big-card">
-                <div class="big-card__box">
-                  <div class="big-card__info">
-                    <div class="big-card__info-block">
-                      <div class="big-card__image-block">
-                        <img src="images/content/block_7/img_1.png" alt="">
-                        <span class="big-card__fps-block">
-                          <span class="big-card__fps-value">120+</span>
-                          <span class="big-card__fps-unit">FPS</span>
-                        </span>
+      <div class="block-7">
+        <div class="container">
+          <h1 class="title"><span>Типовые решения</span> для компьютерного клуба</h1>
+          <p class="block-7__text accented-text">Мы оснастили более 10 игровых клубов и проконсультировали более сотни клиентов. Проанализировав их потребности, предлагаем несколько оптимальных конфигураций:</p>
+          <div class="configs-tab is-active is-visible" data-target="1">
+            <div class="big-cards">
+              <div class="big-cards__item">
+                <div class="big-card">
+                  <div class="big-card__box">
+                    <div class="big-card__info">
+                      <div class="big-card__info-block">
+                        <div class="big-card__image-block">
+                          <img src="images/content/block_7/img_1.png" alt="">
+                          <span class="big-card__fps-block">
+                            <span class="big-card__fps-value">120+</span>
+                            <span class="big-card__fps-unit">FPS</span>
+                          </span>
+                        </div>
+                        <p class="big-card__title">enthoo evolv shift x</p>
+                        <p class="big-card__text">Решает задачи плавной картинки и качественно геймплея без разрывов изображения за счет высокого FPS (120+) в современных играх тип AAA</p>
+                        <button class="button button--arrow" type="button"><span class="button__text">запросить цену</span></button>
                       </div>
-                      <p class="big-card__title">enthoo evolv shift x</p>
-                      <p class="big-card__text">Решает задачи плавной картинки и качественно геймплея без разрывов изображения за счет высокого FPS (120+) в современных играх тип AAA</p>
-                      <button class="button button--arrow" type="button"><span class="button__text">запросить цену</span></button>
-                    </div>
-                    <div class="big-card__info-block">
-                      <p class="big-card__resolution-title">Выберите разрешение:</p>
-                      <div class="big-card__resolution-block">
-                        <button class="big-card__resolution is-active" type="button">1080 P</button>
-                        <button class="big-card__resolution" type="button">1440 P</button>
-                      </div>
-                      <p class="big-card__config-title">Конфигуратор:</p>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#cpu" />
-                          </svg>
+                      <div class="big-card__info-block">
+                        <p class="big-card__resolution-title">Выберите разрешение:</p>
+                        <div class="big-card__resolution-block">
+                          <button class="big-card__resolution is-active" type="button">1080 P</button>
+                          <button class="big-card__resolution" type="button">1440 P</button>
                         </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Процессор:</p>
-                          <p class="config-option__text">8-ядерный AMD Ryzen 7 3700X 3.60 GHz</p>
+                        <p class="big-card__config-title">Конфигуратор:</p>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#cpu" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Процессор:</p>
+                            <p class="config-option__text">8-ядерный AMD Ryzen 7 3700X 3.60 GHz</p>
+                          </div>
                         </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#ram" />
-                          </svg>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#ram" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Оперативная память:</p>
+                            <p class="config-option__text">16GB (2x8Gb) DDR4 3000Mhz</p>
+                          </div>
                         </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Оперативная память:</p>
-                          <p class="config-option__text">16GB (2x8Gb) DDR4 3000Mhz</p>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#fan" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Видеокарта:</p>
+                            <p class="config-option__text">AMD Radeon 5700 XT 8G</p>
+                          </div>
                         </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#fan" />
-                          </svg>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#ssd" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Накопитель SSD M.2:</p>
+                          </div>
                         </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Видеокарта:</p>
-                          <p class="config-option__text">AMD Radeon 5700 XT 8G</p>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#ssd" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Накопитель SSD SATA:</p>
+                            <p class="config-option__text">SSD 480GB</p>
+                          </div>
                         </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#ssd" />
-                          </svg>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#hdd" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Накопители HDD:</p>
+                            <p class="config-option__text">Жесткий диск 2TB</p>
+                          </div>
                         </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Накопитель SSD M.2:</p>
-                        </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#ssd" />
-                          </svg>
-                        </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Накопитель SSD SATA:</p>
-                          <p class="config-option__text">SSD 480GB</p>
-                        </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#hdd" />
-                          </svg>
-                        </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Накопители HDD:</p>
-                          <p class="config-option__text">Жесткий диск 2TB</p>
-                        </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#warranty" />
-                          </svg>
-                        </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Гарантия:</p>
-                          <p class="config-option__text">Гарантия 36 месяцев</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="big-card__box">
-                  <div class="games-list">
-                    <button class="games-list__button is-active" type="button"><img src="images/content/block_7/img_3.png" alt="PUBG"></button>
-                    <button class="games-list__button" type="button"><img src="images/content/block_7/img_4.png" alt="CS:GO"></button>
-                    <button class="games-list__button" type="button"><img src="images/content/block_7/img_5.png" alt="DOTA2"></button>
-                    <button class="games-list__button" type="button"><img src="images/content/block_7/img_6.png" alt="JEDI"></button>
-                    <button class="games-list__button" type="button"><img src="images/content/block_7/img_7.png" alt="FORTNITE"></button>
-                  </div>
-                  <div class="graphs">
-                    <div class="graphs__hz">
-                      <div class="graphs__hz-item">60 Гц</div>
-                      <div class="graphs__hz-item">144 Гц</div>
-                      <div class="graphs__hz-item">240 Гц</div>
-                    </div>
-                    <div class="graph">
-                      <div class="graph__value" style="width: 80%">160 FPS</div>
-                    </div>
-                    <p class="graphs__title">Разрешение 1080p</p>
-                    <div class="graph">
-                      <div class="graph__value" style="width: 60%">130 FPS</div>
-                    </div>
-                    <p class="graphs__title">Разрешение 1440p</p>
-                    <div class="graph">
-                      <div class="graph__value" style="width: 30%">50 FPS</div>
-                    </div>
-                    <p class="graphs__title">Разрешение 2160p</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="big-cards__item">
-              <div class="big-card">
-                <div class="big-card__box">
-                  <div class="big-card__info">
-                    <div class="big-card__info-block">
-                      <div class="big-card__image-block">
-                        <img src="images/content/block_7/img_2.png" alt="">
-                        <span class="big-card__fps-block">
-                          <span class="big-card__fps-value">120+</span>
-                          <span class="big-card__fps-unit">FPS</span>
-                        </span>
-                      </div>
-                      <p class="big-card__title">ProGaming</p>
-                      <p class="big-card__text">Решает задачи плавной картинки и качественно геймплея без разрывов изображения за счет высокого FPS (120+) в современных играх тип AAA</p>
-                      <button class="button button--arrow" type="button"><span class="button__text">запросить цену</span></button>
-                    </div>
-                    <div class="big-card__info-block">
-                      <p class="big-card__resolution-title">Выберите разрешение:</p>
-                      <div class="big-card__resolution-block">
-                        <button class="big-card__resolution is-active" type="button">1080 P</button>
-                        <button class="big-card__resolution" type="button">1440 P</button>
-                      </div>
-                      <p class="big-card__config-title">Конфигуратор:</p>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#cpu" />
-                          </svg>
-                        </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Процессор:</p>
-                          <p class="config-option__text">6-ядерный Intel Core i5-9400F 2.90 GHz</p>
-                        </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#ram" />
-                          </svg>
-                        </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Оперативная память:</p>
-                          <p class="config-option__text">16GB (2x8Gb) DDR4 2666Mhz</p>
-                        </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#fan" />
-                          </svg>
-                        </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Видеокарта:</p>
-                          <p class="config-option__text">NVIDIA GeForce GTX 1660 Ti 6G</p>
-                        </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#ssd" />
-                          </svg>
-                        </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Накопитель SSD M.2:</p>
-                        </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#ssd" />
-                          </svg>
-                        </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Накопитель SSD SATA:</p>
-                          <p class="config-option__text">SSD M.2 240GB</p>
-                        </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#hdd" />
-                          </svg>
-                        </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Накопители HDD:</p>
-                          <p class="config-option__text">Жесткий диск 2TB</p>
-                        </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#warranty" />
-                          </svg>
-                        </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Гарантия:</p>
-                          <p class="config-option__text">Гарантия 36 месяцев</p>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#warranty" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Гарантия:</p>
+                            <p class="config-option__text">Гарантия 36 месяцев</p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="big-card__box">
-                  <div class="games-list">
-                    <button class="games-list__button" type="button"><img src="images/content/block_7/img_3.png" alt="PUBG"></button>
-                    <button class="games-list__button" type="button"><img src="images/content/block_7/img_4.png" alt="CS:GO"></button>
-                    <button class="games-list__button is-active" type="button"><img src="images/content/block_7/img_5.png" alt="DOTA2"></button>
-                    <button class="games-list__button" type="button"><img src="images/content/block_7/img_6.png" alt="JEDI"></button>
-                    <button class="games-list__button" type="button"><img src="images/content/block_7/img_7.png" alt="FORTNITE"></button>
-                  </div>
-                  <div class="graphs">
-                    <div class="graphs__hz">
-                      <div class="graphs__hz-item">60 Гц</div>
-                      <div class="graphs__hz-item">144 Гц</div>
-                      <div class="graphs__hz-item">240 Гц</div>
+                  <div class="big-card__box">
+                    <div class="games-list">
+                      <button class="games-list__button is-active" type="button"><img src="images/content/block_7/img_3.png" alt="PUBG"></button>
+                      <button class="games-list__button" type="button"><img src="images/content/block_7/img_4.png" alt="CS:GO"></button>
+                      <button class="games-list__button" type="button"><img src="images/content/block_7/img_5.png" alt="DOTA2"></button>
+                      <button class="games-list__button" type="button"><img src="images/content/block_7/img_6.png" alt="JEDI"></button>
+                      <button class="games-list__button" type="button"><img src="images/content/block_7/img_7.png" alt="FORTNITE"></button>
                     </div>
-                    <div class="graph">
-                      <div class="graph__value" style="width: 80%">160 FPS</div>
+                    <div class="graphs">
+                      <div class="graphs__hz">
+                        <div class="graphs__hz-item">60 Гц</div>
+                        <div class="graphs__hz-item">144 Гц</div>
+                        <div class="graphs__hz-item">240 Гц</div>
+                      </div>
+                      <div class="graph">
+                        <div class="graph__value" style="width: 80%">160 FPS</div>
+                      </div>
+                      <p class="graphs__title">Разрешение 1080p</p>
+                      <div class="graph">
+                        <div class="graph__value" style="width: 60%">130 FPS</div>
+                      </div>
+                      <p class="graphs__title">Разрешение 1440p</p>
+                      <div class="graph">
+                        <div class="graph__value" style="width: 30%">50 FPS</div>
+                      </div>
+                      <p class="graphs__title">Разрешение 2160p</p>
                     </div>
-                    <p class="graphs__title">Разрешение 1080p</p>
-                    <div class="graph">
-                      <div class="graph__value" style="width: 60%">130 FPS</div>
-                    </div>
-                    <p class="graphs__title">Разрешение 1440p</p>
-                    <div class="graph">
-                      <div class="graph__value" style="width: 30%">50 FPS</div>
-                    </div>
-                    <p class="graphs__title">Разрешение 2160p</p>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="configs-tab" data-target="2">
-          <div class="big-cards">
-            <div class="big-cards__item">
-              <div class="big-card">
-                <div class="big-card__box">
-                  <div class="big-card__info">
-                    <div class="big-card__info-block">
-                      <div class="big-card__image-block">
-                        <img src="images/content/block_7/img_2.png" alt="">
-                        <span class="big-card__fps-block">
-                          <span class="big-card__fps-value">120+</span>
-                          <span class="big-card__fps-unit">FPS</span>
-                        </span>
+              <div class="big-cards__item">
+                <div class="big-card">
+                  <div class="big-card__box">
+                    <div class="big-card__info">
+                      <div class="big-card__info-block">
+                        <div class="big-card__image-block">
+                          <img src="images/content/block_7/img_2.png" alt="">
+                          <span class="big-card__fps-block">
+                            <span class="big-card__fps-value">120+</span>
+                            <span class="big-card__fps-unit">FPS</span>
+                          </span>
+                        </div>
+                        <p class="big-card__title">ProGaming</p>
+                        <p class="big-card__text">Решает задачи плавной картинки и качественно геймплея без разрывов изображения за счет высокого FPS (120+) в современных играх тип AAA</p>
+                        <button class="button button--arrow" type="button"><span class="button__text">запросить цену</span></button>
                       </div>
-                      <p class="big-card__title">ProGaming</p>
-                      <p class="big-card__text">Решает задачи плавной картинки и качественно геймплея без разрывов изображения за счет высокого FPS (120+) в современных играх тип AAA</p>
-                      <button class="button button--arrow" type="button"><span class="button__text">запросить цену</span></button>
-                    </div>
-                    <div class="big-card__info-block">
-                      <p class="big-card__resolution-title">Выберите разрешение:</p>
-                      <div class="big-card__resolution-block">
-                        <button class="big-card__resolution is-active" type="button">1080 P</button>
-                        <button class="big-card__resolution" type="button">1440 P</button>
-                      </div>
-                      <p class="big-card__config-title">Конфигуратор:</p>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#cpu" />
-                          </svg>
+                      <div class="big-card__info-block">
+                        <p class="big-card__resolution-title">Выберите разрешение:</p>
+                        <div class="big-card__resolution-block">
+                          <button class="big-card__resolution is-active" type="button">1080 P</button>
+                          <button class="big-card__resolution" type="button">1440 P</button>
                         </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Процессор:</p>
-                          <p class="config-option__text">6-ядерный Intel Core i5-9400F 2.90 GHz</p>
+                        <p class="big-card__config-title">Конфигуратор:</p>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#cpu" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Процессор:</p>
+                            <p class="config-option__text">6-ядерный Intel Core i5-9400F 2.90 GHz</p>
+                          </div>
                         </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#ram" />
-                          </svg>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#ram" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Оперативная память:</p>
+                            <p class="config-option__text">16GB (2x8Gb) DDR4 2666Mhz</p>
+                          </div>
                         </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Оперативная память:</p>
-                          <p class="config-option__text">16GB (2x8Gb) DDR4 2666Mhz</p>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#fan" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Видеокарта:</p>
+                            <p class="config-option__text">NVIDIA GeForce GTX 1660 Ti 6G</p>
+                          </div>
                         </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#fan" />
-                          </svg>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#ssd" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Накопитель SSD M.2:</p>
+                          </div>
                         </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Видеокарта:</p>
-                          <p class="config-option__text">NVIDIA GeForce GTX 1660 Ti 6G</p>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#ssd" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Накопитель SSD SATA:</p>
+                            <p class="config-option__text">SSD M.2 240GB</p>
+                          </div>
                         </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#ssd" />
-                          </svg>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#hdd" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Накопители HDD:</p>
+                            <p class="config-option__text">Жесткий диск 2TB</p>
+                          </div>
                         </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Накопитель SSD M.2:</p>
-                        </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#ssd" />
-                          </svg>
-                        </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Накопитель SSD SATA:</p>
-                          <p class="config-option__text">SSD M.2 240GB</p>
-                        </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#hdd" />
-                          </svg>
-                        </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Накопители HDD:</p>
-                          <p class="config-option__text">Жесткий диск 2TB</p>
-                        </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#warranty" />
-                          </svg>
-                        </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Гарантия:</p>
-                          <p class="config-option__text">Гарантия 36 месяцев</p>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#warranty" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Гарантия:</p>
+                            <p class="config-option__text">Гарантия 36 месяцев</p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="big-card__box">
-                  <div class="games-list">
-                    <button class="games-list__button" type="button"><img src="images/content/block_7/img_3.png" alt="PUBG"></button>
-                    <button class="games-list__button" type="button"><img src="images/content/block_7/img_4.png" alt="CS:GO"></button>
-                    <button class="games-list__button is-active" type="button"><img src="images/content/block_7/img_5.png" alt="DOTA2"></button>
-                    <button class="games-list__button" type="button"><img src="images/content/block_7/img_6.png" alt="JEDI"></button>
-                    <button class="games-list__button" type="button"><img src="images/content/block_7/img_7.png" alt="FORTNITE"></button>
-                  </div>
-                  <div class="graphs">
-                    <div class="graphs__hz">
-                      <div class="graphs__hz-item">60 Гц</div>
-                      <div class="graphs__hz-item">144 Гц</div>
-                      <div class="graphs__hz-item">240 Гц</div>
+                  <div class="big-card__box">
+                    <div class="games-list">
+                      <button class="games-list__button" type="button"><img src="images/content/block_7/img_3.png" alt="PUBG"></button>
+                      <button class="games-list__button" type="button"><img src="images/content/block_7/img_4.png" alt="CS:GO"></button>
+                      <button class="games-list__button is-active" type="button"><img src="images/content/block_7/img_5.png" alt="DOTA2"></button>
+                      <button class="games-list__button" type="button"><img src="images/content/block_7/img_6.png" alt="JEDI"></button>
+                      <button class="games-list__button" type="button"><img src="images/content/block_7/img_7.png" alt="FORTNITE"></button>
                     </div>
-                    <div class="graph">
-                      <div class="graph__value" style="width: 80%">160 FPS</div>
-                    </div>
-                    <p class="graphs__title">Разрешение 1080p</p>
-                    <div class="graph">
-                      <div class="graph__value" style="width: 60%">130 FPS</div>
-                    </div>
-                    <p class="graphs__title">Разрешение 1440p</p>
-                    <div class="graph">
-                      <div class="graph__value" style="width: 30%">50 FPS</div>
-                    </div>
-                    <p class="graphs__title">Разрешение 2160p</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="big-cards__item">
-              <div class="big-card">
-                <div class="big-card__box">
-                  <div class="big-card__info">
-                    <div class="big-card__info-block">
-                      <div class="big-card__image-block">
-                        <img src="images/content/block_7/img_1.png" alt="">
-                        <span class="big-card__fps-block">
-                          <span class="big-card__fps-value">120+</span>
-                          <span class="big-card__fps-unit">FPS</span>
-                        </span>
+                    <div class="graphs">
+                      <div class="graphs__hz">
+                        <div class="graphs__hz-item">60 Гц</div>
+                        <div class="graphs__hz-item">144 Гц</div>
+                        <div class="graphs__hz-item">240 Гц</div>
                       </div>
-                      <p class="big-card__title">enthoo evolv shift x</p>
-                      <p class="big-card__text">Решает задачи плавной картинки и качественно геймплея без разрывов изображения за счет высокого FPS (120+) в современных играх тип AAA</p>
-                      <button class="button button--arrow" type="button"><span class="button__text">запросить цену</span></button>
+                      <div class="graph">
+                        <div class="graph__value" style="width: 80%">160 FPS</div>
+                      </div>
+                      <p class="graphs__title">Разрешение 1080p</p>
+                      <div class="graph">
+                        <div class="graph__value" style="width: 60%">130 FPS</div>
+                      </div>
+                      <p class="graphs__title">Разрешение 1440p</p>
+                      <div class="graph">
+                        <div class="graph__value" style="width: 30%">50 FPS</div>
+                      </div>
+                      <p class="graphs__title">Разрешение 2160p</p>
                     </div>
-                    <div class="big-card__info-block">
-                      <p class="big-card__resolution-title">Выберите разрешение:</p>
-                      <div class="big-card__resolution-block">
-                        <button class="big-card__resolution is-active" type="button">1080 P</button>
-                        <button class="big-card__resolution" type="button">1440 P</button>
-                      </div>
-                      <p class="big-card__config-title">Конфигуратор:</p>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#cpu" />
-                          </svg>
-                        </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Процессор:</p>
-                          <p class="config-option__text">8-ядерный AMD Ryzen 7 3700X 3.60 GHz</p>
-                        </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#ram" />
-                          </svg>
-                        </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Оперативная память:</p>
-                          <p class="config-option__text">16GB (2x8Gb) DDR4 3000Mhz</p>
-                        </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#fan" />
-                          </svg>
-                        </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Видеокарта:</p>
-                          <p class="config-option__text">AMD Radeon 5700 XT 8G</p>
-                        </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#ssd" />
-                          </svg>
-                        </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Накопитель SSD M.2:</p>
-                        </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#ssd" />
-                          </svg>
-                        </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Накопитель SSD SATA:</p>
-                          <p class="config-option__text">SSD 480GB</p>
-                        </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#hdd" />
-                          </svg>
-                        </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Накопители HDD:</p>
-                          <p class="config-option__text">Жесткий диск 2TB</p>
-                        </div>
-                      </div>
-                      <div class="big-card__config-option config-option">
-                        <div class="config-option__icon-block">
-                          <svg class="config-option__icon" aria-hidden="true">
-                            <use xlink:href="#warranty" />
-                          </svg>
-                        </div>
-                        <div class="config-option__info">
-                          <p class="config-option__title">Гарантия:</p>
-                          <p class="config-option__text">Гарантия 36 месяцев</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="big-card__box">
-                  <div class="games-list">
-                    <button class="games-list__button is-active" type="button"><img src="images/content/block_7/img_3.png" alt="PUBG"></button>
-                    <button class="games-list__button" type="button"><img src="images/content/block_7/img_4.png" alt="CS:GO"></button>
-                    <button class="games-list__button" type="button"><img src="images/content/block_7/img_5.png" alt="DOTA2"></button>
-                    <button class="games-list__button" type="button"><img src="images/content/block_7/img_6.png" alt="JEDI"></button>
-                    <button class="games-list__button" type="button"><img src="images/content/block_7/img_7.png" alt="FORTNITE"></button>
-                  </div>
-                  <div class="graphs">
-                    <div class="graphs__hz">
-                      <div class="graphs__hz-item">60 Гц</div>
-                      <div class="graphs__hz-item">144 Гц</div>
-                      <div class="graphs__hz-item">240 Гц</div>
-                    </div>
-                    <div class="graph">
-                      <div class="graph__value" style="width: 80%">160 FPS</div>
-                    </div>
-                    <p class="graphs__title">Разрешение 1080p</p>
-                    <div class="graph">
-                      <div class="graph__value" style="width: 60%">130 FPS</div>
-                    </div>
-                    <p class="graphs__title">Разрешение 1440p</p>
-                    <div class="graph">
-                      <div class="graph__value" style="width: 30%">50 FPS</div>
-                    </div>
-                    <p class="graphs__title">Разрешение 2160p</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="block-7__buttons-block">
-          <button class="js-tab-changer button" type="button" data-target="1">Стандарт</button>
-          <button class="js-tab-changer button button--transparent" type="button" data-target="2">Vip</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="block-8">
-      <div class="container">
-        <h2 class="title"><span>Удиви геймера качеством</span> изображения и геймплея, пусть&nbsp;Вас&nbsp;запомнят</h2>
-        <p class="block-8__text accented-text">Конфигурации игровых систем мы подбираем в соотвествии частоты обновления монитора, FPS и набора игр. Это важный параметр для геймера, так как она на прямую влияет на качество геймплея и картинку, которую
-          запомнят.</p>
-        <a class="video-block" href="https://www.youtube.com/watch?v=D87Z0-KvH6A&t=6s" data-fancybox>
-          <img src="images/content/block_8/img_1.jpg" alt="Видео">
-          <span class="video-block__play">
-            <svg class="video-block__play-icon" aria-hidden="true">
-              <use xlink:href="#play" />
-            </svg>
-          </span>
-        </a>
-      </div>
-    </div>
-
-    <div class="block-9">
-      <div class="container">
-        <h2 class="title"><span>Запоминайся</span> и побеждай</h2>
-        <p class="block-9__text accented-text">Игровые клубы переживают эпоху ренессанса. Направление популярное и развивается.Именно по этой причине, мы предлагаем нашим клиентам выделиться и запомниться геймерам на фоне своих конкурентов через
-          фирменный стиль.</p>
-        <div class="cols cols--4">
-          <div class="cols__item">
-            <div class="feature2">
-              <img src="images/content/block_9/img_1.jpg" alt="нанесение логотипа">
-              <span class="feature2__title">НАНЕСЕНИЕ ЛОГОТИПА</span>
+          <div class="configs-tab" data-target="2">
+            <div class="big-cards">
+              <div class="big-cards__item">
+                <div class="big-card">
+                  <div class="big-card__box">
+                    <div class="big-card__info">
+                      <div class="big-card__info-block">
+                        <div class="big-card__image-block">
+                          <img src="images/content/block_7/img_2.png" alt="">
+                          <span class="big-card__fps-block">
+                            <span class="big-card__fps-value">120+</span>
+                            <span class="big-card__fps-unit">FPS</span>
+                          </span>
+                        </div>
+                        <p class="big-card__title">ProGaming</p>
+                        <p class="big-card__text">Решает задачи плавной картинки и качественно геймплея без разрывов изображения за счет высокого FPS (120+) в современных играх тип AAA</p>
+                        <button class="button button--arrow" type="button"><span class="button__text">запросить цену</span></button>
+                      </div>
+                      <div class="big-card__info-block">
+                        <p class="big-card__resolution-title">Выберите разрешение:</p>
+                        <div class="big-card__resolution-block">
+                          <button class="big-card__resolution is-active" type="button">1080 P</button>
+                          <button class="big-card__resolution" type="button">1440 P</button>
+                        </div>
+                        <p class="big-card__config-title">Конфигуратор:</p>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#cpu" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Процессор:</p>
+                            <p class="config-option__text">6-ядерный Intel Core i5-9400F 2.90 GHz</p>
+                          </div>
+                        </div>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#ram" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Оперативная память:</p>
+                            <p class="config-option__text">16GB (2x8Gb) DDR4 2666Mhz</p>
+                          </div>
+                        </div>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#fan" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Видеокарта:</p>
+                            <p class="config-option__text">NVIDIA GeForce GTX 1660 Ti 6G</p>
+                          </div>
+                        </div>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#ssd" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Накопитель SSD M.2:</p>
+                          </div>
+                        </div>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#ssd" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Накопитель SSD SATA:</p>
+                            <p class="config-option__text">SSD M.2 240GB</p>
+                          </div>
+                        </div>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#hdd" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Накопители HDD:</p>
+                            <p class="config-option__text">Жесткий диск 2TB</p>
+                          </div>
+                        </div>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#warranty" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Гарантия:</p>
+                            <p class="config-option__text">Гарантия 36 месяцев</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="big-card__box">
+                    <div class="games-list">
+                      <button class="games-list__button" type="button"><img src="images/content/block_7/img_3.png" alt="PUBG"></button>
+                      <button class="games-list__button" type="button"><img src="images/content/block_7/img_4.png" alt="CS:GO"></button>
+                      <button class="games-list__button is-active" type="button"><img src="images/content/block_7/img_5.png" alt="DOTA2"></button>
+                      <button class="games-list__button" type="button"><img src="images/content/block_7/img_6.png" alt="JEDI"></button>
+                      <button class="games-list__button" type="button"><img src="images/content/block_7/img_7.png" alt="FORTNITE"></button>
+                    </div>
+                    <div class="graphs">
+                      <div class="graphs__hz">
+                        <div class="graphs__hz-item">60 Гц</div>
+                        <div class="graphs__hz-item">144 Гц</div>
+                        <div class="graphs__hz-item">240 Гц</div>
+                      </div>
+                      <div class="graph">
+                        <div class="graph__value" style="width: 80%">160 FPS</div>
+                      </div>
+                      <p class="graphs__title">Разрешение 1080p</p>
+                      <div class="graph">
+                        <div class="graph__value" style="width: 60%">130 FPS</div>
+                      </div>
+                      <p class="graphs__title">Разрешение 1440p</p>
+                      <div class="graph">
+                        <div class="graph__value" style="width: 30%">50 FPS</div>
+                      </div>
+                      <p class="graphs__title">Разрешение 2160p</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="big-cards__item">
+                <div class="big-card">
+                  <div class="big-card__box">
+                    <div class="big-card__info">
+                      <div class="big-card__info-block">
+                        <div class="big-card__image-block">
+                          <img src="images/content/block_7/img_1.png" alt="">
+                          <span class="big-card__fps-block">
+                            <span class="big-card__fps-value">120+</span>
+                            <span class="big-card__fps-unit">FPS</span>
+                          </span>
+                        </div>
+                        <p class="big-card__title">enthoo evolv shift x</p>
+                        <p class="big-card__text">Решает задачи плавной картинки и качественно геймплея без разрывов изображения за счет высокого FPS (120+) в современных играх тип AAA</p>
+                        <button class="button button--arrow" type="button"><span class="button__text">запросить цену</span></button>
+                      </div>
+                      <div class="big-card__info-block">
+                        <p class="big-card__resolution-title">Выберите разрешение:</p>
+                        <div class="big-card__resolution-block">
+                          <button class="big-card__resolution is-active" type="button">1080 P</button>
+                          <button class="big-card__resolution" type="button">1440 P</button>
+                        </div>
+                        <p class="big-card__config-title">Конфигуратор:</p>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#cpu" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Процессор:</p>
+                            <p class="config-option__text">8-ядерный AMD Ryzen 7 3700X 3.60 GHz</p>
+                          </div>
+                        </div>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#ram" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Оперативная память:</p>
+                            <p class="config-option__text">16GB (2x8Gb) DDR4 3000Mhz</p>
+                          </div>
+                        </div>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#fan" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Видеокарта:</p>
+                            <p class="config-option__text">AMD Radeon 5700 XT 8G</p>
+                          </div>
+                        </div>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#ssd" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Накопитель SSD M.2:</p>
+                          </div>
+                        </div>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#ssd" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Накопитель SSD SATA:</p>
+                            <p class="config-option__text">SSD 480GB</p>
+                          </div>
+                        </div>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#hdd" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Накопители HDD:</p>
+                            <p class="config-option__text">Жесткий диск 2TB</p>
+                          </div>
+                        </div>
+                        <div class="big-card__config-option config-option">
+                          <div class="config-option__icon-block">
+                            <svg class="config-option__icon" aria-hidden="true">
+                              <use xlink:href="#warranty" />
+                            </svg>
+                          </div>
+                          <div class="config-option__info">
+                            <p class="config-option__title">Гарантия:</p>
+                            <p class="config-option__text">Гарантия 36 месяцев</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="big-card__box">
+                    <div class="games-list">
+                      <button class="games-list__button is-active" type="button"><img src="images/content/block_7/img_3.png" alt="PUBG"></button>
+                      <button class="games-list__button" type="button"><img src="images/content/block_7/img_4.png" alt="CS:GO"></button>
+                      <button class="games-list__button" type="button"><img src="images/content/block_7/img_5.png" alt="DOTA2"></button>
+                      <button class="games-list__button" type="button"><img src="images/content/block_7/img_6.png" alt="JEDI"></button>
+                      <button class="games-list__button" type="button"><img src="images/content/block_7/img_7.png" alt="FORTNITE"></button>
+                    </div>
+                    <div class="graphs">
+                      <div class="graphs__hz">
+                        <div class="graphs__hz-item">60 Гц</div>
+                        <div class="graphs__hz-item">144 Гц</div>
+                        <div class="graphs__hz-item">240 Гц</div>
+                      </div>
+                      <div class="graph">
+                        <div class="graph__value" style="width: 80%">160 FPS</div>
+                      </div>
+                      <p class="graphs__title">Разрешение 1080p</p>
+                      <div class="graph">
+                        <div class="graph__value" style="width: 60%">130 FPS</div>
+                      </div>
+                      <p class="graphs__title">Разрешение 1440p</p>
+                      <div class="graph">
+                        <div class="graph__value" style="width: 30%">50 FPS</div>
+                      </div>
+                      <p class="graphs__title">Разрешение 2160p</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="cols__item">
-            <div class="feature2">
-              <img src="images/content/block_9/img_2.jpg" alt="нанесение логотипа">
-              <span class="feature2__title">НАНЕСЕНИЕ ИЗОБРАЖЕНИЯ</span>
-            </div>
-          </div>
-          <div class="cols__item">
-            <div class="feature2">
-              <img src="images/content/block_9/img_3.jpg" alt="нанесение логотипа">
-              <span class="feature2__title">ПОКРАСКА</span>
-            </div>
-          </div>
-          <div class="cols__item">
-            <div class="feature2">
-              <img src="images/content/block_9/img_4.jpg" alt="нанесение логотипа">
-              <span class="feature2__title">РАЗРАБОТКА УНИКАЛЬНОГО ДИЗАЙНА</span>
-            </div>
+          <div class="block-7__buttons-block">
+            <button class="js-tab-changer button" type="button" data-target="1">Стандарт</button>
+            <button class="js-tab-changer button button--transparent" type="button" data-target="2">Vip</button>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="block-10">
-      <div class="container">
-        <h2 class="title"><span>Выбирай то, что нужно</span> и&nbsp;экономь</h2>
-        <p class="block-10__text accented-text">Новый клуб - это непростая задача: поиск помещения, ремонт, найм сотрудников, реклама и т.д. Поэтому лизинг - одно из решений, что снизить единовременную нагрузку и вложиться в правильное оборудование.</p>
-        <div class="cols cols--3">
-          <div class="cols__item">
-            <div class="feature3">
-              <div class="feature3__icon"><img src="images/content/block_10/img_1.png" alt=""></div>
-              <div class="feature3__info">
-                <p class="feature3__title">вероятность одобрения<br> заявки более 80%</p>
-                <p class="feature3__text">Лояльные требования и индивидуальный<br> подход к рассмотрению каждой заявки</p>
-              </div>
-            </div>
-          </div>
-          <div class="cols__item">
-            <div class="feature3">
-              <div class="feature3__icon"><img src="images/content/block_10/img_2.png" alt=""></div>
-              <div class="feature3__info">
-                <p class="feature3__title">не обременяет баланс<br> компании</p>
-                <p class="feature3__text">Сумма договора лизинга не увеличивает<br> кредиторскую задолженность в балансе<br> Вашей компании</p>
-              </div>
-            </div>
-          </div>
-          <div class="cols__item">
-            <div class="feature3">
-              <div class="feature3__icon"><img src="images/content/block_10/img_3.png" alt=""></div>
-              <div class="feature3__info">
-                <p class="feature3__title">новое оборудование</p>
-                <p class="feature3__text">Никакого б/у − Arenza делает новое и лучшее оборудование доступным для бизнеса</p>
-              </div>
-            </div>
-          </div>
-          <div class="cols__item">
-            <div class="feature3">
-              <div class="feature3__icon"><img src="images/content/block_10/img_4.png" alt=""></div>
-              <div class="feature3__info">
-                <p class="feature3__title">экономия на налогах</p>
-                <p class="feature3__text">Arenza помогает экономить денежные средства за счет налоговых преференций (снижение налогооблагаемой базы по налогу на прибыль и налогу на имущество, возврат НДС)</p>
-              </div>
-            </div>
-          </div>
-          <div class="cols__item">
-            <div class="feature3">
-              <div class="feature3__icon"><img src="images/content/block_10/img_5.png" alt=""></div>
-              <div class="feature3__info">
-                <p class="feature3__title">удобный график выплат</p>
-                <p class="feature3__text">Доступные ежемесячные платежи помогают<br> планировать бюджет вашего бизнеса</p>
-              </div>
-            </div>
-          </div>
-          <div class="cols__item">
-            <div class="feature3">
-              <div class="feature3__icon"><img src="images/content/block_10/img_6.png" alt=""></div>
-              <div class="feature3__info">
-                <p class="feature3__title">оформление онлайн</p>
-                <p class="feature3__text">Услуги Arenza доступны в любом городе безличного присутствия, достаточно вашейэлектронной подписи</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="block-10__button-block">
-          <button class="button button--arrow" type="button" data-fancybox="request" data-src="#request"><span class="button__text">оставить заявку</span></button>
-        </p>
-      </div>
-    </div>
-
-    <div class="block-11">
-      <div class="container">
-        <h2 class="title"><span>Игровые компьютеры - это&nbsp;инструмент,</span><br> который должен приносить пользу</h2>
-        <p class="block-11__text accented-text">Мы понимаем, что игровые клубы работают 24/7. Поэтому надежность оборудования играет важную роль. Мы предлагаем воспользоваться премиальным обслуживанием компании.</p>
-        <div class="cols cols--4">
-          <div class="cols__item">
-            <div class="feature4">
-              <span class="feature4__image"><img src="images/content/block_11/img_1.png" alt=""></span>
-              <p class="feature4__title">бесплатная доставка</p>
-              <p class="feature4__text">Бесплатная и надежная доставка<br> со страхованием по России</p>
-            </div>
-          </div>
-          <div class="cols__item">
-            <div class="feature4">
-              <span class="feature4__image"><img src="images/content/block_11/img_2.png" alt=""></span>
-              <p class="feature4__title">гарантия 3 года</p>
-              <p class="feature4__text">Гарантия на игровые компьютеры<br> составляет от 12 до 36 месяцев</p>
-            </div>
-          </div>
-          <div class="cols__item">
-            <div class="feature4">
-              <span class="feature4__image"><img src="images/content/block_11/img_3.png" alt=""></span>
-              <p class="feature4__title">стресс-тестирование</p>
-              <p class="feature4__text">Все компьютеры проходят<br> комплексное стресс-тестирование</p>
-            </div>
-          </div>
-          <div class="cols__item">
-            <div class="feature4">
-              <span class="feature4__image"><img src="images/content/block_11/img_4.png" alt=""></span>
-              <p class="feature4__title">поддержка и сервис</p>
-              <p class="feature4__text">В Москве и Санкт-Петербурге, для<br> регионов бесплатный трансфер</p>
-            </div>
-          </div>
+      <div class="block-8">
+        <div class="container">
+          <h2 class="title"><span>Удиви геймера качеством</span> изображения и геймплея, пусть&nbsp;Вас&nbsp;запомнят</h2>
+          <p class="block-8__text accented-text">Конфигурации игровых систем мы подбираем в соотвествии частоты обновления монитора, FPS и набора игр. Это важный параметр для геймера, так как она на прямую влияет на качество геймплея и картинку, которую
+            запомнят.</p>
+          <a class="video-block" href="https://www.youtube.com/watch?v=D87Z0-KvH6A&t=6s" data-fancybox>
+            <img src="images/content/block_8/img_1.jpg" alt="Видео">
+            <span class="video-block__play">
+              <svg class="video-block__play-icon" aria-hidden="true">
+                <use xlink:href="#play" />
+              </svg>
+            </span>
+          </a>
         </div>
       </div>
-    </div>
 
-    <div class="block-12">
-      <div class="container">
-        <h2 class="title"><span>Ты можешь</span> быть&nbsp;следующим</h2>
-        <p class="block-12__text accented-text">Мы реализовали несколько проектов игровых клубов. Наиболее интересные поделились своим мнением:</p>
-        <div class="js-reviews-slider reviews-slider">
-          <div class="reviews-slider__slide">
-            <div class="review">
-              <div class="review__top">
-                <div class="review__info">
-                  <p class="review__title">SKYNET CYBER ZONE</p>
-                  <p class="review__text">Вот и я получил копьютер. Огромное спасибо DigitalRazor за отличную работу. Отдельное спасибо Дмитрию Изотову и Дмитрию Ткач за помощь в реализации моих хотелок. Все четко, сообщения о всех этапах работы. Сделано
-                    все качественно, я очень доволен. Рекомендую!</p>
-                </div>
-                <div class="review__image"><img src="images/content/block_12/img_1.jpg" alt=""></div>
-              </div>
-              <div class="review__author">
-                <div class="review__author-avatar"><img src="images/content/block_12/img_3.jpg" alt=""></div>
-                <div class="review__author-info">
-                  <p class="review__author-name">АНДРЕЙ КРАСОВ</p>
-                  <p class="review__author-about">Владелец</p>
-                </div>
+      <div class="block-9">
+        <div class="container">
+          <h2 class="title"><span>Запоминайся</span> и побеждай</h2>
+          <p class="block-9__text accented-text">Игровые клубы переживают эпоху ренессанса. Направление популярное и развивается.Именно по этой причине, мы предлагаем нашим клиентам выделиться и запомниться геймерам на фоне своих конкурентов через
+            фирменный стиль.</p>
+          <div class="cols cols--4">
+            <div class="cols__item">
+              <div class="feature2">
+                <img src="images/content/block_9/img_1.jpg" alt="нанесение логотипа">
+                <span class="feature2__title">НАНЕСЕНИЕ ЛОГОТИПА</span>
               </div>
             </div>
-          </div>
-          <div class="reviews-slider__slide">
-            <div class="review">
-              <div class="review__top">
-                <div class="review__info">
-                  <p class="review__title">SKYNET CYBER ZONE</p>
-                  <p class="review__text">Вот и я получил копьютер. Огромное спасибо DigitalRazor за отличную работу. Отдельное спасибо Дмитрию Изотову и Дмитрию Ткач за помощь в реализации моих хотелок. Все четко, сообщения о всех этапах работы. Сделано
-                    все качественно, я очень доволен. Рекомендую!</p>
-                </div>
-                <div class="review__image"><img src="images/content/block_12/img_2.jpg" alt=""></div>
-              </div>
-              <div class="review__author">
-                <div class="review__author-avatar"><img src="images/content/block_12/img_4.jpg" alt=""></div>
-                <div class="review__author-info">
-                  <p class="review__author-name">АНДРЕЙ КРАСОВ</p>
-                  <p class="review__author-about">Владелец</p>
-                </div>
+            <div class="cols__item">
+              <div class="feature2">
+                <img src="images/content/block_9/img_2.jpg" alt="нанесение логотипа">
+                <span class="feature2__title">НАНЕСЕНИЕ ИЗОБРАЖЕНИЯ</span>
               </div>
             </div>
-          </div>
-          <div class="reviews-slider__slide">
-            <div class="review">
-              <div class="review__top">
-                <div class="review__info">
-                  <p class="review__title">SKYNET CYBER ZONE</p>
-                  <p class="review__text">Вот и я получил копьютер. Огромное спасибо DigitalRazor за отличную работу. Отдельное спасибо Дмитрию Изотову и Дмитрию Ткач за помощь в реализации моих хотелок. Все четко, сообщения о всех этапах работы. Сделано
-                    все качественно, я очень доволен. Рекомендую!</p>
-                </div>
-                <div class="review__image"><img src="images/content/block_12/img_1.jpg" alt=""></div>
-              </div>
-              <div class="review__author">
-                <div class="review__author-avatar"><img src="images/content/block_12/img_3.jpg" alt=""></div>
-                <div class="review__author-info">
-                  <p class="review__author-name">АНДРЕЙ КРАСОВ</p>
-                  <p class="review__author-about">Владелец</p>
-                </div>
+            <div class="cols__item">
+              <div class="feature2">
+                <img src="images/content/block_9/img_3.jpg" alt="нанесение логотипа">
+                <span class="feature2__title">ПОКРАСКА</span>
               </div>
             </div>
-          </div>
-          <div class="reviews-slider__slide">
-            <div class="review">
-              <div class="review__top">
-                <div class="review__info">
-                  <p class="review__title">SKYNET CYBER ZONE</p>
-                  <p class="review__text">Вот и я получил копьютер. Огромное спасибо DigitalRazor за отличную работу. Отдельное спасибо Дмитрию Изотову и Дмитрию Ткач за помощь в реализации моих хотелок. Все четко, сообщения о всех этапах работы. Сделано
-                    все качественно, я очень доволен. Рекомендую!</p>
-                </div>
-              </div>
-              <div class="review__author">
-                <div class="review__author-avatar"><img src="images/content/block_12/img_4.jpg" alt=""></div>
-                <div class="review__author-info">
-                  <p class="review__author-name">АНДРЕЙ КРАСОВ</p>
-                  <p class="review__author-about">Владелец</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="reviews-slider__slide">
-            <div class="review">
-              <div class="review__top">
-                <div class="review__info">
-                  <p class="review__title">SKYNET CYBER ZONE</p>
-                  <p class="review__text">Вот и я получил копьютер. Огромное спасибо DigitalRazor за отличную работу. Отдельное спасибо Дмитрию Изотову и Дмитрию Ткач за помощь в реализации моих хотелок. Все четко, сообщения о всех этапах работы. Сделано
-                    все качественно, я очень доволен. Рекомендую!</p>
-                </div>
-                <div class="review__image"><img src="images/content/block_12/img_2.jpg" alt=""></div>
-              </div>
-              <div class="review__author">
-                <div class="review__author-avatar"><img src="images/content/block_12/img_3.jpg" alt=""></div>
-                <div class="review__author-info">
-                  <p class="review__author-name">АНДРЕЙ КРАСОВ</p>
-                  <p class="review__author-about">Владелец</p>
-                </div>
+            <div class="cols__item">
+              <div class="feature2">
+                <img src="images/content/block_9/img_4.jpg" alt="нанесение логотипа">
+                <span class="feature2__title">РАЗРАБОТКА УНИКАЛЬНОГО ДИЗАЙНА</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="block-13">
-      <div class="container">
-        <h2 class="title"><span>Закрой вопросы</span> одним&nbsp;ударом</h2>
-        <p class="block-13__text accented-text">Игровые компьютеры решают основную задачу. Но для нового клуба она не единственная. За последние 10 лет работы мы накопили опыт в различного рода работах и вот с чем мы можем помочь:</p>
-        <div class="cols cols--4">
-          <div class="cols__item">
-            <div class="feature5">
-              <p class="feature5__image">
-                <img src="images/content/block_13/img_1.jpg" alt="">
-                <span class="feature5__title">Монтаж скс</span>
-              </p>
-              <p class="feature5__text">Поможем провести локальную сеть и подключить видеонаблюдение.</p>
+      <div class="block-10">
+        <div class="container">
+          <h2 class="title"><span>Выбирай то, что нужно</span> и&nbsp;экономь</h2>
+          <p class="block-10__text accented-text">Новый клуб - это непростая задача: поиск помещения, ремонт, найм сотрудников, реклама и т.д. Поэтому лизинг - одно из решений, что снизить единовременную нагрузку и вложиться в правильное оборудование.</p>
+          <div class="cols cols--3">
+            <div class="cols__item">
+              <div class="feature3">
+                <div class="feature3__icon"><img src="images/content/block_10/img_1.png" alt=""></div>
+                <div class="feature3__info">
+                  <p class="feature3__title">вероятность одобрения<br> заявки более 80%</p>
+                  <p class="feature3__text">Лояльные требования и индивидуальный<br> подход к рассмотрению каждой заявки</p>
+                </div>
+              </div>
+            </div>
+            <div class="cols__item">
+              <div class="feature3">
+                <div class="feature3__icon"><img src="images/content/block_10/img_2.png" alt=""></div>
+                <div class="feature3__info">
+                  <p class="feature3__title">не обременяет баланс<br> компании</p>
+                  <p class="feature3__text">Сумма договора лизинга не увеличивает<br> кредиторскую задолженность в балансе<br> Вашей компании</p>
+                </div>
+              </div>
+            </div>
+            <div class="cols__item">
+              <div class="feature3">
+                <div class="feature3__icon"><img src="images/content/block_10/img_3.png" alt=""></div>
+                <div class="feature3__info">
+                  <p class="feature3__title">новое оборудование</p>
+                  <p class="feature3__text">Никакого б/у − Arenza делает новое и лучшее оборудование доступным для бизнеса</p>
+                </div>
+              </div>
+            </div>
+            <div class="cols__item">
+              <div class="feature3">
+                <div class="feature3__icon"><img src="images/content/block_10/img_4.png" alt=""></div>
+                <div class="feature3__info">
+                  <p class="feature3__title">экономия на налогах</p>
+                  <p class="feature3__text">Arenza помогает экономить денежные средства за счет налоговых преференций (снижение налогооблагаемой базы по налогу на прибыль и налогу на имущество, возврат НДС)</p>
+                </div>
+              </div>
+            </div>
+            <div class="cols__item">
+              <div class="feature3">
+                <div class="feature3__icon"><img src="images/content/block_10/img_5.png" alt=""></div>
+                <div class="feature3__info">
+                  <p class="feature3__title">удобный график выплат</p>
+                  <p class="feature3__text">Доступные ежемесячные платежи помогают<br> планировать бюджет вашего бизнеса</p>
+                </div>
+              </div>
+            </div>
+            <div class="cols__item">
+              <div class="feature3">
+                <div class="feature3__icon"><img src="images/content/block_10/img_6.png" alt=""></div>
+                <div class="feature3__info">
+                  <p class="feature3__title">оформление онлайн</p>
+                  <p class="feature3__text">Услуги Arenza доступны в любом городе безличного присутствия, достаточно вашейэлектронной подписи</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="cols__item">
-            <div class="feature5">
-              <p class="feature5__image">
-                <img src="images/content/block_13/img_2.jpg" alt="">
-                <span class="feature5__title">программное обеспечение</span>
-              </p>
-              <p class="feature5__text">Специальные предложения от партнеров на ПО для игровых клубов.</p>
+          <p class="block-10__button-block">
+            <button class="button button--arrow" type="button" data-fancybox="request" data-src="#request"><span class="button__text">оставить заявку</span></button>
+          </p>
+        </div>
+      </div>
+
+      <div class="block-11">
+        <div class="container">
+          <h2 class="title"><span>Игровые компьютеры - это&nbsp;инструмент,</span><br> который должен приносить пользу</h2>
+          <p class="block-11__text accented-text">Мы понимаем, что игровые клубы работают 24/7. Поэтому надежность оборудования играет важную роль. Мы предлагаем воспользоваться премиальным обслуживанием компании.</p>
+          <div class="cols cols--4">
+            <div class="cols__item">
+              <div class="feature4">
+                <span class="feature4__image"><img src="images/content/block_11/img_1.png" alt=""></span>
+                <p class="feature4__title">бесплатная доставка</p>
+                <p class="feature4__text">Бесплатная и надежная доставка<br> со страхованием по России</p>
+              </div>
             </div>
-          </div>
-          <div class="cols__item">
-            <div class="feature5">
-              <p class="feature5__image">
-                <img src="images/content/block_13/img_3.jpg" alt="">
-                <span class="feature5__title">периферия</span>
-              </p>
-              <p class="feature5__text">Рекомендуем или предложим готовые комплекты игровой периферии и мониторов.</p>
+            <div class="cols__item">
+              <div class="feature4">
+                <span class="feature4__image"><img src="images/content/block_11/img_2.png" alt=""></span>
+                <p class="feature4__title">гарантия 3 года</p>
+                <p class="feature4__text">Гарантия на игровые компьютеры<br> составляет от 12 до 36 месяцев</p>
+              </div>
             </div>
-          </div>
-          <div class="cols__item">
-            <div class="feature5">
-              <p class="feature5__image">
-                <img src="images/content/block_13/img_4.jpg" alt="">
-                <span class="feature5__title">Мониторинг оборудования</span>
-              </p>
-              <p class="feature5__text">Внедрим систему мониторинга, что поможет держать состояние оборудование под контролем.</p>
+            <div class="cols__item">
+              <div class="feature4">
+                <span class="feature4__image"><img src="images/content/block_11/img_3.png" alt=""></span>
+                <p class="feature4__title">стресс-тестирование</p>
+                <p class="feature4__text">Все компьютеры проходят<br> комплексное стресс-тестирование</p>
+              </div>
+            </div>
+            <div class="cols__item">
+              <div class="feature4">
+                <span class="feature4__image"><img src="images/content/block_11/img_4.png" alt=""></span>
+                <p class="feature4__title">поддержка и сервис</p>
+                <p class="feature4__text">В Москве и Санкт-Петербурге, для<br> регионов бесплатный трансфер</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="block-14">
-      <div class="container">
-        <h2 class="title"><span>Галерея тех,</span> кто&nbsp;уже&nbsp;с&nbsp;нами</h2>
-        <div class="cols cols--4">
-          <div class="cols__item">
-            <a class="gallery-item" href="images/content/block_14/img_1.jpg" data-fancybox="images"><img src="images/content/block_14/img_1.jpg" alt=""></a>
-          </div>
-          <div class="cols__item">
-            <a class="gallery-item" href="images/content/block_14/img_2.jpg" data-fancybox="images"><img src="images/content/block_14/img_2.jpg" alt=""></a>
-          </div>
-          <div class="cols__item">
-            <a class="gallery-item" href="images/content/block_14/img_3.jpg" data-fancybox="images"><img src="images/content/block_14/img_3.jpg" alt=""></a>
-          </div>
-          <div class="cols__item">
-            <a class="gallery-item" href="images/content/block_14/img_4.jpg" data-fancybox="images"><img src="images/content/block_14/img_4.jpg" alt=""></a>
-          </div>
-          <div class="cols__item">
-            <a class="gallery-item" href="images/content/block_14/img_5.jpg" data-fancybox="images"><img src="images/content/block_14/img_5.jpg" alt=""></a>
-          </div>
-          <div class="cols__item">
-            <a class="gallery-item" href="images/content/block_14/img_6.jpg" data-fancybox="images"><img src="images/content/block_14/img_6.jpg" alt=""></a>
-          </div>
-          <div class="cols__item">
-            <a class="gallery-item" href="images/content/block_14/img_7.jpg" data-fancybox="images"><img src="images/content/block_14/img_7.jpg" alt=""></a>
-          </div>
-          <div class="cols__item">
-            <a class="gallery-item" href="images/content/block_14/img_8.jpg" data-fancybox="images"><img src="images/content/block_14/img_8.jpg" alt=""></a>
+      <div class="block-12">
+        <div class="container">
+          <h2 class="title"><span>Ты можешь</span> быть&nbsp;следующим</h2>
+          <p class="block-12__text accented-text">Мы реализовали несколько проектов игровых клубов. Наиболее интересные поделились своим мнением:</p>
+          <div class="js-reviews-slider reviews-slider">
+            <div class="reviews-slider__slide">
+              <div class="review">
+                <div class="review__top">
+                  <div class="review__info">
+                    <p class="review__title">SKYNET CYBER ZONE</p>
+                    <p class="review__text">Вот и я получил копьютер. Огромное спасибо DigitalRazor за отличную работу. Отдельное спасибо Дмитрию Изотову и Дмитрию Ткач за помощь в реализации моих хотелок. Все четко, сообщения о всех этапах работы. Сделано
+                      все качественно, я очень доволен. Рекомендую!</p>
+                  </div>
+                  <div class="review__image"><img src="images/content/block_12/img_1.jpg" alt=""></div>
+                </div>
+                <div class="review__author">
+                  <div class="review__author-avatar"><img src="images/content/block_12/img_3.jpg" alt=""></div>
+                  <div class="review__author-info">
+                    <p class="review__author-name">АНДРЕЙ КРАСОВ</p>
+                    <p class="review__author-about">Владелец</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-slider__slide">
+              <div class="review">
+                <div class="review__top">
+                  <div class="review__info">
+                    <p class="review__title">SKYNET CYBER ZONE</p>
+                    <p class="review__text">Вот и я получил копьютер. Огромное спасибо DigitalRazor за отличную работу. Отдельное спасибо Дмитрию Изотову и Дмитрию Ткач за помощь в реализации моих хотелок. Все четко, сообщения о всех этапах работы. Сделано
+                      все качественно, я очень доволен. Рекомендую!</p>
+                  </div>
+                  <div class="review__image"><img src="images/content/block_12/img_2.jpg" alt=""></div>
+                </div>
+                <div class="review__author">
+                  <div class="review__author-avatar"><img src="images/content/block_12/img_4.jpg" alt=""></div>
+                  <div class="review__author-info">
+                    <p class="review__author-name">АНДРЕЙ КРАСОВ</p>
+                    <p class="review__author-about">Владелец</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-slider__slide">
+              <div class="review">
+                <div class="review__top">
+                  <div class="review__info">
+                    <p class="review__title">SKYNET CYBER ZONE</p>
+                    <p class="review__text">Вот и я получил копьютер. Огромное спасибо DigitalRazor за отличную работу. Отдельное спасибо Дмитрию Изотову и Дмитрию Ткач за помощь в реализации моих хотелок. Все четко, сообщения о всех этапах работы. Сделано
+                      все качественно, я очень доволен. Рекомендую!</p>
+                  </div>
+                  <div class="review__image"><img src="images/content/block_12/img_1.jpg" alt=""></div>
+                </div>
+                <div class="review__author">
+                  <div class="review__author-avatar"><img src="images/content/block_12/img_3.jpg" alt=""></div>
+                  <div class="review__author-info">
+                    <p class="review__author-name">АНДРЕЙ КРАСОВ</p>
+                    <p class="review__author-about">Владелец</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-slider__slide">
+              <div class="review">
+                <div class="review__top">
+                  <div class="review__info">
+                    <p class="review__title">SKYNET CYBER ZONE</p>
+                    <p class="review__text">Вот и я получил копьютер. Огромное спасибо DigitalRazor за отличную работу. Отдельное спасибо Дмитрию Изотову и Дмитрию Ткач за помощь в реализации моих хотелок. Все четко, сообщения о всех этапах работы. Сделано
+                      все качественно, я очень доволен. Рекомендую!</p>
+                  </div>
+                </div>
+                <div class="review__author">
+                  <div class="review__author-avatar"><img src="images/content/block_12/img_4.jpg" alt=""></div>
+                  <div class="review__author-info">
+                    <p class="review__author-name">АНДРЕЙ КРАСОВ</p>
+                    <p class="review__author-about">Владелец</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-slider__slide">
+              <div class="review">
+                <div class="review__top">
+                  <div class="review__info">
+                    <p class="review__title">SKYNET CYBER ZONE</p>
+                    <p class="review__text">Вот и я получил копьютер. Огромное спасибо DigitalRazor за отличную работу. Отдельное спасибо Дмитрию Изотову и Дмитрию Ткач за помощь в реализации моих хотелок. Все четко, сообщения о всех этапах работы. Сделано
+                      все качественно, я очень доволен. Рекомендую!</p>
+                  </div>
+                  <div class="review__image"><img src="images/content/block_12/img_2.jpg" alt=""></div>
+                </div>
+                <div class="review__author">
+                  <div class="review__author-avatar"><img src="images/content/block_12/img_3.jpg" alt=""></div>
+                  <div class="review__author-info">
+                    <p class="review__author-name">АНДРЕЙ КРАСОВ</p>
+                    <p class="review__author-about">Владелец</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="block-15">
-      <div class="container">
-        <h2 class="title"><span>Свяжитесь</span> с нами</h2>
-        <p class="block-15__text accent-text">Оставьте заявку, и мы ответим Вам онлайн в течение 15 минут.</p>
-        <form class="form2" action="">
-          <div class="row">
-            <div class="col-md-4">
-              <label class="form2__label" for="inp1">
-                <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Ваше имя</span></span>
-                <input id="inp1" class="form2__input" type="text" name="name">
-              </label>
+      <div class="block-13">
+        <div class="container">
+          <h2 class="title"><span>Закрой вопросы</span> одним&nbsp;ударом</h2>
+          <p class="block-13__text accented-text">Игровые компьютеры решают основную задачу. Но для нового клуба она не единственная. За последние 10 лет работы мы накопили опыт в различного рода работах и вот с чем мы можем помочь:</p>
+          <div class="cols cols--4">
+            <div class="cols__item">
+              <div class="feature5">
+                <p class="feature5__image">
+                  <img src="images/content/block_13/img_1.jpg" alt="">
+                  <span class="feature5__title">Монтаж скс</span>
+                </p>
+                <p class="feature5__text">Поможем провести локальную сеть и подключить видеонаблюдение.</p>
+              </div>
             </div>
-            <div class="col-md-4">
-              <label class="form2__label" for="inp2">
-                <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Ваше телефон</span></span>
-                <input id="inp2" class="form2__input" type="text" name="phone">
-              </label>
+            <div class="cols__item">
+              <div class="feature5">
+                <p class="feature5__image">
+                  <img src="images/content/block_13/img_2.jpg" alt="">
+                  <span class="feature5__title">программное обеспечение</span>
+                </p>
+                <p class="feature5__text">Специальные предложения от партнеров на ПО для игровых клубов.</p>
+              </div>
             </div>
-            <div class="col-md-4">
-              <label class="form2__label" for="inp3">
-                <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Ваше email</span></span>
-                <input id="inp3" class="form2__input" type="text" name="email">
-              </label>
+            <div class="cols__item">
+              <div class="feature5">
+                <p class="feature5__image">
+                  <img src="images/content/block_13/img_3.jpg" alt="">
+                  <span class="feature5__title">периферия</span>
+                </p>
+                <p class="feature5__text">Рекомендуем или предложим готовые комплекты игровой периферии и мониторов.</p>
+              </div>
+            </div>
+            <div class="cols__item">
+              <div class="feature5">
+                <p class="feature5__image">
+                  <img src="images/content/block_13/img_4.jpg" alt="">
+                  <span class="feature5__title">Мониторинг оборудования</span>
+                </p>
+                <p class="feature5__text">Внедрим систему мониторинга, что поможет держать состояние оборудование под контролем.</p>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-6">
-              <label class="form2__label" for="inp4">
-                <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Ваше город</span></span>
-                <input id="inp4" class="form2__input" type="text" name="city">
-              </label>
+        </div>
+      </div>
+
+      <div class="block-14">
+        <div class="container">
+          <h2 class="title"><span>Галерея тех,</span> кто&nbsp;уже&nbsp;с&nbsp;нами</h2>
+          <div class="cols cols--4">
+            <div class="cols__item">
+              <a class="gallery-item" href="images/content/block_14/img_1.jpg" data-fancybox="images"><img src="images/content/block_14/img_1.jpg" alt=""></a>
             </div>
-            <div class="col-md-6">
-              <label class="form2__label" for="inp5">
-                <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Название клуба</span></span>
-                <input id="inp5" class="form2__input" type="text" name="club">
-              </label>
+            <div class="cols__item">
+              <a class="gallery-item" href="images/content/block_14/img_2.jpg" data-fancybox="images"><img src="images/content/block_14/img_2.jpg" alt=""></a>
+            </div>
+            <div class="cols__item">
+              <a class="gallery-item" href="images/content/block_14/img_3.jpg" data-fancybox="images"><img src="images/content/block_14/img_3.jpg" alt=""></a>
+            </div>
+            <div class="cols__item">
+              <a class="gallery-item" href="images/content/block_14/img_4.jpg" data-fancybox="images"><img src="images/content/block_14/img_4.jpg" alt=""></a>
+            </div>
+            <div class="cols__item">
+              <a class="gallery-item" href="images/content/block_14/img_5.jpg" data-fancybox="images"><img src="images/content/block_14/img_5.jpg" alt=""></a>
+            </div>
+            <div class="cols__item">
+              <a class="gallery-item" href="images/content/block_14/img_6.jpg" data-fancybox="images"><img src="images/content/block_14/img_6.jpg" alt=""></a>
+            </div>
+            <div class="cols__item">
+              <a class="gallery-item" href="images/content/block_14/img_7.jpg" data-fancybox="images"><img src="images/content/block_14/img_7.jpg" alt=""></a>
+            </div>
+            <div class="cols__item">
+              <a class="gallery-item" href="images/content/block_14/img_8.jpg" data-fancybox="images"><img src="images/content/block_14/img_8.jpg" alt=""></a>
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-3">
-              <div class="form2__fieldset">
-                <div class="form2__legend"><span class="form2__legend-content"><span class="form2__legend-decor">+</span> Форма оплаты</span></div>
-                <label class="radio-label2" for="r1">
-                  <input id="r1" class="radio-label2__input" type="radio" name="type" value="1">
-                  <span class="radio-label2__radio"></span>
-                  ЛИЗИНГ
+        </div>
+      </div>
+
+      <div class="block-15">
+        <div class="container">
+          <h2 class="title"><span>Свяжитесь</span> с нами</h2>
+          <p class="block-15__text accent-text">Оставьте заявку, и мы ответим Вам онлайн в течение 15 минут.</p>
+          <form class="form2" action="">
+            <div class="row">
+              <div class="col-md-4">
+                <label class="form2__label" for="inp1">
+                  <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Ваше имя</span></span>
+                  <input id="inp1" class="form2__input" type="text" name="name">
                 </label>
-                <label class="radio-label2" for="r2">
-                  <input id="r2" class="radio-label2__input" type="radio" name="type" value="2">
-                  <span class="radio-label2__radio"></span>
-                  ПРЯМАЯ ЗАКУПКА
+              </div>
+              <div class="col-md-4">
+                <label class="form2__label" for="inp2">
+                  <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Ваше телефон</span></span>
+                  <input id="inp2" class="form2__input" type="text" name="phone">
+                </label>
+              </div>
+              <div class="col-md-4">
+                <label class="form2__label" for="inp3">
+                  <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Ваше email</span></span>
+                  <input id="inp3" class="form2__input" type="text" name="email">
                 </label>
               </div>
             </div>
-            <div class="col-lg-9">
-              <div class="row">
-                <div class="col-md-6">
-                  <label class="form2__label" for="inp6">
-                    <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Кол-во компьютеров</span></span>
-                    <input id="inp6" class="form2__input" type="text" name="qnt">
+            <div class="row">
+              <div class="col-md-6">
+                <label class="form2__label" for="inp4">
+                  <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Ваше город</span></span>
+                  <input id="inp4" class="form2__input" type="text" name="city">
+                </label>
+              </div>
+              <div class="col-md-6">
+                <label class="form2__label" for="inp5">
+                  <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Название клуба</span></span>
+                  <input id="inp5" class="form2__input" type="text" name="club">
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="form2__fieldset">
+                  <div class="form2__legend"><span class="form2__legend-content"><span class="form2__legend-decor">+</span> Форма оплаты</span></div>
+                  <label class="radio-label2" for="r1">
+                    <input id="r1" class="radio-label2__input" type="radio" name="type" value="1">
+                    <span class="radio-label2__radio"></span>
+                    ЛИЗИНГ
                   </label>
-                </div>
-                <div class="col-md-6">
-                  <label class="form2__label" for="inp7">
-                    <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Планируемая дата открытия</span></span>
-                    <input id="inp7" class="form2__input" type="text" name="date">
+                  <label class="radio-label2" for="r2">
+                    <input id="r2" class="radio-label2__input" type="radio" name="type" value="2">
+                    <span class="radio-label2__radio"></span>
+                    ПРЯМАЯ ЗАКУПКА
                   </label>
                 </div>
               </div>
-              <label class="form2__label" for="inp8">
-                <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Ваше сообщение</span></span>
-                <textarea id="inp8" class="form2__textarea" name="comment"></textarea>
-              </label>
+              <div class="col-lg-9">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label class="form2__label" for="inp6">
+                      <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Кол-во компьютеров</span></span>
+                      <input id="inp6" class="form2__input" type="text" name="qnt">
+                    </label>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form2__label" for="inp7">
+                      <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Планируемая дата открытия</span></span>
+                      <input id="inp7" class="form2__input" type="text" name="date">
+                    </label>
+                  </div>
+                </div>
+                <label class="form2__label" for="inp8">
+                  <span class="form2__label-text"><span class="form2__label-content"><span class="form2__label-decor">+</span> Ваше сообщение</span></span>
+                  <textarea id="inp8" class="form2__textarea" name="comment"></textarea>
+                </label>
+              </div>
             </div>
-          </div>
-          <div class="form2__submit-block">
-            <label class="checkbox-label2" for="ch1">
-              <input id="ch1" class="checkbox-label2__input" type="checkbox">
-              <span class="checkbox-label2__icon"></span>
-              Я принимаю условия договора оферты
-            </label>
-            <button class="button button--arrow" type="submit"><span class="button__text">оставить заявку</span></button>
-          </div>
-        </form>
+            <div class="form2__submit-block">
+              <label class="checkbox-label2" for="ch1">
+                <input id="ch1" class="checkbox-label2__input" type="checkbox">
+                <span class="checkbox-label2__icon"></span>
+                Я принимаю условия договора оферты
+              </label>
+              <button class="button button--arrow" type="submit"><span class="button__text">оставить заявку</span></button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>

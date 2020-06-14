@@ -20,76 +20,78 @@
   <div class="wrapper">
     //= template/header.html
 
-    <div class="auth-reg">
-      <div class="container">
-        <div class="auth-reg__links auth-reg-links">
-          <a class="auth-reg-links__link" href="auth.html">Авторизация</a>
-          <span class="auth-reg-links__separator"></span>
-          <a class="auth-reg-links__link is-active" href="register.html">Регистрация</a>
-        </div>
-        <div class="reg-form form">
-          <form method="post" action="/auth/?register=yes" name="bform" enctype="multipart/form-data">
-            <input type="hidden" name="backurl" value="/auth/">
-            <input type="hidden" name="AUTH_FORM" value="Y">
-            <input type="hidden" name="TYPE" value="REGISTRATION">
-            <div class="row">
-              <div class="col-sm-6">
-                <label class="form__label">
-                  <span class="form__label-text">Имя:</span>
-                  <input class="input" type="text" name="USER_NAME" maxlength="50" value="">
+    <div class="page-content">
+      <div class="auth-reg">
+        <div class="container">
+          <div class="auth-reg__links auth-reg-links">
+            <a class="auth-reg-links__link" href="auth.html">Авторизация</a>
+            <span class="auth-reg-links__separator"></span>
+            <a class="auth-reg-links__link is-active" href="register.html">Регистрация</a>
+          </div>
+          <div class="reg-form form">
+            <form method="post" action="/auth/?register=yes" name="bform" enctype="multipart/form-data">
+              <input type="hidden" name="backurl" value="/auth/">
+              <input type="hidden" name="AUTH_FORM" value="Y">
+              <input type="hidden" name="TYPE" value="REGISTRATION">
+              <div class="row">
+                <div class="col-sm-6">
+                  <label class="form__label">
+                    <span class="form__label-text">Имя:</span>
+                    <input class="input" type="text" name="USER_NAME" maxlength="50" value="">
+                  </label>
+                </div>
+                <div class="col-sm-6">
+                  <label class="form__label">
+                    <span class="form__label-text">Фамилия:</span>
+                    <input class="input" type="text" name="USER_LAST_NAME" maxlength="50" value="">
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <label class="form__label">
+                    <span class="form__label-text">Логин (мин 3 символа):</span>
+                    <input class="input" type="text" name="" value="">
+                  </label>
+                </div>
+                <div class="col-sm-6">
+                  <label class="form__label">
+                    <span class="form__label-text">E-mail:</span>
+                    <input class="input" type="text" name="USER_EMAIL" maxlength="255" value="">
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <label class="form__label">
+                    <span class="form__label-text">Пароль:</span>
+                    <input class="input" type="password" name="USER_PASS" value="">
+                  </label>
+                </div>
+                <div class="col-sm-6">
+                  <label class="form__label">
+                    <span class="form__label-text">Подтвержение пароля:</span>
+                    <input class="input" type="password" name="USER_REPASS" value="">
+                  </label>
+                </div>
+              </div>
+              <div class="reg-form__checkboxes">
+                <label class="checkbox-label" for="inp_1">
+                  <input id="inp_1" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  Согласен с обработкой персональных данных
+                </label>
+                <label class="checkbox-label" for="inp_2">
+                  <input id="inp_2" class="checkbox-label__input" type="checkbox">
+                  <span class="checkbox-label__icon"></span>
+                  Хочу получать спец-предложения
                 </label>
               </div>
-              <div class="col-sm-6">
-                <label class="form__label">
-                  <span class="form__label-text">Фамилия:</span>
-                  <input class="input" type="text" name="USER_LAST_NAME" maxlength="50" value="">
-                </label>
+              <div class="reg-form__button-block">
+                <input class="form__button reg-form__button button button--h50" type="submit" name="Register" value="Зарегистрироваться">
               </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <label class="form__label">
-                  <span class="form__label-text">Логин (мин 3 символа):</span>
-                  <input class="input" type="text" name="" value="">
-                </label>
-              </div>
-              <div class="col-sm-6">
-                <label class="form__label">
-                  <span class="form__label-text">E-mail:</span>
-                  <input class="input" type="text" name="USER_EMAIL" maxlength="255" value="">
-                </label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <label class="form__label">
-                  <span class="form__label-text">Пароль:</span>
-                  <input class="input" type="password" name="USER_PASS" value="">
-                </label>
-              </div>
-              <div class="col-sm-6">
-                <label class="form__label">
-                  <span class="form__label-text">Подтвержение пароля:</span>
-                  <input class="input" type="password" name="USER_REPASS" value="">
-                </label>
-              </div>
-            </div>
-            <div class="reg-form__checkboxes">
-              <label class="checkbox-label" for="inp_1">
-                <input id="inp_1" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                Согласен с обработкой персональных данных
-              </label>
-              <label class="checkbox-label" for="inp_2">
-                <input id="inp_2" class="checkbox-label__input" type="checkbox">
-                <span class="checkbox-label__icon"></span>
-                Хочу получать спец-предложения
-              </label>
-            </div>
-            <div class="reg-form__button-block">
-              <input class="form__button reg-form__button button button--h50" type="submit" name="Register" value="Зарегистрироваться">
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>

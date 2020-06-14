@@ -1,0 +1,144 @@
+.selection-block
+  padding-top: 50px
+  padding-bottom: 50px
+
+  @media(min-width: 1200px)
+    padding-top: 100px
+    padding-bottom: 100px
+
+  .title
+    margin-bottom: 40px
+
+    @media(min-width: 1200px)
+      margin-bottom: 70px
+
+.resolution-selection
+  margin-bottom: 25px
+
+  @media(min-width: 768px)
+    align-items: flex-start
+    border-bottom: 1px solid rgba(#4F5966, 0.3)
+    display: flex
+    margin-bottom: 50px
+
+  .numbered-title
+    max-width: 350px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      margin-top: 5px
+      width: 350px
+
+  .settings-button
+    @media(min-width: 768px)
+      margin-left: auto
+
+.res-list
+  display: flex
+  margin-bottom: 20px
+
+  @media(min-width: 768px)
+    margin-bottom: 0
+
+.res
+  background-color: transparent
+  border: none
+  border-bottom: 3px solid transparent
+  color: #66788C
+  cursor: pointer
+  font-family: $secondary_font
+  font-size: 35px
+  padding: 0 0 25px
+  transition: color 0.3s, border-bottom-color 0.3s
+
+  &:not(:last-child)
+    margin-right: 40px
+
+  @media(min-width: 768px)
+    padding-bottom: 45px
+
+  &:hover,
+  &:focus
+    color: #fff
+
+  &.is-active
+    border-bottom-color: $main_color
+    color: #fff
+
+.settings-button
+  align-items: center
+  background-color: #0E141B
+  border: 1px solid #66788C
+  color: #fff
+  display: inline-flex
+  font-size: 14px
+  justify-content: center
+  padding: 10px 20px
+  text-decoration: none
+
+  &__icon
+    fill: #66788C
+    height: 14px
+    margin-right: 6px
+    width: 14px
+
+.games-selection
+  @media(min-width: 768px)
+    display: flex
+
+  &__title-block
+    margin-bottom: 30px
+
+    @media(min-width: 768px)
+      min-width: 350px
+      padding-right: 100px
+      width: 350px
+
+    @media(min-width: 1200px)
+      font-size: 14px
+
+  &__games
+    flex-grow: 1
+
+.g-list
+  display: flex
+  flex-wrap: wrap
+  margin-left: -3px
+  margin-right: -3px
+
+  &__item
+    margin-bottom: 6px
+    padding-left: 3px
+    padding-right: 3px
+    width: 33.33333%
+
+    @media(min-width: 768px)
+      width: 33.33333%
+
+    @media(min-width: 1200px)
+      width: 25%
+
+.game
+  background-color: #000
+  border: none
+  color: #fff
+  cursor: pointer
+  display: block
+  opacity: 0.5
+  padding: 0
+  position: relative
+  text-transform: uppercase
+  text-align: center
+
+  &.is-active
+    opacity: 1
+
+    &::after
+      border: 5px solid $main_color
+      content: ''
+      height: 100%
+      left: 0
+      position: absolute
+      top: 0
+      width: 100%
+      z-index: 1
