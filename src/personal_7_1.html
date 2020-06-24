@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>DIGITAL RAZOR</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/personal/style.html
+</head>
+
+<body class="personal">
+  //= template/personal/sprite.html
+
+  <div class="personal__wrapper">
+    //= template/personal/header.html
+
+    <div class="personal__inner">
+      <div class="personal__content custom-scroll">
+        <h1 class="personal__title">Мои RMA-заявки <a class="add-rma" href="personal_7_2.html">СОЗДАТЬ НОВЫЙ ТИКЕТ</a></h1>
+        <div class="no-orders">
+          <img src="images/content/personal/orders/no_orders.svg" alt="Список заказов пуст">
+          <p class="no-orders__title">Список заявок пуст</p>
+          <p>Вы можете оставить заявку на решение проблемы с вашим компьютером<br> <a href="personal_7_2.html">Создать новый тикет</a></p>
+        </div>
+      </div>
+      <div class="personal__sidebar custom-scroll">
+        //= template/personal/sidebar.html
+      </div>
+    </div>
+  </div>
+
+  //= template/personal/scripts.html
+</body>
+
+</html>

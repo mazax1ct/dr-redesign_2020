@@ -1,0 +1,346 @@
+.rma-page
+  .personal__inner,
+  .personal__content
+    height: 100%
+
+  .personal__content
+    overflow-y: hidden
+
+    @media(min-width: 992px)
+      padding-bottom: 0
+
+.add-rma
+  border: 1px solid #fff
+  color: #fff
+  display: inline-block
+  font-family: $secondary_font
+  font-size: 11px
+  height: 30px
+  line-height: 10px
+  left: auto
+  padding: 8px 12px
+  position: absolute
+  right: 0
+  top: 0
+  text-decoration: none
+  text-transform: uppercase
+  transition: border-color 0.3s, color 0.3s
+
+  &:hover
+    border-color: $main_color
+    color: $main_color
+
+  @media(min-width: 1200px)
+    font-size: 13px
+    height: 50px
+    line-height: 16px
+    padding: 15px 20px
+
+.rma-list
+  border-collapse: collapse
+  border: none
+  color: #fff
+  font-size: 10px
+  text-align: left
+  width: 100%
+
+  @media(min-width: 375px)
+    font-size: 12px
+
+  @media(min-width: 1200px)
+    font-size: 15px
+
+  &__th
+    border-bottom: 2px solid $main_color
+    font-family: $secondary_font
+    font-size: 11px
+    padding: 5px
+    text-align: left
+    text-transform: uppercase
+    white-space: nowrap
+
+    @media(min-width: 992px)
+      padding: 10px 15px
+
+  &__cell
+    border-bottom: 1px solid #333
+    padding: 5px
+    text-align: left
+
+    @media(min-width: 992px)
+      padding: 10px 15px
+
+  tbody
+    tr
+      &:nth-child(even)
+        .rma-list__cell
+          background-color: #212121
+
+  &__type-block
+    text-align: center
+
+    @media(min-width: 768px)
+      display: none
+
+  &__id-block
+    white-space: nowrap
+
+  &__date
+    @media(max-width: 991px)
+      display: none
+
+  &__end
+    white-space: nowrap
+
+  &__status
+    @media(min-width: 600px)
+      font-weight: 700
+
+    &--type_1
+      color: #fff
+
+    &--type_2
+      color: #25BA4F
+
+    &--type_3
+      color: $main_color
+
+  &__buttons
+    @media(min-width: 1200px)
+      text-align: right
+      white-space: nowrap
+
+  &__button
+    border: 1px solid #666
+    color: #666
+    display: inline-block
+    font-family: $secondary_font
+    font-size: 11px
+    height: 28px
+    margin-right: 10px
+    margin-bottom: 5px
+    padding: 5px 12px
+    text-decoration: none
+    text-transform: uppercase
+    transition: border-color 0.3s, color 0.3s
+
+    @media(min-width: 1200px)
+      margin-bottom: 0
+
+    &:last-child
+      margin: 0
+
+    &:hover
+      border-color: #fff
+      color: #fff
+      text-decoration: none
+
+.rma
+  height: 100%
+  margin-bottom: 0 !important
+  padding-top: 105px
+  padding-bottom: 30px
+  position: relative
+
+  @media(min-width: 992px)
+    padding-top: 74px
+    padding-bottom: 85px
+
+  &__top-block
+    align-items: center
+    background-color: #1a1a1a
+    border-bottom: 1px solid #323232
+    left: 0
+    position: fixed
+    padding-bottom: 15px
+    padding-left: 15px
+    padding-right: 15px
+    top: 75px
+    width: 100%
+    z-index: 1
+
+    @media(min-width: 992px)
+      border: none
+      background-color: transparent
+      padding-top: 15px
+      padding-bottom: 0
+      top: 80px
+
+  &__top-block-inner
+    @media(min-width: 768px)
+      max-width: 1680px
+      margin-left: auto
+      margin-right: auto
+
+    @media(min-width: 992px)
+      padding-right: 300px
+
+    @media(min-width: 1400px)
+      padding-right: 410px
+      padding-left: 75px
+
+  &__top-block-inner2
+    @media(min-width: 768px)
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+
+    @media(min-width: 992px)
+      border-bottom: 1px solid #323232
+      padding-bottom: 15px
+
+  &__buttons-block
+    align-items: center
+    display: flex
+    justify-content: space-between
+    margin-bottom: 5px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+
+    .rma__close
+      font-size: 12px
+
+      @media(min-width: 768px)
+        display: none
+
+  &__title-block
+    text-align: center
+
+  &__title
+    color: rgba(#fff, 0.4)
+    font-size: 20px
+    line-height: 24px
+    margin-bottom: 5px
+
+    @media(min-width: 768px)
+      font-size: 30px
+      line-height: 34px
+      margin-bottom: 10px
+
+    @media(min-width: 1200px)
+      font-size: 36px
+      line-height: 40px
+      margin-bottom: 15px
+
+    span
+      color: #fff
+
+  &__date
+    color: rgba(#fff, 0.4)
+    font-size: 12px
+    text-align: center
+
+    @media(min-width: 768px)
+      font-size: 14px
+
+  &__status-block
+    display: none
+
+    @media(min-width: 768px)
+      display: block
+
+  &__status
+    align-items: center
+    background-color: rgba(#fff, 0.1)
+    border: 1px solid #666
+    color: #fff
+    display: inline-flex
+    font-family: $secondary_font
+    font-size: 13px
+    justify-content: center
+    line-height: 19px
+    min-height: 36px
+    min-width: 125px
+    margin-bottom: 0
+    padding: 10px
+    text-transform: uppercase
+    text-align: center
+    vertical-align: middle
+
+    @media(min-width: 768px)
+      margin-bottom: 5px
+
+    &--type_1
+      border-color: #397FBE
+      background-color: rgba(#397FBE, 0.1)
+      color: #397FBE
+
+  &__close
+    align-items: center
+    background-color: transparent
+    border: 1px solid transparent
+    color: #fff
+    cursor: pointer
+    display: inline-flex
+    font-family: $secondary_font
+    font-size: 13px
+    justify-content: center
+    line-height: 16px
+    min-height: 36px
+    min-width: 125px
+    padding: 10px
+    text-transform: uppercase
+    text-align: center
+    transition: border-color 0.3s, color 0.3s
+    vertical-align: middle
+
+    &:hover
+      border-color: $main_color
+      color: $main_color
+
+      .rma__close-icon
+        fill: $main_color
+
+  &__close-icon
+    fill: #fff
+    height: 12px
+    margin-left: 10px
+    margin-top: 1px
+    transition: fill 0.3s
+    width: 12px
+
+  &__dialog
+    height: 100%
+    margin-right: -15px
+    padding-right: 15px
+    overflow-y: auto
+    overflow-x: hidden
+
+    @media(min-width: 992px)
+      height: calc(100% - 50px)
+
+    @media(min-width: 1200px)
+      height: calc(100% - 80px)
+
+    @media(min-width: 1200px)
+      margin-right: -30px
+      padding-right: 30px
+
+  &__submit-zone-outter
+    bottom: 0
+    left: 0
+    position: fixed
+    top: auto
+    width: 100%
+    z-index: 1
+
+  &__submit-zone-inner
+    @media(min-width: 768px)
+      max-width: 1680px
+      margin-left: auto
+      margin-right: auto
+
+    @media(min-width: 992px)
+      padding-right: 300px
+
+    @media(min-width: 1400px)
+      padding-right: 375px
+
+  &__submit-zone
+    background-color: #000
+    border-top: 1px solid #323232
+    height: 50px
+
+    @media(min-width: 1200px)
+      height: 80px
