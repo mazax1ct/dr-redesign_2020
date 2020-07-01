@@ -335,7 +335,224 @@
   &__submit-zone
     background-color: #000
     border-top: 1px solid #323232
+    display: flex
     height: 50px
 
     @media(min-width: 1200px)
       height: 80px
+
+  &__attach,
+  &__submit
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 50px
+    justify-content: center
+    min-width: 50px
+    padding: 0
+    width: 50px
+
+    @media(min-width: 1200px)
+      height: 80px
+      min-width: 80px
+      width: 80px
+
+    &:hover
+      svg
+        fill: #fff
+
+  &__attach-icon
+    fill: #666
+    height: 24px
+    transition: fill 0.3s
+    width: 21px
+
+  &__submit-icon
+    fill: #666
+    height: 24px
+    transition: fill 0.3s
+    width: 24px
+
+  &__message-block
+    flex-grow: 1
+    height: 50px
+    padding: 5px
+
+    @media(min-width: 1200px)
+      height: 80px
+      padding: 15px
+
+  &__message
+    color: #fff
+    font-size: 12px
+    height: 100%
+    overflow-y: auto
+    position: relative
+
+    @media(min-width: 1200px)
+      font-size: 16px
+
+    &:empty::before
+      content: attr(placeholder)
+      color: #666
+      left: 0
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+
+    &:focus::before
+      display: none
+
+.dialog-date
+  color: rgba(#fff, 0.4)
+  margin-top: 30px
+  margin-bottom: 30px
+  text-align: center
+
+.dialog
+  margin-bottom: 10px
+  padding-right: 40px
+  position: relative
+
+  @media(min-width: 1200px)
+    margin-bottom: 20px
+    padding-left: 120px
+    padding-right: 120px
+
+  &--company
+    padding-right: 0
+    padding-left: 40px
+
+    .dialog__avatar
+      left: 0
+      right: auto
+
+    .dialog__text
+      background-color: #141414
+
+  &__avatar
+    left: auto
+    position: absolute
+    right: 0
+    top: 0
+    width: 30px
+
+    @media(min-width: 1200px)
+      width: 80px
+
+    img
+      border-radius: 50%
+
+  &__text
+    background-color: #242424
+    color: #fff
+    font-size: 12px
+    min-height: 30px
+    padding: 10px
+
+    @media(min-width: 768px)
+      font-size: 14px
+
+    @media(min-width: 1200px)
+      min-height: 80px
+      padding: 30px 40px
+
+.attach
+  padding-left: 58px
+  position: relative
+
+  &__icon
+    background: url('../images/content/rma/attach.svg') no-repeat 0 0 transparent
+    height: 44px
+    left: 0
+    position: absolute
+    top: 0
+    width: 44px
+
+  &__title
+    color: $main_color
+    font-family: $secondary_font
+    font-size: 13px
+    margin-bottom: 5px
+    text-transform: uppercase
+
+    @media(min-width: 1200px)
+      font-size: 15px
+
+  &__value
+    color: #666
+    font-size: 13px
+
+.attach-form
+  border-top: 1px solid #383838
+  display: flex
+  margin-top: 15px
+  margin-left: -15px
+  margin-right: -15px
+  padding-left: 15px
+  padding-right: 15px
+
+  @media(min-width: 768px)
+    margin-top: 50px
+    margin-left: -50px
+    margin-right: -50px
+    padding-left: 50px
+    padding-right: 25px
+
+  &__submit
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    height: 50px
+    justify-content: center
+    min-width: 50px
+    padding: 0
+    width: 50px
+
+    @media(min-width: 1200px)
+      height: 80px
+      min-width: 80px
+      width: 80px
+
+    &:hover
+      svg
+        fill: #fff
+
+  &__submit-icon
+    fill: #666
+    height: 24px
+    transition: fill 0.3s
+    width: 24px
+
+  &__message-block
+    flex-grow: 1
+    height: 50px
+    padding: 5px
+
+    @media(min-width: 1200px)
+      height: 80px
+
+  &__message
+    color: #fff
+    font-size: 12px
+    height: 100%
+    overflow-y: auto
+    position: relative
+
+    @media(min-width: 1200px)
+      font-size: 14px
+
+    &:empty::before
+      content: attr(placeholder)
+      color: #666
+      left: 0
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+
+    &:focus::before
+      display: none
