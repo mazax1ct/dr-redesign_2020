@@ -509,9 +509,17 @@
 
       <div class="block-7">
         <div class="container">
-          <h1 class="title"><span>Типовые решения</span> для компьютерного клуба</h1>
-          <p class="block-7__text accented-text">Мы оснастили более 10 игровых клубов и проконсультировали более сотни клиентов. Проанализировав их потребности, предлагаем несколько оптимальных конфигураций:</p>
+          <h1 class="title"><span>Выбери</span> устройство</h1>
+          <div class="block-7__tabs-nav">
+            <p class="block-7__tabs-title">Для какого вида залов:</p>
+            <div class="block-7__buttons-block">
+              <button class="js-tab-changer block-7__button is-active" type="button" data-target="1">Стандартный</button>
+              <button class="js-tab-changer block-7__button" type="button" data-target="2">Vip</button>
+            </div>
+          </div>
+          <!--<p class="block-7__text accented-text">Мы оснастили более 10 игровых клубов и проконсультировали более сотни клиентов. Проанализировав их потребности, предлагаем несколько оптимальных конфигураций:</p>-->
           <div class="configs-tab is-active is-visible" data-target="1">
+            <h2 class="configs-tab__title h3 text-center">ДЛЯ СТАНДАРТНЫХ ЗАЛОВ:</h2>
             <div class="big-cards">
               <div class="big-cards__item">
                 <div class="big-card">
@@ -520,13 +528,10 @@
                       <div class="big-card__info-block">
                         <div class="big-card__image-block">
                           <img src="images/content/block_7/img_1.png" alt="">
-                          <span class="big-card__fps-block">
-                            <span class="big-card__fps-value">120+</span>
-                            <span class="big-card__fps-unit">FPS</span>
-                          </span>
+                          <span class="big-card__fps-block"><span class="big-card__fps">66 FPS</span></span>
                         </div>
-                        <p class="big-card__title">enthoo evolv shift x</p>
-                        <p class="big-card__text">Решает задачи плавной картинки и качественно геймплея без разрывов изображения за счет высокого FPS (120+) в современных играх тип AAA</p>
+                        <p class="big-card__title">mini-ITX</p>
+                        <p class="big-card__text">Эксклюзивный дизайн ORIGIN для ПК малого форм-фактора, который может поместиться в небольших помещениях вертикально или горизонтально</p>
                         <button class="button button--arrow" type="button"><span class="button__text">запросить цену</span></button>
                       </div>
                       <div class="big-card__info-block">
@@ -535,11 +540,11 @@
                           <button class="big-card__resolution is-active" type="button">1080 P</button>
                           <button class="big-card__resolution" type="button">1440 P</button>
                         </div>
-                        <p class="big-card__config-title">Конфигуратор:</p>
+                        <!--<p class="big-card__config-title">Конфигуратор:</p>-->
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#cpu" />
+                              <use xlink:href="#cpu_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -550,7 +555,7 @@
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#ram" />
+                              <use xlink:href="#ram_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -561,7 +566,7 @@
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#fan" />
+                              <use xlink:href="#gpu_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -572,17 +577,18 @@
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#ssd" />
+                              <use xlink:href="#ssd_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
                             <p class="config-option__title">Накопитель SSD M.2:</p>
+                            <p class="config-option__text">-</p>
                           </div>
                         </div>
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#ssd" />
+                              <use xlink:href="#ssd_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -593,7 +599,7 @@
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#hdd" />
+                              <use xlink:href="#hdd_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -604,7 +610,7 @@
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#warranty" />
+                              <use xlink:href="#warranty_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -615,7 +621,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="big-card__box">
+                  <div class="big-card__games">
+                    <div class="games-title"><h3>Сравните игры</h3></div>
                     <div class="games-list">
                       <button class="games-list__button is-active" type="button"><img src="images/content/block_7/img_3.png" alt="PUBG"></button>
                       <button class="games-list__button" type="button"><img src="images/content/block_7/img_4.png" alt="CS:GO"></button>
@@ -625,22 +632,28 @@
                     </div>
                     <div class="graphs">
                       <div class="graphs__hz">
-                        <div class="graphs__hz-item">60 Гц</div>
-                        <div class="graphs__hz-item">144 Гц</div>
-                        <div class="graphs__hz-item">240 Гц</div>
+                        <div class="graphs__hz-item"><span class="graphs__hz-text">0 Гц</span></div>
+                        <div class="graphs__hz-item"><span class="graphs__hz-text">60 Гц</span></div>
+                        <div class="graphs__hz-item"><span class="graphs__hz-text">144 Гц</span></div>
+                        <div class="graphs__hz-item"><span class="graphs__hz-text">240 Гц</span></div>
                       </div>
+                      <p class="graphs__title">1080p</p>
                       <div class="graph">
+                        <p class="graph__title">Разрешение 1080p</p>
                         <div class="graph__value" style="width: 80%">160 FPS</div>
                       </div>
-                      <p class="graphs__title">Разрешение 1080p</p>
+      
+                      <p class="graphs__title">1440p</p>
                       <div class="graph">
+                        <p class="graph__title">Разрешение 1440p</p>
                         <div class="graph__value" style="width: 60%">130 FPS</div>
                       </div>
-                      <p class="graphs__title">Разрешение 1440p</p>
+      
+                      <p class="graphs__title">2160p</p>
                       <div class="graph">
+                        <p class="graph__title">Разрешение 2160p</p>
                         <div class="graph__value" style="width: 30%">50 FPS</div>
                       </div>
-                      <p class="graphs__title">Разрешение 2160p</p>
                     </div>
                   </div>
                 </div>
@@ -652,10 +665,7 @@
                       <div class="big-card__info-block">
                         <div class="big-card__image-block">
                           <img src="images/content/block_7/img_2.png" alt="">
-                          <span class="big-card__fps-block">
-                            <span class="big-card__fps-value">120+</span>
-                            <span class="big-card__fps-unit">FPS</span>
-                          </span>
+                          <span class="big-card__fps-block"><span class="big-card__fps">66 FPS</span></span>
                         </div>
                         <p class="big-card__title">ProGaming</p>
                         <p class="big-card__text">Решает задачи плавной картинки и качественно геймплея без разрывов изображения за счет высокого FPS (120+) в современных играх тип AAA</p>
@@ -667,11 +677,11 @@
                           <button class="big-card__resolution is-active" type="button">1080 P</button>
                           <button class="big-card__resolution" type="button">1440 P</button>
                         </div>
-                        <p class="big-card__config-title">Конфигуратор:</p>
+                        <!--<p class="big-card__config-title">Конфигуратор:</p>-->
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#cpu" />
+                              <use xlink:href="#cpu_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -682,7 +692,7 @@
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#ram" />
+                              <use xlink:href="#ram_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -693,7 +703,7 @@
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#fan" />
+                              <use xlink:href="#gpu_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -704,17 +714,18 @@
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#ssd" />
+                              <use xlink:href="#ssd_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
                             <p class="config-option__title">Накопитель SSD M.2:</p>
+                            <p class="config-option__text">-</p>
                           </div>
                         </div>
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#ssd" />
+                              <use xlink:href="#ssd_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -725,7 +736,7 @@
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#hdd" />
+                              <use xlink:href="#hdd_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -736,7 +747,7 @@
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#warranty" />
+                              <use xlink:href="#warranty_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -747,7 +758,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="big-card__box">
+                  <div class="big-card__games">
+                    <div class="games-title"></div>
                     <div class="games-list">
                       <button class="games-list__button" type="button"><img src="images/content/block_7/img_3.png" alt="PUBG"></button>
                       <button class="games-list__button" type="button"><img src="images/content/block_7/img_4.png" alt="CS:GO"></button>
@@ -757,22 +769,28 @@
                     </div>
                     <div class="graphs">
                       <div class="graphs__hz">
-                        <div class="graphs__hz-item">60 Гц</div>
-                        <div class="graphs__hz-item">144 Гц</div>
-                        <div class="graphs__hz-item">240 Гц</div>
+                        <div class="graphs__hz-item"><span class="graphs__hz-text">0 Гц</span></div>
+                        <div class="graphs__hz-item"><span class="graphs__hz-text">60 Гц</span></div>
+                        <div class="graphs__hz-item"><span class="graphs__hz-text">144 Гц</span></div>
+                        <div class="graphs__hz-item"><span class="graphs__hz-text">240 Гц</span></div>
                       </div>
+                      <p class="graphs__title">1080p</p>
                       <div class="graph">
+                        <p class="graph__title">Разрешение 1080p</p>
                         <div class="graph__value" style="width: 80%">160 FPS</div>
                       </div>
-                      <p class="graphs__title">Разрешение 1080p</p>
+      
+                      <p class="graphs__title">1440p</p>
                       <div class="graph">
+                        <p class="graph__title">Разрешение 1440p</p>
                         <div class="graph__value" style="width: 60%">130 FPS</div>
                       </div>
-                      <p class="graphs__title">Разрешение 1440p</p>
+      
+                      <p class="graphs__title">2160p</p>
                       <div class="graph">
+                        <p class="graph__title">Разрешение 2160p</p>
                         <div class="graph__value" style="width: 30%">50 FPS</div>
                       </div>
-                      <p class="graphs__title">Разрешение 2160p</p>
                     </div>
                   </div>
                 </div>
@@ -780,6 +798,7 @@
             </div>
           </div>
           <div class="configs-tab" data-target="2">
+            <h2 class="configs-tab__title h3 text-center">ДЛЯ VIP ЗАЛОВ:</h2>
             <div class="big-cards">
               <div class="big-cards__item">
                 <div class="big-card">
@@ -788,10 +807,7 @@
                       <div class="big-card__info-block">
                         <div class="big-card__image-block">
                           <img src="images/content/block_7/img_2.png" alt="">
-                          <span class="big-card__fps-block">
-                            <span class="big-card__fps-value">120+</span>
-                            <span class="big-card__fps-unit">FPS</span>
-                          </span>
+                          <span class="big-card__fps-block"><span class="big-card__fps">66 FPS</span></span>
                         </div>
                         <p class="big-card__title">ProGaming</p>
                         <p class="big-card__text">Решает задачи плавной картинки и качественно геймплея без разрывов изображения за счет высокого FPS (120+) в современных играх тип AAA</p>
@@ -803,11 +819,11 @@
                           <button class="big-card__resolution is-active" type="button">1080 P</button>
                           <button class="big-card__resolution" type="button">1440 P</button>
                         </div>
-                        <p class="big-card__config-title">Конфигуратор:</p>
+                        <!--<p class="big-card__config-title">Конфигуратор:</p>-->
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#cpu" />
+                              <use xlink:href="#cpu_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -818,7 +834,7 @@
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#ram" />
+                              <use xlink:href="#ram_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -829,7 +845,7 @@
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#fan" />
+                              <use xlink:href="#gpu_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -840,17 +856,18 @@
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#ssd" />
+                              <use xlink:href="#ssd_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
                             <p class="config-option__title">Накопитель SSD M.2:</p>
+                            <p class="config-option__text">-</p>
                           </div>
                         </div>
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#ssd" />
+                              <use xlink:href="#ssd_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -861,7 +878,7 @@
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#hdd" />
+                              <use xlink:href="#hdd_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -872,7 +889,7 @@
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#warranty" />
+                              <use xlink:href="#warranty_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -883,7 +900,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="big-card__box">
+                  <div class="big-card__games">
+                    <div class="games-title"><h3>Сравните игры</h3></div>
                     <div class="games-list">
                       <button class="games-list__button" type="button"><img src="images/content/block_7/img_3.png" alt="PUBG"></button>
                       <button class="games-list__button" type="button"><img src="images/content/block_7/img_4.png" alt="CS:GO"></button>
@@ -893,22 +911,28 @@
                     </div>
                     <div class="graphs">
                       <div class="graphs__hz">
-                        <div class="graphs__hz-item">60 Гц</div>
-                        <div class="graphs__hz-item">144 Гц</div>
-                        <div class="graphs__hz-item">240 Гц</div>
+                        <div class="graphs__hz-item"><span class="graphs__hz-text">0 Гц</span></div>
+                        <div class="graphs__hz-item"><span class="graphs__hz-text">60 Гц</span></div>
+                        <div class="graphs__hz-item"><span class="graphs__hz-text">144 Гц</span></div>
+                        <div class="graphs__hz-item"><span class="graphs__hz-text">240 Гц</span></div>
                       </div>
+                      <p class="graphs__title">1080p</p>
                       <div class="graph">
+                        <p class="graph__title">Разрешение 1080p</p>
                         <div class="graph__value" style="width: 80%">160 FPS</div>
                       </div>
-                      <p class="graphs__title">Разрешение 1080p</p>
+      
+                      <p class="graphs__title">1440p</p>
                       <div class="graph">
+                        <p class="graph__title">Разрешение 1440p</p>
                         <div class="graph__value" style="width: 60%">130 FPS</div>
                       </div>
-                      <p class="graphs__title">Разрешение 1440p</p>
+      
+                      <p class="graphs__title">2160p</p>
                       <div class="graph">
+                        <p class="graph__title">Разрешение 2160p</p>
                         <div class="graph__value" style="width: 30%">50 FPS</div>
                       </div>
-                      <p class="graphs__title">Разрешение 2160p</p>
                     </div>
                   </div>
                 </div>
@@ -920,10 +944,7 @@
                       <div class="big-card__info-block">
                         <div class="big-card__image-block">
                           <img src="images/content/block_7/img_1.png" alt="">
-                          <span class="big-card__fps-block">
-                            <span class="big-card__fps-value">120+</span>
-                            <span class="big-card__fps-unit">FPS</span>
-                          </span>
+                          <span class="big-card__fps-block"><span class="big-card__fps">66 FPS</span></span>
                         </div>
                         <p class="big-card__title">enthoo evolv shift x</p>
                         <p class="big-card__text">Решает задачи плавной картинки и качественно геймплея без разрывов изображения за счет высокого FPS (120+) в современных играх тип AAA</p>
@@ -935,11 +956,11 @@
                           <button class="big-card__resolution is-active" type="button">1080 P</button>
                           <button class="big-card__resolution" type="button">1440 P</button>
                         </div>
-                        <p class="big-card__config-title">Конфигуратор:</p>
+                        <!--<p class="big-card__config-title">Конфигуратор:</p>-->
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#cpu" />
+                              <use xlink:href="#cpu_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -950,7 +971,7 @@
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#ram" />
+                              <use xlink:href="#ram_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -961,7 +982,7 @@
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#fan" />
+                              <use xlink:href="#gpu_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -972,17 +993,18 @@
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#ssd" />
+                              <use xlink:href="#ssd_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
                             <p class="config-option__title">Накопитель SSD M.2:</p>
+                            <p class="config-option__text">-</p>
                           </div>
                         </div>
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#ssd" />
+                              <use xlink:href="#ssd_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -993,7 +1015,7 @@
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#hdd" />
+                              <use xlink:href="#hdd_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -1004,7 +1026,7 @@
                         <div class="big-card__config-option config-option">
                           <div class="config-option__icon-block">
                             <svg class="config-option__icon" aria-hidden="true">
-                              <use xlink:href="#warranty" />
+                              <use xlink:href="#warranty_2" />
                             </svg>
                           </div>
                           <div class="config-option__info">
@@ -1015,7 +1037,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="big-card__box">
+                  <div class="big-card__games">
+                    <div class="games-title"></div>
                     <div class="games-list">
                       <button class="games-list__button is-active" type="button"><img src="images/content/block_7/img_3.png" alt="PUBG"></button>
                       <button class="games-list__button" type="button"><img src="images/content/block_7/img_4.png" alt="CS:GO"></button>
@@ -1025,31 +1048,33 @@
                     </div>
                     <div class="graphs">
                       <div class="graphs__hz">
-                        <div class="graphs__hz-item">60 Гц</div>
-                        <div class="graphs__hz-item">144 Гц</div>
-                        <div class="graphs__hz-item">240 Гц</div>
+                        <div class="graphs__hz-item"><span class="graphs__hz-text">0 Гц</span></div>
+                        <div class="graphs__hz-item"><span class="graphs__hz-text">60 Гц</span></div>
+                        <div class="graphs__hz-item"><span class="graphs__hz-text">144 Гц</span></div>
+                        <div class="graphs__hz-item"><span class="graphs__hz-text">240 Гц</span></div>
                       </div>
+                      <p class="graphs__title">1080p</p>
                       <div class="graph">
+                        <p class="graph__title">Разрешение 1080p</p>
                         <div class="graph__value" style="width: 80%">160 FPS</div>
                       </div>
-                      <p class="graphs__title">Разрешение 1080p</p>
+      
+                      <p class="graphs__title">1440p</p>
                       <div class="graph">
+                        <p class="graph__title">Разрешение 1440p</p>
                         <div class="graph__value" style="width: 60%">130 FPS</div>
                       </div>
-                      <p class="graphs__title">Разрешение 1440p</p>
+      
+                      <p class="graphs__title">2160p</p>
                       <div class="graph">
+                        <p class="graph__title">Разрешение 2160p</p>
                         <div class="graph__value" style="width: 30%">50 FPS</div>
                       </div>
-                      <p class="graphs__title">Разрешение 2160p</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="block-7__buttons-block">
-            <button class="js-tab-changer button" type="button" data-target="1">Стандарт</button>
-            <button class="js-tab-changer button button--transparent" type="button" data-target="2">Vip</button>
           </div>
         </div>
       </div>
