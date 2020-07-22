@@ -372,6 +372,42 @@
   @media(min-width: 1900px)
     margin-bottom: 125px
 
+  &--type_2
+    max-width: 1075px
+    margin-left: auto
+    margin-right: auto
+    position: relative
+
+    @media(min-width: 1200px)
+      margin-bottom: 100px
+
+    &::after,
+    &::before
+      border-top: 1px solid #262F39
+      content: ''
+      left: 50%
+      position: absolute
+      transform: translateX(-50%)
+      width: 5000px
+
+    &::before
+      top: 0
+
+    &::after
+      top: auto
+      bottom: 0
+
+    .games-list__button
+      @media(min-width: 1200px)
+        padding-top: 30px
+        padding-bottom: 30px
+
+      &:first-child
+        border-left: none
+
+      &:last-child
+        border-right: none
+
   &__button
     background-color: transparent
     border: 1px solid #262F39
@@ -414,6 +450,11 @@
   @media(min-width: 768px)
     padding-top: 15px
 
+  &--type_2
+    max-width: 1130px
+    margin-left: auto
+    margin-right: auto
+
   &__hz
     display: flex
     justify-content: space-between
@@ -429,7 +470,7 @@
     color: #fff
     font-family: $secondary_font
     font-size: 16px
-    font-weight: 600
+    font-weight: 500
     position: relative
     text-align: right
 
@@ -458,7 +499,7 @@
     color: rgba(#fff, 0.5)
     font-family: $secondary_font
     font-size: 11px
-    font-weight: 600
+    font-weight: 500
     margin-left: 5px
     margin-bottom: 5px
     position: relative
@@ -489,7 +530,7 @@
     display: none
     font-family: $secondary_font
     font-size: 16px
-    font-weight: 600
+    font-weight: 500
     left: 20px
     margin-bottom: 0
     position: absolute
