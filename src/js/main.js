@@ -70,6 +70,11 @@ $(document).ready(function() {
         }
       ]
     });
+
+    $('.js-main-banner').on('afterChange', function(slick, currentSlide) {
+      $('.main-banner__slide').removeClass('animate');
+      $('.main-banner__slide.slick-active').addClass('animate');
+    });
   }
 
   //слайдер акций
