@@ -287,7 +287,6 @@ $(document).ready(function() {
   });
   /******js для страницы лендинга evolv******/
 
-
   if($('body').width() < 1200) {
     //слайдер конфигураций
     if($('.js-list-9').length) {
@@ -353,6 +352,66 @@ $(document).ready(function() {
     }
   }
 
+  //слайдер дизайнов
+  if($('.js-design-banner').length) {
+    $('.js-design-banner').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: false,
+      mobileFirst: true,
+      asNavFor: '.js-design-banner-2',
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            arrows: true,
+            prevArrow: '<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
+            nextArrow: '<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>'
+          }
+        }
+      ]
+    });
+
+    $('.js-design-banner').on('afterChange', function(event, slick, currentSlide, nextSlide) {
+      console.log('sdf');
+      $('#video-banner').attr('src', $('.slick-current').attr('data-src'));
+    });
+
+  }
+
+  if($('.js-design-banner-2').length) {
+    $('.js-design-banner-2').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: false,
+      mobileFirst: true,
+      focusOnSelect: true,
+      asNavFor: '.js-design-banner',
+      responsive: [
+
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 6
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 5
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 4
+          }
+        }
+      ]
+    });
+  }
 });
 
 //переключение слайдера сравнения конфигураций
