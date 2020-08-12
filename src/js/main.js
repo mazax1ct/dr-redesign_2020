@@ -352,7 +352,7 @@ $(document).ready(function() {
     }
   }
 
-  //слайдер дизайнов
+  //слайдер-баннер дизайнов
   if($('.js-design-banner').length) {
     $('.js-design-banner').slick({
       slidesToShow: 1,
@@ -360,6 +360,7 @@ $(document).ready(function() {
       dots: false,
       arrows: false,
       mobileFirst: true,
+      asNavFor: '.js-design-banner-2',
       responsive: [
         {
           breakpoint: 1199,
@@ -372,10 +373,110 @@ $(document).ready(function() {
       ]
     });
 
-    $('.js-design-banner').on('beforeChange', function(slick, currentSlide) {
-      console.log('меняем видео');
+    $('.js-design-banner').on('afterChange', function(event, slick, currentSlide, nextSlide) {
+      $('#video-banner').attr('src', $('.slick-current').attr('data-src'));
     });
   }
+
+  if($('.js-design-banner-2').length) {
+    $('.js-design-banner-2').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: false,
+      mobileFirst: true,
+      focusOnSelect: true,
+      asNavFor: '.js-design-banner',
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 6
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 5
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 4
+          }
+        }
+      ]
+    });
+  }
+
+  //список дизайнов
+  var filtered = false;
+  if($('.js-designs-slider').length) {
+    $('.js-designs-slider').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: false,
+      mobileFirst: true,
+      responsive: [
+        {
+          breakpoint: 599,
+          settings: {
+            slidesToShow: 2,
+            arrows: true,
+            prevArrow: '<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
+            nextArrow: '<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>'
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 3,
+            arrows: true,
+            prevArrow: '<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
+            nextArrow: '<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>'
+          }
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 6,
+            arrows: true,
+            prevArrow: '<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
+            nextArrow: '<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>'
+          }
+        }
+      ]
+    });
+
+    $('.js-filter').on('click', function() {
+      $('.js-filter').removeClass('is-active');
+      var filter = $(this).data('filter');
+      if(filter == 'all') {
+        $('.js-designs-slider').slick('slickUnfilter');
+      } else {
+        $('.js-designs-slider').slick('slickUnfilter').slick('slickFilter','[data-filter="'+filter+'"]');
+      }
+      $(this).addClass('is-active');
+      filtered = true;
+      $('.js-designs-slider').slick('setPosition');
+      $('.js-show-all-designs').removeClass('hidden');
+    });
+  }
+
+  $('.js-design-change').click(function () {
+    $('.js-design-change').removeClass('is-active');
+    $(this).addClass('is-active');
+    return false;
+  });
+
+  $('.js-show-all-designs').click(function () {
+    $('.js-designs-slider').slick('slickUnfilter');
+    filtered = false;
+    $('.js-designs-slider').slick('unslick');
+    $(this).addClass('hidden');
+  });
 });
 
 //переключение слайдера сравнения конфигураций
