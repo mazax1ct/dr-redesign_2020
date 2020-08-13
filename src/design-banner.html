@@ -26,16 +26,65 @@
       <div class="screen-9" style="background: none">
         <div class="container">
           <h1 class="title"><span>Выбери</span> один из дизайнов</h1>
+          <div class="design-block">
+            <div class="design-block__left" style="background-image: url('images/content/designs/boxes/img_5.jpg')">
+              <div class="box-block">
+                <div class="box-block__right">
+                  <img src="images/content/designs/boxes/img_4.png" alt="">
+                  <div class="box-block__social-block">
+                    <div class="box-block__social-dropdown-wrapper">
+                      <button class="js-share-dropdown box-block__social-button" type="button"><svg aria-hidden="true"><use xlink:href="#share" /></svg> 12</button>
+                      <div class="box-block__social-dropdown">
+                        <a class="box-block__share-button" href="#" title="Поделиться в Instagram">
+                          <svg aria-hidden="true"><use xlink:href="#inst" /></svg>
+                        </a>
+                        <a class="box-block__share-button" href="#" title="Поделиться Вконтакте">
+                          <svg aria-hidden="true"><use xlink:href="#vk" /></svg>
+                        </a>
+                        <a class="box-block__copy-link" href="#"><svg aria-hidden="true"><use xlink:href="#copy" /></svg>Скопировать ссылку</a>
+                      </div>
+                    </div>
+                    <button class="box-block__social-button" type="button"><svg aria-hidden="true"><use xlink:href="#like" /></svg> 256</button>
 
+                  </div>
+                </div>
+                <div class="box-block__left">
+                  <div class="box-block__left-inner">
+                    <p class="box-block__title color-red">Perfomance</p>
+                    <p class="box-block__title">Cougar SubZero</p>
+                    <p class="box-block__buttons">
+                      <button class="button button--arrow" type="button" data-src="#design_order" data-fancybox="design_order"><span class="button__text">Заказать</span></button>
+                      <button class="js-add-design button button--config button--h60" type="button"><span class="button__text">Добавить свой</span></button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="design-block__right">
+              <div class="js-box-slider box-slider">
+                <div class="js-box-change box-slider__item is-active"><img src="images/content/designs/boxes/img_1.png" alt="название корпуса"></div>
+                <div class="js-box-change box-slider__item"><img src="images/content/designs/boxes/img_2.png" alt="название корпуса"></div>
+                <div class="js-box-change box-slider__item"><img src="images/content/designs/boxes/img_3.png" alt="название корпуса"></div>
+                <div class="js-box-change box-slider__item"><img src="images/content/designs/boxes/img_1.png" alt="название корпуса"></div>
+                <div class="js-box-change box-slider__item"><img src="images/content/designs/boxes/img_2.png" alt="название корпуса"></div>
+                <div class="js-box-change box-slider__item"><img src="images/content/designs/boxes/img_3.png" alt="название корпуса"></div>
+                <div class="js-box-change box-slider__item"><img src="images/content/designs/boxes/img_1.png" alt="название корпуса"></div>
+                <div class="js-box-change box-slider__item"><img src="images/content/designs/boxes/img_2.png" alt="название корпуса"></div>
+                <div class="js-box-change box-slider__item"><img src="images/content/designs/boxes/img_3.png" alt="название корпуса"></div>
+              </div>
+            </div>
+          </div>
           <div class="designs">
-            <ul class="designs-list">
-              <li class="designs-list__item"><button class="js-filter designs-list__button is-active" type="button" data-filter="all">Все</button></li>
-              <li class="designs-list__item"><button class="js-filter designs-list__button" type="button" data-filter="aero">Аэрография</button></li>
-              <li class="designs-list__item"><button class="js-filter designs-list__button" type="button" data-filter="graph">Граффити</button></li>
-              <li class="designs-list__item"><button class="js-filter designs-list__button" type="button" data-filter="comics">Комиксы</button></li>
-              <li class="designs-list__item"><button class="js-filter designs-list__button" type="button" data-filter="girls">Девушки</button></li>
-              <li class="designs-list__item"><button class="js-filter designs-list__button" type="button" data-filter="rpg">RPG</button></li>
-            </ul>
+            <div class="designs-list-wrapper">
+              <ul class="designs-list">
+                <li class="designs-list__item"><button class="js-filter designs-list__button is-active" type="button" data-filter="all">Все</button></li>
+                <li class="designs-list__item"><button class="js-filter designs-list__button" type="button" data-filter="aero">Аэрография</button></li>
+                <li class="designs-list__item"><button class="js-filter designs-list__button" type="button" data-filter="graph">Граффити</button></li>
+                <li class="designs-list__item"><button class="js-filter designs-list__button" type="button" data-filter="comics">Комиксы</button></li>
+                <li class="designs-list__item"><button class="js-filter designs-list__button" type="button" data-filter="girls">Девушки</button></li>
+                <li class="designs-list__item"><button class="js-filter designs-list__button" type="button" data-filter="rpg">RPG</button></li>
+              </ul>
+            </div>
             <div class="js-designs-slider designs-slider">
               <div class="js-design-change designs-slider__item" data-filter="graph"><img src="images/content/designs/designs-list/img_1.jpg" alt="Название арта"></div>
               <div class="js-design-change designs-slider__item" data-filter="rpg"><img src="images/content/designs/designs-list/img_2.jpg" alt="Название арта"></div>
@@ -113,7 +162,7 @@
           </div>
         </div>
       </div>
-      <div class="screen-9" style="background: none">
+      <div id="add_design" class="screen-9" style="background: none">
         <div class="container">
           <h2 class="title"><span>Создай свой</span> уникальный дизайн</h2>
           <form class="form form--design_request" action="" method="post">
@@ -160,7 +209,34 @@
 
   //= template/footer.html
 
+  <div id="design_order" class="popup popup--design_save">
+    <button class="js-popup-close popup__close" type="button" title="Закрыть">
+      <svg class="popup__close-svg" aria-hidden="true">
+        <use xlink:href="#menu_close" />
+      </svg>
+    </button>
+    <p class="popup__title">Сохранение дизайна</p>
+    <p class="popup__text">Сохраните Ваш дизайн, чтобы нанести его на выбранную конфигурацию.</p>
+    <p class="popup__text">Вы можете указать ссылку на выбранную конфигурацию игрового компьютера или заказать подбор системы под выбранный дизайн. Для этого укажите контакты для связи</p>
+    <form class="form" action="" method="post">
+      <label class="form__label" for="number">
+        <input id="number" class="input_2" name="number" type="text" placeholder="Ссылка на конфигурацию компьютера">
+      </label>
+      <label class="form__label" for="email">
+        <input id="email" class="input_2" name="email" type="text" placeholder="Электронная почта*">
+      </label>
+      <label class="form__label" for="phone">
+        <input id="phone" class="input_2" name="phone" type="text" placeholder="Номер телефона">
+      </label>
+      <div class="form__button-block">
+        <button class="button button--arrow" type="submit"><span class="button__text">Заказать</span></button>
+        <button class="button button--config button--h60" type="submit"><span class="button__text">Сохранить</span></button>
+      </div>
+    </form>
+  </div>
+
   //= template/scripts.html
+  <script src="js/jquery.fancybox.min.js"></script>
 </body>
 
 </html>
