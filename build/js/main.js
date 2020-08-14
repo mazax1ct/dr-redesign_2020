@@ -72,8 +72,8 @@ $(document).ready(function() {
     });
 
     $('.js-main-banner').on('afterChange', function(slick, currentSlide) {
-      $('.main-banner__slide').removeClass('animate');
-      $('.main-banner__slide.slick-active').addClass('animate');
+      $('.main-banner__slide-back').removeClass('animate');
+      $('.main-banner__slide.slick-active .main-banner__slide-back').addClass('animate');
     });
   }
 
