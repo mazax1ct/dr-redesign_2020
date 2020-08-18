@@ -108,14 +108,18 @@
     &::after,
     &::before
       bottom: 100%
-      left: auto
+      left: 50%
       border: solid transparent
       content: ''
       height: 0
       width: 0
       position: absolute
       pointer-events: none
-      right: 15px
+
+
+      @media(min-width: 768px)
+        left: auto
+        right: 15px
 
     &::after
     	border-color: rgba(23, 31, 41, 0)
@@ -124,11 +128,13 @@
     	margin-left: -8px
 
     &::before
-      right: 14px
       border-color: rgba(50, 69, 90, 0)
       border-bottom-color: #32455A
       border-width: 9px
       margin-left: -9px
+
+      @media(min-width: 768px)
+        right: 14px
 
   &__share-button
     align-items: center
