@@ -1,4 +1,4 @@
-.block-7
+.block-20
   background-color: #0c1117
   padding-top: 50px
   padding-bottom: 50px
@@ -16,52 +16,17 @@
   &__tabs-nav
     align-items: flex-start
     border-bottom: 1px solid rgba(#4F5966,0.3)
-    display: none
+    display: flex
     justify-content: center
-    margin-bottom: 50px
-    position: relative
-
-    &--type_2
-      display: flex
-      margin-bottom: 0
-
-      .block-7__buttons-block
-        margin-left: auto
-
-      .block-7__button
-        font-size: 16px
-
-        @media(min-width: 768px)
-          font-size: 20px
 
     @media(min-width: 1200px)
       display: flex
-
-  &__tabs-title
-    color: #fff
-    font-family: $secondary_font
-    font-size: 15px
-    line-height: 19px
-    margin-right: auto
-    margin-bottom: 0
-    max-width: 110px
-    text-transform: uppercase
-
-    @media(min-width: 768px)
-      font-size: 22px
-      line-height: 42px
-      left: 0
-      max-width: 150px
-      position: absolute
-      top: 0
-
-    @media(min-width: 1200px)
-      max-width: 100%
 
   &__buttons-block
     display: flex
     justify-content: center
     margin-right: auto
+    margin-left: auto
     text-align: center
 
     @media(min-width: 768px)
@@ -74,7 +39,7 @@
     color: #66788C
     cursor: pointer
     font-family: $secondary_font
-    font-size: 20px
+    font-size: 16px
     margin-left: 10px
     margin-right: 10px
     padding: 0 0 20px
@@ -102,10 +67,6 @@
       margin-right: 30px
 
   .configs-tab
-    @media(max-width: 1199px)
-      display: block
-      opacity: 1
-
     .configs-tab__title
       @media(min-width: 1200px)
         display: none
@@ -377,193 +338,3 @@
 
     @media(min-width: 1900px)
       margin-left: 30px
-
-.games-list
-  display: flex
-  margin-bottom: 60px
-
-  @media(min-width: 1900px)
-    margin-bottom: 125px
-
-  &--type_2
-    max-width: 1075px
-    margin-left: auto
-    margin-right: auto
-    position: relative
-
-    @media(min-width: 1200px)
-      margin-bottom: 100px
-
-    &::after,
-    &::before
-      border-top: 1px solid #262F39
-      content: ''
-      left: 50%
-      position: absolute
-      transform: translateX(-50%)
-      width: 5000px
-
-    &::before
-      top: 0
-
-    &::after
-      top: auto
-      bottom: 0
-
-    .games-list__button
-      @media(min-width: 1200px)
-        padding-top: 30px
-        padding-bottom: 30px
-
-      &:first-child
-        border-left: none
-
-      &:last-child
-        border-right: none
-
-  &__button
-    background-color: transparent
-    border: 1px solid #262F39
-    border-right: none
-    cursor: pointer
-    padding: 15px 10px 15px
-    position: relative
-    width: 20%
-
-    &:last-child
-      border-right: 1px solid #262F39
-
-    &::after
-      bottom: 0
-      background-color: transparent
-      content: ''
-      height: 3px
-      left: 0
-      position: absolute
-      top: auto
-      width: 100%
-      z-index: 1
-
-    img
-      opacity: 0.5
-
-    &.is-active
-      background-color: #121B25
-      cursor: default
-
-      &::after
-        background-color: $main_color
-
-      img
-        opacity: 1
-
-.graphs
-  position: relative
-
-  @media(min-width: 768px)
-    padding-top: 15px
-
-  &--type_2
-    max-width: 1130px
-    margin-left: auto
-    margin-right: auto
-
-  &__hz
-    display: flex
-    justify-content: space-between
-    height: 100%
-    left: 0
-    position: absolute
-    top: 0
-    width: 100%
-    z-index: 1
-
-  &__hz-item
-    border-right: 1px solid #2a2a2a
-    color: #fff
-    font-family: $secondary_font
-    font-size: 16px
-    font-weight: 500
-    position: relative
-    text-align: right
-
-    &:nth-child(2),
-    &:nth-child(3)
-      .graphs__hz-text
-        transform: translateX(-50%)
-
-    &:nth-child(4)
-      .graphs__hz-text
-        transform: translateX(-100%)
-
-    @media(min-width: 768px)
-      font-size: 25px
-
-  &__hz-text
-    left: 0
-    position: absolute
-    top: -35px
-    white-space: nowrap
-
-    @media(min-width: 768px)
-      top: -40px
-
-  &__title
-    color: rgba(#fff, 0.5)
-    font-family: $secondary_font
-    font-size: 11px
-    font-weight: 500
-    margin-left: 5px
-    margin-bottom: 5px
-    position: relative
-    z-index: 2
-
-    @media(min-width: 1900px)
-      display: none
-
-    &:last-child
-      margin-bottom: 0
-
-.graph
-  background-image: linear-gradient(to right, #66788C, rgba(#66788C, 0))
-  border: 1px solid #2C3640
-  height: 50px
-  margin-bottom: 10px
-  position: relative
-  z-index: 2
-
-  @media(min-width: 1900px)
-    margin-bottom: 25px
-
-  &:last-child
-    margin-bottom: 0
-
-  &__title
-    color: #fff
-    display: none
-    font-family: $secondary_font
-    font-size: 16px
-    font-weight: 500
-    left: 20px
-    margin-bottom: 0
-    position: absolute
-    top: 50%
-    transform: translateY(-50%)
-    z-index: 1
-
-    @media(min-width: 1900px)
-      display: block
-
-  &__value
-    background-image: linear-gradient(to right, #8F1317, $main_color)
-    color: #fff
-    height: 48px
-    font-family: $secondary_font
-    font-size: 16px
-    font-weight: 700
-    left: 0
-    line-height: 46px
-    position: absolute
-    padding-right: 10px
-    top: 0
-    text-align: right

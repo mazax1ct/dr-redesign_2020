@@ -16,7 +16,7 @@ var resize_scroll = function(e) {
 
 //проверка на тач-устройства
 function isTouchDevice(){
-    return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
+  return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
 }
 
 //элемент для bodyScrollLock
@@ -85,29 +85,6 @@ $(document).ready(function() {
       dots: true,
       arrows: false,
       mobileFirst: true
-    });
-  }
-
-  //слайдер отзывов
-  if($('.js-reviews-slider').length) {
-    $('.js-reviews-slider').slick({
-      adaptiveHeight: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: false,
-      arrows: true,
-      mobileFirst: true,
-      prevArrow: '<button class="slick-arrow slick-prev" aria-label="Назад" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#slider_arrow_left"/></svg></button>',
-      nextArrow: '<button class="slick-arrow slick-next" aria-label="Вперед" type="button"><svg class="slick-arrow__arrow" aria-hidden="true"><use xlink:href="#slider_arrow_right"/></svg></button>',
-      responsive: [
-        {
-          breakpoint: 1199,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        }
-      ]
     });
   }
 
@@ -278,87 +255,7 @@ $(document).ready(function() {
       ]
     });
   }
-
-  //переключение игр в списке
-  $(document).on('click', '.js-game', function () {
-    $('.js-game').removeClass('is-active');
-    $(this).addClass('is-active');
-    return false;
-  });
   /******js для страницы лендинга evolv******/
-
-  if($('body').width() < 1200) {
-    //слайдер конфигураций
-    if($('.js-list-9').length) {
-      $('.js-list-9').on('init', function(event, slick) {
-        var list = $('.js-list-9').find('.slick-dots');
-        $.each(list['0'].children, function(index, value) {
-          if(index < 9) {
-            list['0'].children[index].children['0'].innerText = '0' + list['0'].children[index].children['0'].innerText;
-          }
-        });
-      });
-
-      $('.js-list-9').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: false,
-        mobileFirst: true,
-        responsive: [
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3
-            }
-          }
-        ]
-      });
-    }
-
-    //слайдер сравнения конфигураций
-    if($('.js-list-12').length) {
-      $('.js-list-12').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: false,
-        mobileFirst: true,
-        responsive: [
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3
-            }
-          }
-        ]
-      });
-    }
-  }
-});
-
-//переключение слайдера сравнения конфигураций
-$(document).on('click', '.js-compare-slide', function () {
-  $('.js-compare-slide').removeClass('is-active');
-  $(this).addClass('is-active');
-  $('.js-list-12').slick('slickGoTo', $(this).attr('data-href'));
-  return false;
 });
 
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе
@@ -403,24 +300,6 @@ $(document).on('click', '.js-b2-nav', function () {
 //закрытие попапа
 $(document).on('click', '.js-popup-close', function () {
   $.fancybox.close();
-  return false;
-});
-
-//переключение табов стандарт/vip
-$(document).on('click', '.js-tab-changer', function () {
-  var el = $(this);
-  $('.js-tab-changer').removeClass('is-active');
-  el.addClass('is-active');
-
-  $('.configs-tab.is-active').animate({
-    opacity: 0
-  }, 400, function() {
-    $('.configs-tab.is-active').removeClass('is-active');
-    $('.configs-tab[data-target='+el.attr('data-target')+']').addClass('is-active').animate({
-      opacity: 1
-    }, 400);
-  });
-
   return false;
 });
 
