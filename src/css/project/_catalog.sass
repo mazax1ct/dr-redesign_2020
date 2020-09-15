@@ -283,7 +283,7 @@
     font-weight: 600
     font-size: 20px
     line-height: 1
-    margin-bottom: 0
+    margin-bottom: 5px
     white-space: nowrap
 
     @media(min-width: 1400px)
@@ -310,3 +310,272 @@
     &::before,
     &::after
       height: 60px
+
+.cart-popup
+  background-color: #171F29
+  max-width: 666px
+  padding: 50px 15px
+  width: 100%
+  z-index: 10
+
+  @media(min-width: 680px)
+    padding: 50px 60px
+
+  &__close
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    height: 50px
+    justify-content: center
+    left: auto
+    position: absolute
+    padding: 0
+    right: 0
+    top: 0
+    width: 50px
+
+  &__close-svg
+    stroke: #32455A
+    height: 20px
+    width: 20px
+
+  &__title
+    color: #fff
+    font-family: $secondary_font
+    font-size: 32px
+    margin-bottom: 25px
+    text-align: center
+
+    @media(min-width: 680px)
+      margin-bottom: 50px
+      text-align: left
+
+  &__buttons
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin-left: -5px
+    margin-right: -5px
+
+    .button
+      margin: 5px
+      max-width: 270px
+      width: 100%
+
+      @media(min-width: 680px)
+        width: calc(50% - 10px)
+
+    .button--buy
+      background-color: $main_color
+      border-color: $main_color
+      height: 60px
+
+      &:hover,
+      &:focus
+        background-color: $main_color
+        border-color: $main_color
+        text-decoration: none
+
+      &::before,
+      &::after
+        height: 60px
+
+    .button--arrow
+      border-color: #263849
+      background-color: transparent
+
+      &::before
+        background-color: #263849
+
+.catalog-detail
+  margin-bottom: 30px
+
+  @media(min-width: 992px)
+    display: flex
+
+  @media(min-width: 1200px)
+    margin-bottom: 65px
+
+  &__image
+    background-color: #090D11
+    text-align: center
+
+    &--desktop
+      display: none
+
+      @media(min-width: 992px)
+        display: block
+        order: 1
+        width: 50%
+
+    &--mobile
+      margin-bottom: 20px
+
+      @media(min-width: 992px)
+        display: none
+
+  &__info
+    @media(min-width: 992px)
+      order: 2
+      padding-left: 35px
+      width: 50%
+
+    @media(min-width: 1400px)
+      padding-left: 70px
+
+  &__title
+    margin-left: 15px
+
+    @media(min-width: 1200px)
+      margin-left: 30px
+
+  &__stock-block
+    font-size: 15px
+    margin-bottom: 25px
+
+    a
+      border-bottom: 1px dotted currentColor
+      color: #A9B5C2
+      font-family: $secondary_font
+      text-decoration: none
+
+  &__stock
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 0.5C3.1552 0.5 0 3.6552 0 7.5C0 11.3448 3.1552 14.5 7 14.5C10.8448 14.5 14 11.3448 14 7.5C14 3.6552 10.8448 0.5 7 0.5ZM6.15286 10.6839L3.08749 7.61856L4.24747 6.45859L6.20654 8.41766L10.1395 4.84241L11.2434 6.05606L6.15286 10.6839Z' fill='%2325BA4F'/%3E%3C/svg%3E%0A")
+    background-position: 0 50%
+    background-repeat: no-repeat
+    color: #25BA4F
+    font-family: $secondary_font
+    font-size: 15px
+    margin-right: 15px
+    padding-left: 20px
+
+  &__text
+    color: #66788C
+    margin-bottom: 25px
+
+    @media(min-width: 1400px)
+      font-size: 17px
+      margin-bottom: 50px
+
+  &__price-block
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+
+  &__price-block-inner
+    margin-bottom: 10px
+    margin-right: 20px
+
+    @media(min-width: 768px)
+      margin-right: 40px
+
+  &__price
+    color: #fff
+    font-family: $secondary_font
+    font-weight: 600
+    font-size: 20px
+    line-height: 1
+    margin-bottom: 5px
+    white-space: nowrap
+
+    @media(min-width: 1400px)
+      font-size: 29px
+
+  &__credit-price
+    color: #66788C
+    font-size: 12px
+    margin-bottom: 0
+
+  &__buy-button
+    background-color: $main_color
+    border-color: $main_color
+    height: 60px
+    margin-bottom: 10px
+
+    &:hover,
+    &:focus
+      background-color: $main_color
+      border-color: $main_color
+      text-decoration: none
+
+    &::before,
+    &::after
+      height: 60px
+
+.detail-tabs-nav
+  display: flex
+  font-family: $secondary_font
+  font-size: 16px
+  margin-bottom: 30px
+  overflow-x: auto
+  text-transform: uppercase
+
+  @media(min-width: 1200px)
+    margin-bottom: 70px
+
+  &__item
+    margin-right: 40px
+
+  &__link
+    color: #66788C
+    display: block
+    padding-top: 5px
+    padding-bottom: 5px
+    text-decoration: none
+
+    &:hover,
+    &.is-active
+      color: #fff
+
+.detail-tab
+  border: 1px solid #32455A
+  background-color: #171F29
+  display: none
+  padding: 20px
+  margin-bottom: 40px
+
+  @media(min-width: 992px)
+    padding: 40px
+
+  @media(min-width: 1200px)
+    padding: 60px 110px
+    margin-bottom: 80px
+
+  &.is-active
+    display: block
+
+  .title
+    text-transform: none
+
+    @media(min-width: 1200px)
+      font-size: 32px
+
+  table
+    border-collapse: collapse
+    max-width: 785px
+    width: 100%
+
+    &:not(:last-child)
+      margin-bottom: 40px
+
+    @media(min-width: 1200px)
+      font-size: 17px
+
+    tr
+      &:not(:last-child)
+
+        th,
+        td
+          border-bottom: 1px solid rgba(#4F5966, 0.3)
+
+    th,
+    td
+      padding-top: 10px
+      padding-bottom: 10px
+
+    th
+      color: #66788C
+      font-weight: 400
+      text-align: left
+      text-transform: uppercase

@@ -252,6 +252,18 @@
             </a>
           </li>
         </ol>
+        <div class="cart-popup" style="position: fixed; left: 50%; top: 50%; transform: translate(-50%,-50%)">
+          <button class="cart-popup__close" type="button" title="Закрыть">
+            <svg class="cart-popup__close-svg" aria-hidden="true">
+              <use xlink:href="#popup-close2" />
+            </svg>
+          </button>
+          <p class="cart-popup__title">Добавлено в корзину</p>
+          <div class="cart-popup__buttons">
+            <a class="button button--buy" href="#"><span class="button__text">Перейти в корзину</span></a>
+            <a class="button button--arrow" href="#"><span class="button__text">Продолжить покупки</span></a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -264,17 +276,17 @@
   <script type="text/javascript" src="js/select2-addon.js"></script>
 
   <script>
-  $(document).ready(function () {
-    //кастомный селект
-    $('.js-select').each(function() {
-      var $p = $(this).closest('.select-wrapper');
-      $(this).select2({
-        minimumResultsForSearch: Infinity,
-        dropdownPosition: 'below',
-        dropdownParent: $p
+    $(document).ready(function () {
+      //кастомный селект
+      $('.js-select').each(function() {
+        var $p = $(this).closest('.select-wrapper');
+        $(this).select2({
+          minimumResultsForSearch: Infinity,
+          dropdownPosition: 'below',
+          dropdownParent: $p
+        });
       });
     });
-  });
   </script>
 </body>
 
