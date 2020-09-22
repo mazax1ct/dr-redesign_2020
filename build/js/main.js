@@ -12,6 +12,44 @@ var resize_scroll = function(e) {
   } else {
     h.removeClass("scrolled");
   }
+
+  if($('.js-catalog-menu').length) {
+    var m = $('.js-catalog-menu');
+    var offTop = m.offset().top;
+
+    m.height($('.catalog-menu__inner').height());
+
+    if($(window).scrollTop() > offTop + m.height()) {
+      $('.catalog-menu__inner').addClass("half-scrolled");
+    } else {
+      $('.catalog-menu__inner').removeClass("half-scrolled");
+    }
+
+    if($(window).scrollTop() > offTop + m.height() + h.height()) {
+      $('.catalog-menu__inner').addClass("scrolled");
+    } else {
+      $('.catalog-menu__inner').removeClass("scrolled");
+    }
+  }
+
+  if($('.js-detail-menu').length) {
+    var m = $('.js-detail-menu');
+    var offTop = m.offset().top;
+
+    m.height($('.detail-tabs-nav__inner').height());
+
+    if($(window).scrollTop() > offTop + m.height()) {
+      $('.detail-tabs-nav__inner').addClass("half-scrolled");
+    } else {
+      $('.detail-tabs-nav__inner').removeClass("half-scrolled");
+    }
+
+    if($(window).scrollTop() > offTop + m.height() + h.height()/2) {
+      $('.detail-tabs-nav__inner').addClass("scrolled");
+    } else {
+      $('.detail-tabs-nav__inner').removeClass("scrolled");
+    }
+  }
 };
 
 //проверка на тач-устройства
@@ -333,4 +371,24 @@ $(document).on('click', '.js-question-toggler', function () {
 
 $(window).on("orientationchange", function(event) {
   $('.faq__questions-block, .faq__section').attr('style', '');
+});
+
+//раздел каталога
+$(document).on('click', '.js-filter-opener', function () {
+  $('.catalog-filter__dropdown').toggleClass('is-open');
+  if($('.catalog-filter__dropdown').hasClass('is-open')){
+    $(this).find('span').text('Скрыть');
+  }else{
+    $(this).find('span').text($(this).attr('data-text'));
+  }
+  return false;
+});
+
+$(document).on('click', '.detail-tabs-nav__link', function () {
+  $('.detail-tabs-nav__link').removeClass('is-active');
+  $(this).addClass('is-active');
+  $('html, body').animate({
+    scrollTop: $($.attr(this, 'href')).offset().top - $('.js-detail-menu').height() - $('.header').height()
+  }, 400);
+  return false;
 });
