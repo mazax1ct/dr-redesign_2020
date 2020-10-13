@@ -1,0 +1,45 @@
+.config-features
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-bottom: 40px
+
+  @media(min-width: 768px)
+    display: flex
+
+  @media(min-width: 1200px)
+    margin-bottom: 80px
+
+  &__item
+    font-family: $secondary_font
+    margin-bottom: 15px
+    text-align: center
+
+  &__item-title
+    color: #66788C
+    font-size: 13px
+    margin-top: 0
+    margin-bottom: 0
+    text-transform: uppercase
+
+  &__item-value
+    color: #fff
+    font-size: 24px
+    line-height: 1.3
+    margin-top: 0
+    margin-bottom: 0
+
+    @media(min-width: 1200px)
+      font-size: 38px
+
+    @media(min-width: 1900px)
+      font-size: 42px
+
+  &__separator
+    background-color: #263849
+    display: none
+    height: 17px
+    width: 1px
+
+    @media(min-width: 768px)
+      display: block
