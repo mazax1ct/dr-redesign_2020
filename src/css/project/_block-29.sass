@@ -3,12 +3,20 @@
 
   &__text-block
     color: #fff
-    padding-top: 120px
-    padding-bottom: 140px
+    padding-top: 40px
+    padding-bottom: 40px
+    text-align: center
+
+    @media(min-width: 768px)
+      padding-top: 60px
+      padding-bottom: 60px
+      text-align: left
 
     @media(min-width: 1200px)
       font-size: 17px
       line-height: 1.4
+      padding-top: 120px
+      padding-bottom: 140px
 
   &__text-block-inner
     max-width: 530px
@@ -19,3 +27,9 @@
     background-repeat: no-repeat
     background-position: 50% 50%
     background-size: cover
+    height: 0
+    padding-bottom: 100%
+
+    @media(min-width: 768px)
+      height: auto
+      padding-bottom: 0
