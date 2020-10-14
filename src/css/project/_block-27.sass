@@ -7,9 +7,20 @@
     margin-bottom: 80px
     margin-top: 80px
 
+  &__item
+    &:not(:last-child)
+      margin-bottom: 30px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+
   &__item-title
     margin-bottom: 10px
     text-transform: uppercase
 
   &__item-text
     color: #66788C
+
+.decor-block
+  @media(max-width: 767px)
+    display: none

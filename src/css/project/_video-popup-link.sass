@@ -27,11 +27,19 @@
     border-radius: 50%
     box-shadow: none
     content: ''
-    height: 104px
+    height: 54px
     left: 50%
     position: absolute
     top: 50%
     transform: translate(-50%, -50%)
     transition: box-shadow 0.3s
-    width: 104px
+    width: 54px
     z-index: 2
+
+    @media(min-width: 768px)
+      height: 104px
+      width: 104px
+
+  &--blue
+    &::after
+      background-color: #00aae9
