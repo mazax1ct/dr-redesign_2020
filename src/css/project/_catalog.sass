@@ -341,17 +341,25 @@
     display: flex
     margin-bottom: 15px
 
-    .select-wrapper
-      margin-left: 15px
-      position: relative
-      z-index: 2
+    & > div
+      &:first-child
+        padding-right: 15px
 
-      @media(min-width: 1400px)
-        margin-left: 30px
+        @media(min-width: 1400px)
+          padding-right: 20px
+
+    .select-wrapper
+      flex-grow: 1
+      min-width: 115px
+      position: relative
+      width: 50%
+      z-index: 2
 
     .select2-container
       min-width: 115px
       font-size: 13px
+      max-width: 100%
+      width: 100% !important
 
     .select2-container--default .select2-selection--single
       border-color: #32455A
@@ -360,7 +368,7 @@
 
     .select2-container--default .select2-selection--single .select2-selection__rendered
       color: #66788C
-      line-height: 44px
+      line-height: 42px
       padding-left: 10px
       padding-right: 30px
 
