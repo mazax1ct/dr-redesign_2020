@@ -554,44 +554,40 @@
       <div class="container">
         <ol class="breadcrumbs">
           <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
-          <li class="breadcrumbs__item">Рабочие станции</li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="vacancies.html">Вакансии</a></li>
+          <li class="breadcrumbs__item">Менеджер в команду по развитию категории аксессуаров</li>
         </ol>
-      </div>
-      <div class="block-17">
-        <div class="container">
-          <h2 class="title"><span>Выбери</span> тип деятельности:</h2>
-          <div class="list-11">
-            <div class="list-11__item">
-              <a class="group-tizer3" href="#">
-                <span class="group-tizer3__title">Engineering</span>
-                <span class="group-tizer3__text">Специально разработан для:<br> <b>CAD / CAM, моделирование, рендеринг</b></span>
-                <span class="group-tizer3__button-block"><span class="button button--arrow"><span class="button__text">Смотреть решения</span></span></span>
-                <span class="group-tizer3__image"><img src="images/content/ws/img_1.png" alt=""></span>
-                <span class="group-tizer3__price-title">цена начинается от</span>
-                <span class="group-tizer3__price">65 000 ₽</span>
-              </a>
-            </div>
-            <div class="list-11__item">
-              <a class="group-tizer3" href="#">
-                <span class="group-tizer3__title">Studio</span>
-                <span class="group-tizer3__text">Специально разработан для:<br> <b>CAD / CAM, моделирование, рендеринг</b></span>
-                <span class="group-tizer3__button-block"><span class="button button--arrow"><span class="button__text">Смотреть решения</span></span></span>
-                <span class="group-tizer3__image"><img src="images/content/ws/img_2.png" alt=""></span>
-                <span class="group-tizer3__price-title">цена начинается от</span>
-                <span class="group-tizer3__price">65 000 ₽</span>
-              </a>
-            </div>
-            <div class="list-11__item">
-              <a class="group-tizer3" href="#">
-                <span class="group-tizer3__title">Data Science</span>
-                <span class="group-tizer3__text">Специально разработан для:<br> <b>CAD / CAM, моделирование, рендеринг</b></span>
-                <span class="group-tizer3__button-block"><span class="button button--arrow"><span class="button__text">Смотреть решения</span></span></span>
-                <span class="group-tizer3__image"><img src="images/content/ws/img_1.png" alt=""></span>
-                <span class="group-tizer3__price-title">цена начинается от</span>
-                <span class="group-tizer3__price">65 000 ₽</span>
-              </a>
+        <div class="vacancy-detail row">
+          <div class="vacancy-detail__body col-md-7 col-lg-7 order-lg-2">
+            <h1><span class="color-red">Вакансия</span> менеджер в команду по&nbsp;развитию категории аксессуаров</h1>
+            <p class="vacancy-detail__info">
+              <span class="vacancy-detail__type">Удаленная работа</span>
+              <span class="vacancy-detail__salary">от 30.000 Р</span>
+            </p>
+            <h2>Требования к кандидату</h2>
+            <ul>
+              <li>Знание актуальной игровой периферии;</li>
+              <li>Четкая и внятная речь, письменная грамотность, доброжелательность, отзывчивость, стрессоустойчивость, коммуникабельность;</li>
+              <li>Наличие ПК + хороший домашний интернет.</li>
+            </ul>
+            <h2>Чем нужно будет заниматься:</h2>
+            <ul>
+              <li>Обработка входящих заявок с сайта;</li>
+              <li>Ежедневный аудит нашего сайта (контент, цены, корректные статусы);</li>
+              <li>Аудит цен конкурентов на рынке, а также аудит цен конкурентов в рамках других проектов;</li>
+              <li>Наличие актуальных товарных позиций на нашем сайте – своевременная передача информации, устаревшие модели/новинки;</li></li>
+              <li>Оформление и сопровождение заказов на сторонних проектах;</li>
+              <li>Индивидуальные оперативные поручения;</li>
+              <li>Обязательное знание рынка игровой периферии;</li>
+            </ul>
+            <div class="vacancy-detail__bottom">
+              <p class="vacancy-detail__bottom-text">Подробное резюме с зарплатными ожиданиями просим отправлять на почту: <a href="mailto:work@digital-razor.ru">work@digital‑razor.ru</a></p>
+              <p><button class="button button--arrow" type="button" data-fancybox="resume" data-src="#resume"><span class="button__text">Откликнуться</span></button></p>
             </div>
           </div>
+          <p class="vacancy-detail__back-block col-lg-3 order-lg-1">
+            <a class="vacancy-detail__back" href="vacancies.html">Вернуться к вакансиям</a>
+          </p>
         </div>
       </div>
     </div>
@@ -667,10 +663,56 @@
     </div>
   </footer>
 
+  <div id="resume" class="popup popup--resume">
+    <button class="js-popup-close popup__close" type="button" title="Закрыть">
+      <svg class="popup__close-svg" aria-hidden="true">
+        <use xlink:href="#menu_close" />
+      </svg>
+    </button>
+    <p class="popup__title"><span class="color-red">Отклик на вакансию</span><br> Менеджер в команду по развитию категории аксессуаров</p>
+    <form class="form" action="" method="post">
+      <div class="row">
+        <div class="col-md-6">
+          <label class="form__label" for="fio">
+            <input id="fio" class="input_2" name="fio" type="text" placeholder="ФИО">
+          </label>
+        </div>
+        <div class="col-md-6">
+          <label class="form__label" for="email">
+            <input id="email" class="input_2" name="email" type="text" placeholder="E-mail">
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <label class="form__label" for="phone">
+            <input id="phone" class="input_2" name="phone" type="text" placeholder="Телефон">
+          </label>
+        </div>
+        <div class="col-md-6">
+          <label class="upload-file_2">
+            <input class="js-upload-file upload-file_2__input" type="file" name="file" id="file" value="" data-multiple-caption="{count} файла выбрано" multiple="">
+            <span class="upload-file_2__text">Загрузить резюме</span>
+          </label>
+        </div>
+      </div>
+      <label class="checkbox-label3" for="terms">
+        <input id="terms" class="checkbox-label3__input" type="checkbox">
+        <span class="checkbox-label3__icon"></span>
+        Даю согласие на обработку <a href="#" target="_blank">персональных данных</a>
+      </label>
+      <div class="form__button-block">
+        <button class="button button--arrow" type="submit"><span class="button__text">Отправить резюме</span></button>
+      </div>
+    </form>
+  </div>
+
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bodyScrollLock.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+
+  <script src="js/jquery.fancybox.min.js"></script>
 </body>
 
 </html>

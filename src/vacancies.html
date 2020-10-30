@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>DIGITAL RAZOR</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/style.html
+</head>
+
+<body class="inner-page">
+  //= template/sprite.html
+  <div class="wrapper">
+    //= template/header.html
+
+    <div class="page-content">
+      <div class="container">
+        <ol class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+          <li class="breadcrumbs__item">Вакансии</li>
+        </ol>
+        <h1>ВАКАНСИИ</h1>
+        <div class="vacancies">
+          <div class="vacancies__left">
+            <p>Мы – безумные фанаты мощных и красивых компьютеров, топового железа и игр.</p>
+            <p>Нам нужны сотрудники, которые разделяют наши интересы,  с детства любят компьютеры и компьютерные игры, интересуются новыми технологиями и хотят стать частью нашей дружной команды.</p>
+            <p class="vacancies__button-block"><button class="button button--arrow" type="button" data-fancybox="resume" data-src="#resume"><span class="button__text">Оставить резюме</span></button></p>
+          </div>
+          <div class="vacancies__right">
+            <a class="vacancy" href="vacancy.html">
+              <span class="vacancy__position">Менеджер в команду по развитию категории аксессуаров</span>
+              <span class="vacancy__info">
+                <span class="vacancy__type">Удаленная работа</span>
+                <span class="vacancy__salary">от 30.000 Р</span>
+              </span>
+            </a>
+            <a class="vacancy" href="vacancy.html">
+              <span class="vacancy__position">Сборщик персональных компютеров</span>
+              <span class="vacancy__info">
+                <span class="vacancy__type">Офис в городе Санкт-Петербург</span>
+                <span class="vacancy__salary">По договоренности</span>
+              </span>
+            </a>
+            <a class="vacancy" href="vacancy.html">
+              <span class="vacancy__position">Сборщик персональных компютеров</span>
+              <span class="vacancy__info">
+                <span class="vacancy__type">Удаленная работа</span>
+                <span class="vacancy__salary">от 30.000 Р</span>
+              </span>
+            </a>
+            <a class="vacancy" href="vacancy.html">
+              <span class="vacancy__position">Сборщик персональных компютеров</span>
+              <span class="vacancy__info">
+                <span class="vacancy__type">Удаленная работа</span>
+                <span class="vacancy__salary">от 30.000 Р</span>
+              </span>
+            </a>
+            <p class="text-center">
+              <button class="load-more" type="button"><svg class="load-more__icon" aria-hidden="true"><use xlink:href="#load_more" /></svg>Показать еще 5 вакансий</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  //= template/footer.html
+
+  <div id="resume" class="popup popup--resume">
+    <button class="js-popup-close popup__close" type="button" title="Закрыть">
+      <svg class="popup__close-svg" aria-hidden="true">
+        <use xlink:href="#menu_close" />
+      </svg>
+    </button>
+    <p class="popup__title"><span class="color-red">Отклик на вакансию</span><br> Менеджер в команду по развитию категории аксессуаров</p>
+    <form class="form" action="" method="post">
+      <div class="row">
+        <div class="col-md-6">
+          <label class="form__label" for="fio">
+            <input id="fio" class="input_2" name="fio" type="text" placeholder="ФИО">
+          </label>
+        </div>
+        <div class="col-md-6">
+          <label class="form__label" for="email">
+            <input id="email" class="input_2" name="email" type="text" placeholder="E-mail">
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <label class="form__label" for="phone">
+            <input id="phone" class="input_2" name="phone" type="text" placeholder="Телефон">
+          </label>
+        </div>
+        <div class="col-md-6">
+          <label class="upload-file_2">
+            <input class="js-upload-file upload-file_2__input" type="file" name="file" id="file" value="" data-multiple-caption="{count} файла выбрано" multiple="">
+            <span class="upload-file_2__text">Загрузить резюме</span>
+          </label>
+        </div>
+      </div>
+      <label class="checkbox-label3" for="terms">
+        <input id="terms" class="checkbox-label3__input" type="checkbox">
+        <span class="checkbox-label3__icon"></span>
+        Даю согласие на обработку <a href="#" target="_blank">персональных данных</a>
+      </label>
+      <div class="form__button-block">
+        <button class="button button--arrow" type="submit"><span class="button__text">Отправить резюме</span></button>
+      </div>
+    </form>
+  </div>
+
+  //= template/scripts.html
+
+  <script src="js/jquery.fancybox.min.js"></script>
+</body>
+
+</html>
